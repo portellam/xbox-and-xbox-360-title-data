@@ -7,7 +7,9 @@ Databases, scripts, and references to compile video game titles for Microsoft Xb
 ## Main Directory
 
 - [README](./README.md)
+- [Contributors](./CONTRIBUTORS.md)
 - [Databases](./databases/README.md)
+- [References](./REFERENCES.md)
 - [Scripts](./scripts/README.md)
 
 ## Table of Contents
@@ -21,30 +23,17 @@ Databases, scripts, and references to compile video game titles for Microsoft Xb
 
 Last Updated: 2025-09-10
 
-| Reference Index | Reference Title | Has Dataset | Has API | Notes | Last Updated |
-| - | - | - | - | - | - |
-| 1 | [List of systems - Games Database](https://www.gamesdatabase.org/systems) | Yes and No. | Unknown | Presence of **Dataset**(s) depend on the video game system. | Unknown |
-| 2 | [About - Microsoft Xbox 360 - Games Database](https://www.gamesdatabase.org/system-microsoft_xbox_360) | Yes. | No.  | Xbox 360 retail and XBLA games:<br>1. [Microsoft Xbox 360 games list with Title ID](https://www.gamesdatabase.org/xbox_360_games_list_with_title_ids)<br>2. [Microsoft Xbox Live Arcade games list with Title ID](https://www.gamesdatabase.org/xbox_live_arcade_games_list_with_title_ids) | Unknown |
-| 3 | [About - Microsoft Xbox - Games Database](https://www.gamesdatabase.org/system-microsoft_xbox) | No. | No. | Original Xbox | Unknown |
-| 4 | [MobCat's Original Xbox Title ID Database](https://www.mobcat.zip/XboxIDs/)   | Yes, see [Download the complete database.](https://www.mobcat.zip/XboxIDs/titleIDs.db) | Yes, see [MobCat's Xbox Title ID Database Documentation](https://www.mobcat.zip/XboxIDs/documentation/?id=2). | Original Xbox.<br><br>Cover scans and box art: [Original Xbox Cover scans](https://www.mobcat.zip/XboxIDs/CoverFlow.php)  | 2025-08-30 |
-| 5 | [GitHub - IronRingX/xbox360-gamelist: Listing of Title ID, Media ID, Region, XEX CRC, and Wave for Xbox 360 games.](https://github.com/IronRingX/xbox360-gamelist) |  |  |  | 2023-04-19  |
-
-
-#### References to sort
-
-- [Directory Listing](https://archive.rushhosting.net/)
-- [GitHub - MobCat/MobCats-original-xbox-game-list: Og xbox title ID Database](https://github.com/MobCat/MobCats-original-xbox-game-list)
-- [List of Xbox games compatible with Xbox 360 - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_games_compatible_with_Xbox_360#cite_ref-Puyo_46-0)
-- [List of Xbox 360 games - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_games)
-- [List of Xbox 360 games (A–L) - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_games_(A%E2%80%93L))
-- [List of Xbox 360 games (M–Z) - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_games_(M%E2%80%93Z))
-- [List of Xbox 360 System Link games - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_System_Link_games)
-- [Original Xbox Games Compatibility List - ConsoleMods Wiki](https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List)
-- [Title ID Finder](https://www.themodshop.co/tid/)
-- [Xbox 360 TitleIDs list · GitHub](https://gist.github.com/albertofustinoni/51f2ea0537130f4820a3f5ed49d69042)
-- [Xbox Live Arcade - Wikipedia](https://en.wikipedia.org/wiki/Xbox_Live_Arcade#Xbox)
-- [Xbox Title IDs - Redump Wiki](http://wiki.redump.org/index.php?title=Xbox_Title_IDs)
-- [Xenon Fusion Emulator (XeFu) Xbox One / Series Files For Jtag / RGH Xbox 360's \| Digiex](https://digiex.net/threads/xenon-fusion-emulator-xefu-xbox-one-series-files-for-jtag-rgh-xbox-360s.16757/)
+| #  | Source | Dataset | API | Notes | Last Updated |
+|----|--------|---------|-----|-------|--------------|
+| 1  | [List of systems - Games Database](./REFERENCES.md#ref-8) | Yes and No. | Unknown | Presence of **Dataset**(s) depend on the video game system. | Unknown |
+| 2  | [About - Microsoft Xbox 360 - Games Database](./REFERENCES.md#ref-1) | Yes. | No.  | Xbox 360 retail and XBLA games:<br>1. [Microsoft Xbox 360 games list with Title ID](./REFERENCES.md#ref-13)<br>2. [Microsoft Xbox Live Arcade games list with Title ID](./REFERENCES.md#ref-14) | Unknown |
+| 3  | [About - Microsoft Xbox - Games Database](./REFERENCES.md#ref-2) | No. | No. | Original Xbox | Unknown |
+| 4  | [MobCat's Original Xbox Title ID Database](./REFERENCES.md#ref-15) | Yes, see [Download the complete database.](./REFERENCES.md#ref-3) | Yes, see [MobCat's Xbox Title ID Database Documentation](./REFERENCES.md#ref-16) | GitHub: [GitHub - MobCat/MobCats-original-xbox-game-list](./REFERENCES.md#ref-5); Original Xbox.<br><br>Cover scans and box art: [Original Xbox Cover scans](./REFERENCES.md#ref-17) | 2025-08-30 |
+| 5  | [GitHub - IronRingX/xbox360-gamelist](./REFERENCES.md#ref-4) |  |  |  | 2023-04-19 |
+| 6  | [Welcome | XboxDB](./REFERENCES.md#ref-20) | Yes. | Yes, see [API | XboxDB](./REFERENCES.md#ref-1) | Incomplete. Xbox 360: 1136 titles; XBLA: 628 titles | Unknown |
+| 7  | [Directory Listing](./REFERENCES.md#ref-2) | Yes. | No. | To search by Title ID, use the following URL format: "https://archive.rushhosting.net/TITLE_ID". Some games may reflect different release dates, if re-released as Games on Demand (GOD). | Unknown |
+| 8  | [List of Xbox games compatible with Xbox 360 - Wikipedia](./REFERENCES.md#ref-12) |  |  |  |  |
+| 9  | [List of Xbox 360 games - Wikipedia](./REFERENCES.md#ref-9) | Yes. | No. |  |  |
 
 
 ### ☎️ 2. Contact

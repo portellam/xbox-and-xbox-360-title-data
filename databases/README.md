@@ -4,7 +4,9 @@ Backups and local copies of title data.
 ## Main Directory
 
 - [README](../README.md)
+- [Contributors](../CONTRIBUTORS.md)
 - [Databases](.README.md)
+- [References](../REFERENCES.md)
 - [Scripts](../scripts/README.md)
 
 ## Table of Contents
@@ -35,6 +37,8 @@ TODO: implement!
 	5. **Is Retail**
 	6. **Is XBLA** (Xbox Live Arcade)
 	7. **Is Indie** (Xbox 360 only)
+  8. **Region** (NTSC/PAL, NA/EU/Asia/AUS)
+  8. **Rating** (ESRB, PEGI)
 
 - [ ]  *Xbox* and *Xbox 360:* database file with the following columns:
 	1. **Title ID**
@@ -49,7 +53,7 @@ TODO: implement!
 
 - [ ] *Xbox:* database file with the following columns:
 1. **Title ID**
-2. **Xenon Fusion (XeFu)** [<sup>\[1\]</sup>](#1) **Revisions and Status** [<sup>\[2\]</sup>](#2)
+2. **Xenon Fusion (XeFu)** [<sup>\[24\]</sup>](../REFERENCES.md#24) **Revisions and Status** [<sup>\[18\]</sup>](../REFERENCES.md#18)
 	1. **v1**
 	2. **v2**
 	3. **v3**
@@ -63,7 +67,7 @@ TODO: implement!
 	11. **2021b**
 	12. **2021c**
 
-  - Status map: [<sup>\[2\]</sup>](#2)
+  - Status map: [<sup>\[18\]</sup>](../REFERENCES.md#18)
 
     | Status | Notes |
     | - | - |
@@ -80,19 +84,3 @@ TODO: implement!
 	2. **Uses 3D**
 	3. **Uses Kinect (required)**
 	4. **Uses Kinect (optional)**
-
-
-### 3. References
-
-#### 1.
-
-&nbsp;&nbsp;**Xenon Fusion Emulator**. ConsoleMods. Accessed 2025-09-10.
-
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>https://consolemods.org/wiki/Xbox_360:Xenon_Fusion_Emulator.</sup>
-
-#### 2.
-
-&nbsp;&nbsp;**Original Xbox Games Compatibility List**. ConsoleMods.
-Accessed 2025-09-10.
-
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List.</sup>

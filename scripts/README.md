@@ -3,7 +3,9 @@
 ## Main Directory
 
 - [README](../README.md)
+- [Contributors](../CONTRIBUTORS.md)
 - [Databases](../databases/README.md)
+- [References](../REFERENCES.md)
 - [Scripts](./README.md)
 
 ## This Directory Table
@@ -15,5 +17,10 @@
 
 ## Backlog
 
-- [ ] fix `get-xbox-360-games_archive.rushhosting.net.py`
+- [ ] cron job to upload latest database files to this repo.
+- [ ] individual script files for each resource.
+  - [ ] fix `get-xbox-360-games_archive.rushhosting.net.py`
+- [ ] master script file
+  - [ ] aggregates each resource's database
+  - [ ] set priority given trust (or lack of trust) with regards to accuracy of records.
 - [ ] add more
