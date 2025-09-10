@@ -8,7 +8,7 @@ Databases, scripts, and references to compile video game titles for Microsoft Xb
 
 - [README](./README.md)
 - [Databases](./databases/README.md)
-- [Scripts](./docs/getting-started/README.md)
+- [Scripts](./scripts/README.md)
 
 ## Table of Contents
 

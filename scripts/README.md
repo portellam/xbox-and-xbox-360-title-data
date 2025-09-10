@@ -2,9 +2,9 @@
 
 ## Main Directory
 
-- [README](./README.md)
-- [Databases](./databases/README.md)
-- [Scripts](./docs/getting-started/README.md)
+- [README](../README.md)
+- [Databases](../databases/README.md)
+- [Scripts](./README.md)
 
 ## This Directory Table
 | Script File | Functionality | Notes |
