@@ -30,11 +30,10 @@ Last Updated: 2025-09-10
 | 3  | [About - Microsoft Xbox - Games Database](./REFERENCES.md#ref-2) | No. | No. | Original Xbox | Unknown |
 | 4  | [MobCat's Original Xbox Title ID Database](./REFERENCES.md#ref-15) | Yes, see [Download the complete database.](./REFERENCES.md#ref-3) | Yes, see [MobCat's Xbox Title ID Database Documentation](./REFERENCES.md#ref-16) | GitHub: [GitHub - MobCat/MobCats-original-xbox-game-list](./REFERENCES.md#ref-5); Original Xbox.<br><br>Cover scans and box art: [Original Xbox Cover scans](./REFERENCES.md#ref-17) | 2025-08-30 |
 | 5  | [GitHub - IronRingX/xbox360-gamelist](./REFERENCES.md#ref-4) |  |  |  | 2023-04-19 |
-| 6  | [Welcome | XboxDB](./REFERENCES.md#ref-20) | Yes. | Yes, see [API | XboxDB](./REFERENCES.md#ref-1) | Incomplete. Xbox 360: 1136 titles; XBLA: 628 titles | Unknown |
+| 6  | [Welcome \| XboxDB](./REFERENCES.md#ref-20) | Yes. | Yes, see [API \| XboxDB](./REFERENCES.md#ref-1) | Incomplete. Xbox 360: 1136 titles; XBLA: 628 titles | Unknown |
 | 7  | [Directory Listing](./REFERENCES.md#ref-2) | Yes. | No. | To search by Title ID, use the following URL format: "https://archive.rushhosting.net/TITLE_ID". Some games may reflect different release dates, if re-released as Games on Demand (GOD). | Unknown |
 | 8  | [List of Xbox games compatible with Xbox 360 - Wikipedia](./REFERENCES.md#ref-12) |  |  |  |  |
 | 9  | [List of Xbox 360 games - Wikipedia](./REFERENCES.md#ref-9) | Yes. | No. |  |  |
-
 
 ### ☎️ 2. Contact
 
