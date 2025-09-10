@@ -18,6 +18,7 @@ Databases, scripts, and references to compile video game titles for Microsoft Xb
 ## Contents
 
 ### 🌐 1. Table of References
+
 Last Updated: 2025-09-10
 
 | Reference Index | Reference Title | Has Dataset | Has API | Notes | Last Updated |
@@ -27,6 +28,11 @@ Last Updated: 2025-09-10
 | 3 | [About - Microsoft Xbox - Games Database](https://www.gamesdatabase.org/system-microsoft_xbox) | No. | No. | Original Xbox | Unknown |
 | 4 | [MobCat's Original Xbox Title ID Database](https://www.mobcat.zip/XboxIDs/)   | Yes, see [Download the complete database.](https://www.mobcat.zip/XboxIDs/titleIDs.db) | Yes, see [MobCat's Xbox Title ID Database Documentation](https://www.mobcat.zip/XboxIDs/documentation/?id=2). | Original Xbox.<br><br>Cover scans and box art: [Original Xbox Cover scans](https://www.mobcat.zip/XboxIDs/CoverFlow.php)  | 2025-08-30 |
 | 5 | [GitHub - IronRingX/xbox360-gamelist: Listing of Title ID, Media ID, Region, XEX CRC, and Wave for Xbox 360 games.](https://github.com/IronRingX/xbox360-gamelist) |  |  |  | 2023-04-19   |
+
+
+- [Xenon Fusion Emulator (XeFu) Xbox One / Series Files For Jtag / RGH Xbox 360's \| Digiex](https://digiex.net/threads/xenon-fusion-emulator-xefu-xbox-one-series-files-for-jtag-rgh-xbox-360s.16757/
+- [List of Xbox games compatible with Xbox 360 - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_games_compatible_with_Xbox_360#cite_ref-Puyo_46-0)
+- [Original Xbox Games Compatibility List - ConsoleMods Wiki](https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List)
 
 ### ☎️ 2. Contact
 
