@@ -4,6 +4,12 @@
 
 Databases, scripts, and references to compile video game titles for Microsoft Xbox and Xbox 360.
 
+## Main Directory
+
+- [README](./README.md)
+- [Databases](./databases/README.md)
+- [Scripts](./docs/getting-started/README.md)
+
 ## Table of Contents
 
 - [🌐 1. Table of References](#-1-table-of-references)
