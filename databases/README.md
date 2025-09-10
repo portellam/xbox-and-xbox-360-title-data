@@ -28,18 +28,16 @@ TODO: implement!
 - [ ] add more?
 
 - [ ] (Original) *Xbox* and *Xbox 360:* master database file with following columns:
-
-  1. **Title ID**
+	1. **Title ID**
 	2. **Name**
-  3. **Is Xbox**
-  4. **Is Xbox 360**
-  5. **Is Retail**
-  6. **Is XBLA** (Xbox Live Arcade)
-  7. **Is Indie** (Xbox 360 only)
+	3. **Is Xbox**
+	4. **Is Xbox 360**
+	5. **Is Retail**
+	6. **Is XBLA** (Xbox Live Arcade)
+	7. **Is Indie** (Xbox 360 only)
 
 - [ ]  *Xbox* and *Xbox 360:* database file with the following columns:
-
-  1. **Title ID**
+	1. **Title ID**
 	2. **Developer**
 	3. **Publisher**
 	4. **Genre**
@@ -50,23 +48,22 @@ TODO: implement!
 	9. **Release Date** (North America/NTSC-U or main region)
 
 - [ ] *Xbox:* database file with the following columns:
+1. **Title ID**
+2. **[Xenon Fusion (XeFu)]** [<sup>\[1\]</sup>](#1) **Revisions and Status** [<sup>\[2\]</sup>](#2)
+	1. **v1**
+	2. **v2**
+	3. **v3**
+	4. **v5**
+	5. **v1_1**
+	6. **v6**
+	7. **v7**
+	8. **v7b**
+	9. **2019**
+	10. **2021a**
+	11. **2021b**
+	12. **2021c**
 
-  1. **Title ID**
-  2. **(Xenon Fusion)[#1] Revisions and Status**
-    1. **v1**
-    2. **v2**
-    3. **v3**
-    4. **v5**
-    5. **v1_1**
-    6. **v6**
-    7. **v7**
-    8. **v7b**
-    9. **2019**
-    10. **2021a**
-    11. **2021b**
-    12. **2021c**
-
-  - Status map:
+  - Status map: [<sup>\[2\]</sup>](#2)
 
     | Status | Notes |
     | - | - |
@@ -79,8 +76,7 @@ TODO: implement!
     | 7. Untested   | For untested games. |
 
 - [ ] *Xbox 360:* database files:
-
-  1. **Title ID**
+	1. **Title ID**
 	2. **Uses 3D**
 	3. **Uses Kinect (required)**
 	4. **Uses Kinect (optional)**
@@ -90,7 +86,7 @@ TODO: implement!
 
 #### 1.
 
-&nbsp;&nbsp;**Xenon_Fusion_Emulator**. ConsoleMods. Accessed 2025-09-10.
+&nbsp;&nbsp;**Xenon Fusion Emulator**. ConsoleMods. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://consolemods.org/wiki/Xbox_360:Xenon_Fusion_Emulator.</sup>
 
