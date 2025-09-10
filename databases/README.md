@@ -37,19 +37,20 @@ TODO: implement!
 	5. **Is Retail**
 	6. **Is XBLA** (Xbox Live Arcade)
 	7. **Is Indie** (Xbox 360 only)
-  8. **Region** (NTSC/PAL, NA/EU/Asia/AUS)
-  8. **Rating** (ESRB, PEGI)
+	8. **Region** (NTSC/PAL, Americas/Europe/Asia/Australia)
 
 - [ ]  *Xbox* and *Xbox 360:* database file with the following columns:
-	1. **Title ID**
-	2. **Developer**
-	3. **Publisher**
-	4. **Genre**
-	5. **Max Player Count** (Local, LAN, or Online)
-	6. **Has Local Multiplayer** (Cooperative or Split-screen)
-	7. **Has LAN Multiplayer** (System Link)
-	8. **Has Online Multiplayer** (Xbox Live)
-	9. **Release Date** (North America/NTSC-U or main region)
+1. **Title ID**
+2. **Developer**
+3. **Publisher**
+4. **Genre**
+5. **Max Player Count** (Local, LAN, or Online)
+6. **Has Multiplayer**
+	1. **Has Local** (Cooperative or Split-screen)
+	2. **Has LAN** (System Link)
+	3. **Has Online** (Xbox Live)
+7. **Release Date**
+8. **Rating** (ESRB, PEGI)
 
 - [ ] *Xbox:* database file with the following columns:
 1. **Title ID**
