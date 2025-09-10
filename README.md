@@ -27,12 +27,25 @@ Last Updated: 2025-09-10
 | 2 | [About - Microsoft Xbox 360 - Games Database](https://www.gamesdatabase.org/system-microsoft_xbox_360) | Yes. | No.  | Xbox 360 retail and XBLA games:<br>1. [Microsoft Xbox 360 games list with Title ID](https://www.gamesdatabase.org/xbox_360_games_list_with_title_ids)<br>2. [Microsoft Xbox Live Arcade games list with Title ID](https://www.gamesdatabase.org/xbox_live_arcade_games_list_with_title_ids) | Unknown |
 | 3 | [About - Microsoft Xbox - Games Database](https://www.gamesdatabase.org/system-microsoft_xbox) | No. | No. | Original Xbox | Unknown |
 | 4 | [MobCat's Original Xbox Title ID Database](https://www.mobcat.zip/XboxIDs/)   | Yes, see [Download the complete database.](https://www.mobcat.zip/XboxIDs/titleIDs.db) | Yes, see [MobCat's Xbox Title ID Database Documentation](https://www.mobcat.zip/XboxIDs/documentation/?id=2). | Original Xbox.<br><br>Cover scans and box art: [Original Xbox Cover scans](https://www.mobcat.zip/XboxIDs/CoverFlow.php)  | 2025-08-30 |
-| 5 | [GitHub - IronRingX/xbox360-gamelist: Listing of Title ID, Media ID, Region, XEX CRC, and Wave for Xbox 360 games.](https://github.com/IronRingX/xbox360-gamelist) |  |  |  | 2023-04-19   |
+| 5 | [GitHub - IronRingX/xbox360-gamelist: Listing of Title ID, Media ID, Region, XEX CRC, and Wave for Xbox 360 games.](https://github.com/IronRingX/xbox360-gamelist) |  |  |  | 2023-04-19  |
 
 
-- [Xenon Fusion Emulator (XeFu) Xbox One / Series Files For Jtag / RGH Xbox 360's \| Digiex](https://digiex.net/threads/xenon-fusion-emulator-xefu-xbox-one-series-files-for-jtag-rgh-xbox-360s.16757/
+#### References to sort
+
+- [Directory Listing](https://archive.rushhosting.net/)
+- [GitHub - MobCat/MobCats-original-xbox-game-list: Og xbox title ID Database](https://github.com/MobCat/MobCats-original-xbox-game-list)
 - [List of Xbox games compatible with Xbox 360 - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_games_compatible_with_Xbox_360#cite_ref-Puyo_46-0)
+- [List of Xbox 360 games - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_games)
+- [List of Xbox 360 games (A–L) - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_games_(A%E2%80%93L))
+- [List of Xbox 360 games (M–Z) - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_games_(M%E2%80%93Z))
+- [List of Xbox 360 System Link games - Wikipedia](https://en.wikipedia.org/wiki/List_of_Xbox_360_System_Link_games)
 - [Original Xbox Games Compatibility List - ConsoleMods Wiki](https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List)
+- [Title ID Finder](https://www.themodshop.co/tid/)
+- [Xbox 360 TitleIDs list · GitHub](https://gist.github.com/albertofustinoni/51f2ea0537130f4820a3f5ed49d69042)
+- [Xbox Live Arcade - Wikipedia](https://en.wikipedia.org/wiki/Xbox_Live_Arcade#Xbox)
+- [Xbox Title IDs - Redump Wiki](http://wiki.redump.org/index.php?title=Xbox_Title_IDs)
+- [Xenon Fusion Emulator (XeFu) Xbox One / Series Files For Jtag / RGH Xbox 360's \| Digiex](https://digiex.net/threads/xenon-fusion-emulator-xefu-xbox-one-series-files-for-jtag-rgh-xbox-360s.16757/)
+
 
 ### ☎️ 2. Contact
 
