@@ -49,7 +49,7 @@ TODO: implement!
 
 - [ ] *Xbox:* database file with the following columns:
 1. **Title ID**
-2. **[Xenon Fusion (XeFu)]** [<sup>\[1\]</sup>](#1) **Revisions and Status** [<sup>\[2\]</sup>](#2)
+2. **Xenon Fusion (XeFu)** [<sup>\[1\]</sup>](#1) **Revisions and Status** [<sup>\[2\]</sup>](#2)
 	1. **v1**
 	2. **v2**
 	3. **v3**
