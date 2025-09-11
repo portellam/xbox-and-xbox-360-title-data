@@ -21,18 +21,18 @@ Backups and local copies of title data.
 
 Last Updated: 2025-09-11
 
-| Database File | Functionality | Notes |
-| - | - | - |
-| **archive.rushhosting.net**<sup>[CSV][201]</sup> | Includes **Capabilities* (*Coop, SystemLink,* and *Xbox Live*). | Incomplete parse from HTML pages. |
-| **ConsoleMods.org Compatibility List**<sup>[CSV][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. |
-| **List of Xbox 360 games (A–L)**<sup>[CSV][301] [JSON][302]</sup> | Includes *Genres* and *Addons* (*3D support Kinect optional/required, Downloadable titles, Indie,* and *XBLA*). | Successful parse from HTML table. |
-| **List of Xbox 360 games (A–L): Cancelled games**<sup>[CSV][311] [JSON][312]</sup> | Same as above. | Successful parse from HTML table. |
-| **List of Xbox 360 games (M–Z)**<sup>[CSV][401] [JSON][402]</sup> | Same as above. | Successful parse from HTML table. |
-| **List of Xbox 360 games (M–Z): Cancelled games**<sup>[CSV][411] [JSON][412]</sup> | Same as above. | Successful parse from HTML table. |
-| **List of Xbox 360 System Link games**<sup>[CSV][501] [JSON][502]</sup> | Includes *Total players, Per console, Versus mode,* and *Co-op mode*. | Successful parse from HTML table. |
-| **List of Xbox games**<sup>[CSV][601] [JSON][602]</sup> | - | Successful parse from HTML table. |
-| **List of Xbox games compatible with Xbox 360**<sup>[CSV][701] [JSON][702]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. |
-| **List of Xbox titles removed from backward compatibility list**<sup>[CSV][711] [JSON][712]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. |
+| Database File | Functionality | Notes | Credits |
+| - | - | - | - |
+| **archive.rushhosting.net**<sup>[CSV][201]</sup> | Includes **Capabilities* (*Coop, SystemLink,* and *Xbox Live*). | Incomplete parse from HTML pages. | [2](../REFERENCES.md#2) |
+| **ConsoleMods.org Compatibility List**<sup>[CSV][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. | [19](../REFERENCES.md#19) |
+| **List of Xbox 360 games (A–L)**<sup>[CSV][301] [JSON][302]</sup> | Includes *Genres* and *Addons* (*3D support Kinect optional/required, Downloadable titles, Indie,* and *XBLA*). | Successful parse from HTML table. | [9](../REFERENCES.md#9) |
+| **List of Xbox 360 games (A–L): Cancelled games**<sup>[CSV][311] [JSON][312]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
+| **List of Xbox 360 games (M–Z)**<sup>[CSV][401] [JSON][402]</sup> | Same as above. | Successful parse from HTML table. | [10](../REFERENCES.md#10) |
+| **List of Xbox 360 games (M–Z): Cancelled games**<sup>[CSV][411] [JSON][412]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
+| **List of Xbox 360 System Link games**<sup>[CSV][501] [JSON][502]</sup> | Includes *Total players, Per console, Versus mode,* and *Co-op mode*. | Successful parse from HTML table. | [11](../REFERENCES.md#11) |
+| **List of Xbox games**<sup>[CSV][601] [JSON][602]</sup> | - | Successful parse from HTML table. | [12](../REFERENCES.md#12) |
+| **List of Xbox games compatible with Xbox 360**<sup>[CSV][701] [JSON][702]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. | [13](../REFERENCES.md#13) |
+| **List of Xbox titles removed from backward compatibility list**<sup>[CSV][711] [JSON][712]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. | Same as above. |
 
 [101]: ./csv/consolemods.org_xbox_360_original_xbox_games_compatibility_list.csv
 [102]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list.json
