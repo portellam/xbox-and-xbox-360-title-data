@@ -300,17 +300,11 @@ def main() -> int:
   if not page_content:
     return 1
 
-  try:
-    print("Parsing page.")
-    soup = BeautifulSoup(
-      page_content,
-      "html.parser"
-    )
-
-  except Exception as e:
-    print("Could not parse page.")
-    print(f"Error: {e}")
-    return 1
+  print("Parsing page.")
+  soup = BeautifulSoup(
+    page_content,
+    "html.parser"
+  )
 
   table = find_table(soup)
 
@@ -348,6 +342,13 @@ def main() -> int:
   return 0
 
 if __name__ == "__main__":
-  sys.exit(
-    main()
-  )
+  try:
+    sys.exit(
+      main()
+    )
+
+  except KeyboardInterrupt:
+    print("Script interrupted by user.")
+
+  except Exception as e:
+    print(f"Script failed: {e}")
