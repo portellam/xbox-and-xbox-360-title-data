@@ -34,11 +34,11 @@ URL_LIST = [
 ]
 
 OUTPUT_FILE_NAME_LIST = [
-  "wikipedia.org_xbox_360_games_a-l_list",
-  "wikipedia.org_xbox_360_games_m-z_list",
-  "wikipedia.org_xbox_360_system_link_games_list",
-  "wikipedia.org_xbox_games_list",
-  "wikipedia.org_xbox_games_compatible_with_xbox_360_list"
+  "wikipedia.org_xbox_360_games_a-l",
+  "wikipedia.org_xbox_360_games_m-z",
+  "wikipedia.org_xbox_360_system_link_games",
+  "wikipedia.org_xbox_games",
+  "wikipedia.org_xbox_games_compatible_with_xbox_360"
 ]
 
 ELEMENT_TAG_LIST = [
@@ -65,6 +65,7 @@ def fetch_page(
     return response.text
 
   except requests.RequestException as e:
+    print("Could not fetch page.")
     print(f"Error: {e}")
     return None
 
@@ -82,6 +83,7 @@ def find_tables(
     return table_list
 
   except Exception as e:
+    print("Could not find tables.")
     print(f"Error: {e}")
     return []
 
@@ -255,7 +257,9 @@ def main() -> int:
     if not table_list:
       continue
 
-    for idx, table in enumerate(
+    index = 1
+
+    for actual_index, table in enumerate(
       table_list,
       start = 1
     ):
@@ -273,7 +277,8 @@ def main() -> int:
         print("Warning: Could not extract data. No data rows exist.")
         continue
 
-      file_suffix = f"{output_name}_table_{idx}"
+      file_suffix = f"{output_name}_table_{index}"
+      index += 1
 
       if not write_csv(
         header_list,
