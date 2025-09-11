@@ -19,16 +19,46 @@ Backups and local copies of title data.
 
 ### 1. This Directory Table
 
-Last Update: 2025-09-10
+Last Updated: 2025-09-11
 
 | Database File | Functionality | Notes |
 | - | - | - |
-| **ConsoleMods.org Compatibility List**<sup>[CSV][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successfuly parsed from HTML table.
-| **archive.rushhosting.net**<sup>[CSV][201]</sup> | Includes "Capabilities" (Coop, SystemLink, and Xbox Live) | Incomplete parse from HTML pages. |
+| **archive.rushhosting.net**<sup>[CSV][201]</sup> | Includes **Capabilities* (*Coop, SystemLink,* and *Xbox Live*). | Incomplete parse from HTML pages. |
+| **ConsoleMods.org Compatibility List**<sup>[CSV][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. |
+| **List of Xbox 360 games (A–L)**<sup>[CSV][301] [JSON][302]</sup> | Includes *Genres* and *Addons* (*3D support Kinect optional/required, Downloadable titles, Indie,* and *XBLA*). | Successful parse from HTML table. |
+| **List of Xbox 360 games (A–L): Cancelled games**<sup>[CSV][311] [JSON][312]</sup> | Same as above. | Successful parse from HTML table. |
+| **List of Xbox 360 games (M–Z)**<sup>[CSV][401] [JSON][402]</sup> | Same as above. | Successful parse from HTML table. |
+| **List of Xbox 360 games (M–Z): Cancelled games**<sup>[CSV][411] [JSON][412]</sup> | Same as above. | Successful parse from HTML table. |
+| **List of Xbox 360 System Link games**<sup>[CSV][501] [JSON][502]</sup> | Includes *Total players, Per console, Versus mode,* and *Co-op mode*. | Successful parse from HTML table. |
+| **List of Xbox games**<sup>[CSV][601] [JSON][602]</sup> | - | Successful parse from HTML table. |
+| **List of Xbox games compatible with Xbox 360**<sup>[CSV][701] [JSON][702]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. |
+| **List of Xbox titles removed from backward compatibility list**<sup>[CSV][711] [JSON][712]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. |
 
-[101]: ./xbox_360_original_xbox_games_compatibility_list.csv
-[102]: ./xbox_360_original_xbox_games_compatibility_list.json
-[201]: ./xbox_360_title_data_archive.rushhosting.net.csv
+[101]: ./csv/consolemods.org_xbox_360_original_xbox_games_compatibility_list.csv
+[102]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list.json
+
+[201]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
+
+[301]: ./csv/wikipedia.org_xbox_360_games_a-l_table_1.csv
+[302]: ./json/wikipedia.org_xbox_360_games_a-l_table_1.json
+[311]: ./csv/wikipedia.org_xbox_360_games_a-l_table_2.csv
+[312]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
+
+[401]: ./csv/wikipedia.org_xbox_360_games_m-z_table_1.csv
+[402]: ./json/wikipedia.org_xbox_360_games_m-z_table_1.json
+[411]: ./csv/wikipedia.org_xbox_360_games_m-z_table_2.csv
+[412]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
+
+[501]: ./csv/wikipedia.org_xbox_360_system_link_games_table_1.csv
+[502]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
+
+[601]: ./csv/wikipedia.org_xbox_games_table_1.csv
+[602]: ./json/wikipedia.org_xbox_games_table_1.json
+
+[701]: ./csv/wikipedia.org_xbox_games_compatible_with_xbox_360_table_1.csv
+[702]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_1.json
+[711]: ./csv/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.csv
+[712]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
 
 ### 2. Backlog
 
@@ -59,7 +89,7 @@ Last Update: 2025-09-10
 
 - [ ] *Xbox:* database file with the following columns:
 1. **Title ID**
-2. **Xenon Fusion (XeFu)** [<sup>\[24\]</sup>](../REFERENCES.md#24) **Revisions and Status** [<sup>\[18\]</sup>](../REFERENCES.md#18)
+2. **Xenon Fusion (XeFu)** [<sup>\[25\]</sup>](../REFERENCES.md#25) **Revisions and Status** [<sup>\[19\]</sup>](../REFERENCES.md#19)
 	1. **v1**
 	2. **v2**
 	3. **v3**
@@ -73,7 +103,7 @@ Last Update: 2025-09-10
 	11. **2021b**
 	12. **2021c**
 
-  - Status map: [<sup>\[18\]</sup>](../REFERENCES.md#18)
+  - Status map: [<sup>\[19\]</sup>](../REFERENCES.md#19)
 
     | Status | Notes |
     | - | - |

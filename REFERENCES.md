@@ -1,5 +1,7 @@
 # References
 
+Last Updated: 2025-09-11
+
 ## Main Directory
 
 - [README](./README.md)
@@ -36,20 +38,20 @@ the following files accordingly:
 
 ### 4.
 
-&nbsp;&nbsp;**GitHub - IronRingX/xbox360-gamelist**. GitHub. Accessed 2025-09-10.
+&nbsp;&nbsp;**IronRingX/xbox360-gamelist**. GitHub. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://github.com/IronRingX/xbox360-gamelist</sup>
 
 ### 5.
 
-&nbsp;&nbsp;**GitHub - MobCat/MobCats-original-xbox-game-list**. GitHub.
+&nbsp;&nbsp;**MobCat/MobCats-original-xbox-game-list**. GitHub.
 Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://github.com/MobCat/MobCats-original-xbox-game-list</sup>
 
 ### 6.
 
-&nbsp;&nbsp;**GitHub - XboxUnity/AuroraScripts: Various LUA scripts for Aurora**.
+&nbsp;&nbsp;**XboxUnity/AuroraScripts: Various LUA scripts for Aurora**.
 GitHub. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://github.com/XboxUnity/AuroraScripts</sup>
@@ -62,8 +64,7 @@ GitHub. Accessed 2025-09-10.
 
 ### 8.
 
-&nbsp;&nbsp;**List of systems - Games Database**. GamesDatabase.
-Accessed 2025-09-10.
+&nbsp;&nbsp;**List of systems**. GamesDatabase. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.gamesdatabase.org/systems</sup>
 
@@ -88,90 +89,95 @@ Accessed 2025-09-10.
 
 ### 12.
 
-&nbsp;&nbsp;**List of Xbox games compatible with Xbox 360 - Wikipedia**.
-Wikipedia. Accessed 2025-09-10.
+&nbsp;&nbsp;**List of Xbox games**. Wikipedia. Accessed 2025-09-10.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/List_of_Xbox_games</sup>
+
+### 13.
+
+&nbsp;&nbsp;**List of Xbox games compatible with Xbox 360**. Wikipedia.
+Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/List_of_Xbox_games_compatible_with_Xbox_360#List_of_compatible_Xbox_games</sup>
 
-### 13.
+### 14.
 
 &nbsp;&nbsp;**Microsoft Xbox 360 games list with Title ID**. GamesDatabase.
 Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.gamesdatabase.org/xbox_360_games_list_with_title_ids</sup>
 
-### 14.
+### 15.
 
 &nbsp;&nbsp;**Microsoft Xbox Live Arcade games list with Title ID**.
 GamesDatabase. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.gamesdatabase.org/xbox_live_arcade_games_list_with_title_ids</sup>
 
-### 15.
+### 16.
 
 &nbsp;&nbsp;**MobCat's Original Xbox Title ID Database**. MobCat.
 Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.mobcat.zip/XboxIDs/</sup>
 
-### 16.
+### 17.
 
 &nbsp;&nbsp;**MobCat's Xbox Title ID Database Documentation**. MobCat.
 Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.mobcat.zip/XboxIDs/documentation/?id=2</sup>
 
-### 17.
+### 18.
 
 &nbsp;&nbsp;**Original Xbox Cover scans**. MobCat. Accessed 2025-09-10.
 
-
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.mobcat.zip/XboxIDs/CoverFlow.php</sup>
 
-### 18.
+### 19.
 
 &nbsp;&nbsp;**Original Xbox Games Compatibility List**. ConsoleMods.
 Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List.</sup>
 
-### 19.
+### 20.
 
 &nbsp;&nbsp;**Title ID Finder**. The Mod Shop. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://www.themodshop.co/tid/</sup>
 
-### 20.
+### 21.
 
 &nbsp;&nbsp;**Welcome | XboxDB**. XboxDB. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://xboxdb.altervista.org/</sup>
 
-### 21.
+### 22.
 
 &nbsp;&nbsp;**Xbox 360 TitleIDs list**. GitHub. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://gist.github.com/albertofustinoni/51f2ea0537130f4820a3f5ed49d69042</sup>
 
-### 22.
+### 23.
 
 &nbsp;&nbsp;**Xbox Live Arcade**. Wikipedia. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/Xbox_Live_Arcade#Xbox</sup>
 
-### 23.
+### 24.
 
 &nbsp;&nbsp;**Xbox Title IDs**. Redump Wiki. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>http://wiki.redump.org/index.php?title=Xbox_Title_IDs</sup>
 
-### 24.
+### 25.
 
 &nbsp;&nbsp;**Xenon Fusion Emulator**. ConsoleMods. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://consolemods.org/wiki/Xbox_360:Xenon_Fusion_Emulator.</sup>
 
-### 25.
+### 26.
 
 &nbsp;&nbsp;**Xenon Fusion Emulator (XeFu) Xbox One / Series Files For Jtag / RGH Xbox 360's**.
 Digiex. Accessed 2025-09-10.
