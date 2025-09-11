@@ -1,3 +1,14 @@
+#!/usr/bin/env python
+
+#
+# Filename:       get-rushhosting.net-database.py
+# Description:    Retrieves data from archive.rushhosting.net pages, and outputs as
+#                 CSV and JSON.
+# Author(s):      Alex Portell <github.com/portellam>
+# Maintainer(s):  Alex Portell <github.com/portellam>
+# Version:        1.0.0
+#
+
 from bs4 import BeautifulSoup
 import datetime
 import pandas as pd
@@ -10,6 +21,18 @@ try:
   import aiohttp
   import asyncio
   IS_ASYNC_AVAILABLE = True
+
+except ImportError:
+  module = "aiohttp"
+  command = f"pip install {module}"
+
+  print(
+    f"Warning: '{module}' not installed."
+    + f" Falling back to synchronous mode. Run '{command}' for async support."
+  )
+
+  IS_ASYNC_AVAILABLE = False
+
   PRIMARY_KEY = "Title ID"
   INPUT_FILE_EXTENSION = ".txt"
   INPUT_FILE = f"xbox_360_title_ids{INPUT_FILE_EXTENSION}"
@@ -17,17 +40,6 @@ try:
   OUTPUT_FILE = f"xbox_360_title_data{OUTPUT_FILE_EXTENSION}"
   FAILED_FILE = f"xbox_360_title_ids_failed{INPUT_FILE_EXTENSION}"
   URL = "https://archive.rushhosting.net/"
-
-except ImportError:
-  module = "aiohttp"
-  command = f"pip install {module}"
-  
-  print(
-    f"Warning: '{module}' not installed."
-    + f" Falling back to synchronous mode. Run '{command}' for async support."
-  )
-  
-  IS_ASYNC_AVAILABLE = False
 
 def is_title_id(title_id):
   if not isinstance(
@@ -39,10 +51,10 @@ def is_title_id(title_id):
   regex = r'^[A-F0-9]{8}$'
 
   is_match = re.match(
-    regex, 
+    regex,
     title_id
   ) is not None
-  
+
   return is_match
 
 def read_title_ids(file_path):
@@ -55,39 +67,38 @@ def read_title_ids(file_path):
     return []
 
   title_id_list = []
-  
+
   try:
-   
     has_extension = file_path.lower().endswith(OUTPUT_FILE_EXTENSION)
-    
+
     if has_extension:
       df = pd.read_csv(file_path)
-      
+
       if PRIMARY_KEY in df.columns:
         title_id_list = df[PRIMARY_KEY].dropna().astype(str).tolist()
-      
+
       else:
         raise ValueError(
           f"{OUTPUT_FILE_EXTENSION} file must contain a '{PRIMARY_KEY}' column."
         )
-    
+
     else:
       with open(
         file_path,
         'r'
       ) as f:
         title_id_list = [line.strip() for line in f if line.strip()]
-    
+
     valid_title_id_list = [
       title_id for title_id in title_id_list if is_title_id(title_id)
     ]
-    
+
     if len(valid_title_id_list) != len(title_id_list):
       invalid_count = len(title_id_list) - len(valid_title_id_list)
       print(f"Warning: {invalid_count} invalid {PRIMARY_KEY}(s) found.")
-    
+
     return valid_title_id_list
-  
+
   except Exception as e:
     print(f"Error reading {PRIMARY_KEY}(s) from '{file_path}': {e}")
     return []
@@ -140,7 +151,7 @@ async def fetch_url_async(
       ) as response:
         response.raise_for_status()
         return await response.text()
-    
+
     except aiohttp.ClientError as e:
       do_backoff = attempt < retries - 1
       backoff_count_in_seconds = delay * (2 ** attempt)
@@ -148,7 +159,7 @@ async def fetch_url_async(
       if do_backoff:
         await asyncio.sleep(backoff_count_in_seconds)
         continue
-      
+
       print(f"{prefix}Error fetching {url}: {e}")
       title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
       log_failed_title_id(title_id)
@@ -162,21 +173,21 @@ def extract_game_data(
   try:
     if not html:
       return None
-    
+
     soup = BeautifulSoup(
       html,
       'html.parser'
     )
-    
+
     regex = '([A-F0-9]+)'
 
     title_id_match = re.search(
-      fr'{URL}{regex}', 
+      fr'{URL}{regex}',
       url
     )
 
     title_id = title_id_match.group(1) if title_id_match else 'N/A'
-    
+
     name_elem = (
       soup.select_one('head title')
       or soup.find('h1')
@@ -192,9 +203,9 @@ def extract_game_data(
     )
 
     name = name_elem.get_text(strip=True) if name_elem else 'N/A'
-    
+
     description = 'N/A'
-    
+
     desc_elem = (
       soup.find(
         'div',
@@ -213,13 +224,13 @@ def extract_game_data(
       or soup.find(
         lambda tag: tag.name in ['h2', 'h3', 'div']
         and re.search(
-          r'description|summary|overview|about', 
+          r'description|summary|overview|about',
           tag.get_text(strip=True),
           re.I
         )
       )
     )
-    
+
     if desc_elem:
       next_elem = (
         desc_elem.find_next_sibling('p')
@@ -227,9 +238,9 @@ def extract_game_data(
         or desc_elem.find_parent().select_one('p, div.description-text, div.summary')
       )
       description = next_elem.get_text(strip=True) if next_elem else 'N/A'
-    
+
     published_by = developed_by = release_date = 'N/A'
-    
+
     table = (
       soup.find(
         'table',
@@ -240,28 +251,28 @@ def extract_game_data(
       )
       or soup.find('table')
     )
-    
+
     if table:
       tbody = table.find('tbody') or table
-      tr_list = tbody.find_all('tr')
-      
-      if len(tr_list) >= 2:
-        headers = [cell.get_text(strip=True).lower() for cell in tr_list[0].find_all(['th', 'td'])]
-        values = [cell.get_text(strip=True) for cell in tr_list[1].find_all(['th', 'td'])]
+      tr_list_list = tbody.find_all('tr')
 
-        for label, value in zip(headers, values):
+      if len(tr_list_list) >= 2:
+        header_list_list = [cell.get_text(strip=True).lower() for cell in tr_list_list[0].find_all(['th', 'td'])]
+        value_list = [cell.get_text(strip=True) for cell in tr_list_list[1].find_all(['th', 'td'])]
+
+        for label, value in zip(header_list_list, value_list):
           if 'published by' in label or 'publisher' in label:
             published_by = value
-            
+
           elif 'developed by' in label or 'developer' in label:
             developed_by = value
-            
+
           elif 'release date' in label or 'released' in label or 'launch' in label:
             release_date = value
-            
+
             if release_date != 'N/A':
               release_date = datetime.datetime.strptime(release_date, "%m/%d/%Y").strftime("%Y/%m/%d")
-              
+
             else:
               release_date = f'\"{release_date}\"'
 
@@ -283,11 +294,11 @@ def extract_game_data(
     )
 
     text = cap_section.get_text().lower() if cap_section else html.lower()
-    
+
     has_local_multiplayer = False
     has_LAN_multiplayer = False
     has_online_multiplayer = False
-    
+
     if 'coop' in text or 'co-op' in text:
       has_local_multiplayer = True
 
@@ -296,7 +307,7 @@ def extract_game_data(
 
     if 'xbox live' in text:
       has_online_multiplayer = True
-    
+
     return {
       f'{PRIMARY_KEY}': f'\'{title_id}',
       'Name': f'\"{name}\"',
@@ -308,7 +319,7 @@ def extract_game_data(
       'Has LAN Multiplayer': has_LAN_multiplayer,
       'Has Online Multiplayer': has_online_multiplayer
     }
-  
+
   except Exception as e:
     print(f"{prefix}Error processing '{url}': {e}")
     title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
@@ -326,13 +337,13 @@ async def extract_game_data_async(
       session,
       url
     )
-    
+
     return extract_game_data(
       prefix,
       html,
       url
     )
-  
+
   except Exception as e:
     print(f"{prefix}Error processing '{url}': {e}")
     title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
@@ -348,32 +359,32 @@ def extract_game_data_sync(
       prefix,
       url
     )
-    
+
     return extract_game_data(
       prefix,
       html,
       url
     )
-  
+
   except Exception as e:
     print(f"{prefix}Error processing '{url}': {e}")
     title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
     log_failed_title_id(title_id)
     return None
 
-def write_to_file(
+def write_csv(
   data
 ):
   try:
     df = pd.DataFrame(data)
-    
+
     df.to_csv(
       OUTPUT_FILE,
       index=False
     )
 
     print(f"Data saved to '{OUTPUT_FILE}' ({len(df)} records).")
-  
+
   except Exception as e:
     print(f"Error writing to file: {e}")
     return None
@@ -383,11 +394,11 @@ async def main_async(title_id_list):
     game_url_list = [URL + title_id for title_id in title_id_list]
     data = []
     index = 0
-    max_index = len(title_id_list)    
+    max_index = len(title_id_list)
     connector = aiohttp.TCPConnector(limit = 5)
 
     async with aiohttp.ClientSession(connector = connector) as session:
-      tasks = [
+      task_list = [
         extract_game_data_async(
           "",
           session,
@@ -395,22 +406,22 @@ async def main_async(title_id_list):
         ) for url in game_url_list
       ]
 
-      completed_tasks = enumerate(asyncio.as_completed(tasks))
+      completed_tasks = enumerate(asyncio.as_completed(task_list))
 
       for i, future in completed_tasks:
         result = await future
         index += 1
-        
+
         if index % 50 == 0:
           print("Waiting 30 seconds...")
           await asyncio.sleep(30)
-          
+
         prefix = f"Record {index} of {max_index}:"
-        
+
         if result:
           print(f"{prefix}\tExtracted game data from {game_url_list[i]}")
           data.append(result)
-          write_to_file(data)
+          write_csv(data)
 
   except Exception as e:
     print(f"Async processing failed: {e}")
@@ -422,18 +433,18 @@ def main_sync(title_id_list):
     data = []
     index = 1
     max_index = len(title_id_list)
-    
+
     for url in game_url_list:
       prefix = f"Record {index} of {max_index}:"
       do_wait = index % 50 == 0 and index != 0
       wait_seconds = 30
-    
+
       if do_wait:
         print(f"Waiting {wait_seconds} seconds...")
         time.sleep(wait_seconds)
 
       print(f"{prefix}\tExtracting game data from {url}")
-      
+
       result = extract_game_data_sync(
         prefix,
         url
@@ -441,11 +452,11 @@ def main_sync(title_id_list):
 
       if result:
         data.append(result)
-        write_to_file(data)
+        write_csv(data)
 
       index += 1
       time.sleep(0.5)
-  
+
   except Exception as e:
     print(f"Sync processing failed: {e}")
     return None
@@ -453,21 +464,21 @@ def main_sync(title_id_list):
 if __name__ == "__main__":
   try:
     title_id_list = read_title_ids(INPUT_FILE)
-    
+
     if not title_id_list:
       print(f"No valid {PRIMARY_KEY}(s) found. Exiting.")
       exit(1)
-    
+
     has_incompatible_module = platform.system() == "Emscripten"
 
     if IS_ASYNC_AVAILABLE and not has_incompatible_module:
       asyncio.run(main_async(title_id_list))
-    
+
     else:
       main_sync(title_id_list)
-  
+
   except KeyboardInterrupt:
     print("Script interrupted by user.")
-  
+
   except Exception as e:
     print(f"Script failed: {e}")
