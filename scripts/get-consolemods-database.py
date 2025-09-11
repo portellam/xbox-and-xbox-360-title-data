@@ -26,7 +26,7 @@ except ImportError as e:
   sys.exit(1)
 
 URL = (
-  "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List"
+  "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List/en"
 )
 
 OUTPUT_FILE_NAME = (
