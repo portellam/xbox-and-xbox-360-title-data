@@ -19,11 +19,16 @@ Backups and local copies of title data.
 
 ### 1. This Directory Table
 
-TODO: implement!
+Last Update: 2025-09-10
 
 | Database File | Functionality | Notes |
 | - | - | - |
-| | | |
+| **ConsoleMods.org Compatibility List**<sup>[CSV][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successfuly parsed from HTML table.
+| **archive.rushhosting.net**<sup>[CSV][201]</sup> | Includes "Capabilities" (Coop, SystemLink, and Xbox Live) | Incomplete parse from HTML pages. |
+
+[101]: ./xbox_360_original_xbox_games_compatibility_list.csv
+[102]: ./xbox_360_original_xbox_games_compatibility_list.json
+[201]: ./xbox_360_title_data_archive.rushhosting.net.csv
 
 ### 2. Backlog
 
