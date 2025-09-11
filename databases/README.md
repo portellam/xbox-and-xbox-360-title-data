@@ -13,7 +13,8 @@ Backups and local copies of title data.
 
 - [1. This Directory Table](#1-this-directory-table)
 - [2. Backlog](#2-backlog)
-- [3. References](#3-references)
+	- [1. Not complete](#2-not-complete)
+	- [2. Complete](#2-complete)
 
 ## Contents
 
@@ -146,18 +147,18 @@ Last Updated: 2025-09-11
 	16. [x] **Rating** (ESRB, PEGI)
 
 - [x] *Xbox* only: found one (1) or more database(s) which have the following fields (in one form or another):
-	1. **XeFu v1**
-	2. **v2**
-	3. **v3**
-	4. **v5**
-	5. **v1_1**
-	6. **v6**
-	7. **v7**
-	8. **v7b**
-	9. **2019**
-	10. **2021a**
-	11. **2021b**
-	12. **2021c**
+	1.  [x] **XeFu v1**
+	2.  [x] **v2**
+	3.  [x] **v3**
+	4.  [x] **v5**
+	5.  [x] **v1_1**
+	6.  [x] **v6**
+	7.  [x] **v7**
+	8.  [x] **v7b**
+	9.  [x] **2019**
+	10. [x] **2021a**
+	11. [x] **2021b**
+	12. [x] **2021c**
 
 - [x] *Xbox 360* only: found one (1) or more database(s) which have the following fields (in one form or another):
 	1. [x] **Is Indie** (Xbox 360 only)

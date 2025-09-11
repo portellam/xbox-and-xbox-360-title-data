@@ -8,18 +8,29 @@
 - [References](../REFERENCES.md)
 - [Scripts](./README.md)
 
-## This Directory Table
+## Table of Contents
+
+- [1. This Directory Table](#1-this-directory-table)
+- [2. Backlog](#2-backlog)
+  - [1. Not complete](#2-not-complete)
+  - [2. Complete](#2-complete)
+
+## Contents
+
+### 1. This Directory Table
+
+Last Updated: 2025-09-11
 
 | Script File | Functionality | Notes |
 | - | - | - |
 | [`get-xbox-360-compatible-xbox-games_consolemods.org`](./get-xbox-360-compatible-xbox-games_consolemods.org) | Parses HTML and outputs to CSV, JSON. | Lists the best-known compatibility status of each Xbox game on Xbox 360. |
 | [`get-xbox-360-games_archive.rushhosting.net.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Parses HTML and outputs to CSV. | Xbox 360 games. Rate limited. Fails every 50 to 100 web requests. |
 
-## Backlog
+### 2. Backlog
 
 Last Updated: 2025-09-11
 
-### 1. Not complete
+#### 1. Not complete
 
 - [ ] add more
 
@@ -36,22 +47,22 @@ Last Updated: 2025-09-11
   - has API.
 
 - [ ] *Moby Games*
-  - comprehensive resource.
-  - [ ] use API
-  - [ ] acquire API
-    - This is more courteous.
-    - paid ([link](https://www.mobygames.com/api/subscribe/))
-    - free ([link](https://www.mobygames.com/user/login/?next=%2Fsubscription-request-form))
+  - [ ] Use API.
+    - Note: this is more courteous.
+    - API scraper ([link](https://github.com/P-ogg/Game-details/blob/main/Mobygames_api.py))
+  - [ ] Acquire API.
+    - Paid API ([link](https://www.mobygames.com/api/subscribe/))
+    - Free API ([link](https://www.mobygames.com/user/login/?next=%2Fsubscription-request-form))
   - [ ] scrape webpages
     - *Xbox* ([link](https://www.mobygames.com/game/platform:xbox/sort:title/page:1/))
       - Action only: ([link](https://www.mobygames.com/game/genre:action/platform:xbox/sort:title/page:1/))
     - *Xbox 360* ([link](https://www.mobygames.com/game/platform:xbox360/sort:title/page:1/))
       - Action only: ([link](https://www.mobygames.com/game/genre:action/platform:xbox360/sort:title/page:1/))
-	  - [ ] determine if this is feasible?
-    - scraper ([link](https://github.com/P-ogg/Game-details/blob/main/Mobygames_api.py))
+  - Review: Comprehensive resource.
   - Retrospective: may do both API and scrape. API because it's the right thing to do, and scrape because I like the challenge.
 
-- [ ] *Xbox DB*
-  - [link](https://xboxdb.altervista.org/browse)
+- [ ] *Xbox DB*[<sup>[20]</sup>](../REFERENCES.md#20)
+  - Free API [<sup>[1]</sup>](../REFERENCES.md#1)
+  - [ ] Use API.
 
-### 2. Complete
+#### 2. Complete

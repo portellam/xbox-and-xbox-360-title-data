@@ -11,7 +11,7 @@ Last Updated: 2025-09-11
 - [Scripts](./scripts/README.md)
 
 ## ❗ PLEASE READ
-On the event of any addition, removal, or update of any reference, please update
+On the event of an addition, removal, or update of any reference, please update
 the following files accordingly:
 
 - `./README.md`
