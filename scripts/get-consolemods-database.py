@@ -3,7 +3,7 @@
 #
 # Filename:       get-consolemods-database.py
 # Description:    Retrieves table from ConsoleMods.org article, and outputs as
-#                 CSV/JSON.
+#                 CSV and JSON.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
 # Version:        1.0.0
