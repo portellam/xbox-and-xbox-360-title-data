@@ -5,7 +5,7 @@ Backups and local copies of title data.
 
 - [README](../README.md)
 - [Contributors](../CONTRIBUTORS.md)
-- [Databases](.README.md)
+- [Databases](./README.md)
 - [References](../REFERENCES.md)
 - [Scripts](../scripts/README.md)
 
