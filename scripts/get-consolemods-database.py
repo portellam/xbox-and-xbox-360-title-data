@@ -12,11 +12,12 @@
 import sys
 import csv
 import json
-from typing import Optional, List, Dict
+from typing import Optional, List
 
 try:
   import requests
   from bs4 import BeautifulSoup
+
 except ImportError as e:
   print(
     f"Missing required package: {e.name}. "
@@ -24,18 +25,34 @@ except ImportError as e:
   )
   sys.exit(1)
 
-URL = "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List"
-OUTPUT_FILE_NAME = "xbox_360_original_xbox_games_compatibility_list"
+URL = (
+  "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List"
+)
+
+OUTPUT_FILE_NAME = (
+  "consolemods_xbox_360_original_xbox_games_compatibility_list"
+)
+
+HEADER_KEY_LIST = [
+  "Name",
+  "Tested By",
+  "Known Issues"
+]
+
+ELEMENT_TAG_LIST = [
+  "th",
+  "td"
+]
 
 STATUS_MAP = {
-  "supported": "supported",
-  "playable": "playable",
-  "ingame": "in-game",
-  "orange": "menus",
-  "menus": "menus",
-  "intro": "intro",
-  "unplayable": "unplayable",
-  "untested": "untested",
+  "supported":   "supported",
+  "playable":    "playable",
+  "ingame":      "in-game",
+  "orange":      "menus",
+  "menus":       "menus",
+  "intro":       "intro",
+  "unplayable":  "unplayable",
+  "untested":    "untested",
 }
 
 def fetch_page(
@@ -46,8 +63,10 @@ def fetch_page(
 
     response = requests.get(
       url,
-      headers={ "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" },
-      timeout=10
+      headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+      },
+      timeout = 10
     )
 
     response.raise_for_status()
@@ -62,16 +81,13 @@ def find_table(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
   try:
-    table = find_by_section_id(soup)
-
-    if table is not None:
-      print("Found table by section.")
-      return table
-
-    print("Could not find table by section.")
-    table = find_by_header(soup)
+    table = (
+      find_by_section_id(soup)
+      or find_by_header(soup)
+    )
 
     if table is None:
+      print("Could not find table by section.")
       print("Could not find table by header.")
       return None
 
@@ -82,22 +98,33 @@ def find_table(
     print(f"Error: {e}")
     return None
 
+def has_required_headers(
+  header_list: List[str]
+) -> bool:
+  return all(
+    h in header_list
+    for h in HEADER_KEY_LIST
+  )
+
 def find_by_header(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
   for table in soup.find_all("table"):
-    headers = [
+    header_list = [
       th.text.strip()
       for th in table.find_all("th")
     ]
 
-    if all(h in headers for h in ["Name", "Tested By", "Known Issues"]):
+    if has_required_headers(header_list):
       return table
 
 def find_by_section_id(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
-  section = soup.find("span", id="Compatibility_List")
+  section = soup.find(
+    "span",
+    id = "Compatibility_List"
+  )
 
   if not section:
     return None
@@ -108,12 +135,14 @@ def find_by_section_id(
     element = element.find_next_sibling()
 
     if element and element.name == "table":
-      headers = [
-        th.get_text(strip=True).lower()
+      header_list = [
+        th.get_text(
+          strip = True
+        ).lower()
         for th in element.find_all("th")
       ]
 
-      if "name" in headers and "tested by" in headers and "known issues" in headers:
+      if has_required_headers(header_list):
         return element
 
   return None
@@ -125,12 +154,15 @@ def extract_headers(
     print("Extracting headers.")
 
     for tr in table.find_all("tr"):
-      cells = tr.find_all(["th", "td"])
+      cell_list = tr.find_all(ELEMENT_TAG_LIST)
 
-      if cells:
+      if cell_list:
         return [
-          cell.get_text(separator=" ", strip=True)
-          for cell in cells
+          cell.get_text(
+            separator=" ",
+            strip = True
+          )
+          for cell in cell_list
         ]
 
     return []
@@ -140,27 +172,29 @@ def extract_headers(
     return []
 
 def process_row(
-  cells: List[BeautifulSoup],
-  headers: List[str]
+  cell_list: List[BeautifulSoup],
+  header_list: List[str]
 ) -> Optional[List[str]]:
   try:
-    if len(cells) < len(headers):
+    if len(cell_list) < len(header_list):
       return None
 
     row = []
 
-    for i, cell in enumerate(cells):
-      if 0 < i < len(headers) - 2:
+    for i, cell in enumerate(cell_list):
+      text = cell.text.strip()
+
+      if 0 < i < len(header_list) - 2:
         a = cell.find("a")
 
         if a and a.has_attr("href"):
           fragment = a["href"].lstrip("#").strip()
-          status = STATUS_MAP.get(fragment, fragment)
-          row.append(status)
-        else:
-          row.append(cell.text.strip())
-      else:
-        row.append(cell.text.strip())
+          text = STATUS_MAP.get(
+            fragment,
+            fragment
+          )
+
+      row.append(text)
 
     return row
 
@@ -170,29 +204,28 @@ def process_row(
 
 def extract_rows(
   table: BeautifulSoup,
-  headers: List[str]
+  header_list: List[str]
 ) -> List[List[str]]:
   try:
-    valid_rows = table.find_all("tr")[1:]
-    valid_rows_count = len(valid_rows)
-    print(f"Extracting {valid_rows_count} rows...")
-    extracted_rows = []
-    index = 1
+    row_list = table.find_all("tr")[1:]
+    print(f"Extracting {len(row_list)} rows...")
+    extracted_row_list = []
 
-    for tr in valid_rows:
-      cells = tr.find_all(["td", "th"])
-      row = process_row(cells, headers)
-      index += 1
+    for index, tr in enumerate(row_list, start=1):
+      cell_list = tr.find_all(ELEMENT_TAG_LIST)
+      row = process_row(
+        cell_list,
+        header_list
+      )
 
       if not row:
         print(f"Could not process row: {index}")
-        valid_rows_count -= 1
         continue
 
-      extracted_rows.append(row)
+      extracted_row_list.append(row)
 
-    print(f"Extracted {valid_rows_count} rows.")
-    return extracted_rows
+    print(f"Extracted {len(extracted_row_list)} rows.")
+    return extracted_row_list
 
   except Exception as e:
     print("Could not extract rows.")
@@ -200,18 +233,23 @@ def extract_rows(
     return []
 
 def write_csv(
-  headers: List[str],
-  extracted_rows: List[List[str]],
-  output_file_name: str
+  header_list: List[str],
+  extracted_row_list: List[List[str]],
+  name: str
 ) -> bool:
   try:
-    output_file = f"{output_file_name}.csv"
+    output_file = f"{name}.csv"
     print(f"Writing to file: '{output_file}'")
 
-    with open(output_file, "w", newline="", encoding="utf-8") as csvfile:
+    with open(
+      output_file,
+      "w",
+      newline = "",
+      encoding = "utf-8"
+    ) as csvfile:
       writer = csv.writer(csvfile)
-      writer.writerow(headers)
-      writer.writerows(extracted_rows)
+      writer.writerow(header_list)
+      writer.writerows(extracted_row_list)
 
     print("Wrote to file.")
     return True
@@ -222,21 +260,31 @@ def write_csv(
     return False
 
 def write_json(
-  headers: List[str],
-  extracted_rows: List[List[str]],
-  output_file_name: str
+  header_list: List[str],
+  extracted_row_list: List[List[str]],
+  name: str
 ) -> bool:
   try:
-    output_file = f"{output_file_name}.json"
+    output_file = f"{name}.json"
     print(f"Writing to file: '{output_file}'")
 
     data = [
-      dict(zip(headers, row))
-      for row in extracted_rows
+      dict(
+        zip(header_list, row)
+      )
+      for row in extracted_row_list
     ]
 
-    with open(output_file, "w", encoding="utf-8") as jsonfile:
-      json.dump(data, jsonfile, indent=2)
+    with open(
+      output_file,
+      "w",
+      encoding = "utf-8"
+    ) as jsonfile:
+      json.dump(
+        data,
+        jsonfile,
+        indent = 2
+      )
 
     print("Wrote to file.")
     return True
@@ -269,30 +317,30 @@ def main() -> int:
   if not table:
     return 1
 
-  headers = extract_headers(table)
+  header_list = extract_headers(table)
 
-  if not headers:
+  if not header_list:
     return 1
 
-  extracted_rows = extract_rows(
+  extracted_row_list = extract_rows(
     table,
-    headers
+    header_list
   )
 
-  if not extracted_rows:
+  if not extracted_row_list:
     print("Warning: Could not extract data. No data rows exist.")
     return 1
 
   if not write_csv(
-    headers,
-    extracted_rows,
+    header_list,
+    extracted_row_list,
     OUTPUT_FILE_NAME
   ):
     return 1
 
   if not write_json(
-    headers,
-    extracted_rows,
+    header_list,
+    extracted_row_list,
     OUTPUT_FILE_NAME
   ):
     return 1
