@@ -21,11 +21,11 @@
 
 Last Updated: 2025-09-11
 
-| Script File | Functionality | Notes |
+| Script File | Functionality | Notes | Tested? |
 | - | - | - |
-| [`get-consolemods-database.py`](./get-consolemods-database.py) | Parses HTML and outputs to CSV, JSON. | Lists the best-known compatibility status of each Xbox game on Xbox 360. |
-| [`get-rushhosting.net-database.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Parses HTML and outputs to CSV. | Xbox 360 games. Rate limited. Fails every 50 to 100 web requests. |
-| [`get-wikipedia-database.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Parses HTML and outputs to CSV. | Lists Wikipedia articles' tables. |
+| [`get-consolemods-database.py`](./get-consolemods-database.py) | Parses HTML and outputs to CSV, JSON. | Lists the best-known compatibility status of each Xbox game on Xbox 360. | *187 Ride or Die* returns incorrect values. *Advent Rising* returns correct values. |
+| [`get-rushhosting.net-database.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Parses HTML and outputs to CSV. | Xbox 360 games. Rate limited. Fails every 50 to 100 web requests. | No. |
+| [`get-wikipedia-database.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Parses HTML and outputs to CSV. | Lists Wikipedia articles' tables. | No. |
 
 ### 2. Backlog
 

@@ -35,6 +35,18 @@ OUTPUT_FILE_NAME = (
 
 HEADER_KEY_LIST = [
   "Name",
+  "xefu",
+  "xefu2",
+  "xefu3",
+  "xefu5",
+  "xefu1_1",
+  "xefu6",
+  "xefu7",
+  "xefu7b",
+  "xefu2019",
+  "xefu2021a",
+  "xefu2021b",
+  "xefu2021c",
   "Tested By",
   "Known Issues"
 ]
@@ -48,8 +60,8 @@ STATUS_MAP = {
   "supported":   "supported",
   "playable":    "playable",
   "ingame":      "in-game",
+  "in-game":     "in-game",
   "orange":      "menus",
-  "menus":       "menus",
   "intro":       "intro",
   "unplayable":  "unplayable",
   "untested":    "untested",
@@ -81,18 +93,21 @@ def find_table(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
   try:
-    table = (
-      find_by_section_id(soup)
-      or find_by_header(soup)
-    )
+    table = find_by_section_id(soup)
+    if table:
+      print("Found table by section ID 'Compatibility_List'.")
+      print(f"Debug: Table headers: {[th.get_text(strip=True) for th in table.find_all('th')]}")
+      return table
 
-    if table is None:
-      print("Could not find table by section.")
-      print("Could not find table by header.")
-      return None
+    table = find_by_header(soup)
+    if table:
+      print("Found table by header match.")
+      print(f"Debug: Table headers: {[th.get_text(strip=True) for th in table.find_all('th')]}")
+      return table
 
-    print("Found table by section.")
-    return table
+    print("Could not find table by section.")
+    print("Could not find table by header.")
+    return None
 
   except Exception as e:
     print(f"Error: {e}")
@@ -101,10 +116,15 @@ def find_table(
 def has_required_headers(
   header_list: List[str]
 ) -> bool:
-  return all(
-    h in header_list
+  header_set_lower = {
+    h.lower()
+    for h in header_list
+  }
+  required_set_lower = {
+    h.lower()
     for h in HEADER_KEY_LIST
-  )
+  }
+  return required_set_lower.issubset(header_set_lower)
 
 def find_by_header(
   soup: BeautifulSoup
@@ -157,13 +177,15 @@ def extract_headers(
       cell_list = tr.find_all(ELEMENT_TAG_LIST)
 
       if cell_list:
-        return [
+        header_list = [
           cell.get_text(
             separator=" ",
             strip = True
           )
           for cell in cell_list
         ]
+        print(f"Debug: Extracted headers: {header_list}")
+        return header_list
 
     return []
 
@@ -172,35 +194,29 @@ def extract_headers(
     return []
 
 def process_row(
-  cell_list: List[BeautifulSoup],
-  header_list: List[str]
-) -> Optional[List[str]]:
-  try:
-    if len(cell_list) < len(header_list):
-      return None
+  cell_list,
+  header_list
+):
+  row = []
+  for i, header in enumerate(header_list):
+    cell = cell_list[i]
 
-    row = []
+    if 1 <= i <= 12:
+      div = cell.find('div', class_='visible')
+      title = div.get('title', '').strip().lower() if div else ''
+      status_token = STATUS_MAP.get(title, 'untested')
+      row.append(status_token)
 
-    for i, cell in enumerate(cell_list):
-      text = cell.text.strip()
+    elif i == 13:
+      row.append(cell.get_text(strip=True))  # Tested By
 
-      if 0 < i < len(header_list) - 2:
-        a = cell.find("a")
+    elif i == 14:
+      row.append(cell.get_text(strip=True))  # Known Issues
 
-        if a and a.has_attr("href"):
-          fragment = a["href"].lstrip("#").strip()
-          text = STATUS_MAP.get(
-            fragment,
-            fragment
-          )
+    else:
+      row.append(cell.get_text(strip=True))  # Name
 
-      row.append(text)
-
-    return row
-
-  except Exception as e:
-    print(f"Error: {e}")
-    return None
+  return row
 
 def extract_rows(
   table: BeautifulSoup,
@@ -213,6 +229,11 @@ def extract_rows(
 
     for index, tr in enumerate(row_list, start=1):
       cell_list = tr.find_all(ELEMENT_TAG_LIST)
+
+      if len(cell_list) != 15:
+        print(f"Warning: Row {index} has {len(cell_list)} columns, expected 15")
+        continue
+
       row = process_row(
         cell_list,
         header_list
@@ -303,7 +324,7 @@ def main() -> int:
   print("Parsing page.")
   soup = BeautifulSoup(
     page_content,
-    "html.parser"
+    "lxml"
   )
 
   table = find_table(soup)
@@ -342,13 +363,4 @@ def main() -> int:
   return 0
 
 if __name__ == "__main__":
-  try:
-    sys.exit(
-      main()
-    )
-
-  except KeyboardInterrupt:
-    print("Script interrupted by user.")
-
-  except Exception as e:
-    print(f"Script failed: {e}")
+  exit(main())
