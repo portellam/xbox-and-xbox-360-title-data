@@ -9,39 +9,33 @@
 # Version:        1.0.0
 #
 
-from bs4 import BeautifulSoup
 import datetime
-import pandas as pd
-import platform
 import re
-import requests
+import sys
 import time
+from typing import List, Optional
 
 try:
   import aiohttp
   import asyncio
-  IS_ASYNC_AVAILABLE = True
+  import pandas as pd
+  from bs4 import BeautifulSoup
 
-except ImportError:
-  module = "aiohttp"
-  command = f"pip install {module}"
+except ImportError as e:
+  print(f"Missing required package: {e.name}. Please install using 'pip install {e.name}'")
+  sys.exit(1)
 
-  print(
-    f"Warning: '{module}' not installed."
-    + f" Falling back to synchronous mode. Run '{command}' for async support."
-  )
+PRIMARY_KEY = "Title ID"
+INPUT_FILE_EXTENSION = ".txt"
+INPUT_FILE = f"xbox_360_title_ids{INPUT_FILE_EXTENSION}"
+OUTPUT_FILE_EXTENSION = ".csv"
+OUTPUT_FILE = f"xbox_360_title_data{OUTPUT_FILE_EXTENSION}"
+FAILED_FILE = f"xbox_360_title_ids_failed{INPUT_FILE_EXTENSION}"
+BASE_URL = "https://archive.rushhosting.net/"
 
-  IS_ASYNC_AVAILABLE = False
-
-  PRIMARY_KEY = "Title ID"
-  INPUT_FILE_EXTENSION = ".txt"
-  INPUT_FILE = f"xbox_360_title_ids{INPUT_FILE_EXTENSION}"
-  OUTPUT_FILE_EXTENSION = ".csv"
-  OUTPUT_FILE = f"xbox_360_title_data{OUTPUT_FILE_EXTENSION}"
-  FAILED_FILE = f"xbox_360_title_ids_failed{INPUT_FILE_EXTENSION}"
-  URL = "https://archive.rushhosting.net/"
-
-def is_title_id(title_id):
+def is_title_id(
+  title_id: str
+) -> bool:
   if not isinstance(
     title_id,
     str
@@ -57,7 +51,9 @@ def is_title_id(title_id):
 
   return is_match
 
-def read_title_ids(file_path):
+def read_title_list(
+  file_path: str
+) -> List[str]:
   if not isinstance(
     file_path,
     str
@@ -66,7 +62,7 @@ def read_title_ids(file_path):
     print(f"Error: File path must be a string, got {type_name}")
     return []
 
-  title_id_list = []
+  title_list = []
 
   try:
     has_extension = file_path.lower().endswith(OUTPUT_FILE_EXTENSION)
@@ -75,44 +71,44 @@ def read_title_ids(file_path):
       df = pd.read_csv(file_path)
 
       if PRIMARY_KEY in df.columns:
-        title_id_list = df[PRIMARY_KEY].dropna().astype(str).tolist()
+        title_list = df[PRIMARY_KEY].dropna().astype(str).tolist()
 
       else:
-        raise ValueError(
-          f"{OUTPUT_FILE_EXTENSION} file must contain a '{PRIMARY_KEY}' column."
-        )
+        raise ValueError(f"{OUTPUT_FILE_EXTENSION} file must contain a '{PRIMARY_KEY}' column.")
 
     else:
       with open(
         file_path,
         'r'
       ) as f:
-        title_id_list = [line.strip() for line in f if line.strip()]
+        title_list = [line.strip() for line in f if line.strip()]
 
-    valid_title_id_list = [
-      title_id for title_id in title_id_list if is_title_id(title_id)
+    valid_title_list = [
+      title_id for title_id in title_list if is_title_id(title_id)
     ]
 
-    if len(valid_title_id_list) != len(title_id_list):
-      invalid_count = len(title_id_list) - len(valid_title_id_list)
+    if len(valid_title_list) != len(title_list):
+      invalid_count = len(title_list) - len(valid_title_list)
       print(f"Warning: {invalid_count} invalid {PRIMARY_KEY}(s) found.")
 
-    return valid_title_id_list
+    return valid_title_list
 
   except Exception as e:
-    print(f"Error reading {PRIMARY_KEY}(s) from '{file_path}': {e}")
+    print(f"Error: {e}")
     return []
 
-def log_failed_title_id(title_id):
+def log_failed_title_id(
+  title_id: str
+) -> None:
   with open(FAILED_FILE, 'a') as f:
     f.write(f"{title_id}\n")
 
 def fetch_url_sync(
-  prefix,
-  url,
-  retries = 3,
-  delay = 2
-):
+  prefix: str,
+  url: str,
+  retries: int = 3,
+  delay: int = 2
+) -> Optional[str]:
   for attempt in range(retries):
     try:
       response = requests.get(
@@ -131,18 +127,18 @@ def fetch_url_sync(
         time.sleep(backoff_count_in_seconds)
         continue
 
-      print(f"{prefix}Error fetching '{url}': {e}")
+      print(f"Error: {e}")
       title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
       log_failed_title_id(title_id)
       return None
 
 async def fetch_url_async(
-  prefix,
-  session,
-  url,
-  retries = 3,
-  delay = 2
-):
+  prefix: str,
+  session: aiohttp.ClientSession,
+  url: str,
+  retries: int = 3,
+  delay: int = 2
+) -> Optional[str]:
   for attempt in range(retries):
     try:
       async with session.get(
@@ -153,23 +149,20 @@ async def fetch_url_async(
         return await response.text()
 
     except aiohttp.ClientError as e:
-      do_backoff = attempt < retries - 1
-      backoff_count_in_seconds = delay * (2 ** attempt)
-
-      if do_backoff:
-        await asyncio.sleep(backoff_count_in_seconds)
+      if attempt < retries - 1:
+        await asyncio.sleep(delay * (2 ** attempt))
         continue
 
-      print(f"{prefix}Error fetching {url}: {e}")
+      print(f"Error: {e}")
       title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
       log_failed_title_id(title_id)
       return None
 
 def extract_game_data(
-  prefix,
-  html,
-  url
-):
+  prefix: str,
+  html: Optional[str],
+  url: str
+) -> Optional[dict]:
   try:
     if not html:
       return None
@@ -182,7 +175,7 @@ def extract_game_data(
     regex = '([A-F0-9]+)'
 
     title_id_match = re.search(
-      fr'{URL}{regex}',
+      fr'{BASE_URL}{regex}',
       url
     )
 
@@ -254,13 +247,13 @@ def extract_game_data(
 
     if table:
       tbody = table.find('tbody') or table
-      tr_list_list = tbody.find_all('tr')
+      tr_list = tbody.find_all('tr')
 
-      if len(tr_list_list) >= 2:
-        header_list_list = [cell.get_text(strip=True).lower() for cell in tr_list_list[0].find_all(['th', 'td'])]
-        value_list = [cell.get_text(strip=True) for cell in tr_list_list[1].find_all(['th', 'td'])]
+      if len(tr_list) >= 2:
+        header_list = [cell.get_text(strip=True).lower() for cell in tr_list[0].find_all(['th', 'td'])]
+        value_list = [cell.get_text(strip=True) for cell in tr_list[1].find_all(['th', 'td'])]
 
-        for label, value in zip(header_list_list, value_list):
+        for label, value in zip(header_list, value_list):
           if 'published by' in label or 'publisher' in label:
             published_by = value
 
@@ -311,7 +304,6 @@ def extract_game_data(
     return {
       f'{PRIMARY_KEY}': f'\'{title_id}',
       'Name': f'\"{name}\"',
-      # 'Description': f'\"{description}\"',
       'Publisher': f'\"{published_by}\"',
       'Developer': f'\"{developed_by}\"',
       'Release date': release_date,
@@ -321,16 +313,16 @@ def extract_game_data(
     }
 
   except Exception as e:
-    print(f"{prefix}Error processing '{url}': {e}")
+    print(f"Error: {e}")
     title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
     log_failed_title_id(title_id)
     return None
 
 async def extract_game_data_async(
-  prefix,
-  session,
-  url
-):
+  prefix: str,
+  session: aiohttp.ClientSession,
+  url: str
+) -> Optional[dict]:
   try:
     html = await fetch_url_async(
       prefix,
@@ -345,15 +337,15 @@ async def extract_game_data_async(
     )
 
   except Exception as e:
-    print(f"{prefix}Error processing '{url}': {e}")
+    print(f"Error: {e}")
     title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
     log_failed_title_id(title_id)
     return None
 
 def extract_game_data_sync(
-  prefix,
-  url
-):
+  prefix: str,
+  url: str
+) -> Optional[dict]:
   try:
     html = fetch_url_sync(
       prefix,
@@ -367,14 +359,14 @@ def extract_game_data_sync(
     )
 
   except Exception as e:
-    print(f"{prefix}Error processing '{url}': {e}")
+    print(f"Error: {e}")
     title_id = re.search(r'[A-F0-9]{8}$', url).group(0) if re.search(r'[A-F0-9]{8}$', url) else 'Unknown'
     log_failed_title_id(title_id)
     return None
 
 def write_csv(
-  data
-):
+  data: List[dict]
+) -> None:
   try:
     df = pd.DataFrame(data)
 
@@ -383,18 +375,19 @@ def write_csv(
       index=False
     )
 
-    print(f"Data saved to '{OUTPUT_FILE}' ({len(df)} records).")
+    print(f"Wrote to file: '{OUTPUT_FILE}' ({len(df)} records).")
 
   except Exception as e:
-    print(f"Error writing to file: {e}")
-    return None
+    print(f"Error: {e}")
 
-async def main_async(title_id_list):
+async def main_async(
+  title_list: List[str]
+) -> int:
   try:
-    game_url_list = [URL + title_id for title_id in title_id_list]
+    game_url_list = [BASE_URL + title_id for title_id in title_list]
     data = []
     index = 0
-    max_index = len(title_id_list)
+    max_index = len(title_list)
     connector = aiohttp.TCPConnector(limit = 5)
 
     async with aiohttp.ClientSession(connector = connector) as session:
@@ -411,10 +404,12 @@ async def main_async(title_id_list):
       for i, future in completed_tasks:
         result = await future
         index += 1
+        do_wait = index % 50 == 0 and index != 0
+        wait_seconds = 30
 
-        if index % 50 == 0:
-          print("Waiting 30 seconds...")
-          await asyncio.sleep(30)
+        if do_wait:
+          print(f"Waiting {wait_seconds} seconds...")
+          await asyncio.sleep(wait_seconds)
 
         prefix = f"Record {index} of {max_index}:"
 
@@ -423,25 +418,27 @@ async def main_async(title_id_list):
           data.append(result)
           write_csv(data)
 
-  except Exception as e:
-    print(f"Async processing failed: {e}")
-    return None
+    return 0
 
-def main_sync(title_id_list):
+  except Exception as e:
+    print(f"Error: {e}")
+    return 1
+
+def main_sync(
+  title_list: List[str]
+) -> int:
   try:
-    game_url_list = [URL + title_id for title_id in title_id_list]
+    game_url_list = [BASE_URL + title_id for title_id in title_list]
     data = []
     index = 1
-    max_index = len(title_id_list)
+    max_index = len(title_list)
 
     for url in game_url_list:
       prefix = f"Record {index} of {max_index}:"
-      do_wait = index % 50 == 0 and index != 0
-      wait_seconds = 30
 
-      if do_wait:
-        print(f"Waiting {wait_seconds} seconds...")
-        time.sleep(wait_seconds)
+      if index % 50 == 0 and index != 0:
+        print(f"Waiting 30 seconds...")
+        time.sleep(30)
 
       print(f"{prefix}\tExtracting game data from {url}")
 
@@ -457,28 +454,38 @@ def main_sync(title_id_list):
       index += 1
       time.sleep(0.5)
 
+    return 0
+
   except Exception as e:
-    print(f"Sync processing failed: {e}")
-    return None
+    print(f"Error: {e}")
+    return 1
+
+def main() -> int:
+  title_list = read_title_list(INPUT_FILE)
+
+  if not title_list:
+    print(f"No valid {PRIMARY_KEY}(s) found.")
+    return 1
+
+  try:
+    import platform
+    has_incompatible_module = platform.system() == "Emscripten"
+
+    if not has_incompatible_module:
+      return asyncio.run(main_async(title_list))
+
+    return main_sync(title_list)
+
+  except Exception as e:
+    print(f"Error: {e}")
+    return 1
 
 if __name__ == "__main__":
   try:
-    title_id_list = read_title_ids(INPUT_FILE)
-
-    if not title_id_list:
-      print(f"No valid {PRIMARY_KEY}(s) found. Exiting.")
-      exit(1)
-
-    has_incompatible_module = platform.system() == "Emscripten"
-
-    if IS_ASYNC_AVAILABLE and not has_incompatible_module:
-      asyncio.run(main_async(title_id_list))
-
-    else:
-      main_sync(title_id_list)
+    sys.exit(main())
 
   except KeyboardInterrupt:
     print("Script interrupted by user.")
 
   except Exception as e:
-    print(f"Script failed: {e}")
+    print(f"Error: {e}")
