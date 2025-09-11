@@ -29,7 +29,7 @@ PRIMARY_KEY = "Title ID"
 INPUT_FILE_EXTENSION = ".txt"
 INPUT_FILE = f"xbox_360_title_ids{INPUT_FILE_EXTENSION}"
 OUTPUT_FILE_EXTENSION = ".csv"
-OUTPUT_FILE = f"xbox_360_title_data{OUTPUT_FILE_EXTENSION}"
+OUTPUT_FILE = f"archive.rushhosting.net_xbox_360_title_id_list{OUTPUT_FILE_EXTENSION}"
 FAILED_FILE = f"xbox_360_title_ids_failed{INPUT_FILE_EXTENSION}"
 BASE_URL = "https://archive.rushhosting.net/"
 

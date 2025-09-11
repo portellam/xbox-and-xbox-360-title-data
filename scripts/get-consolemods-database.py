@@ -30,7 +30,7 @@ URL = (
 )
 
 OUTPUT_FILE_NAME = (
-  "consolemods_xbox_360_original_xbox_games_compatibility_list"
+  "consolemods.org_xbox_360_original_xbox_games_compatibility_list"
 )
 
 HEADER_KEY_LIST = [
