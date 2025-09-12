@@ -26,7 +26,8 @@ from config_consolemods import (
 )
 
 from fetch import (
-  fetch_page
+  fetch_page,
+  sanitize_html
 )
 
 from extract_consolemods import (
@@ -42,6 +43,8 @@ from write import (
 
 def main() -> int:
   page_content = fetch_page(URL)
+  page_content = sanitize_html(page_content)
+
   if not page_content:
     return 1
 

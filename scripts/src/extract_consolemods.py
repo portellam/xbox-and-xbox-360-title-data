@@ -128,7 +128,7 @@ def extract_headers(
 def extract_rows(
   table: BeautifulSoup,
   header_list: List[str]
-) -> List[List[str]]:
+) -> List[Dict[str, str]]:
   try:
     print("Extracting rows.")
     rows_list = []
@@ -141,12 +141,15 @@ def extract_rows(
       if not cell_list:
         continue
 
-      row = process_row(
-        cell_list,
-        header_list
-      )
+      row_data = {}
 
-      rows_list.append(row)
+      for header, cell in zip(
+        header_list,
+        cell_list
+      ):
+        row_data[header] = extract_cell_value(cell)
+
+      rows_list.append(row_data)
 
     return rows_list
 

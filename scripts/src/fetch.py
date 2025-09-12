@@ -10,6 +10,8 @@
 
 import sys
 
+import re
+
 from typing import (
   Optional
 )
@@ -22,6 +24,17 @@ except ImportError as e:
     + f"Please install using 'pip install {e.name}'"
   )
   sys.exit(1)
+
+def sanitize_html(
+  html: str
+) -> str:
+  pattern = r'(<td><div title=")([^"]+)(".*?</div>)(\s*</td>)'
+  replacement = r'\1\2\3\2\4'
+  return re.sub(
+    pattern,
+    replacement,
+    html
+  )
 
 def fetch_page(
   url: str
