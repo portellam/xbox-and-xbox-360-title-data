@@ -122,6 +122,11 @@ def retrieve_and_process_tables(
 
   table_list = soup.find_all('table')
   sanitized_list = []
+
+  for table in table_list:
+    sanitized_table = sanitize_table(table)
+    sanitized_list.append(sanitized_table)
+
   return sanitized_list
 
 def export_html(
