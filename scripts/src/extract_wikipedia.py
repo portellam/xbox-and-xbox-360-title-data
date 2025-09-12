@@ -68,8 +68,6 @@ def extract_headers(
     print("Extracting headers.")
 
     for tr in header_list:
-      print("extract_headers_2")
-
       cell_list = []
 
       try:
