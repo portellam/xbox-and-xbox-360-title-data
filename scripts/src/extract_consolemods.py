@@ -57,6 +57,7 @@ def extract_headers(
 
   try:
     thead = table.find("thead")
+
     if thead:
       header_cells = thead.find_all("th")
 
