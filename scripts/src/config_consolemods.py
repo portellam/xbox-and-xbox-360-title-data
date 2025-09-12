@@ -12,8 +12,10 @@ URL = (
   "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List/en"
 )
 
+OUTPUT_PATH = "../../databases/"
+
 OUTPUT_FILE_NAME = (
-  "consolemods.org_xbox_360_original_xbox_games_compatibility_list"
+  f"{OUTPUT_PATH}consolemods.org_xbox_360_original_xbox_games_compatibility_list"
 )
 
 HEADER_KEY_LIST = [
