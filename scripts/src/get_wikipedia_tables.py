@@ -32,7 +32,7 @@ from extract_wikipedia import (
 
 from config_wikipedia import (
   OUTPUT_FILE_NAME_LIST,
-  URL
+  URL_LIST
 )
 
 from write import (
