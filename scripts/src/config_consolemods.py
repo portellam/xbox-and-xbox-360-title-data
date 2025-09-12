@@ -32,8 +32,8 @@ HEADER_KEY_LIST = [
   "21a",
   "21b",
   "21c",
-  "Tested By",
-  "Known Issues"
+  "Known Issues",
+  "Tested By"
 ]
 
 HEADER_MAP = {
