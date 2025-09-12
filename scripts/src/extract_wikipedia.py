@@ -69,7 +69,14 @@ def extract_headers(
 
     for tr in header_list:
       print("extract_headers_2")
-      cell_list = tr.find_all(ELEMENT_TAG_LIST)
+
+      cell_list = []
+
+      try:
+        cell_list = tr.find_all(ELEMENT_TAG_LIST)
+
+      except:
+        continue
 
       if not cell_list:
         continue

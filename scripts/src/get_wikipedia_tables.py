@@ -61,7 +61,7 @@ def write_many(
   index = 1
 
   for table in table_list:
-    name = f"{base_name}_{index}"
+    name = f"{base_name}_table{index}"
     header_list = extract_headers(table)
     index += 1
 
