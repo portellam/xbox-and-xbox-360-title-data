@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Filename:       get_consolemods_tables
+# Filename:       get_consolemods_tables.py
 # Description:    Retrieves table from ConsoleMods.org article, and outputs as
 #                 JSON.
 # Author(s):      Alex Portell <github.com/portellam>
