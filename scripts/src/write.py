@@ -80,3 +80,37 @@ def write_json(
     print("Could not write to file.")
     print(f"Error: {e}")
     return False
+
+def write_this(
+  url,
+  name,
+  header_list,
+  row_list
+) -> int:
+  if not url:
+    print("Warning: URL is not valid.")
+    return 1
+
+  if not name:
+    print("Warning: File name is not valid.")
+    return 1
+
+  if not row_list:
+    print("Warning: No data rows exist.")
+    return 1
+
+  if not write_csv(
+    header_list,
+    row_list,
+    name
+  ):
+    return 1
+
+  if not write_json(
+    header_list,
+    row_list,
+    name
+  ):
+    return 1
+
+  return 0
