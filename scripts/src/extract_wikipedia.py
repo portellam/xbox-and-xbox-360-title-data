@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Filename:       extract_wiki.py
+# Filename:       extract_wikipedia.py
 # Description:    Extract HTML Wiki table as lists.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
@@ -9,7 +9,7 @@
 #
 
 from typing import Optional, List
-from wiki_config import ELEMENT_TAG_LIST
+from config_wikipedia import ELEMENT_TAG_LIST
 
 try:
   from bs4 import BeautifulSoup

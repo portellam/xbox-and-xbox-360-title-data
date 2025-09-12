@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Filename:       wiki_config.py
+# Filename:       config_wikipedia.py
 # Description:    List of Wikipedia articles to parse.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>

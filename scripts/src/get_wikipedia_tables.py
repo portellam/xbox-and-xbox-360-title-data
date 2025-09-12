@@ -15,8 +15,8 @@ import collections.abc
 collections.Callable = collections.abc.Callable
 from bs4 import BeautifulSoup
 from fetch import fetch_page
-from extract_wiki import find_tables, extract_headers, extract_rows
-from wiki_config import URL_LIST, OUTPUT_FILE_NAME_LIST
+from extract_wikipedia import find_tables, extract_headers, extract_rows
+from config_wikipedia import URL_LIST, OUTPUT_FILE_NAME_LIST
 from write import write_csv, write_json
 
 def main() -> int:
