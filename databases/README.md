@@ -20,7 +20,7 @@ Backups and local copies of title data.
 
 ### 1. This Directory Table
 
-Last Updated: 2025-09-11
+Last Updated: 2025-09-12
 
 | Database File | Functionality | Notes | Credits |
 | - | - | - | - |
@@ -35,22 +35,22 @@ Last Updated: 2025-09-11
 | **List of Xbox games compatible with Xbox 360**<sup>[JSON][701]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. | [13](../REFERENCES.md#13) |
 | **List of Xbox titles removed from backward compatibility list**<sup>[JSON][702]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. | Same as above. |
 
-[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list.json
+[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_3.json
 
 [201]: ./json/archive.rushhosting.net_xbox_360_title_id_list.json
 
-[301]: ./json/wikipedia.org_xbox_360_games_a-l_table_1.json
-[302]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
+[301]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
+[302]: ./json/wikipedia.org_xbox_360_games_a-l_table_4.json
 
-[401]: ./json/wikipedia.org_xbox_360_games_m-z_table_1.json
-[402]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
+[401]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
+[402]: ./json/wikipedia.org_xbox_360_games_m-z_table_4.json
 
 [501]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
 
 [601]: ./json/wikipedia.org_xbox_games_table_1.json
 
-[701]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_1.json
-[702]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
+[701]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
+[702]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json
 
 ### 2. Backlog
 

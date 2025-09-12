@@ -1760,6 +1760,13 @@
     "Ref(s)": "[ 40 ]"
   },
   {
+    "Title": "Max Payne 2: The Fall of Max Payne",
+    "Publisher(s)": "Rockstar Games",
+    "Technical issue(s)": "",
+    "Add-Ons": "XO XBO",
+    "Region(s)": ""
+  },
+  {
     "Title": "Maximum Chase",
     "Publisher(s)": "Majesco Entertainment",
     "Technical issue(s)": "Live action cinematics are choppy.",
@@ -3368,6 +3375,12 @@
     "Ref(s)": "[ 5 ] [ 15 ]"
   },
   {
+    "Title": "Tony Hawk's Pro Skater 4",
+    "Publisher(s)": "Activision",
+    "Technical issue(s)": "The loading progress bar is missing. Game will freeze at the Xbox logo unless playing with the console\u2019s resolution set to 480p or by playing with AV Cables.",
+    "Add-Ons": "[ 5 ]"
+  },
+  {
     "Title": "Tony Hawk's Underground",
     "Publisher(s)": "Activision",
     "Technical issue(s)": "The loading progress bar is missing.",
@@ -3598,6 +3611,14 @@
     "Add-Ons": "",
     "Region(s)": "",
     "Ref(s)": "[ 5 ]"
+  },
+  {
+    "Title": "World Soccer Winning Eleven 9 International [ d ] Pro Evolution Soccer 5 (PAL) World Soccer: Winning Eleven 9 (JP)",
+    "Publisher(s)": "Konami",
+    "Technical issue(s)": "",
+    "Add-Ons": "",
+    "Region(s)": "",
+    "Ref(s)": ""
   },
   {
     "Title": "Worms 4: Mayhem",

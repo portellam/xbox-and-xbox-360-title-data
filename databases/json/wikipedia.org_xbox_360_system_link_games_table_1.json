@@ -984,6 +984,14 @@
     "Notes": "source: mobygames.com"
   },
   {
+    "Title": "Monster Madness: Battle for Suburbia",
+    "Total players": "16",
+    "Per console": "1",
+    "Versus mode": "16",
+    "Co-op mode": "16",
+    "Notes": "System link coop is survival only. Local 4 player shared screen includes vs, survival coop and story coop."
+  },
+  {
     "Title": "MotoGP '06",
     "Total players": "16",
     "Per console": "1",
@@ -1352,6 +1360,13 @@
     "Notes": "source: mobygames.com"
   },
   {
+    "Title": "Sol Survivor (Arcade)",
+    "Total players": "8",
+    "Per console": "",
+    "Versus mode": "",
+    "Co-op mode": ""
+  },
+  {
     "Title": "Soldier of Fortune: Payback",
     "Total players": "12",
     "Per console": "",
@@ -1662,6 +1677,13 @@
     "Versus mode": "",
     "Co-op mode": "",
     "Notes": "source: mobygames.com"
+  },
+  {
+    "Title": "World Series of Poker 2008: Battle for the Bracelets",
+    "Total players": "21",
+    "Per console": "1",
+    "Versus mode": "21",
+    "Co-op mode": ""
   },
   {
     "Title": "World Series Poker: Tournament of Champions",

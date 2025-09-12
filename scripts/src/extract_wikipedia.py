@@ -96,9 +96,6 @@ def process_row(
   header_list: List[str]
 ) -> Optional[dict]:
   try:
-    if len(cell_list) < 1 or len(cell_list) != len(header_list):
-      return None
-
     row = {}
 
     for header, cell in zip(
