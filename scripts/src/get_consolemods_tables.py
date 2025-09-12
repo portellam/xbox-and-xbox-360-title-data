@@ -25,10 +25,6 @@ from config_consolemods import (
   URL
 )
 
-from fetch import (
-  fetch_page
-)
-
 from extract_consolemods import (
   extract_headers,
   extract_rows
@@ -54,6 +50,7 @@ def write_many(
   index = 1
 
   for table in table_list:
+    print(f"Extracting table {index}.")
     name = f"{name}_{index}"
     header_list = extract_headers(table)
     index += 1
