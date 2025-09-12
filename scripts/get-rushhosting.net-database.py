@@ -2,8 +2,8 @@
 
 #
 # Filename:       get-rushhosting.net-database.py
-# Description:    Retrieves data from archive.rushhosting.net pages, and outputs as
-#                 CSV and JSON.
+# Description:    Retrieves data from archive.rushhosting.net pages, and outputs
+#                 as JSON.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
 # Version:        1.0.0
@@ -195,7 +195,7 @@ def extract_game_data(
       )
     )
 
-    name = name_elem.get_text(strip=True) if name_elem else 'N/A'
+    name = name_elem.get_text(strip = True) if name_elem else 'N/A'
 
     description = 'N/A'
 
@@ -218,7 +218,7 @@ def extract_game_data(
         lambda tag: tag.name in ['h2', 'h3', 'div']
         and re.search(
           r'description|summary|overview|about',
-          tag.get_text(strip=True),
+          tag.get_text(strip = True),
           re.I
         )
       )
@@ -230,7 +230,7 @@ def extract_game_data(
         or desc_elem.find_next('p')
         or desc_elem.find_parent().select_one('p, div.description-text, div.summary')
       )
-      description = next_elem.get_text(strip=True) if next_elem else 'N/A'
+      description = next_elem.get_text(strip = True) if next_elem else 'N/A'
 
     published_by = developed_by = release_date = 'N/A'
 
@@ -250,8 +250,8 @@ def extract_game_data(
       tr_list = tbody.find_all('tr')
 
       if len(tr_list) >= 2:
-        header_list = [cell.get_text(strip=True).lower() for cell in tr_list[0].find_all(['th', 'td'])]
-        value_list = [cell.get_text(strip=True) for cell in tr_list[1].find_all(['th', 'td'])]
+        header_list = [cell.get_text(strip = True).lower() for cell in tr_list[0].find_all(['th', 'td'])]
+        value_list = [cell.get_text(strip = True) for cell in tr_list[1].find_all(['th', 'td'])]
 
         for label, value in zip(header_list, value_list):
           if 'published by' in label or 'publisher' in label:

@@ -38,7 +38,7 @@ except ImportError as e:
 def extract_cell_value(
   cell: BeautifulSoup
 ) -> str:
-  text = cell.get_text(strip=True)
+  text = cell.get_text(strip = True)
   if text:
     return STATUS_MAP.get(text.lower(), text)
 
@@ -81,6 +81,7 @@ def extract_headers(
       text = text.strip()
 
       normalized_text = normalize_header(text)
+
       text = inverted_header_map.get(
         normalized_text,
         text

@@ -2,7 +2,7 @@
 
 #
 # Filename:       write.py
-# Description:    Writes lists to CSV and JSON files.
+# Description:    Writes lists to JSON files.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
 # Version:        1.0.0
@@ -14,39 +14,6 @@ from typing import (
   Dict,
   List
 )
-
-def write_csv(
-  header_list: List[str],
-  text: List[Dict[str, str]],
-  name: str
-) -> bool:
-  try:
-    output_file = f"{name}.csv"
-
-    if not text:
-      print(f"Skipped writing to file: '{output_file}'")
-      return False
-
-    print(f"Writing to file: '{output_file}'")
-
-    with open(
-      output_file,
-      "w",
-      newline = "",
-      encoding = "utf-8"
-    ) as csvfile:
-      writer = csv.writer(csvfile)
-      writer.writerow(header_list)
-      for row in text:
-        writer.writerow([row.get(h, "") for h in header_list])
-
-    print("Wrote to file.")
-    return True
-
-  except IOError as e:
-    print("Could not write to file.")
-    print(f"Error: {e}")
-    return False
 
 def write_json(
   header_list: List[str],
@@ -88,22 +55,15 @@ def write_this(
   row_list
 ) -> int:
   if not url:
-    # print("Warning: URL is not valid.")
+    print("Warning: URL is not valid.")
     return 1
 
   if not name:
-    # print("Warning: File name is not valid.")
+    print("Warning: File name is not valid.")
     return 1
 
   if not row_list:
-    # print("Warning: No data rows exist.")
-    return 1
-
-  if not write_csv(
-    header_list,
-    row_list,
-    name
-  ):
+    print("Warning: No data rows exist.")
     return 1
 
   if not write_json(
