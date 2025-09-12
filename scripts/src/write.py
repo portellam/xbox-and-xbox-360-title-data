@@ -62,14 +62,17 @@ def write_this(
 ) -> int:
   if not url:
     print("Warning: URL is not valid.")
+    print()
     return 1
 
   if not name:
     print("Warning: File name is not valid.")
+    print()
     return 1
 
   if not row_list:
     print(f"Note: Output is empty.")
+    print()
     return 2
 
   if not write_json(
@@ -77,6 +80,8 @@ def write_this(
     row_list,
     name
   ):
+    print()
     return 1
 
+  print()
   return 0

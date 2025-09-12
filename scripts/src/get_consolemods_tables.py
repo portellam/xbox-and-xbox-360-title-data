@@ -50,7 +50,6 @@ def write_many(
   index = 1
 
   for table in table_list:
-    print()
     print(f"Extracting table {index}.")
     name = f"{base_name}_table_{index}"
     index += 1
