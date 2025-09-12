@@ -8,8 +8,14 @@
 # Version:        1.0.0
 #
 
-from typing import Optional, List
-from config_wikipedia import ELEMENT_TAG_LIST
+from typing import (
+  List,
+  Optional
+)
+
+from config_wikipedia import (
+  ELEMENT_TAG_LIST
+)
 
 try:
   from bs4 import BeautifulSoup

@@ -9,7 +9,10 @@
 #
 
 import sys
-from typing import Optional
+
+from typing import (
+  Optional
+)
 
 try:
   import requests

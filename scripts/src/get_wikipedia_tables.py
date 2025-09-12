@@ -16,11 +16,29 @@ import collections
 import collections.abc
 collections.Callable = collections.abc.Callable
 
-from bs4 import BeautifulSoup
-from fetch import fetch_page
-from extract_wikipedia import find_tables, extract_headers, extract_rows
-from config_wikipedia import URL_LIST, OUTPUT_FILE_NAME_LIST
-from write import write_csv, write_json
+from bs4 import (
+  BeautifulSoup
+)
+
+from fetch import (
+  fetch_page
+)
+
+from extract_wikipedia import (
+  extract_headers,
+  extract_rows,
+  find_tables
+)
+
+from config_wikipedia import (
+  OUTPUT_FILE_NAME_LIST,
+  URL
+)
+
+from write import (
+  write_csv,
+  write_json
+)
 
 def main() -> int:
   for url, output_name in zip(

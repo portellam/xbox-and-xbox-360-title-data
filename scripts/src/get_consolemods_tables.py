@@ -16,11 +16,29 @@ import collections
 import collections.abc
 collections.Callable = collections.abc.Callable
 
-from bs4 import BeautifulSoup
-from config_consolemods import URL, OUTPUT_FILE_NAME
-from fetch import fetch_page
-from extract_consolemods import find_table, extract_headers, extract_rows
-from write import write_csv, write_json
+from bs4 import (
+  BeautifulSoup
+)
+
+from config_consolemods import (
+  OUTPUT_FILE_NAME,
+  URL
+)
+
+from fetch import (
+  fetch_page
+)
+
+from extract_consolemods import (
+  extract_headers,
+  extract_rows,
+  find_table
+ )
+
+from write import (
+  write_csv,
+  write_json
+)
 
 def main() -> int:
   page_content = fetch_page(URL)
