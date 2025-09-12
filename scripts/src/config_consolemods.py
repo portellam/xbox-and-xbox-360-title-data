@@ -20,21 +20,36 @@ OUTPUT_FILE_NAME = (
 
 HEADER_KEY_LIST = [
   "Name",
-  "xefu",
-  "xefu2",
-  "xefu3",
-  "xefu5",
-  "xefu1_1",
-  "xefu6",
-  "xefu7",
-  "xefu7b",
-  "xefu2019",
-  "xefu2021a",
-  "xefu2021b",
-  "xefu2021c",
+  "1",
+  "2",
+  "3",
+  "5",
+  "1_1",
+  "6",
+  "7",
+  "7b",
+  "19",
+  "21a",
+  "21b",
+  "21c",
   "Tested By",
   "Known Issues"
 ]
+
+HEADER_MAP = {
+  "1": "xefu",
+  "2": "xefu2",
+  "3": "xefu3",
+  "5": "xefu5",
+  "1_1": "xefu1_1",
+  "6": "xefu6",
+  "7": "xefu7",
+  "7b": "xefu7b",
+  "19": "xefu2019",
+  "21a": "xefu2021a",
+  "21b": "xefu2021b",
+  "21c": "xefu2021c"
+}
 
 ELEMENT_TAG_LIST = [
   "th",
