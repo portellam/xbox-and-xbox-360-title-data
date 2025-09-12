@@ -38,42 +38,14 @@ except ImportError as e:
 def extract_cell_value(
   cell: BeautifulSoup
 ) -> str:
+  text = cell.get_text(strip=True)
+  if text:
+    return STATUS_MAP.get(text.lower(), text)
+
   if cell.has_attr("title"):
-    return cell["title"].strip()
+    return STATUS_MAP.get(cell["title"].lower().strip(), cell["title"].strip())
 
-  inner_with_title = cell.find(attrs = {"title": True})
-
-  if inner_with_title:
-    return inner_with_title["title"].strip()
-
-  abbr = cell.find("abbr")
-
-  if abbr and abbr.has_attr("title"):
-    return abbr["title"].strip()
-
-  img = cell.find("img")
-
-  if img and img.has_attr("alt"):
-    return img["alt"].strip()
-
-  if cell.has_attr("class"):
-    for cls in cell["class"]:
-      cls_lower = cls.lower()
-
-      if cls_lower in [
-        "in-game",
-        "intro",
-        "issues",
-        "menus",
-        # "orange",
-        "playable",
-        "supported",
-        "unplayable",
-        "untested",
-      ]:
-        return cls_lower
-
-  return cell.get_text(strip = True)
+  return ""
 
 def extract_headers(
   table: BeautifulSoup
@@ -111,14 +83,21 @@ def extract_headers(
       text = text.strip()
       print(f"DEBUG: raw header text: '{text}'")
 
+      normalized_text = normalize_header(text)
       text = inverted_header_map.get(
-        text,
+        normalized_text,
         text
       )
+
+      if text not in HEADER_KEY_LIST:
+        print(f"DEBUG: Header '{text}' not in HEADER_KEY_LIST, using raw text")
 
       header_list.append(text)
 
     print("DEBUG: Extracted headers:", header_list)
+    if "Name" not in header_list:
+      print("DEBUG: 'Name' header missing, returning empty list")
+      return []
     return header_list
 
   except Exception as e:
@@ -135,10 +114,19 @@ def extract_rows(
 
     tr_list = table.find_all("tr")
 
+    if not tr_list:
+      print("DEBUG: No rows found in table")
+      return []
+
     for tr in tr_list[1:]:
       cell_list = tr.find_all("td")
 
       if not cell_list:
+        print("DEBUG: Skipping empty row")
+        continue
+
+      if len(cell_list) < len(header_list):
+        print(f"DEBUG: Skipping row with insufficient cells: {len(cell_list)} cells, expected {len(header_list)}")
         continue
 
       row_data = {}
@@ -147,9 +135,25 @@ def extract_rows(
         header_list,
         cell_list
       ):
-        row_data[header] = extract_cell_value(cell)
+        value = extract_cell_value(cell)
+
+        if header in HEADER_MAP or header in HEADER_MAP.values():
+          value = STATUS_MAP.get(value.lower(), value)
+
+        if value == header or not value:
+          print(f"DEBUG: Skipping placeholder or empty value for header '{header}'")
+          continue
+
+        row_data[header] = value
+
+      if not row_data or "Name" not in row_data or row_data["Name"].startswith("{{"):
+        print("DEBUG: Skipping row with invalid or placeholder Name")
+        continue
 
       rows_list.append(row_data)
+
+    if not rows_list:
+      print("DEBUG: No valid rows extracted")
 
     return rows_list
 
@@ -162,13 +166,12 @@ def find_by_header(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
   for table in soup.find_all("table"):
-    header_list = [
-      th.text.strip()
-      for th in table.find_all("th")
-    ]
-
+    header_list = extract_headers(table)
     if has_required_headers(header_list):
+      print("DEBUG: Table found by header matching with required headers")
       return table
+  print("DEBUG: No table found by header matching")
+  return None
 
 def find_by_section_id(
   soup: BeautifulSoup
@@ -179,7 +182,8 @@ def find_by_section_id(
   )
 
   if not section:
-      return None
+    print("DEBUG: No span with id=Compatibility_List found")
+    return None
 
   heading = section.find_parent(
     [
@@ -193,74 +197,52 @@ def find_by_section_id(
   )
 
   if not heading:
-      return None
+    print("DEBUG: No heading parent found for Compatibility_List span")
+    return None
 
   table = heading.find_next("table")
 
   if not table:
-      return None
+    print("DEBUG: No table found after heading")
+    return None
 
-  header_list = [th.get_text(strip=True).lower() for th in table.find_all("th")]
-  print("DEBUG: header_list from table:", header_list)
-  print("DEBUG: required headers:", HEADER_KEY_LIST)
-
+  header_list = extract_headers(table)
   if has_required_headers(header_list):
-      return table
-
+    print("DEBUG: Table found by section ID with required headers")
+    return table
+  print("DEBUG: Table found but missing required headers")
   return None
 
 def find_table(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
-  id = "Compatibility_List"
-
-  section_span = soup.find(
-    "span",
-    id = id
-  )
-
-  if not section_span:
-    print("DEBUG: No span with id=Compatibility_List found.")
-    return None
-
-  heading = section_span.find_parent(
-    [
-      "h1",
-      "h2",
-      "h3",
-      "h4",
-      "h5",
-      "h6"
-    ]
-  )
-
-  if not heading:
-    print("DEBUG: No heading parent found for Compatibility_List span.")
-    return None
-
-  table = heading.find_next(
-    "table",
-    class_ = lambda c: c and "wikitable" in c
-  )
-
-  if not table:
-    print("DEBUG: No wikitable found after heading.")
-    return None
-
-  print("DEBUG: Found table classes:", table.get("class"))
-
-  thead = table.find("thead")
-
-  header_list = extract_headers(table)
-
-  print("DEBUG: header_list from table:", header_list)
-
-  if has_required_headers(header_list):
+  table = find_by_section_id(soup)
+  if table:
     return table
 
-  else:
-    print("DEBUG: Table found but headers did not match required list.")
-    return None
+  table = find_by_header(soup)
+  if table:
+    return table
+
+  table = soup.find("table", class_=lambda c: c and "wikitable" in c)
+  if table:
+    header_list = extract_headers(table)
+    if has_required_headers(header_list):
+      print("DEBUG: Table found by wikitable class with required headers")
+      return table
+    print("DEBUG: Wikitable found but missing required headers")
+
+  tables = soup.find_all("table")
+  print(f"DEBUG: Found {len(tables)} tables")
+  for i, table in enumerate(tables):
+    headers = extract_headers(table)
+    print(f"DEBUG: Table {i+1} headers: {headers}")
+    if has_required_headers(headers):
+      print(f"DEBUG: Table {i+1} selected as fallback")
+      return table
+
+  print("DEBUG: No suitable table found")
+  return None
 
 def has_required_headers(
   header_list: List[str]
@@ -269,13 +251,8 @@ def has_required_headers(
     h.lower()
     for h in header_list
   }
-
-  required_set_lower = {
-    h.lower()
-    for h in HEADER_KEY_LIST
-  }
-
-  return required_set_lower.issubset(header_set_lower)
+  required_headers = {"name", "tested by", "known issues"}
+  return all(h in header_set_lower for h in required_headers)
 
 def normalize_header(h: str) -> str:
   return re.sub(
@@ -283,42 +260,3 @@ def normalize_header(h: str) -> str:
     '',
     h.lower()
   )
-
-def process_row(
-  cell_list,
-  header_list
-):
-  row = []
-  status_headers = set(HEADER_MAP.values())
-
-  for i, header in enumerate(header_list):
-    cell = cell_list[i]
-    header_lower = header.lower()
-
-    canonical_header = HEADER_MAP.get(header_lower, header_lower)
-
-    if canonical_header in status_headers:
-      div = cell.find(
-        'div',
-        class_ = 'visible'
-      )
-      title = div.get(
-        'title',
-        ''
-      ).strip().lower() if div else ''
-      status_token = STATUS_MAP.get(
-        title,
-        'untested'
-      )
-      row.append(status_token)
-
-    elif header_lower == "tested by":
-      row.append(cell.get_text(strip = True))
-
-    elif header_lower == "known issues":
-      row.append(cell.get_text(strip = True))
-
-    else:
-      row.append(cell.get_text(strip = True))
-
-  return row

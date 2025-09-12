@@ -28,8 +28,8 @@ except ImportError as e:
 def sanitize_html(
   html: str
 ) -> str:
-  pattern = r'(<td><div title=")([^"]+)(".*?</div>)(\s*</td>)'
-  replacement = r'\1\2\3\2\4'
+  pattern = r'<td>\s*(<div[^>]*title="([^"]+)"[^>]*>.*?</div>)\s*</td>'
+  replacement = r'<td>\2</td>'
   return re.sub(
     pattern,
     replacement,

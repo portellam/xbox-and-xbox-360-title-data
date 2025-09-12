@@ -10,11 +10,14 @@
 
 import csv
 import json
-from typing import List
+from typing import (
+  Dict,
+  List
+)
 
 def write_csv(
   header_list: List[str],
-  extracted_row_list: List[List[str]],
+  extracted_row_list: List[Dict[str, str]],
   name: str
 ) -> bool:
   try:
@@ -29,7 +32,8 @@ def write_csv(
     ) as csvfile:
       writer = csv.writer(csvfile)
       writer.writerow(header_list)
-      writer.writerows(extracted_row_list)
+      for row in extracted_row_list:
+        writer.writerow([row.get(h, "") for h in header_list])
 
     print("Wrote to file.")
     return True
@@ -41,22 +45,16 @@ def write_csv(
 
 def write_json(
   header_list: List[str],
-  extracted_row_list: List[List[str]],
+  extracted_row_list: List[Dict[str, str]],
   name: str
 ) -> bool:
   try:
     output_file = f"{name}.json"
     print(f"Writing to file: '{output_file}'")
 
-    data = [
-      dict(
-        zip(
-          header_list,
-          row
-        )
-      )
-      for row in extracted_row_list
-    ]
+    if not extracted_row_list:
+      print("DEBUG: No valid data to write, skipping JSON output")
+      return False
 
     with open(
       output_file,
@@ -64,7 +62,7 @@ def write_json(
       encoding = "utf-8"
     ) as jsonfile:
       json.dump(
-        data,
+        extracted_row_list,
         jsonfile,
         indent = 2
       )
