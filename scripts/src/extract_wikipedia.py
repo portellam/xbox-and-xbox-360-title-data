@@ -18,7 +18,9 @@ from config_wikipedia import (
 )
 
 try:
-  from bs4 import BeautifulSoup
+  from bs4 import (
+    BeautifulSoup
+  )
 
 except ImportError as e:
   import sys
