@@ -81,7 +81,6 @@ def extract_headers(
         text = cell.get_text(strip = True)
 
       text = text.strip()
-      print(f"DEBUG: raw header text: '{text}'")
 
       normalized_text = normalize_header(text)
       text = inverted_header_map.get(
@@ -89,15 +88,11 @@ def extract_headers(
         text
       )
 
-      if text not in HEADER_KEY_LIST:
-        print(f"DEBUG: Header '{text}' not in HEADER_KEY_LIST, using raw text")
-
       header_list.append(text)
 
-    print("DEBUG: Extracted headers:", header_list)
     if "Name" not in header_list:
-      print("DEBUG: 'Name' header missing, returning empty list")
       return []
+
     return header_list
 
   except Exception as e:
@@ -115,18 +110,15 @@ def extract_rows(
     tr_list = table.find_all("tr")
 
     if not tr_list:
-      print("DEBUG: No rows found in table")
       return []
 
     for tr in tr_list[1:]:
       cell_list = tr.find_all("td")
 
       if not cell_list:
-        print("DEBUG: Skipping empty row")
         continue
 
       if len(cell_list) < len(header_list):
-        print(f"DEBUG: Skipping row with insufficient cells: {len(cell_list)} cells, expected {len(header_list)}")
         continue
 
       row_data = {}
@@ -141,19 +133,14 @@ def extract_rows(
           value = STATUS_MAP.get(value.lower(), value)
 
         if value == header or not value:
-          print(f"DEBUG: Skipping placeholder or empty value for header '{header}'")
           continue
 
         row_data[header] = value
 
       if not row_data or "Name" not in row_data or row_data["Name"].startswith("{{"):
-        print("DEBUG: Skipping row with invalid or placeholder Name")
         continue
 
       rows_list.append(row_data)
-
-    if not rows_list:
-      print("DEBUG: No valid rows extracted")
 
     return rows_list
 
@@ -167,10 +154,10 @@ def find_by_header(
 ) -> Optional[BeautifulSoup]:
   for table in soup.find_all("table"):
     header_list = extract_headers(table)
+
     if has_required_headers(header_list):
-      print("DEBUG: Table found by header matching with required headers")
       return table
-  print("DEBUG: No table found by header matching")
+
   return None
 
 def find_by_section_id(
@@ -182,7 +169,6 @@ def find_by_section_id(
   )
 
   if not section:
-    print("DEBUG: No span with id=Compatibility_List found")
     return None
 
   heading = section.find_parent(
@@ -197,48 +183,46 @@ def find_by_section_id(
   )
 
   if not heading:
-    print("DEBUG: No heading parent found for Compatibility_List span")
     return None
 
   table = heading.find_next("table")
 
   if not table:
-    print("DEBUG: No table found after heading")
     return None
 
   header_list = extract_headers(table)
+
   if has_required_headers(header_list):
-    print("DEBUG: Table found by section ID with required headers")
     return table
-  print("DEBUG: Table found but missing required headers")
   return None
 
 def find_table(
   soup: BeautifulSoup
 ) -> Optional[BeautifulSoup]:
   table = find_by_section_id(soup)
+
   if table:
     return table
 
   table = find_by_header(soup)
+
   if table:
     return table
 
   table = soup.find("table", class_=lambda c: c and "wikitable" in c)
+
   if table:
     header_list = extract_headers(table)
+
     if has_required_headers(header_list):
-      print("DEBUG: Table found by wikitable class with required headers")
       return table
-    print("DEBUG: Wikitable found but missing required headers")
 
   tables = soup.find_all("table")
-  print(f"DEBUG: Found {len(tables)} tables")
+
   for i, table in enumerate(tables):
     headers = extract_headers(table)
-    print(f"DEBUG: Table {i+1} headers: {headers}")
+
     if has_required_headers(headers):
-      print(f"DEBUG: Table {i+1} selected as fallback")
       return table
 
   print("DEBUG: No suitable table found")
@@ -251,7 +235,13 @@ def has_required_headers(
     h.lower()
     for h in header_list
   }
-  required_headers = {"name", "tested by", "known issues"}
+
+  required_headers = {
+    "name",
+    "tested by",
+    "known issues"
+  }
+
   return all(h in header_set_lower for h in required_headers)
 
 def normalize_header(h: str) -> str:

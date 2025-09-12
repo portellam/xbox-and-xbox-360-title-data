@@ -17,11 +17,16 @@ from typing import (
 
 def write_csv(
   header_list: List[str],
-  extracted_row_list: List[Dict[str, str]],
+  text: List[Dict[str, str]],
   name: str
 ) -> bool:
   try:
     output_file = f"{name}.csv"
+
+    if not text:
+      print(f"Skipped writing to file: '{output_file}'")
+      return False
+
     print(f"Writing to file: '{output_file}'")
 
     with open(
@@ -32,7 +37,7 @@ def write_csv(
     ) as csvfile:
       writer = csv.writer(csvfile)
       writer.writerow(header_list)
-      for row in extracted_row_list:
+      for row in text:
         writer.writerow([row.get(h, "") for h in header_list])
 
     print("Wrote to file.")
@@ -45,16 +50,17 @@ def write_csv(
 
 def write_json(
   header_list: List[str],
-  extracted_row_list: List[Dict[str, str]],
+  text: List[Dict[str, str]],
   name: str
 ) -> bool:
   try:
     output_file = f"{name}.json"
-    print(f"Writing to file: '{output_file}'")
 
-    if not extracted_row_list:
-      print("DEBUG: No valid data to write, skipping JSON output")
+    if not text:
+      print(f"Skipped writing to file: '{output_file}'")
       return False
+
+    print(f"Writing to file: '{output_file}'")
 
     with open(
       output_file,
@@ -62,7 +68,7 @@ def write_json(
       encoding = "utf-8"
     ) as jsonfile:
       json.dump(
-        extracted_row_list,
+        text,
         jsonfile,
         indent = 2
       )

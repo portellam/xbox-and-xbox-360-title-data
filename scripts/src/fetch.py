@@ -30,6 +30,7 @@ def sanitize_html(
 ) -> str:
   pattern = r'<td>\s*(<div[^>]*title="([^"]+)"[^>]*>.*?</div>)\s*</td>'
   replacement = r'<td>\2</td>'
+
   return re.sub(
     pattern,
     replacement,
