@@ -20,8 +20,9 @@ from bs4 import (
   BeautifulSoup
 )
 
-from fetch import (
-  fetch_page
+from config_wikipedia import (
+  OUTPUT_FILE_NAME_LIST,
+  URL_LIST
 )
 
 from extract_wikipedia import (
@@ -30,72 +31,63 @@ from extract_wikipedia import (
   find_tables
 )
 
-from config_wikipedia import (
-  OUTPUT_FILE_NAME_LIST,
-  URL_LIST
+from fetch import (
+  fetch_page
 )
 
 from write import (
-  write_csv,
-  write_json
+  write_this
 )
+
+def write_many(
+  url,
+  name
+) -> int:
+  page_content = fetch_page(url)
+
+  if not page_content:
+    return 1
+
+  soup = BeautifulSoup(
+    page_content,
+    "html.parser"
+  )
+
+  table_list = find_tables(soup)
+
+  if not table_list:
+    return 1
+
+  index = 1
+
+  for table in table_list:
+    name = f"{name}_{index}"
+    header_list = extract_headers(table)
+    index += 1
+
+    row_list = extract_rows(
+      table,
+      header_list
+    )
+
+    write_this(
+      url,
+      name,
+      header_list,
+      row_list
+    )
+
+  return 0
 
 def main() -> int:
   for url, output_name in zip(
     URL_LIST,
     OUTPUT_FILE_NAME_LIST
   ):
-    page_content = fetch_page(url)
-
-    if not page_content:
-      continue
-
-    print("Parsing page.")
-
-    soup = BeautifulSoup(
-      page_content,
-      "html.parser"
+    write_many(
+      url,
+      output_name
     )
-
-    table_list = find_tables(soup)
-    if not table_list:
-      continue
-
-    index = 1
-
-    for actual_index, table in enumerate(
-      table_list,
-      start = 1
-    ):
-      header_list = extract_headers(table)
-
-      if not header_list:
-        continue
-
-      extracted_row_list = extract_rows(
-        table,
-        header_list
-      )
-      if not extracted_row_list:
-        print("Warning: Could not extract data. No data rows exist.")
-        continue
-
-      file_suffix = f"{output_name}_table_{index}"
-      index += 1
-
-      if not write_csv(
-        header_list,
-        extracted_row_list,
-        file_suffix
-      ):
-        continue
-
-      if not write_json(
-        header_list,
-        extracted_row_list,
-        file_suffix
-      ):
-        continue
 
   return 0
 

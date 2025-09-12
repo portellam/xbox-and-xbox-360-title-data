@@ -26,65 +26,57 @@ from config_consolemods import (
 )
 
 from fetch import (
-  fetch_page,
-  sanitize_html
+  fetch_page
 )
 
 from extract_consolemods import (
   extract_headers,
-  extract_rows,
-  find_table
+  extract_rows
  )
 
-from write import (
-  write_csv,
-  write_json
+from sanitize_html import (
+  retrieve_and_process_tables
 )
 
-def main() -> int:
-  page_content = fetch_page(URL)
-  page_content = sanitize_html(page_content)
+from write import (
+  write_this
+)
 
-  if not page_content:
+def write_many(
+  url,
+  name
+) -> int:
+  table_list = retrieve_and_process_tables(url)
+
+  if not table_list:
     return 1
 
-  print("Parsing page.")
-  soup = BeautifulSoup(
-    page_content,
-    "lxml"
-  )
+  index = 1
 
-  table = find_table(soup)
-  if not table:
-    return 1
+  for table in table_list:
+    name = f"{name}_{index}"
+    header_list = extract_headers(table)
+    index += 1
 
-  header_list = extract_headers(table)
-  if not header_list:
-    return 1
+    row_list = extract_rows(
+      table,
+      header_list
+    )
 
-  extracted_row_list = extract_rows(
-    table,
-    header_list
-  )
-  if not extracted_row_list:
-    print("Warning: Could not extract data. No data rows exist.")
-    return 1
-
-  if not write_csv(
-    header_list,
-    extracted_row_list,
-    OUTPUT_FILE_NAME
-  ):
-    return 1
-
-  if not write_json(
-    header_list,
-    extracted_row_list,
-    OUTPUT_FILE_NAME
-  ):
-    return 1
+    write_this(
+      url,
+      name,
+      header_list,
+      row_list
+    )
 
   return 0
+
+def main() -> int:
+  write_many(
+    URL,
+    OUTPUT_FILE_NAME
+  )
 
 if __name__ == "__main__":
   try:
