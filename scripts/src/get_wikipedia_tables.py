@@ -10,9 +10,12 @@
 #
 
 import sys
+
+# Must come before `bs4`
 import collections
 import collections.abc
 collections.Callable = collections.abc.Callable
+
 from bs4 import BeautifulSoup
 from fetch import fetch_page
 from extract_wikipedia import find_tables, extract_headers, extract_rows

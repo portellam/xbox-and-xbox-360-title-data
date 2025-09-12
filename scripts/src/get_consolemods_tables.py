@@ -9,11 +9,13 @@
 # Version:        1.0.0
 #
 
+import sys
+
+# Must come before `bs4`
 import collections
 import collections.abc
 collections.Callable = collections.abc.Callable
 
-import sys
 from bs4 import BeautifulSoup
 from config_consolemods import URL, OUTPUT_FILE_NAME
 from fetch import fetch_page
