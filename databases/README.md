@@ -24,42 +24,33 @@ Last Updated: 2025-09-11
 
 | Database File | Functionality | Notes | Credits |
 | - | - | - | - |
-| **archive.rushhosting.net**<sup>[CSV][201]</sup> | Includes **Capabilities* (*Coop, SystemLink,* and *Xbox Live*). | Incomplete parse from HTML pages. | [2](../REFERENCES.md#2) |
-| **ConsoleMods.org Compatibility List**<sup>[CSV][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. | [19](../REFERENCES.md#19) |
-| **List of Xbox 360 games (A–L)**<sup>[CSV][301] [JSON][302]</sup> | Includes *Genres* and *Addons* (*3D support Kinect optional/required, Downloadable titles, Indie,* and *XBLA*). | Successful parse from HTML table. | [9](../REFERENCES.md#9) |
-| **List of Xbox 360 games (A–L): Cancelled games**<sup>[CSV][311] [JSON][312]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
-| **List of Xbox 360 games (M–Z)**<sup>[CSV][401] [JSON][402]</sup> | Same as above. | Successful parse from HTML table. | [10](../REFERENCES.md#10) |
-| **List of Xbox 360 games (M–Z): Cancelled games**<sup>[CSV][411] [JSON][412]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
-| **List of Xbox 360 System Link games**<sup>[CSV][501] [JSON][502]</sup> | Includes *Total players, Per console, Versus mode,* and *Co-op mode*. | Successful parse from HTML table. | [11](../REFERENCES.md#11) |
-| **List of Xbox games**<sup>[CSV][601] [JSON][602]</sup> | - | Successful parse from HTML table. | [12](../REFERENCES.md#12) |
-| **List of Xbox games compatible with Xbox 360**<sup>[CSV][701] [JSON][702]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. | [13](../REFERENCES.md#13) |
-| **List of Xbox titles removed from backward compatibility list**<sup>[CSV][711] [JSON][712]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. | Same as above. |
+| **archive.rushhosting.net**<sup>[JSON][201]</sup> | Includes **Capabilities* (*Coop, SystemLink,* and *Xbox Live*). | Incomplete parse from HTML pages. | [2](../REFERENCES.md#2) |
+| **ConsoleMods.org Compatibility List**<sup>[JSON][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. | [19](../REFERENCES.md#19) |
+| **List of Xbox 360 games (A–L)**<sup>[JSON][301]</sup> | Includes *Genres* and *Addons* (*3D support Kinect optional/required, Downloadable titles, Indie,* and *XBLA*). | Successful parse from HTML table. | [9](../REFERENCES.md#9) |
+| **List of Xbox 360 games (A–L): Cancelled games**<sup>[JSON][302]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
+| **List of Xbox 360 games (M–Z)**<sup>[JSON][401]</sup> | Same as above. | Successful parse from HTML table. | [10](../REFERENCES.md#10) |
+| **List of Xbox 360 games (M–Z): Cancelled games**<sup>[JSON][402]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
+| **List of Xbox 360 System Link games**<sup>[JSON][501]</sup> | Includes *Total players, Per console, Versus mode,* and *Co-op mode*. | Successful parse from HTML table. | [11](../REFERENCES.md#11) |
+| **List of Xbox games**<sup>[JSON][601]</sup> | - | Successful parse from HTML table. | [12](../REFERENCES.md#12) |
+| **List of Xbox games compatible with Xbox 360**<sup>[JSON][701]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. | [13](../REFERENCES.md#13) |
+| **List of Xbox titles removed from backward compatibility list**<sup>[JSON][702]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. | Same as above. |
 
-[101]: ./csv/consolemods.org_xbox_360_original_xbox_games_compatibility_list.csv
-[102]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list.json
+[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list.json
 
-[201]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
+[201]: ./json/archive.rushhosting.net_xbox_360_title_id_list.json
 
-[301]: ./csv/wikipedia.org_xbox_360_games_a-l_table_1.csv
-[302]: ./json/wikipedia.org_xbox_360_games_a-l_table_1.json
-[311]: ./csv/wikipedia.org_xbox_360_games_a-l_table_2.csv
-[312]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
+[301]: ./json/wikipedia.org_xbox_360_games_a-l_table_1.json
+[302]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
 
-[401]: ./csv/wikipedia.org_xbox_360_games_m-z_table_1.csv
-[402]: ./json/wikipedia.org_xbox_360_games_m-z_table_1.json
-[411]: ./csv/wikipedia.org_xbox_360_games_m-z_table_2.csv
-[412]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
+[401]: ./json/wikipedia.org_xbox_360_games_m-z_table_1.json
+[402]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
 
-[501]: ./csv/wikipedia.org_xbox_360_system_link_games_table_1.csv
-[502]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
+[501]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
 
-[601]: ./csv/wikipedia.org_xbox_games_table_1.csv
-[602]: ./json/wikipedia.org_xbox_games_table_1.json
+[601]: ./json/wikipedia.org_xbox_games_table_1.json
 
-[701]: ./csv/wikipedia.org_xbox_games_compatible_with_xbox_360_table_1.csv
-[702]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_1.json
-[711]: ./csv/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.csv
-[712]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
+[701]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_1.json
+[702]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
 
 ### 2. Backlog
 
