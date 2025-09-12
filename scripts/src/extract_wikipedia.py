@@ -60,14 +60,9 @@ def extract_headers(
     if not table:
       return []
 
-    header_list = table.find_all("tr")
+    header_list = []
 
-    if len(header_list) == 0:
-      return []
-
-    print("Extracting headers.")
-
-    for tr in header_list:
+    for tr in table.find_all("tr"):
       cell_list = []
 
       try:
@@ -79,15 +74,17 @@ def extract_headers(
       if not cell_list:
         continue
 
-      for cell in cell_list:
-        cell = cell.get_text(
+      header_list = [
+        cell.get_text(
           separator = " ",
           strip = True
         )
+        for cell in cell_list
+      ]
 
-        header_list.append(cell)
+      return header_list
 
-    return header_list
+    return []
 
   except Exception as e:
     print("Could not extract headers.")
@@ -97,20 +94,23 @@ def extract_headers(
 def process_row(
   cell_list: List[BeautifulSoup],
   header_list: List[str]
-) -> Optional[List[str]]:
+) -> Optional[dict]:
   try:
-    if len(cell_list) < 1:
+    if len(cell_list) < 1 or len(cell_list) != len(header_list):
       return None
 
-    row = []
+    row = {}
 
-    for cell in cell_list:
+    for header, cell in zip(
+      header_list,
+      cell_list
+    ):
       text = cell.get_text(
         separator = " ",
         strip = True
       )
 
-      row.append(text)
+      row[header] = text
 
     return row
 
@@ -121,12 +121,12 @@ def process_row(
 def extract_rows(
   table: BeautifulSoup,
   header_list: List[str]
-) -> List[List[str]]:
+) -> List[dict]:
   try:
     row_list = table.find_all("tr")[1:]
 
-    if not row_list or {len(row_list)} == 0:
-      return
+    if not row_list:
+      return []
 
     print(f"Extracting {len(row_list)} rows.")
     extracted_row_list = []

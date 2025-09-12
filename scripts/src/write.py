@@ -30,13 +30,18 @@ def write_json(
 
     print(f"Writing to file: '{output_file}'")
 
+    formatted_text = [
+      dict(zip(header_list, row)) if isinstance(row, list) else row
+      for row in text
+    ]
+
     with open(
       output_file,
       "w",
       encoding = "utf-8"
     ) as jsonfile:
       json.dump(
-        text,
+        formatted_text,
         jsonfile,
         indent = 2
       )
