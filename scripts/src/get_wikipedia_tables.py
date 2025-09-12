@@ -2,8 +2,8 @@
 
 #
 # Filename:       get_wikipedia_tables.py
-# Description:    Retrieves tables from specified Wikipedia articles, and outputs as
-#                 CSV and JSON.
+# Description:    Retrieves tables from specified Wikipedia articles, and outputs
+#                 as JSON.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
 # Version:        1.0.0
@@ -41,7 +41,7 @@ from write import (
 
 def write_many(
   url,
-  name
+  base_name
 ) -> int:
   page_content = fetch_page(url)
 
@@ -61,7 +61,7 @@ def write_many(
   index = 1
 
   for table in table_list:
-    name = f"{name}_{index}"
+    name = f"{base_name}_{index}"
     header_list = extract_headers(table)
     index += 1
 

@@ -3,7 +3,7 @@
 #
 # Filename:       get_consolemods_tables
 # Description:    Retrieves table from ConsoleMods.org article, and outputs as
-#                 CSV and JSON.
+#                 JSON.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
 # Version:        1.0.0
@@ -40,7 +40,7 @@ from write import (
 
 def write_many(
   url,
-  name
+  base_name
 ) -> int:
   table_list = retrieve_and_process_tables(url)
 
@@ -51,7 +51,7 @@ def write_many(
 
   for table in table_list:
     print(f"Extracting table {index}.")
-    name = f"{name}_{index}"
+    name = f"{base_name}_{index}"
     header_list = extract_headers(table)
     index += 1
 
