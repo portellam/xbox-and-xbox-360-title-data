@@ -16,7 +16,7 @@ URL_LIST = [
   "https://en.wikipedia.org/wiki/List_of_Xbox_games_compatible_with_Xbox_360"
 ]
 
-OUTPUT_PATH = "../../databases/"
+OUTPUT_PATH = "../../databases/json/"
 
 OUTPUT_FILE_NAME_LIST = [
   f"{OUTPUT_PATH}wikipedia.org_xbox_360_games_a-l",
