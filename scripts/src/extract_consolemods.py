@@ -56,8 +56,6 @@ def extract_headers(
     inverted_header_map[value] = key
 
   try:
-    print("Extracting headers.")
-
     thead = table.find("thead")
     if thead:
       header_cells = thead.find_all("th")
@@ -96,7 +94,8 @@ def extract_headers(
     return header_list
 
   except Exception as e:
-    print(f"Error extracting headers: {e}")
+    print("Could not extract headers")
+    print(f"Error: {e}")
     return []
 
 def extract_rows(
