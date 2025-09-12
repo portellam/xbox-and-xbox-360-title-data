@@ -8,9 +8,8 @@
 # Version:        1.0.0
 #
 
-import sys
-
 import re
+import sys
 
 from typing import (
   Optional
@@ -18,24 +17,13 @@ from typing import (
 
 try:
   import requests
+
 except ImportError as e:
   print(
     f"Missing required package: {e.name}. "
     + f"Please install using 'pip install {e.name}'"
   )
   sys.exit(1)
-
-def sanitize_html(
-  html: str
-) -> str:
-  pattern = r'<td>\s*(<div[^>]*title="([^"]+)"[^>]*>.*?</div>)\s*</td>'
-  replacement = r'<td>\2</td>'
-
-  return re.sub(
-    pattern,
-    replacement,
-    html
-  )
 
 def fetch_page(
   url: str
