@@ -88,15 +88,15 @@ def write_this(
   row_list
 ) -> int:
   if not url:
-    print("Warning: URL is not valid.")
+    # print("Warning: URL is not valid.")
     return 1
 
   if not name:
-    print("Warning: File name is not valid.")
+    # print("Warning: File name is not valid.")
     return 1
 
   if not row_list:
-    print("Warning: No data rows exist.")
+    # print("Warning: No data rows exist.")
     return 1
 
   if not write_csv(
