@@ -61,10 +61,11 @@ def write_many(
   index = 1
 
   for table in table_list:
+    print()
     print(f"Extracting table {index}.")
     name = f"{base_name}_table_{index}"
-    header_list = extract_headers(table)
     index += 1
+    header_list = extract_headers(table)
 
     row_list = extract_rows(
       table,
