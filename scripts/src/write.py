@@ -63,8 +63,7 @@ def write_this(
     return 1
 
   if not row_list:
-    print("Warning: No data rows exist.")
-    return 1
+    return 2
 
   if not write_json(
     header_list,
