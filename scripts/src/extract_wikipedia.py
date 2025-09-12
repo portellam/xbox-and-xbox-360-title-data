@@ -57,15 +57,22 @@ def extract_headers(
   table: BeautifulSoup
 ) -> List[str]:
   try:
+    if not table:
+      return []
+
+    header_list = table.find_all("tr")
+
+    if len(header_list) == 0:
+      return []
+
     print("Extracting headers.")
 
-    for tr in table.find_all("tr"):
+    for tr in header_list:
+      print("extract_headers_2")
       cell_list = tr.find_all(ELEMENT_TAG_LIST)
 
       if not cell_list:
         continue
-
-      header_list = []
 
       for cell in cell_list:
         cell = cell.get_text(
@@ -75,9 +82,7 @@ def extract_headers(
 
         header_list.append(cell)
 
-      return header_list
-
-    return []
+    return header_list
 
   except Exception as e:
     print("Could not extract headers.")
@@ -114,7 +119,11 @@ def extract_rows(
 ) -> List[List[str]]:
   try:
     row_list = table.find_all("tr")[1:]
-    print(f"Extracting {len(row_list)} rows...")
+
+    if not row_list or {len(row_list)} == 0:
+      return
+
+    print(f"Extracting {len(row_list)} rows.")
     extracted_row_list = []
 
     for index, tr in enumerate(
