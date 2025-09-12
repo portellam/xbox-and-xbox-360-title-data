@@ -65,13 +65,17 @@ def extract_headers(
       if not cell_list:
         continue
 
-      return [
-        cell.get_text(
+      header_list = []
+
+      for cell in cell_list:
+        cell = cell.get_text(
           separator = " ",
           strip = True
         )
-        for cell in cell_list
-      ]
+
+        header_list.append(cell)
+
+      return header_list
 
     return []
 
@@ -118,6 +122,7 @@ def extract_rows(
       start = 1
     ):
       cell_list = tr.find_all(ELEMENT_TAG_LIST)
+
       row = process_row(
         cell_list,
         header_list
