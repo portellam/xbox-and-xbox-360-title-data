@@ -10,6 +10,7 @@
 
 import csv
 import json
+
 from typing import (
   Dict,
   List
@@ -63,6 +64,7 @@ def write_this(
     return 1
 
   if not row_list:
+    print(f"Note: Output is empty.")
     return 2
 
   if not write_json(
