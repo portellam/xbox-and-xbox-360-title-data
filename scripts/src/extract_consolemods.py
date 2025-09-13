@@ -58,8 +58,7 @@ def extract_headers(
 ) -> List[str]:
   inverted_header_map = {}
 
-  for key,
-  value in HEADER_MAP.items():
+  for key, value in HEADER_MAP.items():
     inverted_header_map[value] = key
 
   try:
@@ -136,8 +135,7 @@ def extract_rows(
 
       row_data = {}
 
-      for header,
-      cell in zip(
+      for header, cell in zip(
         header_list,
         cell_list
       ):
@@ -239,8 +237,7 @@ def find_table(
 
   tables = soup.find_all("table")
 
-  for i,
-  table in enumerate(tables):
+  for i, table in enumerate(tables):
     headers = extract_headers(table)
 
     if has_required_headers(headers):

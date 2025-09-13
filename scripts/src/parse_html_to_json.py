@@ -207,16 +207,14 @@ def extract_table_data(
       header_list.append(text)
 
     if "Name" not in header_list:
-      return [],
-      []
+      return [], []
 
     print("Extracting rows.")
     row_list = []
     tr_list = table.find_all("tr")
 
     if not tr_list:
-      return header_list,
-        []
+      return header_list, []
 
     for tr in tr_list[1:]:
       cell_list = tr.find_all("td")
@@ -226,10 +224,7 @@ def extract_table_data(
 
       row_data = {}
 
-      for
-        header,
-        cell
-      in zip(
+      for header, cell in zip(
         header_list,
         cell_list
       ):
@@ -250,15 +245,14 @@ def extract_table_data(
 
       row_list.append(row_data)
 
-    return header_list,
-    row_list
+    return header_list, row_list
 
   except Exception as e:
     print("Could not extract table data.")
     print(f"Error: {e}")
 
     return [],
-      []
+    []
 
 def find_tables(
   soup: BeautifulSoup
@@ -327,8 +321,7 @@ def main() -> int:
     sanitized_html = sanitize_html(table)
     print(f"Sanitized HTML for table {index}: {sanitized_html[:100]}...")
 
-    header_list,
-    row_list = extract_table_data(table)
+    header_list, row_list = extract_table_data(table)
 
     if not row_list:
       print(f"Note: Output for table {index} is empty.")

@@ -81,8 +81,7 @@ def write_many(
   return 0
 
 def main() -> int:
-  for url,
-  name in zip(
+  for url, name in zip(
     URL_LIST,
     OUTPUT_FILE_NAME_LIST
   ):
