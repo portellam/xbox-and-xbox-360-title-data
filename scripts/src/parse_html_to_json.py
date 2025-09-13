@@ -146,22 +146,37 @@ def extract_table_data(
 
     if thead:
       header_cells = thead.find_all("th")
+
     else:
-      header_cells = table.find_all("th", limit=len(HEADER_KEY_LIST))
+      header_cells = table.find_all(
+        "th",
+        limit = len(HEADER_KEY_LIST)
+      )
 
     inverted_header_map = {v: k for k, v in HEADER_MAP.items()}
 
     for cell in header_cells:
       if cell.has_attr("title"):
         text = cell["title"].strip()
+
       elif cell.find("abbr") and cell.find("abbr").has_attr("title"):
         text = cell.find("abbr")["title"].strip()
+
       else:
-        text = cell.get_text(strip=True)
+        text = cell.get_text(strip = True)
 
       text = text.strip()
-      normalized_text = re.sub(r'[^a-z0-9_]', '', text.lower())
-      text = inverted_header_map.get(normalized_text, text)
+
+      normalized_text = re.sub(
+        r'[^a-z0-9_]',
+        '',
+        text.lower()
+      )
+
+      text = inverted_header_map.get(
+        normalized_text, text
+      )
+
       header_list.append(text)
 
     if "Name" not in header_list:

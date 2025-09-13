@@ -25,7 +25,7 @@ Last Updated: 2025-09-12
 | Database File | Functionality | Notes | Credits |
 | - | - | - | - |
 | **archive.rushhosting.net**<sup>[JSON][201]</sup> | Includes **Capabilities* (*Coop, SystemLink,* and *Xbox Live*). | Incomplete parse from HTML pages. | [2](../REFERENCES.md#2) |
-| **ConsoleMods.org Compatibility List**<sup>[JSON][101] [JSON][102]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. | [19](../REFERENCES.md#19) |
+| **ConsoleMods.org Compatibility List**<sup>[JSON][101]</sup> | Includes which versions of the *Xenon Fusion (XeFu)*[<sup>\[24\]</sup>](../REFERENCES.md#24) emulator have the best compatibility per title. | Successful parse from HTML table. | [19](../REFERENCES.md#19) |
 | **List of Xbox 360 games (A–L)**<sup>[JSON][301]</sup> | Includes *Genres* and *Addons* (*3D support Kinect optional/required, Downloadable titles, Indie,* and *XBLA*). | Successful parse from HTML table. | [9](../REFERENCES.md#9) |
 | **List of Xbox 360 games (A–L): Cancelled games**<sup>[JSON][302]</sup> | Same as above. | Successful parse from HTML table. | Same as above. |
 | **List of Xbox 360 games (M–Z)**<sup>[JSON][401]</sup> | Same as above. | Successful parse from HTML table. | [10](../REFERENCES.md#10) |
@@ -35,7 +35,7 @@ Last Updated: 2025-09-12
 | **List of Xbox games compatible with Xbox 360**<sup>[JSON][701]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. | [13](../REFERENCES.md#13) |
 | **List of Xbox titles removed from backward compatibility list**<sup>[JSON][702]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. | Same as above. |
 
-[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_3.json
+[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
 
 [201]: ./json/archive.rushhosting.net_xbox_360_title_id_list.json
 
