@@ -93,6 +93,7 @@ def fetch_page(
 ) -> Optional[str]:
   try:
     print(f"Fetching page: '{url}'")
+
     response = requests.get(
       url,
       headers = {
@@ -103,6 +104,7 @@ def fetch_page(
     response.raise_for_status()
     print("Fetched page.")
     return response.text
+
   except requests.RequestException as e:
     print("Could not fetch page.")
     print(f"Error: {e}")
@@ -117,7 +119,7 @@ def sanitize_html(
     div = td.find('div')
     has_title = div and div.has_attr('title')
 
-    if has_title and not td.get_text(strip=True):
+    if has_title and not td.get_text(strip = True):
       td.clear()
       td.string = div['title'].strip()
 
@@ -128,10 +130,12 @@ def extract_cell_value(
   is_status_column: bool
 ) -> str:
   div = cell.find('div')
+
   if div and div.has_attr('title') and is_status_column:
     return STATUS_MAP.get(div['title'].lower().strip(), div['title'].strip())
 
-  text = cell.get_text(strip=True)
+  text = cell.get_text(strip = True)
+
   if text:
     return STATUS_MAP.get(text.lower(), text) if is_status_column else text
 
@@ -174,7 +178,8 @@ def extract_table_data(
       )
 
       text = inverted_header_map.get(
-        normalized_text, text
+        normalized_text,
+        text
       )
 
       header_list.append(text)
@@ -197,7 +202,10 @@ def extract_table_data(
 
       row_data = {}
 
-      for header, cell in zip(header_list, cell_list):
+      for header, cell in zip(
+        header_list,
+        cell_list
+      ):
         is_status_column = header in HEADER_MAP or header in HEADER_MAP.values()
 
         value = extract_cell_value(
@@ -248,12 +256,12 @@ def write_json(
     with open(
       output_file,
       "w",
-      encoding="utf-8"
+      encoding = "utf-8"
     ) as jsonfile:
       json.dump(
         row_list,
         jsonfile,
-        indent=2
+        indent = 2
       )
 
     print("Wrote to file.")
