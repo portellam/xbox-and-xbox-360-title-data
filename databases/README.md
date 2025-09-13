@@ -35,7 +35,7 @@ Last Updated: 2025-09-12
 | **List of Xbox games compatible with Xbox 360**<sup>[JSON][701]</sup> | Includes *Technical Issues*. | Successful parse from HTML table. | [13](../REFERENCES.md#13) |
 | **List of Xbox titles removed from backward compatibility list**<sup>[JSON][702]</sup> | Includes *Date Available, Date Removed,* and *Technical Issues*. | Successful parse from HTML table. | Same as above. |
 
-[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_3.json
+[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
 
 [201]: ./json/archive.rushhosting.net_xbox_360_title_id_list.json
 
