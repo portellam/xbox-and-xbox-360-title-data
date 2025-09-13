@@ -18,7 +18,12 @@ from typing import (
 
 def write_json(
   header_list: List[str],
-  text: List[Dict[str, str]],
+  text: List[
+    Dict[
+      str,
+      str
+    ]
+  ],
   name: str
 ) -> bool:
   try:
@@ -31,7 +36,15 @@ def write_json(
     print(f"Writing to file: '{output_file}'")
 
     formatted_text = [
-      dict(zip(header_list, row)) if isinstance(row, list) else row
+      dict(
+        zip(
+          header_list,
+          row
+        )
+      ) if isinstance(
+        row,
+        list
+      ) else row
       for row in text
     ]
 

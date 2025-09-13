@@ -40,10 +40,16 @@ def extract_cell_value(
 ) -> str:
   text = cell.get_text(strip = True)
   if text:
-    return STATUS_MAP.get(text.lower(), text)
+    return STATUS_MAP.get(
+      text.lower(),
+      text
+    )
 
   if cell.has_attr("title"):
-    return STATUS_MAP.get(cell["title"].lower().strip(), cell["title"].strip())
+    return STATUS_MAP.get(
+      cell["title"].lower().strip(),
+      cell["title"].strip()
+    )
 
   return ""
 
@@ -52,7 +58,8 @@ def extract_headers(
 ) -> List[str]:
   inverted_header_map = {}
 
-  for key, value in HEADER_MAP.items():
+  for key,
+  value in HEADER_MAP.items():
     inverted_header_map[value] = key
 
   try:
@@ -103,7 +110,12 @@ def extract_headers(
 def extract_rows(
   table: BeautifulSoup,
   header_list: List[str]
-) -> List[Dict[str, str]]:
+) -> List[
+  Dict[
+    str,
+    str
+  ]
+]:
   try:
     print("Extracting rows.")
     rows_list = []
@@ -124,14 +136,18 @@ def extract_rows(
 
       row_data = {}
 
-      for header, cell in zip(
+      for header,
+      cell in zip(
         header_list,
         cell_list
       ):
         value = extract_cell_value(cell)
 
         if header in HEADER_MAP or header in HEADER_MAP.values():
-          value = STATUS_MAP.get(value.lower(), value)
+          value = STATUS_MAP.get(
+            value.lower(),
+            value
+          )
 
         if value == header or not value:
           continue
@@ -210,7 +226,10 @@ def find_table(
   if table:
     return table
 
-  table = soup.find("table", class_=lambda c: c and "wikitable" in c)
+  table = soup.find(
+    "table",
+    class_ = lambda c: c and "wikitable" in c
+  )
 
   if table:
     header_list = extract_headers(table)
@@ -220,7 +239,8 @@ def find_table(
 
   tables = soup.find_all("table")
 
-  for i, table in enumerate(tables):
+  for i,
+  table in enumerate(tables):
     headers = extract_headers(table)
 
     if has_required_headers(headers):

@@ -98,7 +98,8 @@ def process_row(
   try:
     row = {}
 
-    for header, cell in zip(
+    for header,
+    cell in zip(
       header_list,
       cell_list
     ):
@@ -128,7 +129,8 @@ def extract_rows(
     print(f"Extracting {len(row_list)} rows.")
     extracted_row_list = []
 
-    for index, tr in enumerate(
+    for index,
+    tr in enumerate(
       row_list,
       start = 1
     ):

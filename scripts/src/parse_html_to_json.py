@@ -123,7 +123,10 @@ def sanitize_html(
       td.clear()
       td.string = div['title'].strip()
 
-  return str(table).replace('\n', '')
+  return str(table).replace(
+    '\n',
+    ''
+  )
 
 def extract_cell_value(
   cell: BeautifulSoup,
@@ -132,18 +135,32 @@ def extract_cell_value(
   div = cell.find('div')
 
   if div and div.has_attr('title') and is_status_column:
-    return STATUS_MAP.get(div['title'].lower().strip(), div['title'].strip())
+    return STATUS_MAP.get(
+      div['title'].lower().strip(),
+      div['title'].strip()
+    )
 
   text = cell.get_text(strip = True)
 
   if text:
-    return STATUS_MAP.get(text.lower(), text) if is_status_column else text
+    return STATUS_MAP.get(
+      text.lower(),
+      text
+    ) if is_status_column else text
 
   return ""
 
 def extract_table_data(
   table: BeautifulSoup
-) -> tuple[List[str], List[Dict[str, str]]]:
+) -> tuple[
+  List[str],
+  List[
+    Dict[
+      str,
+      str
+    ]
+  ]
+]:
   try:
     header_list = []
     thead = table.find("thead")
@@ -157,7 +174,12 @@ def extract_table_data(
         limit = len(HEADER_KEY_LIST)
       )
 
-    inverted_header_map = {v: k for k, v in HEADER_MAP.items()}
+    inverted_header_map = {
+      v: k for
+        k,
+        v
+      in HEADER_MAP.items()
+    }
 
     for cell in header_cells:
       if cell.has_attr("title"):
@@ -185,14 +207,16 @@ def extract_table_data(
       header_list.append(text)
 
     if "Name" not in header_list:
-      return [], []
+      return [],
+      []
 
     print("Extracting rows.")
     row_list = []
     tr_list = table.find_all("tr")
 
     if not tr_list:
-      return header_list, []
+      return header_list,
+        []
 
     for tr in tr_list[1:]:
       cell_list = tr.find_all("td")
@@ -202,7 +226,10 @@ def extract_table_data(
 
       row_data = {}
 
-      for header, cell in zip(
+      for
+        header,
+        cell
+      in zip(
         header_list,
         cell_list
       ):
@@ -223,12 +250,15 @@ def extract_table_data(
 
       row_list.append(row_data)
 
-    return header_list, row_list
+    return header_list,
+    row_list
 
   except Exception as e:
     print("Could not extract table data.")
     print(f"Error: {e}")
-    return [], []
+
+    return [],
+      []
 
 def find_tables(
   soup: BeautifulSoup
@@ -244,7 +274,12 @@ def find_tables(
 
 def write_json(
   header_list: List[str],
-  row_list: List[Dict[str, str]],
+  row_list: List[
+    Dict[
+      str,
+      str
+    ]
+  ],
   output_file: str
 ) -> bool:
   try:
@@ -291,7 +326,9 @@ def main() -> int:
   for table in table_list:
     sanitized_html = sanitize_html(table)
     print(f"Sanitized HTML for table {index}: {sanitized_html[:100]}...")
-    header_list, row_list = extract_table_data(table)
+
+    header_list,
+    row_list = extract_table_data(table)
 
     if not row_list:
       print(f"Note: Output for table {index} is empty.")

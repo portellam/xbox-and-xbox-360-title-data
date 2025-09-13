@@ -102,10 +102,14 @@ def format_attrs(
   if not tag.attrs:
     return ''
 
+  attributes = " ".join(v) if isinstance(
+    v,
+    list
+  ) else v for k,
+  v in tag.attrs.items()
+
   return ' '
-  + ' '.join(
-    f'{k}="{ " ".join(v) if isinstance(v, list) else v }"' for k, v in tag.attrs.items()
-  )
+  + ' '.join(f'{k}="{attributes}"')
 
 def retrieve_and_process_tables(
   url
@@ -134,7 +138,8 @@ def export_html(
   output_file
 ):
   with open(
-    output_file, 'w',
+    output_file,
+    'w',
     encoding='utf-8'
   ) as f:
     f.write(html_content)
