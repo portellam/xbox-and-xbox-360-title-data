@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "{{unplayable}}",
+    "Status": "unplayable",
+    "Notes": "For games that do not work."
+  },
+  {
+    "Name": "{{intro}}",
+    "Status": "intro",
+    "Notes": "For games that will not progress past the boot screens."
+  },
+  {
+    "Name": "{{menus}}",
+    "Status": "Menus",
+    "Notes": "For games that will not progress past the menus."
+  },
+  {
+    "Name": "{{in-game}}",
+    "Status": "in-game",
+    "Notes": "For games that you can actually play with issues."
+  },
+  {
+    "Name": "{{playable}}",
+    "Status": "playable",
+    "Notes": "For games with very minor or no issues."
+  },
+  {
+    "Name": "{{supported}}",
+    "Status": "Officially supported",
+    "Notes": "For officially supported games."
+  },
+  {
+    "Name": "{{untested}}",
+    "Status": "untested",
+    "Notes": "For untested games."
+  }
+]
