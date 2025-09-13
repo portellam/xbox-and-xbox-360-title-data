@@ -29,24 +29,11 @@ def write_json(
   try:
     output_file = f"{name}.json"
 
-    if not text:
+    if not header_list:
       print(f"Skipped writing to file: '{output_file}'")
       return False
 
     print(f"Writing to file: '{output_file}'")
-
-    formatted_text = [
-      dict(
-        zip(
-          header_list,
-          row
-        )
-      ) if isinstance(
-        row,
-        list
-      ) else row
-      for row in text
-    ]
 
     with open(
       output_file,
@@ -54,7 +41,7 @@ def write_json(
       encoding = "utf-8"
     ) as jsonfile:
       json.dump(
-        formatted_text,
+        text,
         jsonfile,
         indent = 2
       )
@@ -68,10 +55,15 @@ def write_json(
     return False
 
 def write_this(
-  url,
-  name,
-  header_list,
-  row_list
+  url: str,
+  name: str,
+  header_list: List[str],
+  row_list: List[
+    Dict[
+      str,
+      str
+    ]
+  ]
 ) -> int:
   if not url:
     print("Warning: URL is not valid.")
