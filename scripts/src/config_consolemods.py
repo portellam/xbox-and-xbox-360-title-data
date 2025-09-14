@@ -62,7 +62,7 @@ STATUS_MAP = {
   "ingame":      "in-game",
   "in-game":     "in-game",
   "orange":      "menus",
-  "intro":       "intro",
+  "intro":       "in-game",
   "unplayable":  "unplayable",
   "untested":    "untested",
 }
