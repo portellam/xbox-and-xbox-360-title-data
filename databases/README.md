@@ -1,10 +1,10 @@
 # Databases
-Backups and local copies of title data.
 
 ## Main Directory
 
 - [README](../README.md)
 - [Contributors](../CONTRIBUTORS.md)
+- [Coverage](../COVERAGE.md)
 - [Databases](./README.md)
 - [References](../REFERENCES.md)
 - [Scripts](../scripts/README.md)
@@ -20,7 +20,8 @@ Backups and local copies of title data.
 
 ### 1. This Directory Table
 
-Last Updated: 2025-09-12
+- [ ] migrate this information elsewhere...
+  - to `COVERAGE.md`.
 
 | Database File | Functionality | Notes | Credits |
 | - | - | - | - |
@@ -54,11 +55,11 @@ Last Updated: 2025-09-12
 
 ### 2. Backlog
 
-Last Updated: 2025-09-11
-
 #### 1. Not complete
 
 - [ ] add more?
+
+- [ ] migrate databases to own git repository? Or keep here and migrate scripts elsewhere?
 
 - [ ] *Xbox* and *Xbox 360:* master database file with following columns:
 	1. **Title ID**
@@ -156,3 +157,6 @@ Last Updated: 2025-09-11
 	2. [x] **Uses 3D**
 	3. [x] **Uses Kinect (required)**
 	4. [x] **Uses Kinect (optional)**
+
+##
+#### Click [here](#databases) to return to the top of this document.

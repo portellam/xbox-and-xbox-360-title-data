@@ -4,6 +4,7 @@
 
 - [README](../README.md)
 - [Contributors](../CONTRIBUTORS.md)
+- [Coverage](../COVERAGE.md)
 - [Databases](../databases/README.md)
 - [References](../REFERENCES.md)
 - [Scripts](./README.md)
@@ -19,17 +20,13 @@
 
 ### 1. This Directory Table
 
-Last Updated: 2025-09-12
-
-| Script File | Functionality | Notes | Tested? |
-| - | - | - | - |
-| [`./src/get_consolemods_tables.py`](./src/get_consolemods_tables.py) | Parses HTML and outputs to JSON. | Lists the best-known compatibility status of each Xbox game on Xbox 360. | *187 Ride or Die* returns incorrect values. *Advent Rising* returns correct values. |
-| [`./get-rushhosting.net-database.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Parses HTML and outputs to JSON. | Xbox 360 games. Rate limited. Fails every 50 to 100 web requests. | No. |
-| [`./src/get_wikipedia_tables.py`](./src/get_wikipedia_tables.py) | Parses HTML and outputs to JSON. | Lists Wikipedia articles' tables. | Yes. |
+| Script                                                                         | Function                                     | Status                                                        |
+| ------------------------------------------------------------------------------ | -------------------------------------------- | ------------------------------------------------------------- |
+| [`./src/get_consolemods_tables.py`](./src/get_consolemods_tables.py)           | Parses HTML, converts to JSON.               | Working.                                                      |
+| [`./get_rushhosting_data.py`](./get-xbox-360-games_archive.rushhosting.net.py) | Queries URL, aggregates HTML, converts JSON. | Developing. Rate limited. Fails every 50 to 100 web requests. |
+| [`./src/get_wikipedia_tables.py`](./src/get_wikipedia_tables.py)               | Parses HTML, converts to JSON.               | Working.                                                      |
 
 ### 2. Backlog
-
-Last Updated: 2025-09-11
 
 #### 1. Not complete
 
@@ -67,3 +64,8 @@ Last Updated: 2025-09-11
   - [ ] Use API.
 
 #### 2. Complete
+
+N/A
+
+##
+#### Click [here](#scripts) to return to the top of this document.

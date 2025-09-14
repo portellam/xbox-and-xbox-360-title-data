@@ -1,24 +1,24 @@
-# Scripts
-
-Last Updated: 2025-09-14
+# Coverage
 
 ## Main Directory
 
-- [README](../README.md)
-- [Contributors](../CONTRIBUTORS.md)
-- [Databases](../databases/README.md)
-- [References](../REFERENCES.md)
-- [Scripts](./README.md)
+- [README](./README.md)
+- [Contributors](./CONTRIBUTORS.md)
+- [Coverage](./COVERAGE.md)
+- [Databases](./databases/README.md)
+- [References](./REFERENCES.md)
+- [Scripts](./scripts/README.md)
 
 ## Table of Contents
 
-- [1. Platform Coverage](#1-platform-coverage)
-- [2. Feature Coverage](#2-feature-coverage)
-- [3. Metadata Coverage](#3-metadata-coverage)
+- [1. Platforms](#1-platform)
+- [2. Metadata](#2-metadata)
+- [3. Features (General)](#3-features-general)
+- [4. Features (Xbox)](#4-features-xbox)
 
 ## Contents
 
-### 1. Platform Coverage
+### 1. Platforms
 
 | Database                  | Xbox | Xbox: Xbox 360 | Xbox 360: Retail | Xbox 360: XBLA | Xbox 360: Indie | Xbox 360: Apps |
 | ------------------------- | :--: | :------------: | :--------------: | :------------: | :-------------: | :------------: |
@@ -36,7 +36,7 @@ Last Updated: 2025-09-14
 | [23](./REFERENCES.md/#23) | [ ]  | [ ]            | [ ]              | [x]            | [ ]             | [ ]            |
 | [24](./REFERENCES.md/#24) | [x]  | [ ]            | [ ]              | [ ]            | [ ]             | [ ]            |
 
-### 2. Metadata Coverage
+### 2. Metadata
 
 | Database                  | Title ID | Name | Developer | Publisher | Genre | Release Date | Regions | Rating |
 | ------------------------- | :------- | :--: | :-------: | :-------: | :---: | :----------: | :-----: | :----: |
@@ -48,8 +48,7 @@ Last Updated: 2025-09-14
 | [16](./REFERENCES.md/#16) | [ ]      | [ ]  | [ ]       | [ ]       | [ ]   | [ ]          | [ ]     | [ ]    |
 | [20](./REFERENCES.md/#20) | [ ]      | [ ]  | [ ]       | [ ]       | [ ]   | [ ]          | [ ]     | [ ]    |
 
-### 2. Feature Coverage (General)
-
+### 3. Features (General)
 
 | Database                  | Player Count: Local | Player Count: LAN | Player Count: Online | 3D Support | Kinect Supported | Kinect Required |
 | ------------------------- | :-----------------: | :---------------: | :------------------: | :--------: | :--------------: | :-------------: |
@@ -62,7 +61,7 @@ Last Updated: 2025-09-14
 | [20](./REFERENCES.md/#20) | [ ]                 | [ ]               | [ ]                  | [ ]        | [ ]              | [ ]             |
 
 
-### 4. Feature Coverage (Xbox)
+### 4. Features (Xbox)
 
 **Notice:** includes the following
 - Communicator Headset
@@ -87,3 +86,6 @@ Last Updated: 2025-09-14
 | [13](./REFERENCES.md/#13) | [ ]                                |
 | [16](./REFERENCES.md/#16) | [x] complete                       |
 | [20](./REFERENCES.md/#20) | [ ]                                |
+
+##
+#### Click [here](#coverage) to return to the top of this document.
