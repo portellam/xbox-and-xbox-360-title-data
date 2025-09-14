@@ -15,7 +15,6 @@ scripts to parse databases, databases to aggregate and compile information.
 
 - [README](./README.md)
 - [Contributors](./CONTRIBUTORS.md)
-- [Coverage](./COVERAGE.md)
 - [Databases](./databases/README.md)
 - [References](./REFERENCES.md)
 - [Scripts](./scripts/README.md)

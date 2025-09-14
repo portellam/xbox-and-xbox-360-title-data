@@ -4,7 +4,6 @@
 
 - [README](./README.md)
 - [Contributors](./CONTRIBUTORS.md)
-- [Coverage](./COVERAGE.md)
 - [Databases](./databases/README.md)
 - [References](./REFERENCES.md)
 - [Scripts](./scripts/README.md)
@@ -183,6 +182,13 @@ Accessed 2025-09-10.
 Digiex. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://digiex.net/threads/xenon-fusion-emulator-xefu-xbox-one-series-files-for-jtag-rgh-xbox-360s.16757/.</sup>
+
+### 27.
+
+&nbsp;&nbsp;**Category:Xbox 360 Live Indie games**. Wikipedia.
+Accessed 2025-09-14.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/Category:Xbox_360_Live_Indie_games.</sup>
 
 ##
 #### Click [here](#references) to return to the top of this document.
