@@ -116,10 +116,9 @@ def extract_rows(
   ]
 ]:
   try:
-    print("Extracting rows.")
     rows_list = []
-
     tr_list = table.find_all("tr")
+    print(f"Extracting {len(tr_list)} rows.")
 
     if not tr_list:
       return []

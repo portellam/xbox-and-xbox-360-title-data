@@ -91,30 +91,6 @@ def extract_headers(
     print(f"Error: {e}")
     return []
 
-def process_row(
-  cell_list: List[BeautifulSoup],
-  header_list: List[str]
-) -> Optional[dict]:
-  try:
-    row = {}
-
-    for header, cell in zip(
-      header_list,
-      cell_list
-    ):
-      text = cell.get_text(
-        separator = " ",
-        strip = True
-      )
-
-      row[header] = text
-
-    return row
-
-  except Exception as e:
-    print(f"Error: {e}")
-    return None
-
 def extract_rows(
   table: BeautifulSoup,
   header_list: List[str]
@@ -152,3 +128,27 @@ def extract_rows(
     print("Could not extract rows.")
     print(f"Error: {e}")
     return []
+
+def process_row(
+  cell_list: List[BeautifulSoup],
+  header_list: List[str]
+) -> Optional[dict]:
+  try:
+    row = {}
+
+    for header, cell in zip(
+      header_list,
+      cell_list
+    ):
+      text = cell.get_text(
+        separator = " ",
+        strip = True
+      )
+
+      row[header] = text
+
+    return row
+
+  except Exception as e:
+    print(f"Error: {e}")
+    return None

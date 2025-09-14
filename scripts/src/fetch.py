@@ -25,7 +25,7 @@ except ImportError as e:
   )
   sys.exit(1)
 
-def fetch_page(
+def get_html(
   url: str
 ) -> Optional[str]:
   try:

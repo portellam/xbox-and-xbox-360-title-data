@@ -30,8 +30,8 @@ def write_json(
     output_file = f"{name}.json"
 
     if not header_list:
-      print(f"Skipped writing to file: '{output_file}'")
-      return False
+      print("No data.")
+      raise Exception
 
     print(f"Writing to file: '{output_file}'")
 
@@ -49,7 +49,7 @@ def write_json(
     print("Wrote to file.")
     return True
 
-  except IOError as e:
+  except Exception as e:
     print("Could not write to file.")
     print(f"Error: {e}")
     return False
@@ -67,17 +67,14 @@ def write_this(
 ) -> int:
   if not url:
     print("Warning: URL is not valid.")
-    print()
     return 1
 
   if not name:
-    print("Warning: File name is not valid.")
-    print()
+    print("Warning: file name is not valid.")
     return 1
 
   if not row_list:
-    print(f"Note: Output is empty.")
-    print()
+    print(f"Warning: output is empty.")
     return 2
 
   if not write_json(
@@ -85,8 +82,6 @@ def write_this(
     row_list,
     name
   ):
-    print()
     return 1
 
-  print()
   return 0

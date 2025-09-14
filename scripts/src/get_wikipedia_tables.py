@@ -32,7 +32,7 @@ from extract_wikipedia import (
 )
 
 from fetch import (
-  fetch_page
+  get_html
 )
 
 from write import (
@@ -43,7 +43,7 @@ def write_many(
   url,
   base_name
 ) -> int:
-  page_content = fetch_page(url)
+  page_content = get_html(url)
 
   if not page_content:
     return 1
@@ -77,6 +77,9 @@ def write_many(
       header_list,
       row_list
     )
+
+    if index < len(table_list):
+      print()
 
   return 0
 

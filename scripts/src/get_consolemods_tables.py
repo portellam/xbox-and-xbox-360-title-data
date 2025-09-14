@@ -31,7 +31,7 @@ from extract_consolemods import (
  )
 
 from sanitize_html import (
-  retrieve_and_process_tables
+  get_html_tables
 )
 
 from write import (
@@ -42,7 +42,7 @@ def write_many(
   url,
   base_name
 ) -> int:
-  table_list = retrieve_and_process_tables(url)
+  table_list = get_html_tables(url)
 
   if not table_list:
     return 1
@@ -66,6 +66,9 @@ def write_many(
       header_list,
       row_list
     )
+
+    if index < len(table_list):
+      print()
 
   return 0
 

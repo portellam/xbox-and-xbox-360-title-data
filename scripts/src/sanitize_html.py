@@ -20,29 +20,19 @@ from bs4 import (
 )
 
 from fetch import (
-  fetch_page
+  get_html
 )
 
-def sanitize_table(
-  table
+def export_html(
+  html_content,
+  output_file
 ):
-  td_list = table.find_all('td')
-
-  for td in td_list:
-    is_empty = not td.get_text(strip = True)
-
-    if not is_empty:
-      continue
-
-    div = td.find('div')
-    has_title = div and div.has_attr('title')
-
-    if not has_title:
-      continue
-
-    td.append(div['title'])
-
-  return table
+  with open(
+    output_file,
+    'w',
+    encoding='utf-8'
+  ) as f:
+    f.write(html_content)
 
 def format_html(
   element,
@@ -65,8 +55,15 @@ def format_html(
   has_nested = any(child.name for child in element.contents)
 
   if not has_nested:
-    text = ''.join(str(c).strip() for c in element.contents)
-    return f"{indent}<{element.name}{format_attrs(element)}>{text}</{element.name}>"
+    text = ''.join(
+      str(c).strip() for c in element.contents
+    )
+
+    return format_html_element(
+      indent,
+      element,
+      text
+    )
 
   inner = []
   trailing_text = ''
@@ -93,10 +90,13 @@ def format_html(
   inner_text = '\n'.join(inner)
   trailing = trailing_text if trailing_text else ''
 
-  return f"{indent}<{element.name}{format_attrs(element)}>"
-  + f"\n{inner_text}{trailing and trailing}\n{indent}</{element.name}>"
+  return format_html_element(
+    indent,
+    element,
+    f"\n{inner_text}{trailing and trailing}\n{indent}"
+  )
 
-def format_attrs(
+def format_html_attributes(
   tag
 ):
   if not tag.attrs:
@@ -104,13 +104,27 @@ def format_attrs(
 
   return ' '
   + ' '.join(
-    f'{k}="{ " ".join(v) if isinstance(v, list) else v }"' for k, v in tag.attrs.items()
+    f'{k}="{ " ".join(v) if isinstance(v, list) else v }"'
+    for k, v in tag.attrs.items()
   )
 
-def retrieve_and_process_tables(
+def format_html_element(
+  indent: str,
+  element,
+  text: str
+):
+  if not element:
+    return ""
+
+  attributes = format_html_attributes(element)
+
+  return f"{indent}"
+  + f"<{element.name}{attributes}>{text}</{element.name}>"
+
+def get_html_tables(
   url
 ):
-  text = fetch_page(url)
+  text = get_html(url)
 
   if not text:
     return []
@@ -124,18 +138,28 @@ def retrieve_and_process_tables(
   sanitized_list = []
 
   for table in table_list:
-    sanitized_table = sanitize_table(table)
+    sanitized_table = sanitize_html_table(table)
     sanitized_list.append(sanitized_table)
 
   return sanitized_list
 
-def export_html(
-  html_content,
-  output_file
+def sanitize_html_table(
+  table
 ):
-  with open(
-    output_file,
-    'w',
-    encoding='utf-8'
-  ) as f:
-    f.write(html_content)
+  td_list = table.find_all('td')
+
+  for td in td_list:
+    is_empty = not td.get_text(strip = True)
+
+    if not is_empty:
+      continue
+
+    div = td.find('div')
+    has_title = div and div.has_attr('title')
+
+    if not has_title:
+      continue
+
+    td.append(div['title'])
+
+  return table
