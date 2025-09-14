@@ -4,7 +4,7 @@
 A master database of video game titles for Microsoft Xbox and Xbox 360. Includes
 scripts to parse databases, databases to aggregate and compile information.
 
-## [💾 Download](#-1-download)
+## [💾 Download](#-2-download)
 #### View this repository on [Codeberg][001], [GitHub][002].
 
 [001]: https://codeberg.org/portellam/xbox-and-xbox-360-title-data
