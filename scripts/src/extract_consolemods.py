@@ -36,22 +36,26 @@ except ImportError as e:
   sys.exit(1)
 
 def extract_cell_value(
-  cell: BeautifulSoup
+  cell: BeautifulSoup,
+  is_status_column: bool
 ) -> str:
+  div = cell.find('div')
+
+  if div and div.has_attr('title') and is_status_column:
+    return STATUS_MAP.get(
+      div['title'].lower().strip(),
+      div['title'].strip()
+    )
+
   text = cell.get_text(strip = True)
-  if text:
-    return STATUS_MAP.get(
-      text.lower(),
-      text
-    )
 
-  if cell.has_attr("title"):
-    return STATUS_MAP.get(
-      cell["title"].lower().strip(),
-      cell["title"].strip()
-    )
+  if not text:
+    return ""
 
-  return ""
+  return STATUS_MAP.get(
+    text.lower(),
+    text
+  ) if is_status_column else text
 
 def extract_headers(
   table: BeautifulSoup
@@ -116,7 +120,7 @@ def extract_rows(
   ]
 ]:
   try:
-    rows_list = []
+    row_list = []
     tr_list = table.find_all("tr")
     print(f"Extracting {len(tr_list)} rows.")
 
@@ -126,10 +130,7 @@ def extract_rows(
     for tr in tr_list[1:]:
       cell_list = tr.find_all("td")
 
-      if not cell_list:
-        continue
-
-      if len(cell_list) < len(header_list):
+      if not cell_list or len(cell_list) < len(header_list):
         continue
 
       row_data = {}
@@ -138,13 +139,11 @@ def extract_rows(
         header_list,
         cell_list
       ):
-        value = extract_cell_value(cell)
-
-        if header in HEADER_MAP or header in HEADER_MAP.values():
-          value = STATUS_MAP.get(
-            value.lower(),
-            value
-          )
+        is_status_column = header in HEADER_MAP or header in HEADER_MAP.values()
+        value = extract_cell_value(
+          cell,
+          is_status_column
+        )
 
         if value == header or not value:
           continue
@@ -154,14 +153,117 @@ def extract_rows(
       if not row_data or "Name" not in row_data or row_data["Name"].startswith("{{"):
         continue
 
-      rows_list.append(row_data)
+      row_list.append(row_data)
 
-    return rows_list
+    return row_list
 
   except Exception as e:
     print("Could not extract rows.")
     print(f"Error: {e}")
     return []
+
+def extract_table_data(
+  table: BeautifulSoup
+) -> tuple[
+  List[str],
+  List[
+    Dict[
+      str,
+      str
+    ]
+  ]
+]:
+  try:
+    header_list = []
+    thead = table.find("thead")
+
+    if thead:
+      header_cells = thead.find_all("th")
+
+    else:
+      header_cells = table.find_all(
+        "th",
+        limit = len(HEADER_KEY_LIST)
+      )
+
+    inverted_header_map = {
+      v: k for
+        k,
+        v
+      in HEADER_MAP.items()
+    }
+
+    for cell in header_cells:
+      if cell.has_attr("title"):
+        text = cell["title"].strip()
+
+      elif cell.find("abbr") and cell.find("abbr").has_attr("title"):
+        text = cell.find("abbr")["title"].strip()
+
+      else:
+        text = cell.get_text(strip = True)
+
+      text = text.strip()
+
+      normalized_text = re.sub(
+        r'[^a-z0-9_]',
+        '',
+        text.lower()
+      )
+
+      text = inverted_header_map.get(
+        normalized_text,
+        text
+      )
+
+      header_list.append(text)
+
+    if "Name" not in header_list:
+      return [], []
+
+    row_list = []
+    tr_list = table.find_all("tr")
+
+    if not tr_list:
+      return header_list, []
+
+    for tr in tr_list[1:]:
+      cell_list = tr.find_all("td")
+
+      if not cell_list or len(cell_list) < len(header_list):
+        continue
+
+      row_data = {}
+
+      for header, cell in zip(
+        header_list,
+        cell_list
+      ):
+        is_status_column = header in HEADER_MAP or header in HEADER_MAP.values()
+
+        value = extract_cell_value(
+          cell,
+          is_status_column
+        )
+
+        if value == header or not value:
+          continue
+
+        row_data[header] = value
+
+      if not row_data or "Name" not in row_data:
+        continue
+
+      row_list.append(row_data)
+
+    return header_list, row_list
+
+  except Exception as e:
+    print("Could not extract table.")
+    print(f"Error: {e}")
+
+    return [],
+    []
 
 def find_by_header(
   soup: BeautifulSoup

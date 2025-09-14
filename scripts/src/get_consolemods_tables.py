@@ -20,62 +20,99 @@ from bs4 import (
   BeautifulSoup
 )
 
+from typing import (
+  List
+)
+
 from config_consolemods import (
   OUTPUT_FILE_NAME,
   URL
 )
 
 from extract_consolemods import (
-  extract_headers,
-  extract_rows
- )
+  extract_table_data
+)
+
+from fetch import (
+  get_html
+)
 
 from sanitize_html import (
-  get_html_tables
+  sanitize_html_table
 )
 
 from write import (
-  write_this
+  write_json
 )
 
 def write_many(
-  url,
-  base_name
+  url: str,
+  base_name: str,
+  table_list: List[BeautifulSoup]
 ) -> int:
-  table_list = get_html_tables(url)
-
   if not table_list:
+    print(f"Could not process tables.")
     return 1
 
+  print(f"Processing tables.")
+  print()
+
   index = 1
+  success_count = 0
 
   for table in table_list:
-    print(f"Extracting table {index}.")
-    name = f"{base_name}_table_{index}"
+    print(f"Processing table {index}.")
+    sanitized_html = sanitize_html_table(table)
+    header_list, row_list = extract_table_data(table)
+    file_name = f"{base_name}_table_{index}"
     index += 1
-    header_list = extract_headers(table)
 
-    row_list = extract_rows(
-      table,
-      header_list
-    )
-
-    write_this(
-      url,
-      name,
-      header_list,
-      row_list
-    )
-
-    if index < len(table_list):
+    if not row_list:
+      print(f"Could not process table.")
+      print(f"Warning: Table is empty.")
       print()
+      continue
 
-  return 0
+    print("Processed table.")
+
+    if not write_json(
+      header_list,
+      row_list,
+      file_name
+    ):
+      print()
+      continue
+
+    print()
+    success_count += 1
+
+  print(f"Processed {success_count} tables.")
+  return 0 if success_count != 0 else 1
 
 def main() -> int:
-  write_many(
+  page_content = get_html(URL)
+
+  if not page_content:
+    return 1
+
+  soup = BeautifulSoup(
+    page_content,
+    "html.parser"
+  )
+
+  table_list = soup.find_all("table")
+
+  if not table_list:
+    print("No tables found.")
+    return 1
+
+  print(f"Found {len(table_list)} tables.")
+  print()
+
+  return write_many(
     URL,
-    OUTPUT_FILE_NAME
+    OUTPUT_FILE_NAME,
+    table_list
   )
 
 if __name__ == "__main__":

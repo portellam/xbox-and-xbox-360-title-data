@@ -138,28 +138,30 @@ def get_html_tables(
   sanitized_list = []
 
   for table in table_list:
-    sanitized_table = sanitize_html_table(table)
-    sanitized_list.append(sanitized_table)
+    sanitized_html = sanitize_html_table(table)
+    sanitized_list.append(sanitized_html)
 
   return sanitized_list
 
 def sanitize_html_table(
   table
-):
+) -> str:
+  if not table:
+    return ""
+
   td_list = table.find_all('td')
 
   for td in td_list:
-    is_empty = not td.get_text(strip = True)
-
-    if not is_empty:
-      continue
-
     div = td.find('div')
     has_title = div and div.has_attr('title')
 
-    if not has_title:
+    if not (has_title and not td.get_text(strip = True)):
       continue
 
-    td.append(div['title'])
+    td.clear()
+    td.string = div['title'].strip()
 
-  return table
+  return str(table).replace(
+    '\n',
+    ''
+  )
