@@ -1,10 +1,15 @@
 # Xbox and Xbox 360 Title Data
 ### Developing
 
-A master database of video game titles for Microsoft Xbox and Xbox 360. Includes
-scripts to parse databases, databases to aggregate and compile information.
+An auto-generated database of video game titles for Microsoft Xbox and Xbox 360.
+Includes scripts to parse and aggregate remote data, to be organized into one
+database. Intended primarily as a "good enough" source to more immediately
+assist in the sorting of Title information, on modded Xbox 360 dashboards
+(example: [*Aurora*](https://github.com/XboxUnity/AuroraScripts)).
 
-## [💾 Download](#-1-download)
+Please use with caution.
+
+## [💾 Download](#-2-download)
 #### View this repository on [Codeberg][001], [GitHub][002].
 
 [001]: https://codeberg.org/portellam/xbox-and-xbox-360-title-data
