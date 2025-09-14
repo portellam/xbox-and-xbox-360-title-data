@@ -84,14 +84,21 @@ def write_many(
   return 0
 
 def main() -> int:
+  index = 0
+
   for url, name in zip(
     URL_LIST,
     OUTPUT_FILE_NAME_LIST
   ):
+    index += 1
+
     write_many(
       url,
       name
     )
+
+    if index < len(URL_LIST):
+      print()
 
   return 0
 
