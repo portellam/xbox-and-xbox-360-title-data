@@ -39,10 +39,10 @@ except ImportError as e:
   sys.exit(1)
 
 URL = "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List"
-
 OUTPUT_PATH = "../../databases/json/"
 
-OUTPUT_FILE_NAME = f"{OUTPUT_PATH}consolemods.org_xbox_360_original_xbox_games_compatibility_list"
+OUTPUT_FILE_NAME = OUTPUT_PATH
+OUTPUT_FILE_NAME += "consolemods.org_xbox_360_original_xbox_games_compatibility_list"
 
 HEADER_KEY_LIST = [
   "Name",
@@ -88,11 +88,11 @@ STATUS_MAP = {
   "untested": "untested",
 }
 
-def fetch_page(
+def get_html(
   url: str
 ) -> Optional[str]:
   try:
-    print(f"Fetching page: '{url}'")
+    print(f"Retrieving HTML from '{url}'.")
 
     response = requests.get(
       url,
@@ -101,28 +101,38 @@ def fetch_page(
       },
       timeout = 10
     )
+
     response.raise_for_status()
-    print("Fetched page.")
+    print("Retrieved HTML.")
     return response.text
 
   except requests.RequestException as e:
-    print("Could not fetch page.")
+    print("Could not retrieve HTML.")
     print(f"Error: {e}")
     return None
 
 def sanitize_html(
   table: BeautifulSoup
 ) -> str:
+  # print("Sanitizing HTML.")
+
+  if not table:
+    # print("Could not sanitized HTML. No table data exists.")
+    return ""
+
   td_list = table.find_all('td')
 
   for td in td_list:
     div = td.find('div')
     has_title = div and div.has_attr('title')
 
-    if has_title and not td.get_text(strip = True):
-      td.clear()
-      td.string = div['title'].strip()
+    if not (has_title and not td.get_text(strip = True)):
+      continue
 
+    td.clear()
+    td.string = div['title'].strip()
+
+  # print("Sanitized HTML.")
   return str(table).replace(
     '\n',
     ''
@@ -132,9 +142,13 @@ def extract_cell_value(
   cell: BeautifulSoup,
   is_status_column: bool
 ) -> str:
+  # print("Extracting table cell value.")
+
   div = cell.find('div')
 
   if div and div.has_attr('title') and is_status_column:
+    # print("Extracted table cell value.")
+
     return STATUS_MAP.get(
       div['title'].lower().strip(),
       div['title'].strip()
@@ -142,13 +156,16 @@ def extract_cell_value(
 
   text = cell.get_text(strip = True)
 
-  if text:
-    return STATUS_MAP.get(
-      text.lower(),
-      text
-    ) if is_status_column else text
+  if not text:
+    # print("Could not extract table cell value. No cell value exists.")
+    return ""
 
-  return ""
+  # print("Extracted table cell value.")
+
+  return STATUS_MAP.get(
+    text.lower(),
+    text
+  ) if is_status_column else text
 
 def extract_table_data(
   table: BeautifulSoup
@@ -162,6 +179,7 @@ def extract_table_data(
   ]
 ]:
   try:
+    # print("Extracting table.")
     header_list = []
     thead = table.find("thead")
 
@@ -207,13 +225,14 @@ def extract_table_data(
       header_list.append(text)
 
     if "Name" not in header_list:
+      # print("Extracted table.")
       return [], []
 
-    print("Extracting rows.")
     row_list = []
     tr_list = table.find_all("tr")
 
     if not tr_list:
+      # print("Extracted table.")
       return header_list, []
 
     for tr in tr_list[1:]:
@@ -245,16 +264,17 @@ def extract_table_data(
 
       row_list.append(row_data)
 
+    # print("Extracted table.")
     return header_list, row_list
 
   except Exception as e:
-    print("Could not extract table data.")
+    print("Could not extract table.")
     print(f"Error: {e}")
 
     return [],
     []
 
-def find_tables(
+def get_tables(
   soup: BeautifulSoup
 ) -> List[BeautifulSoup]:
   table_list = soup.find_all("table")
@@ -274,16 +294,16 @@ def write_json(
       str
     ]
   ],
-  output_file: str
+  file_name: str
 ) -> bool:
   try:
-    if not row_list:
-      print(f"Skipped writing to file: '{output_file}'")
-      return False
+    print(f"Writing to file: '{file_name}'")
 
-    print(f"Writing to file: '{output_file}'")
+    if not row_list:
+      raise Exception("No data.")
+
     with open(
-      output_file,
+      file_name,
       "w",
       encoding = "utf-8"
     ) as jsonfile:
@@ -296,13 +316,55 @@ def write_json(
     print("Wrote to file.")
     return True
 
-  except IOError as e:
+  except Exception as e:
     print("Could not write to file.")
     print(f"Error: {e}")
     return False
 
+def process_tables(table_list: List[BeautifulSoup]) -> bool:
+  if not table_list:
+    print(f"Could not process tables.")
+    return 1
+
+  print(f"Processing tables.")
+  print()
+
+  index = 1
+  success_count = 0
+
+  for table in table_list:
+    print(f"Processing table {index}.")
+    sanitized_html = sanitize_html(table)
+    header_list, row_list = extract_table_data(table)
+    file_name = f"{OUTPUT_FILE_NAME}_table_{index}.json"
+    index += 1
+
+    if not row_list:
+      print(f"Could not process table.")
+      print(f"Warning: Table is empty.")
+      print()
+      continue
+
+    print("Processed table.")
+
+    if not write_json(
+      header_list,
+      row_list,
+      file_name
+    ):
+      print()
+      continue
+
+    print()
+    success_count += 1
+
+  print(f"Processed {success_count} tables.")
+  return success_count != 0
+
+
 def main() -> int:
-  page_content = fetch_page(URL)
+  page_content = get_html(URL)
+
   if not page_content:
     return 1
 
@@ -311,35 +373,10 @@ def main() -> int:
     "html.parser"
   )
 
-  table_list = find_tables(soup)
-
-  if not table_list:
-    return 1
-
-  index = 1
-  for table in table_list:
-    sanitized_html = sanitize_html(table)
-    print(f"Sanitized HTML for table {index}: {sanitized_html[:100]}...")
-
-    header_list, row_list = extract_table_data(table)
-
-    if not row_list:
-      print(f"Note: Output for table {index} is empty.")
-      index += 1
-      continue
-
-    output_file = f"{OUTPUT_FILE_NAME}_table_{index}.json"
-
-    if not write_json(
-      header_list,
-      row_list,
-      output_file
-    ):
-      return 1
-
-    index += 1
-
-  return 0
+  table_list = get_tables(soup)
+  print()
+  result = process_tables(table_list)
+  return result
 
 if __name__ == "__main__":
   try:
