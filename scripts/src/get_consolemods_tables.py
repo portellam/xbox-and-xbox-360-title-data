@@ -30,7 +30,8 @@ from config_consolemods import (
 )
 
 from extract_consolemods import (
-  extract_table_data
+  extract_table_data,
+  has_required_headers
 )
 
 from fetch import (
@@ -61,8 +62,26 @@ def write_many(
   success_count = 0
 
   for table in table_list:
+    header_list, _ = extract_table_data(table)
+    if not has_required_headers(header_list):
+      print(f"Skipping table {index}: missing required headers.")
+      index += 1
+      print()
+      continue
+
     print(f"Processing table {index}.")
-    sanitized_html = sanitize_html_table(table)
+    td_list = table.find_all('td')
+
+    for td in td_list:
+      div = td.find('div')
+      has_title = div and div.has_attr('title')
+
+      if not (has_title and not td.get_text(strip = True)):
+        continue
+
+      td.clear()
+      td.string = div['title'].strip()
+
     header_list, row_list = extract_table_data(table)
     file_name = f"{base_name}_table_{index}"
     index += 1

@@ -9,7 +9,7 @@
 #
 
 URL = (
-  "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List/en"
+  "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List"
 )
 
 OUTPUT_PATH = "../../databases/json/"

@@ -131,7 +131,7 @@ def get_html_tables(
 
   soup = BeautifulSoup(
     text,
-    'lxml'
+    'html.parser'
   )
 
   table_list = soup.find_all('table')
