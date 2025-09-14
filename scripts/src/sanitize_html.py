@@ -24,25 +24,22 @@ from fetch import (
 )
 
 def sanitize_table(
-  table
-):
+  table: BeautifulSoup
+) -> str:
   td_list = table.find_all('td')
 
   for td in td_list:
-    is_empty = not td.get_text(strip = True)
-
-    if not is_empty:
-      continue
-
     div = td.find('div')
     has_title = div and div.has_attr('title')
 
-    if not has_title:
-      continue
+    if has_title and not td.get_text(strip = True):
+      td.clear()
+      td.string = div['title'].strip()
 
-    td.append(div['title'])
-
-  return table
+  return str(table).replace(
+    '\n',
+    ''
+  )
 
 def format_html(
   element,

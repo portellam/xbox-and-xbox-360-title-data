@@ -17,10 +17,10 @@ from typing import (
 )
 
 from config_consolemods import (
-  HEADER_KEY_LIST,
   ELEMENT_TAG_LIST,
-  STATUS_MAP,
-  HEADER_MAP
+  HEADER_KEY_LIST,
+  HEADER_MAP,
+  STATUS_MAP
 )
 
 try:
@@ -36,20 +36,24 @@ except ImportError as e:
   sys.exit(1)
 
 def extract_cell_value(
-  cell: BeautifulSoup
+  cell: BeautifulSoup,
+  is_status_column: bool
 ) -> str:
+  div = cell.find('div')
+
+  if div and div.has_attr('title') and is_status_column:
+    return STATUS_MAP.get(
+      div['title'].lower().strip(),
+      div['title'].strip()
+    )
+
   text = cell.get_text(strip = True)
+
   if text:
     return STATUS_MAP.get(
       text.lower(),
       text
-    )
-
-  if cell.has_attr("title"):
-    return STATUS_MAP.get(
-      cell["title"].lower().strip(),
-      cell["title"].strip()
-    )
+    ) if is_status_column else text
 
   return ""
 
@@ -117,7 +121,7 @@ def extract_rows(
 ]:
   try:
     print("Extracting rows.")
-    rows_list = []
+    row_list = []
 
     tr_list = table.find_all("tr")
 
@@ -139,13 +143,12 @@ def extract_rows(
         header_list,
         cell_list
       ):
-        value = extract_cell_value(cell)
+        is_status_column = header in HEADER_MAP or header in HEADER_MAP.values()
 
-        if header in HEADER_MAP or header in HEADER_MAP.values():
-          value = STATUS_MAP.get(
-            value.lower(),
-            value
-          )
+        value = extract_cell_value(
+          cell,
+          is_status_column
+        )
 
         if value == header or not value:
           continue
@@ -155,9 +158,9 @@ def extract_rows(
       if not row_data or "Name" not in row_data or row_data["Name"].startswith("{{"):
         continue
 
-      rows_list.append(row_data)
+      row_list.append(row_data)
 
-    return rows_list
+    return row_list
 
   except Exception as e:
     print("Could not extract rows.")
@@ -209,6 +212,7 @@ def find_by_section_id(
 
   if has_required_headers(header_list):
     return table
+
   return None
 
 def find_table(
@@ -243,7 +247,6 @@ def find_table(
     if has_required_headers(headers):
       return table
 
-  print("DEBUG: No suitable table found")
   return None
 
 def has_required_headers(
