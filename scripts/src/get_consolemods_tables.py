@@ -39,8 +39,8 @@ from write import (
 )
 
 def write_many(
-  url: str,
-  base_name: str
+  url,
+  base_name
 ) -> int:
   table_list = retrieve_and_process_tables(url)
 
@@ -49,42 +49,23 @@ def write_many(
 
   index = 1
 
-  for table_html in table_list:
-    print(f"Sanitized HTML for table {index}: {table_html[:100]}...")
-
-    table = BeautifulSoup(
-      table_html,
-      'lxml'
-    )
-
+  for table in table_list:
+    print(f"Extracting table {index}.")
+    name = f"{base_name}_table_{index}"
+    index += 1
     header_list = extract_headers(table)
-
-    if not header_list:
-      print(f"Note: No headers found for table {index}.")
-      index += 1
-      continue
 
     row_list = extract_rows(
       table,
       header_list
     )
 
-    if not row_list:
-      print(f"Note: Output for table {index} is empty.")
-      index += 1
-      continue
-
-    output_file = f"{base_name}_table_{index}"
-
-    if write_this(
+    write_this(
       url,
-      output_file,
+      name,
       header_list,
       row_list
-    ) != 0:
-      return 1
-
-    index += 1
+    )
 
   return 0
 
