@@ -54,47 +54,62 @@
 
 ### 2. Coverage
 
+**Disclaimer**: the coverage of the following references is **not necessarily**
+about the accuracy of metadata, but **is** about the headers, titles, or captions.
+
 #### 1. Platforms
 
-| Reference Database        | Xbox                  | Xbox: Xbox 360        | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
-| ------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [2](./REFERENCES.md/#02)  | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [3](./REFERENCES.md/#03)  | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [4](./REFERENCES.md/#04)  | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [5](./REFERENCES.md/#05)  | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [9](./REFERENCES.md/#09)  | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [12](./REFERENCES.md/#12) | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [13](./REFERENCES.md/#13) | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [14](./REFERENCES.md/#14) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[x]</li></ul> |
-| [15](./REFERENCES.md/#15) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [19](./REFERENCES.md/#19) | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [20](./REFERENCES.md/#20) | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [23](./REFERENCES.md/#23) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [24](./REFERENCES.md/#24) | <ul><li>[x]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
+| Reference Database         | Xbox                  | Xbox: Xbox 360        | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
+| -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
+| [1](../REFERENCES.md/#01)  | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
+| [2](../REFERENCES.md/#02)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [3](../REFERENCES.md/#03)  | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [4](../REFERENCES.md/#04)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [5](../REFERENCES.md/#05)  | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [9](../REFERENCES.md/#09)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [10](../REFERENCES.md/#10) | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [12](../REFERENCES.md/#12) | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [13](../REFERENCES.md/#13) | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [14](../REFERENCES.md/#14) | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [15](../REFERENCES.md/#15) | No                    | No                    | No                    | **Yes**               | No                    | No                    |
+| [19](../REFERENCES.md/#19) | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [20](../REFERENCES.md/#20) | **Yes**               | No                    | **Yes**               | **Yes**               | No                    | No                    |
+| [21](../REFERENCES.md/#21) | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
+| [23](../REFERENCES.md/#23) | No                    | No                    | No                    | **Yes**               | No                    | No                    |
+| [24](../REFERENCES.md/#24) | **Yes**               | No                    | No                    | No                    | No                    | No                    |
 
 #### 2. Metadata
 
-| Reference Database        | Title ID | Name  | Developer | Publisher | Genre | Release Date | Regions | Rating |
-| ------------------------- | :------- | :---: | :-------: | :-------: | :---: | :----------: | :-----: | :----: |
-| [2](./REFERENCES.md/#2)   | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [5](./REFERENCES.md/#5)   | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [11](./REFERENCES.md/#11) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [12](./REFERENCES.md/#12) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [13](./REFERENCES.md/#13) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [16](./REFERENCES.md/#16) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [20](./REFERENCES.md/#20) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
+| Reference Database         | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Rating                |
+| -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
+| [1](../REFERENCES.md/#01)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [2](../REFERENCES.md/#02)  | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [5](../REFERENCES.md/#05)  | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
+| [11](../REFERENCES.md/#11) | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    |
+| [12](../REFERENCES.md/#12) | No                    | **Yes**               | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | No                    |
+| [13](../REFERENCES.md/#13) | No                    | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    |
+| [14](../REFERENCES.md/#14) | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
+| [15](../REFERENCES.md/#15) | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
+| [16](../REFERENCES.md/#16) | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
+| [20](../REFERENCES.md/#20) | **Yes**               | **Yes**               | No                    | No                    | No                    | **Yes**               | No                    | No                    |
+| [21](../REFERENCES.md/#21) | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [27](../REFERENCES.md/#27) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [28](../REFERENCES.md/#28) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
 
 #### 3. Features (General)
 
-| Reference Database        | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
-| ------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [2](./REFERENCES.md/#2)   | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [5](./REFERENCES.md/#5)   | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [11](./REFERENCES.md/#11) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [12](./REFERENCES.md/#12) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [13](./REFERENCES.md/#13) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [16](./REFERENCES.md/#16) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
-| [20](./REFERENCES.md/#20) | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> | <ul><li>[ ]</li></ul> |
+| Reference Database         | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
+| -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
+| [2](../REFERENCES.md/#02)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [5](../REFERENCES.md/#5)   | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [9](../REFERENCES.md/#09)  | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [10](../REFERENCES.md/#10) | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [11](../REFERENCES.md/#11) | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [12](../REFERENCES.md/#12) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [13](../REFERENCES.md/#13) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [16](../REFERENCES.md/#16) | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [20](../REFERENCES.md/#20) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [28](../REFERENCES.md/#28) | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
 
 #### 4. Features (Xbox)
 
@@ -112,15 +127,15 @@
 - Scoreboards
 - Voice
 
-| Reference Database        | Features (some or none)                              |
-| ------------------------- | :--------------------------------------------------: |
-| [2](./REFERENCES.md/#2)   | <ul><li>[x]</li></ul> incomplete: Local, LAN, Online |
-| [5](./REFERENCES.md/#5)   | <ul><li>[x]</li></ul> complete                       |
-| [11](./REFERENCES.md/#11) | <ul><li>[x]</li></ul> incomplete: LAN                |
-| [12](./REFERENCES.md/#12) | <ul><li>[ ]</li></ul>                                |
-| [13](./REFERENCES.md/#13) | <ul><li>[ ]</li></ul>                                |
-| [16](./REFERENCES.md/#16) | <ul><li>[x]</li></ul> complete                       |
-| [20](./REFERENCES.md/#20) | <ul><li>[ ]</li></ul>                                |
+| Reference Database         | Features (some or none)                 |
+| -------------------------- | :-------------------------------------: |
+| [2](../REFERENCES.md/#02)  | **Yes**; incomplete: Local, LAN, Online |
+| [5](../REFERENCES.md/#05)  | **Yes**; complete                       |
+| [11](../REFERENCES.md/#11) | **Yes**; incomplete: LAN                |
+| [12](../REFERENCES.md/#12) | No                                      |
+| [13](../REFERENCES.md/#13) | No                                      |
+| [16](../REFERENCES.md/#16) | **Yes**; complete                       |
+| [20](../REFERENCES.md/#20) | No                                      |
 
 ##
 #### Click [here](#databases) to return to the top of this document.

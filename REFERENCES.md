@@ -190,5 +190,17 @@ Accessed 2025-09-14.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/Category:Xbox_360_Live_Indie_games.</sup>
 
+### 28.
+
+&nbsp;&nbsp;**List of Xbox System Link games**. Wikipedia. Accessed 2025-09-14.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/List_of_Xbox_System_Link_games.</sup>
+
+### 29.
+
+&nbsp;&nbsp;**List of cancelled Xbox games**. Wikipedia. Accessed 2025-09-14.
+
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>https://en.wikipedia.org/wiki/List_of_cancelled_Xbox_games.</sup>
+
 ##
 #### Click [here](#references) to return to the top of this document.
