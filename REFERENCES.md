@@ -4,7 +4,6 @@
 
 - [README](./README.md)
 - [Contributors](./CONTRIBUTORS.md)
-- [Coverage](./COVERAGE.md)
 - [Databases](./databases/README.md)
 - [References](./REFERENCES.md)
 - [Scripts](./scripts/README.md)
