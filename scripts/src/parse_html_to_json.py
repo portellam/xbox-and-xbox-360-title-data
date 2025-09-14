@@ -88,56 +88,6 @@ STATUS_MAP = {
   "untested": "untested",
 }
 
-def get_html(
-  url: str
-) -> Optional[str]:
-  try:
-    print(f"Retrieving HTML from '{url}'.")
-
-    response = requests.get(
-      url,
-      headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-      },
-      timeout = 10
-    )
-
-    response.raise_for_status()
-    print("Retrieved HTML.")
-    return response.text
-
-  except requests.RequestException as e:
-    print("Could not retrieve HTML.")
-    print(f"Error: {e}")
-    return None
-
-def sanitize_html(
-  table: BeautifulSoup
-) -> str:
-  # print("Sanitizing HTML.")
-
-  if not table:
-    # print("Could not sanitized HTML. No table data exists.")
-    return ""
-
-  td_list = table.find_all('td')
-
-  for td in td_list:
-    div = td.find('div')
-    has_title = div and div.has_attr('title')
-
-    if not (has_title and not td.get_text(strip = True)):
-      continue
-
-    td.clear()
-    td.string = div['title'].strip()
-
-  # print("Sanitized HTML.")
-  return str(table).replace(
-    '\n',
-    ''
-  )
-
 def extract_cell_value(
   cell: BeautifulSoup,
   is_status_column: bool
@@ -274,6 +224,29 @@ def extract_table_data(
     return [],
     []
 
+def get_html(
+  url: str
+) -> Optional[str]:
+  try:
+    print(f"Retrieving HTML from '{url}'.")
+
+    response = requests.get(
+      url,
+      headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+      },
+      timeout = 10
+    )
+
+    response.raise_for_status()
+    print("Retrieved HTML.")
+    return response.text
+
+  except requests.RequestException as e:
+    print("Could not retrieve HTML.")
+    print(f"Error: {e}")
+    return None
+
 def get_tables(
   soup: BeautifulSoup
 ) -> List[BeautifulSoup]:
@@ -285,41 +258,6 @@ def get_tables(
 
   print(f"Found {len(table_list)} tables.")
   return table_list
-
-def write_json(
-  header_list: List[str],
-  row_list: List[
-    Dict[
-      str,
-      str
-    ]
-  ],
-  file_name: str
-) -> bool:
-  try:
-    print(f"Writing to file: '{file_name}'")
-
-    if not row_list:
-      raise Exception("No data.")
-
-    with open(
-      file_name,
-      "w",
-      encoding = "utf-8"
-    ) as jsonfile:
-      json.dump(
-        row_list,
-        jsonfile,
-        indent = 2
-      )
-
-    print("Wrote to file.")
-    return True
-
-  except Exception as e:
-    print("Could not write to file.")
-    print(f"Error: {e}")
-    return False
 
 def process_tables(table_list: List[BeautifulSoup]) -> bool:
   if not table_list:
@@ -361,6 +299,67 @@ def process_tables(table_list: List[BeautifulSoup]) -> bool:
   print(f"Processed {success_count} tables.")
   return success_count != 0
 
+def sanitize_html(
+  table: BeautifulSoup
+) -> str:
+  # print("Sanitizing HTML.")
+
+  if not table:
+    # print("Could not sanitized HTML. No table data exists.")
+    return ""
+
+  td_list = table.find_all('td')
+
+  for td in td_list:
+    div = td.find('div')
+    has_title = div and div.has_attr('title')
+
+    if not (has_title and not td.get_text(strip = True)):
+      continue
+
+    td.clear()
+    td.string = div['title'].strip()
+
+  # print("Sanitized HTML.")
+  return str(table).replace(
+    '\n',
+    ''
+  )
+
+def write_json(
+  header_list: List[str],
+  row_list: List[
+    Dict[
+      str,
+      str
+    ]
+  ],
+  file_name: str
+) -> bool:
+  try:
+    print(f"Writing to file: '{file_name}'")
+
+    if not row_list:
+      raise Exception("No data.")
+
+    with open(
+      file_name,
+      "w",
+      encoding = "utf-8"
+    ) as jsonfile:
+      json.dump(
+        row_list,
+        jsonfile,
+        indent = 2
+      )
+
+    print("Wrote to file.")
+    return True
+
+  except Exception as e:
+    print("Could not write to file.")
+    print(f"Error: {e}")
+    return False
 
 def main() -> int:
   page_content = get_html(URL)
