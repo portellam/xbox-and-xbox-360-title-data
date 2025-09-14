@@ -1,20 +1,20 @@
 # References
 
-Last Updated: 2025-09-11
-
 ## Main Directory
 
 - [README](./README.md)
 - [Contributors](./CONTRIBUTORS.md)
+- [Coverage](./COVERAGE.md)
 - [Databases](./databases/README.md)
 - [References](./REFERENCES.md)
 - [Scripts](./scripts/README.md)
 
 ## ❗ PLEASE READ
-On the event of an addition, removal, or update of any reference, please update
-the following files accordingly:
+On the **event** of an addition, removal, or update of any reference, please
+**update** the following files accordingly:
 
 - `./README.md`
+- `./COVERAGE.md`
 - `./databases/README.md`
 - `./scripts/README.md`
 
@@ -183,3 +183,6 @@ Accessed 2025-09-10.
 Digiex. Accessed 2025-09-10.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>https://digiex.net/threads/xenon-fusion-emulator-xefu-xbox-one-series-files-for-jtag-rgh-xbox-360s.16757/.</sup>
+
+##
+#### Click [here](#references) to return to the top of this document.
