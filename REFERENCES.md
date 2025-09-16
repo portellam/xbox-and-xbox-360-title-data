@@ -288,5 +288,69 @@ Accessed 2025-09-14.
 &nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
 <sup>https://web.archive.org/web/20250814074128/https://en.wikipedia.org/wiki/List_of_cancelled_Xbox_games.</sup>
 
+### 30.
+
+&nbsp;&nbsp;**GoldenEye 007 (XBLA)**. GoldenEye Wiki. Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://goldeneye.fandom.com/wiki/GoldenEye_007_(XBLA).</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250815152953/https://goldeneye.fandom.com/wiki/GoldenEye_007_(XBLA).</sup>
+
+### 31.
+
+&nbsp;&nbsp;**List of Cancelled Xbox games**. Xbox Wiki. Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250727112614/https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games.</sup>
+
+### 32.
+
+&nbsp;&nbsp;**List of Xbox games**. Xbox Wiki. Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://xbox.fandom.com/wiki/List_of_Xbox_games.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20240505235446/https://xbox.fandom.com/wiki/List_of_Xbox_games.</sup>
+
+### 33.
+
+&nbsp;&nbsp;**List of Xbox 360 applications**. Wikipedia. Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://en.wikipedia.org/wiki/List_of_Xbox_360_applications.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250428052153/https://en.wikipedia.org/wiki/List_of_Xbox_360_applications.</sup>
+
+### 34.
+
+&nbsp;&nbsp;**Python Downloads**. Python.org. Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://www.python.org/downloads/.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250915050416/https://www.python.org/downloads/.</sup>
+
+### 35.
+
+&nbsp;&nbsp;**WIP List of all Xbox Live Indie Games (XBLIG)**. Reddit.
+Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://old.reddit.com/r/xbox360/comments/meey0w/wip_list_of_all_xbox_live_indie_games_xblig/.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250824045600/https://old.reddit.com/r/xbox360/comments/meey0w/wip_list_of_all_xbox_live_indie_games_xblig/.</sup>
+
+### 36.
+
+&nbsp;&nbsp;**Xbox Live Arcade**. Wikipedia. Accessed 2025-09-16.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://en.wikipedia.org/wiki/Xbox_Live_Arcade.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250905234927/https://en.wikipedia.org/wiki/Xbox_Live_Arcade.</sup>
+
 ##
 #### Click [here](#references) to return to the top of this document.
