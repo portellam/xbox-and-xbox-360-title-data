@@ -22,8 +22,8 @@ Please use with caution.
 
 [001]: https://codeberg.org/portellam/xbox-and-xbox-360-title-data
 [002]: https://github.com/portellam/xbox-and-xbox-360-title-data
-[003]: (./REFERENCES.md#37)
-[004]: (./REFERENCES.md#06)
+[003]: ./REFERENCES.md#37
+[004]: ./REFERENCES.md#06
 
 ##
 ## Main Directory
@@ -50,14 +50,14 @@ To generate a local database file from multiple remote sources, and to use said
 database to extend the [filter and sort functionality][101] of custom *Xbox 360*
 dashboards such as [*Aurora*][102].
 
-[101]: (./REFERENCES.md#37)
-[102]: (./REFERENCES.md#06)
+[101]: ./REFERENCES.md#37
+[102]: ./REFERENCES.md#06
 
 ### ✅ 2. Requirements
 
 - [Python][201]
 
-[201]: (./REFERENCES.md#34)
+[201]: ./REFERENCES.md#34
 
 ### 💾 3. Download
 
