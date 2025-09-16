@@ -10,11 +10,11 @@
 
 ## Table of Contents
 
-- [1. This Directory Table](#1-this-directory-table)
+- [1. This Directory](#1-this-directory)
 
 ## Contents
 
-### 1. This Directory Table
+### 1. This Directory
 
 | Script                                                                         | Functionality                                      | Status                                                        |
 | ------------------------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------------------------- |
