@@ -352,5 +352,23 @@ Accessed 2025-09-16.
 &nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
 <sup>https://web.archive.org/web/20250905234927/https://en.wikipedia.org/wiki/Xbox_Live_Arcade.</sup>
 
+### 37.
+
+&nbsp;&nbsp;**Xbox 360: Aurora**. ConsoleMods.org. Accessed 2025-09-14.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://consolemods.org/wiki/Xbox_360:Aurora.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250826160029/https://consolemods.org/wiki/Xbox_360:Aurora.</sup>
+
+### 38.
+
+&nbsp;&nbsp;**Xbox Unity News**. Phoenix. Accessed 2025-09-14.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;
+<sup>https://phoenix.xboxunity.net/#/news.</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;
+<sup>https://web.archive.org/web/20250830044328/https://phoenix.xboxunity.net/#/news.</sup>
+
 ##
 #### Click [here](#references) to return to the top of this document.
