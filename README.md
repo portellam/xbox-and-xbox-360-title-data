@@ -23,7 +23,7 @@ Please use with caution.
 [001]: https://codeberg.org/portellam/xbox-and-xbox-360-title-data
 [002]: https://github.com/portellam/xbox-and-xbox-360-title-data
 [003]: ./REFERENCES.md#37
-[004]: ./REFERENCES.md#06
+[004]: ./REFERENCES.md#6
 
 ##
 ## Main Directory
@@ -51,7 +51,7 @@ database to extend the [filter and sort functionality][101] of custom *Xbox 360*
 dashboards such as [*Aurora*][102].
 
 [101]: ./REFERENCES.md#37
-[102]: ./REFERENCES.md#06
+[102]: ./REFERENCES.md#6
 
 ### ✅ 2. Requirements
 

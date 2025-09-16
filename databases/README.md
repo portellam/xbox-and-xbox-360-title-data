@@ -24,7 +24,7 @@
 
 | Local Database                                                                          | Reference Database        | Notes                             |
 | --------------------------------------------------------------------------------------- | ------------------------- | --------------------------------- |
-| **archive.rushhosting.net** <sup>[CSV][201]</sup>                                       | [2](../REFERENCES.md#02)  | Incomplete parse from HTML pages. |
+| **archive.rushhosting.net** <sup>[CSV][201]</sup>                                       | [2](../REFERENCES.md#2)  | Incomplete parse from HTML pages. |
 | **ConsoleMods.org Compatibility List** <sup>[JSON][101]</sup>                           | [19](../REFERENCES.md#19) | Columns good, data verified.      |
 | **List of Xbox 360 games (A–L)** <sup>[JSON][301]</sup>                                 | [9](../REFERENCES.md#9)   | Columns good, data not verified.  |
 | **List of Xbox 360 games (A–L): Cancelled games** <sup>[JSON][302]</sup>                | Same as above.            | Columns good, data not verified.  |
@@ -61,12 +61,12 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 | Reference Database         | Xbox                  | Xbox: Xbox 360        | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
 | -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [1](../REFERENCES.md/#01)  | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
-| [2](../REFERENCES.md/#02)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
-| [3](../REFERENCES.md/#03)  | **Yes**               | No                    | No                    | No                    | No                    | No                    |
-| [4](../REFERENCES.md/#04)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
-| [5](../REFERENCES.md/#05)  | **Yes**               | No                    | No                    | No                    | No                    | No                    |
-| [9](../REFERENCES.md/#09)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [1](../REFERENCES.md/#1)  | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
+| [2](../REFERENCES.md/#2)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [3](../REFERENCES.md/#3)  | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [4](../REFERENCES.md/#4)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [5](../REFERENCES.md/#5)  | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [9](../REFERENCES.md/#9)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
 | [10](../REFERENCES.md/#10) | No                    | No                    | **Yes**               | No                    | No                    | No                    |
 | [12](../REFERENCES.md/#12) | **Yes**               | No                    | No                    | No                    | No                    | No                    |
 | [13](../REFERENCES.md/#13) | No                    | **Yes**               | No                    | No                    | No                    | No                    |
@@ -82,9 +82,9 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 | Reference Database         | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Rating                |
 | -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [1](../REFERENCES.md/#01)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [2](../REFERENCES.md/#02)  | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [5](../REFERENCES.md/#05)  | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
+| [1](../REFERENCES.md/#1)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [2](../REFERENCES.md/#2)  | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [5](../REFERENCES.md/#5)  | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
 | [11](../REFERENCES.md/#11) | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    |
 | [12](../REFERENCES.md/#12) | No                    | **Yes**               | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | No                    |
 | [13](../REFERENCES.md/#13) | No                    | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    |
@@ -100,9 +100,9 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 | Reference Database         | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
 | -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
-| [2](../REFERENCES.md/#02)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [2](../REFERENCES.md/#2)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
 | [5](../REFERENCES.md/#5)   | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [9](../REFERENCES.md/#09)  | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [9](../REFERENCES.md/#9)  | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
 | [10](../REFERENCES.md/#10) | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
 | [11](../REFERENCES.md/#11) | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    | No                    | No                    |
 | [12](../REFERENCES.md/#12) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
@@ -129,8 +129,8 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 | Reference Database         | Features (some or none)                 |
 | -------------------------- | :-------------------------------------: |
-| [2](../REFERENCES.md/#02)  | **Yes**; incomplete: Local, LAN, Online |
-| [5](../REFERENCES.md/#05)  | **Yes**; complete                       |
+| [2](../REFERENCES.md/#2)  | **Yes**; incomplete: Local, LAN, Online |
+| [5](../REFERENCES.md/#5)  | **Yes**; complete                       |
 | [11](../REFERENCES.md/#11) | **Yes**; incomplete: LAN                |
 | [12](../REFERENCES.md/#12) | No                                      |
 | [13](../REFERENCES.md/#13) | No                                      |
