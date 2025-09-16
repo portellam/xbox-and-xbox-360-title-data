@@ -431,7 +431,6 @@ Accessed 2025-09-16.
 <sup>&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;</sup>
 <sup>https://consolemods.org/wiki/Xbox_360:Aurora.</sup>
 
-
 <sup>&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;</sup>
 <sup>https://web.archive.org/web/20250826160029/https://consolemods.org/wiki/Xbox_360:Aurora.</sup>
 
@@ -441,8 +440,6 @@ Accessed 2025-09-16.
 
 <sup>&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;</sup>
 <sup>https://phoenix.xboxunity.net/#/news.</sup>
-
-
 
 <sup>&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;</sup>
 <sup>https://web.archive.org/web/20250830044328/https://phoenix.xboxunity.net/#/news.</sup>
