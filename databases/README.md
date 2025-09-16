@@ -10,56 +10,117 @@
 
 ## Table of Contents
 
-- [1. This Directory Table](#1-this-directory-table)
+- [1. Disclaimer](#1-disclaimer)
+- [2. This Directory](#2-this-directory)
 
-- [2. Coverage](#2-coverage)
-	- [1. Platforms](#1-platform)
-	- [2. Metadata](#2-metadata)
-	- [3. Features (General)](#3-features-general)
-	- [4. Features (Xbox)](#4-features-xbox)
+- [2. Database Coverage](#2-coverage)
+	- [1. Titles](#1-titles)
+	- [2. Platforms](#1-platform)
+	- [3. Metadata](#2-metadata)
+	- [4. Features (General)](#3-features-general)
+	- [5. Features (Xbox)](#4-features-xbox)
 
 ## Contents
 
-### 1. This Directory Table
+### 1. Disclaimer
 
-| Local Database                                                                          | Reference Database        | Notes                             |
-| --------------------------------------------------------------------------------------- | ------------------------- | --------------------------------- |
-| **archive.rushhosting.net** <sup>[CSV][201]</sup>                                       | [2](../REFERENCES.md#2)  | Incomplete parse from HTML pages. |
-| **ConsoleMods.org Compatibility List** <sup>[JSON][101]</sup>                           | [19](../REFERENCES.md#19) | Columns good, data verified.      |
-| **List of Xbox 360 games (A–L)** <sup>[JSON][301]</sup>                                 | [9](../REFERENCES.md#9)   | Columns good, data not verified.  |
-| **List of Xbox 360 games (A–L): Cancelled games** <sup>[JSON][302]</sup>                | Same as above.            | Columns good, data not verified.  |
-| **List of Xbox 360 games (M–Z)** <sup>[JSON][401]</sup>                                 | [10](../REFERENCES.md#10) | Columns good, data not verified.  |
-| **List of Xbox 360 games (M–Z): Cancelled games** <sup>[JSON][402]</sup>                | Same as above.            | Columns good, data not verified.  |
-| **List of Xbox 360 System Link games** <sup>[JSON][501]</sup>                           | [11](../REFERENCES.md#11) | Columns good, data not verified.  |
-| **List of Xbox games** <sup>[JSON][601]</sup>                                           | [12](../REFERENCES.md#12) | Columns good, data not verified.  |
-| **List of Xbox games compatible with Xbox 360** <sup>[JSON][701]</sup>                  | [13](../REFERENCES.md#13) | Columns good, data not verified.  |
-| **List of Xbox titles removed from backward compatibility list** <sup>[JSON][702]</sup> | Same as above.            | Columns good, data not verified.  |
+The word **"accuracy"** in this context describes as a **ratio** of the presence
+of **metadata** for a number of video game titles **relative** to the **total**
+number of titles.
 
-[101]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
+The word **"coverage"** in this context describes the **presence** of metadata
+attributes (*Name, Developer, Release Date,* and so forth), and **not**
+necessarily of the metadata **accuracy.**
+
+### 2. This Directory
+
+| Local Database | Remote Database Reference | Parseable? | Accuracy Verified? |
+| -------------- | ------------------------- | :--------: | :----------------: |
+| <[201]>        | [2][202]                  | No         | No                 |
+| <[211]>        | [19][212]                 | Yes        | Yes                |
+| <[221]>        | [9][222]                  | Yes        | No                 |
+| <[231]>        | [13][232]                 | Yes        | No                 |
+| <[241]>        | [10][242]                 | Yes        | No                 |
+| <[251]>        | [13][252]                 | Yes        | No                 |
+| <[261]>        | [11][262]                 | Yes        | No                 |
+| <[271]>        | [12][272]                 | Yes        | No                 |
+| <[281]>        | [13][282]                 | Yes        | No                 |
+| <[291]>        | [13][292]                 | Yes        | No                 |
+
 
 [201]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
+[202]: ../REFERENCES.md#2
 
-[301]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
-[302]: ./json/wikipedia.org_xbox_360_games_a-l_table_4.json
+[211]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
+[212]: ../REFERENCES.md#19
 
-[401]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
-[402]: ./json/wikipedia.org_xbox_360_games_m-z_table_4.json
+[221]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
+[222]: ../REFERENCES.md#9
 
-[501]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
+[231]: ./json/wikipedia.org_xbox_360_games_a-l_table_4.json
+[232]: ../REFERENCES.md#13
 
-[601]: ./json/wikipedia.org_xbox_games_table_1.json
+[241]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
+[242]: ../REFERENCES.md#10
 
-[701]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
-[702]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json
+[251]: ./json/wikipedia.org_xbox_360_games_m-z_table_4.json
+[252]: ../REFERENCES.md#13
 
-### 2. Coverage
+[261]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
+[262]: ../REFERENCES.md#11
 
-**Disclaimer**: the coverage of the following references is **not necessarily**
-about the accuracy of metadata, but **is** about the headers, titles, or captions.
+[271]: ./json/wikipedia.org_xbox_games_table_1.json
+[272]: ../REFERENCES.md#12
 
-#### 1. Platforms
+[281]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
+[282]: ../REFERENCES.md#13
 
-| Reference Database         | Xbox                  | Xbox: Xbox 360        | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
+[291]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json
+[292]: ../REFERENCES.md#13
+
+### 3. Database Coverage
+
+The data and metadata coverage of remote databases.
+
+#### 1. Titles
+
+| Platform         | Total Titles Released                                   | Total Titles Unreleased                   |
+| ---------------- | ------------------------------------------------------- | ----------------------------------------- |
+| Xbox             | 989 <sup>[101]</sup>, or 998 <sup>[103]</sup>           | 57 <sup>[102], or 566 <sup>[104]</sup>    |
+| Xbox: XLBA       | 38 <sup>[111]</sup>                                     | 0 <sup>[111]</sup>                        |
+| Xbox 360: Apps	 | 572                                                     | unknown                                   |
+| Xbox 360: Retail | 2,155 (1,072 <sup>[131]</sup> + 1,080 <sup>[132]</sup>) | 6 (3 <sup>[131]<sup> + 3<sup>[132]</sup>) |
+| Xbox 360: Indie  | ?                                                       | unknown                                   |
+| Xbox 360: XBLA   | 724 (362 <sup>[131]</sup> + 362 <sup>[132]</sup>)       | >= 1 (GoldenEye)                          |
+
+[101]: ../REFERENCES.md/#12
+[102]: https://en.wikipedia.org/wiki/List_of_cancelled_Xbox_games
+[103]: https://xbox.fandom.com/wiki/List_of_Xbox_games
+[104]: https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games
+
+[111]: https://en.wikipedia.org/wiki/Xbox_Live_Arcade
+
+[121]: https://en.wikipedia.org/wiki/List_of_Xbox_360_applications
+
+[131]: ../REFERENCES.md/#09
+[132]: ../REFERENCES.md/#10
+
+[151]: https://goldeneye.fandom.com/wiki/GoldenEye_007_(XBLA)
+
+
+https://en.wikipedia.org/wiki/List_of_cancelled_Xbox_games
+https://xbox.fandom.com/wiki/List_of_Xbox_games
+https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games
+https://en.wikipedia.org/wiki/Xbox_Live_Arcade
+https://en.wikipedia.org/wiki/List_of_Xbox_360_applications
+https://goldeneye.fandom.com/wiki/GoldenEye_007_(XBLA)
+https://old.reddit.com/r/xbox360/comments/meey0w/wip_list_of_all_xbox_live_indie_games_xblig/
+https://web.archive.org/web/20250615025844/https://old.reddit.com/r/xbox360/comments/meey0w/wip_list_of_all_xbox_live_indie_games_xblig/
+https://www.python.org/downloads/
+
+#### 2. Platforms
+
+| Remote Database Reference  | Xbox                  | Xbox on Xbox 360      | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
 | -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
 | [1](../REFERENCES.md/#1)  | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
 | [2](../REFERENCES.md/#2)  | No                    | No                    | **Yes**               | No                    | No                    | No                    |
@@ -80,7 +141,7 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 #### 2. Metadata
 
-| Reference Database         | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Rating                |
+ Remote Database Reference   | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Rating                |
 | -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
 | [1](../REFERENCES.md/#1)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
 | [2](../REFERENCES.md/#2)  | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
@@ -98,7 +159,7 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 #### 3. Features (General)
 
-| Reference Database         | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
+| Remote Database Reference  | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
 | -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
 | [2](../REFERENCES.md/#2)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
 | [5](../REFERENCES.md/#5)   | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
@@ -113,7 +174,7 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 
 #### 4. Features (Xbox)
 
-**Notice:** includes the following
+Xbox features include the following:
 - Communicator Headset
 - Content Download
 - Custom Soundtracks
@@ -127,7 +188,7 @@ about the accuracy of metadata, but **is** about the headers, titles, or caption
 - Scoreboards
 - Voice
 
-| Reference Database         | Features (some or none)                 |
+| Remote Database Reference  | Features (some or none)                 |
 | -------------------------- | :-------------------------------------: |
 | [2](../REFERENCES.md/#2)  | **Yes**; incomplete: Local, LAN, Online |
 | [5](../REFERENCES.md/#5)  | **Yes**; complete                       |
