@@ -13,7 +13,7 @@
 - [1. Disclaimer](#1-disclaimer)
 - [2. This Directory](#2-this-directory)
 
-- [2. Database Coverage](#2-coverage)
+- [3. Database Coverage](#3-database-coverage)
 	- [1. Titles](#1-titles)
 	- [2. Platforms](#1-platform)
 	- [3. Metadata](#2-metadata)
@@ -34,49 +34,29 @@ necessarily of the metadata **accuracy.**
 
 ### 2. This Directory
 
-| Local Database | Remote Database Reference | Parseable? | Accuracy Verified? |
-| -------------- | ------------------------- | :--------: | :----------------: |
-| <[201]>        | [2][202]                  | No         | No                 |
-| <[211]>        | [19][212]                 | Yes        | Yes                |
-| <[221]>        | [9][222]                  | Yes        | No                 |
-| <[231]>        | [13][232]                 | Yes        | No                 |
-| <[241]>        | [10][242]                 | Yes        | No                 |
-| <[251]>        | [13][252]                 | Yes        | No                 |
-| <[261]>        | [11][262]                 | Yes        | No                 |
-| <[271]>        | [12][272]                 | Yes        | No                 |
-| <[281]>        | [13][282]                 | Yes        | No                 |
-| <[291]>        | [13][292]                 | Yes        | No                 |
+| Local Database                                                                        | Remote Database Reference | Parseable? | Accuracy Verified? |
+| ------------------------------------------------------------------------------------- | ------------------------- | :--------: | :----------------: |
+| <./csv/archive.rushhosting.net_xbox_360_title_id_list.csv>                            | [2][201]                  | No         | No                 |
+| <./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json> | [19][202]                 | Yes        | Yes                |
+| <./json/wikipedia.org_xbox_360_games_a-l_table_2.json>                                | [9][203]                  | Yes        | No                 |
+| <./json/wikipedia.org_xbox_360_games_a-l_table_4.json>                                | [13][204]                 | Yes        | No                 |
+| <./json/wikipedia.org_xbox_360_games_m-z_table_2.json>                                | [10][205]                 | Yes        | No                 |
+| <./json/wikipedia.org_xbox_360_games_m-z_table_4.json>                                | [13][206]                 | Yes        | No                 |
+| <./json/wikipedia.org_xbox_360_system_link_games_table_1.json>                        | [11][207]                 | Yes        | No                 |
+| <./json/wikipedia.org_xbox_games_table_1.json>                                        | [12][208]                 | Yes        | No                 |
+| <./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json>               | [13][209]                 | Yes        | No                 |
+| <./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json>               | [13][210]                 | Yes        | No                 |
 
-
-[201]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
-[202]: ../REFERENCES.md#2
-
-[211]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
-[212]: ../REFERENCES.md#19
-
-[221]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
-[222]: ../REFERENCES.md#9
-
-[231]: ./json/wikipedia.org_xbox_360_games_a-l_table_4.json
-[232]: ../REFERENCES.md#13
-
-[241]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
-[242]: ../REFERENCES.md#10
-
-[251]: ./json/wikipedia.org_xbox_360_games_m-z_table_4.json
-[252]: ../REFERENCES.md#13
-
-[261]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
-[262]: ../REFERENCES.md#11
-
-[271]: ./json/wikipedia.org_xbox_games_table_1.json
-[272]: ../REFERENCES.md#12
-
-[281]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
-[282]: ../REFERENCES.md#13
-
-[291]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json
-[292]: ../REFERENCES.md#13
+[201]: ../REFERENCES.md#2
+[202]: ../REFERENCES.md#19
+[203]: ../REFERENCES.md#9
+[204]: ../REFERENCES.md#13
+[205]: ../REFERENCES.md#10
+[206]: ../REFERENCES.md#13
+[207]: ../REFERENCES.md#11
+[208]: ../REFERENCES.md#12
+[209]: ../REFERENCES.md#13
+[210]: ../REFERENCES.md#13
 
 ### 3. Database Coverage
 
@@ -84,39 +64,28 @@ The data and metadata coverage of remote databases.
 
 #### 1. Titles
 
-| Platform         | Total Titles Released                                   | Total Titles Unreleased                   |
-| ---------------- | ------------------------------------------------------- | ----------------------------------------- |
-| Xbox             | 989 <sup>[101]</sup>, or 998 <sup>[103]</sup>           | 57 <sup>[102], or 566 <sup>[104]</sup>    |
-| Xbox: XLBA       | 38 <sup>[111]</sup>                                     | 0 <sup>[111]</sup>                        |
-| Xbox 360: Apps	 | 572                                                     | unknown                                   |
-| Xbox 360: Retail | 2,155 (1,072 <sup>[131]</sup> + 1,080 <sup>[132]</sup>) | 6 (3 <sup>[131]<sup> + 3<sup>[132]</sup>) |
-| Xbox 360: Indie  | ?                                                       | unknown                                   |
-| Xbox 360: XBLA   | 724 (362 <sup>[131]</sup> + 362 <sup>[132]</sup>)       | >= 1 (GoldenEye)                          |
+| Platform         | Total Titles Released                                     | Total Titles Unreleased                        |
+| ---------------- | --------------------------------------------------------- | ---------------------------------------------- |
+| Xbox             | 989 <sup>[3101]</sup>, or 998 <sup>[3103]</sup>           | 57 <sup>[3102]</sup>, or 566 <sup>[3104]</sup> |
+| Xbox: XLBA       | 38 <sup>[3111]</sup>                                      | 0 <sup>[3111]</sup>                            |
+| Xbox 360: Apps	 | 572 <sup>[3121]</sup>                                     | unknown                                        |
+| Xbox 360: Retail | 2,155 (1,072 <sup>[3131]</sup> + 1,080 <sup>[3132]</sup>) | 6 (3 <sup>[3131]<sup> + 3<sup>[3132]</sup>)    |
+| Xbox 360: Indie  | ?                                                         | unknown                                        |
+| Xbox 360: XBLA   | 724 (362 <sup>[3151]</sup> + 362 <sup>[3151]</sup>)       | >= 1 (*GoldenEye 007*) <sup>[3151]<sup>        |
 
-[101]: ../REFERENCES.md/#12
-[102]: https://en.wikipedia.org/wiki/List_of_cancelled_Xbox_games
-[103]: https://xbox.fandom.com/wiki/List_of_Xbox_games
-[104]: https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games
+[3101]: ../REFERENCES.md/#12
+[3102]: ../REFERENCES.md/#29
+[3103]: ../REFERENCES.md/#31
+[3104]: ../REFERENCES.md/#32
 
-[111]: https://en.wikipedia.org/wiki/Xbox_Live_Arcade
+[3111]: ../REFERENCES.md/#36
 
-[121]: https://en.wikipedia.org/wiki/List_of_Xbox_360_applications
+[3121]: ../REFERENCES.md/#33
 
-[131]: ../REFERENCES.md/#09
-[132]: ../REFERENCES.md/#10
+[3131]: ../REFERENCES.md/#09
+[3132]: ../REFERENCES.md/#10
 
-[151]: https://goldeneye.fandom.com/wiki/GoldenEye_007_(XBLA)
-
-
-https://en.wikipedia.org/wiki/List_of_cancelled_Xbox_games
-https://xbox.fandom.com/wiki/List_of_Xbox_games
-https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games
-https://en.wikipedia.org/wiki/Xbox_Live_Arcade
-https://en.wikipedia.org/wiki/List_of_Xbox_360_applications
-https://goldeneye.fandom.com/wiki/GoldenEye_007_(XBLA)
-https://old.reddit.com/r/xbox360/comments/meey0w/wip_list_of_all_xbox_live_indie_games_xblig/
-https://web.archive.org/web/20250615025844/https://old.reddit.com/r/xbox360/comments/meey0w/wip_list_of_all_xbox_live_indie_games_xblig/
-https://www.python.org/downloads/
+[3151]: ../REFERENCES.md/#30
 
 #### 2. Platforms
 
