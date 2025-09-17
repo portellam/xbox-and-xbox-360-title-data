@@ -1,0 +1,860 @@
+[
+  {
+    "Name": "Netflix (replaced by new version)",
+    "Available countries": "Canada, Ireland, Mexico, United Kingdom, United States, Russia,",
+    "Category": "Video",
+    "Date": "November 19, 2008"
+  },
+  {
+    "Name": "Facebook (removed from store and inactive)",
+    "Available countries": "N/A",
+    "Category": "Social",
+    "Date": "November 17, 2009"
+  },
+  {
+    "Name": "Twitter (removed from store)",
+    "Available countries": "N/A",
+    "Category": "Social",
+    "Date": "November 17, 2009"
+  },
+  {
+    "Name": "Last.fm (removed from store)",
+    "Available countries": "United States, United Kingdom",
+    "Category": "Music",
+    "Date": "November 17, 2009"
+  },
+  {
+    "Name": "Zune (replaced by Groove Music + Movies & TV.)",
+    "Available countries": "Music: United States, United Kingdom, France, Italy, Spain, Germany, Canada, Australia Zune Music Pass: United States, United Kingdom, France, Italy, Spain, Canada, Australia TV: United States, Canada, Movie Rental: United States, United Kingdom, France, Italy, Spain, Germany, Austria, Japan, Canada, Australia, New Zealand, Mexico Movie Purchase: United States, United Kingdom, France, Germany, Canada, Australia, New Zealand, Japan",
+    "Category": "Video, Music",
+    "Date": "November 17, 2009"
+  },
+  {
+    "Name": "Sky Player",
+    "Available countries": "United Kingdom",
+    "Category": "TV",
+    "Date": "October 27, 2009"
+  },
+  {
+    "Name": "Vodafone Casa TV",
+    "Available countries": "Portugal",
+    "Category": "TV",
+    "Date": "December 17, 2009"
+  },
+  {
+    "Name": "Optik TV",
+    "Available countries": "Canada",
+    "Category": "TV",
+    "Date": "August 4, 2010"
+  },
+  {
+    "Name": "ESPN (removed from store)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "November 1, 2010"
+  },
+  {
+    "Name": "Foxtel",
+    "Available countries": "Australia",
+    "Category": "TV",
+    "Date": "November 1, 2010"
+  },
+  {
+    "Name": "Video Kinect (rendered videoKINECT)",
+    "Available countries": "N/A",
+    "Category": "Social",
+    "Date": "November 1, 2010"
+  },
+  {
+    "Name": "Hulu Plus (replaced by new version)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "April 29, 2011"
+  },
+  {
+    "Name": "BYUtv [ 1 ]",
+    "Available countries": "United States",
+    "Category": "TV",
+    "Date": "April 22, 2014"
+  },
+  {
+    "Name": "Sky Go [ note 2 ]",
+    "Available countries": "United Kingdom",
+    "Category": "TV",
+    "Date": "June 7, 2011"
+  },
+  {
+    "Name": "EPIX",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "ESPN on Xbox Live (removed from store)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "Hulu",
+    "Available countries": "Japan",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "Hulu Plus (new version)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "LoveFilm",
+    "Available countries": "United Kingdom",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "Netflix (new version)",
+    "Available countries": "Brazil, Canada, Chile, Colombia, Mexico, United Kingdom, United States, Russia",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "Premium Play by ( MediaSet )",
+    "Available countries": "Italy",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "Sky Go (SkyDE)",
+    "Available countries": "Germany",
+    "Category": "TV",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "Movistar TV (Movistar)",
+    "Available countries": "Spain",
+    "Category": "TV",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "TODAY ( MSNBC )",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 6, 2011"
+  },
+  {
+    "Name": "blinkbox",
+    "Available countries": "United Kingdom",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "iHeartRadio (Clear Channel)",
+    "Available countries": "United States",
+    "Category": "Music",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "MSN",
+    "Available countries": "Canada, Germany, Italy, Mexico, and United Kingdom",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "MSNBC.com",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "MUZU.TV",
+    "Available countries": "Belgium, Denmark, Finland, France, Germany, Ireland, Italy, Netherlands, Norway, Spain, Sweden and United Kingdom",
+    "Category": "Music",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "ninemsn (inactive)",
+    "Available countries": "Australia",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "Rogers On Demand Online (Rogers Media)",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "SBS ON DEMAND (removed from store)",
+    "Available countries": "Australia",
+    "Category": "TV",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "TMZ",
+    "Available countries": "Canada, United States",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "RTVE",
+    "Available countries": "Spain",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "Verizon Fios TV (removed from store)",
+    "Available countries": "United States",
+    "Category": "TV",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "YouTube",
+    "Available countries": "Available in 24 countries globally",
+    "Category": "Video",
+    "Date": "December 13, 2011"
+  },
+  {
+    "Name": "4 on Demand (C4)",
+    "Available countries": "United Kingdom",
+    "Category": "Video",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "ABC iview (Discontinued in 2018)",
+    "Available countries": "Australia",
+    "Category": "Video",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "Dailymotion",
+    "Available countries": "Available in 34 countries globally",
+    "Category": "Video",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "Demand 5 (Five)",
+    "Available countries": "United Kingdom [ note 3 ]",
+    "Category": "TV",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "M6 ( Astral Media )",
+    "Available countries": "France",
+    "Category": "TV",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "MSN Video",
+    "Available countries": "France",
+    "Category": "Video",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "UFC on Xbox Live",
+    "Available countries": "Canada, United States, Russia",
+    "Category": "Video",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "Vudu ( Walmart )",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 20, 2011"
+  },
+  {
+    "Name": "Astral Media \u2019s Disney XD ( Astral Media )",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "January 17, 2012"
+  },
+  {
+    "Name": "Mediathek/ ZDF",
+    "Available countries": "Germany",
+    "Category": "Video",
+    "Date": "January 17, 2012"
+  },
+  {
+    "Name": "Real Sports (Maple Leaf Sports)",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "January 17, 2012"
+  },
+  {
+    "Name": "CinemaNow ( Best Buy )",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "January 24, 2012"
+  },
+  {
+    "Name": "Crackle (Sony Pictures)",
+    "Available countries": "Australia, Canada, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "January 31, 2012"
+  },
+  {
+    "Name": "Vevo",
+    "Available countries": "Australia, Canada, Ireland, United Kingdom, United States",
+    "Category": "Music",
+    "Date": "March 6, 2012"
+  },
+  {
+    "Name": "AlloCin\u00e9",
+    "Available countries": "France (AlloCin\u00e9), Germany (Filmstarts), Spain (Sensacine), United Kingdom (Screenrush)",
+    "Category": "Video",
+    "Date": "March 13, 2012"
+  },
+  {
+    "Name": "BBC iPlayer",
+    "Available countries": "United Kingdom",
+    "Category": "TV",
+    "Date": "March 20, 2012"
+  },
+  {
+    "Name": "HBO Go",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "March 27, 2012"
+  },
+  {
+    "Name": "MLB.TV (MLB Advanced Media)",
+    "Available countries": "Canada, Mexico, United States",
+    "Category": "Video",
+    "Date": "March 27, 2012"
+  },
+  {
+    "Name": "Xbox Live Event Player",
+    "Available countries": "2012 Revolver Golden Gods (April 7): Belgium, Canada, Denmark, Finland, Germany, Ireland, Norway, Sweden, United Kingdom, United States Xbox E3 2012 Media Briefing (June 4): Available in all countries Miss Teen USA 2012 (July 27): Australia, Brazil, Canada, Chile, Colombia, France, Germany, Ireland, Italy, Mexico, New Zealand, Poland, South Africa, Spain, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "March 27, 2012"
+  },
+  {
+    "Name": "Xfinity On Demand ( Comcast )",
+    "Available countries": "United States",
+    "Category": "TV",
+    "Date": "March 27, 2012"
+  },
+  {
+    "Name": "YOMVI ( Canal+ )",
+    "Available countries": "Spain",
+    "Category": "Video",
+    "Date": "April 3, 2012"
+  },
+  {
+    "Name": "Orange TV",
+    "Available countries": "France",
+    "Category": "TV",
+    "Date": "April 16, 2012"
+  },
+  {
+    "Name": "MLB.TV (MLB Advanced Media)",
+    "Available countries": "Australia, Brazil, Chile, Colombia, Czech Republic, France, Germany, India, Ireland, Italy, Netherlands, New Zealand, Poland, Russia, South Africa, Spain, Sweden, United Kingdom",
+    "Category": "Video",
+    "Date": "May 8, 2012"
+  },
+  {
+    "Name": "Manga Entertainment (Starz)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "May 16, 2012"
+  },
+  {
+    "Name": "MUZU.TV",
+    "Available countries": "Canada, United States",
+    "Category": "Music",
+    "Date": "May 16, 2012"
+  },
+  {
+    "Name": "Amazon Video (removed from store)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "May 29, 2012"
+  },
+  {
+    "Name": "Antena 3",
+    "Available countries": "Spain",
+    "Category": "TV",
+    "Date": "May 29, 2012"
+  },
+  {
+    "Name": "MLB.TV (MLB Advanced Media)",
+    "Available countries": "Hong Kong, Japan, South Korea, Singapore, Taiwan",
+    "Category": "Video",
+    "Date": "May 29, 2012"
+  },
+  {
+    "Name": "MUZU.TV",
+    "Available countries": "Australia, New Zealand",
+    "Category": "Music",
+    "Date": "May 29, 2012"
+  },
+  {
+    "Name": "Paramount Movies",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "June 12, 2012"
+  },
+  {
+    "Name": "Kinect PlayFit",
+    "Available countries": "Available in all countries (except Russia, etc.)",
+    "Category": "Social",
+    "Date": "July 10, 2012"
+  },
+  {
+    "Name": "NBC News",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "August 21, 2012"
+  },
+  {
+    "Name": "Now TV",
+    "Available countries": "United Kingdom",
+    "Category": "TV",
+    "Date": "August 21, 2012"
+  },
+  {
+    "Name": "Wuaki.tv",
+    "Available countries": "Spain",
+    "Category": "Video",
+    "Date": "August 29, 2012"
+  },
+  {
+    "Name": "Sony Pictures",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "September 5, 2012"
+  },
+  {
+    "Name": "Kinect Sesame Street TV",
+    "Available countries": "Australia, Canada, Hong Kong, Ireland, New Zealand, Singapore, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "September 18, 2012"
+  },
+  {
+    "Name": "Kinect Nat Geo TV",
+    "Available countries": "Australia, Canada, Hong Kong, Ireland, New Zealand, Singapore, United Arab Emirates, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "September 18, 2012"
+  },
+  {
+    "Name": "Fox Broadcast",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "September 25, 2012"
+  },
+  {
+    "Name": "L'Or\u00e9al -The Next Level",
+    "Available countries": "United States",
+    "Category": "Social",
+    "Date": "October 2, 2012"
+  },
+  {
+    "Name": "IGN",
+    "Available countries": "United Kingdom",
+    "Category": "Video",
+    "Date": "October 9, 2012"
+  },
+  {
+    "Name": "GameSpot TV",
+    "Available countries": "Australia, Canada, Ireland, New Zealand, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "October 9, 2012"
+  },
+  {
+    "Name": "Internet Explorer",
+    "Available countries": "Available in all countries",
+    "Category": "Web Browser",
+    "Date": "October 16, 2012"
+  },
+  {
+    "Name": "Groove Music",
+    "Available countries": "Available in all countries (except Russia, etc.)",
+    "Category": "Music",
+    "Date": "October 16, 2012"
+  },
+  {
+    "Name": "Movies & TV",
+    "Available countries": "Available in all countries (except Russia)",
+    "Category": "Video",
+    "Date": "October 16, 2012"
+  },
+  {
+    "Name": "NBA Game Time with NBA.com League Pass Broadband",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "October 22, 2012"
+  },
+  {
+    "Name": "NBA Game Time",
+    "Available countries": "Available in all countries (except United States)",
+    "Category": "Video",
+    "Date": "October 30, 2012"
+  },
+  {
+    "Name": "Mustang Customizer (Ford)",
+    "Available countries": "United States",
+    "Category": "Social",
+    "Date": "October 31, 2012"
+  },
+  {
+    "Name": "Gol Stadium",
+    "Available countries": "Spain",
+    "Category": "Video",
+    "Date": "October 31, 2012"
+  },
+  {
+    "Name": "WSJ Live",
+    "Available countries": "Australia, Austria, Belgium, Brazil, Canada, Chile, Colombia, Czech Republic, Denmark, Finland, France, Germany, Greece, Hong Kong, Hungary, India, Ireland, Italy, Japan, Korea, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, South Africa, Singapore, Slovakia, Spain, Sweden, Switzerland, Taiwan, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "October 31, 2012"
+  },
+  {
+    "Name": "Gulli Replay",
+    "Available countries": "France",
+    "Category": "Video",
+    "Date": "November 13, 2012"
+  },
+  {
+    "Name": "Quickflix",
+    "Available countries": "Australia, New Zealand",
+    "Category": "Video",
+    "Date": "November 13, 2012"
+  },
+  {
+    "Name": "Absolute Radio",
+    "Available countries": "United Kingdom",
+    "Category": "Music",
+    "Date": "November 21, 2012"
+  },
+  {
+    "Name": "MUZU.TV",
+    "Available countries": "Austria, Switzerland",
+    "Category": "Music",
+    "Date": "November 21, 2012"
+  },
+  {
+    "Name": "UVideos ( Univision )",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "November 21, 2012"
+  },
+  {
+    "Name": "Vevo",
+    "Available countries": "Brazil",
+    "Category": "Video",
+    "Date": "November 21, 2012"
+  },
+  {
+    "Name": "Blip.TV (shutdown as of August 2015)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 5, 2012"
+  },
+  {
+    "Name": "IGN",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "December 5, 2012"
+  },
+  {
+    "Name": "LoveFilm",
+    "Available countries": "Germany",
+    "Category": "Video",
+    "Date": "December 5, 2012"
+  },
+  {
+    "Name": "Rhapsody",
+    "Available countries": "United States",
+    "Category": "Music",
+    "Date": "December 5, 2012"
+  },
+  {
+    "Name": "RTL XL",
+    "Available countries": "Netherlands",
+    "Category": "Video",
+    "Date": "December 5, 2012"
+  },
+  {
+    "Name": "TOU.TV",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "December 5, 2012"
+  },
+  {
+    "Name": "arte",
+    "Available countries": "Germany, France",
+    "Category": "Video",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "CinemaNow ( Best Buy )",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "CNET",
+    "Available countries": "Canada, United States",
+    "Category": "Video",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Karaoke",
+    "Available countries": "Available in all countries (except Japan and United Arab Emirates) (shutdown in August 2014)",
+    "Category": "Social",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Maxim",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Napster",
+    "Available countries": "Germany, United Kingdom",
+    "Category": "Music",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "SkyDrive (Updated to OneDrive and inactive)",
+    "Available countries": "Available in all countries (except Russia)",
+    "Category": "Social",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Sport1",
+    "Available countries": "Austria, Germany",
+    "Category": "Video",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Vevo",
+    "Available countries": "Spain, Italy, France",
+    "Category": "Music",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Zattoo",
+    "Available countries": "Germany",
+    "Category": "Video",
+    "Date": "December 11, 2012"
+  },
+  {
+    "Name": "Sports Picks",
+    "Available countries": "Available in all countries",
+    "Category": "Video",
+    "Date": "December 14, 2012"
+  },
+  {
+    "Name": "AOL On",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "Azteca",
+    "Available countries": "Mexico",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "Crunchyroll",
+    "Available countries": "Available in all countries (except Japan, United Arab Emirates, Slovakia, Saudi Arabia)",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "IGN",
+    "Available countries": "Australia, New Zealand",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "SnagFilms",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "Televisa",
+    "Available countries": "Mexico",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "Viaplay",
+    "Available countries": "Denmark, Finland, Norway, Sweden",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "Vimeo",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "December 18, 2012"
+  },
+  {
+    "Name": "NHL GameCenter LIVE",
+    "Available countries": "Available in all countries (except Denmark, Finland, Norway, Sweden)",
+    "Category": "Video",
+    "Date": "January 18, 2013"
+  },
+  {
+    "Name": "Slacker Radio",
+    "Available countries": "Canada, United States",
+    "Category": "Music",
+    "Date": "February 26, 2013"
+  },
+  {
+    "Name": "Zona Latina",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "February 26, 2013"
+  },
+  {
+    "Name": "GameTrailers",
+    "Available countries": "Australia, Canada, Germany, Spain, France, Italy, Japan, Mexico, United Kingdom, United States (delisted)",
+    "Category": "Video",
+    "Date": "March 19, 2013"
+  },
+  {
+    "Name": "Redbox Instant by Verizon",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "March 19, 2013"
+  },
+  {
+    "Name": "IndieFlix",
+    "Available countries": "Australia, Canada, Ireland, New Zealand, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "March 26, 2013"
+  },
+  {
+    "Name": "PopcornFlix",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "March 26, 2013"
+  },
+  {
+    "Name": "Revision3",
+    "Available countries": "Canada, United Kingdom, United States",
+    "Category": "Video",
+    "Date": "March 26, 2013"
+  },
+  {
+    "Name": "Toys \"R\" Us Movies",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "March 26, 2013"
+  },
+  {
+    "Name": "WWE on Xbox Live",
+    "Available countries": "United States, Russia",
+    "Category": "Video",
+    "Date": "April 2, 2013"
+  },
+  {
+    "Name": "CBC 's Hockey Night In Canada",
+    "Available countries": "Canada",
+    "Category": "Video",
+    "Date": "April 11, 2013"
+  },
+  {
+    "Name": "Sainsbury's",
+    "Available countries": "United Kingdom",
+    "Category": "",
+    "Date": "April 11, 2013"
+  },
+  {
+    "Name": "Flixster",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "April 16, 2013"
+  },
+  {
+    "Name": "The CW Network (removed from store)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "April 23, 2013"
+  },
+  {
+    "Name": "Pizza Hut (removed from store)",
+    "Available countries": "United States",
+    "Category": "Social",
+    "Date": "April 23, 2013"
+  },
+  {
+    "Name": "Machinima",
+    "Available countries": "Available in all countries (delisted)",
+    "Category": "Video",
+    "Date": "April 30, 2013"
+  },
+  {
+    "Name": "Twitch (removed from store and inactive)",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "May 14, 2013"
+  },
+  {
+    "Name": "Deezer",
+    "Available countries": "Austria, Belgium, Czech Republic, Germany, Denmark, Finland, France, Ireland, Italy, Netherlands, Norway, Poland, Portugal, Russia, Slovakia, Spain, Sweden, Switzerland, United Kingdom (delisted)",
+    "Category": "Music",
+    "Date": "May 28, 2013"
+  },
+  {
+    "Name": "OneBeat",
+    "Available countries": "Canada, United Kingdom, United States, Zimbabwe",
+    "Category": "Video",
+    "Date": "May 28, 2013"
+  },
+  {
+    "Name": "Disney",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "June 19, 2013"
+  },
+  {
+    "Name": "Comedy Central Stand-Up",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "June 30, 2013"
+  },
+  {
+    "Name": "Nickelodeon",
+    "Available countries": "United States",
+    "Category": "Video",
+    "Date": "June 30, 2013"
+  },
+  {
+    "Name": "Ameba",
+    "Available countries": "United States, Canada",
+    "Category": "Video",
+    "Date": "August 21, 2013"
+  },
+  {
+    "Name": "Tenplay (discontinued)",
+    "Available countries": "Australia",
+    "Category": "TV",
+    "Date": "September 29, 2013"
+  },
+  {
+    "Name": "WeatherNation TV",
+    "Available countries": "Global",
+    "Category": "Live Broadcast / Weather Data / Weather Forecast",
+    "Date": "October 8, 2014"
+  },
+  {
+    "Name": "Twitch",
+    "Available countries": "Available in all countries",
+    "Category": "Movies / TV",
+    "Date": "October 8, 2014"
+  },
+  {
+    "Name": "Smosh (inactive)",
+    "Available countries": "United States",
+    "Category": "Entertainment",
+    "Date": "November 20, 2014"
+  }
+]
