@@ -36,27 +36,16 @@ necessarily of the metadata **accuracy.**
 
 | Local Database                                                                        | Remote Database Reference | Parseable? | Accuracy Verified? |
 | ------------------------------------------------------------------------------------- | ------------------------- | :--------: | :----------------: |
-| <./csv/archive.rushhosting.net_xbox_360_title_id_list.csv>                            | [2][201]                  | No         | No                 |
-| <./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json> | [19][202]                 | Yes        | Yes                |
-| <./json/wikipedia.org_xbox_360_games_a-l_table_2.json>                                | [9][203]                  | Yes        | No                 |
-| <./json/wikipedia.org_xbox_360_games_a-l_table_4.json>                                | [13][204]                 | Yes        | No                 |
-| <./json/wikipedia.org_xbox_360_games_m-z_table_2.json>                                | [10][205]                 | Yes        | No                 |
-| <./json/wikipedia.org_xbox_360_games_m-z_table_4.json>                                | [13][206]                 | Yes        | No                 |
-| <./json/wikipedia.org_xbox_360_system_link_games_table_1.json>                        | [11][207]                 | Yes        | No                 |
-| <./json/wikipedia.org_xbox_games_table_1.json>                                        | [12][208]                 | Yes        | No                 |
-| <./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json>               | [13][209]                 | Yes        | No                 |
-| <./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json>               | [13][210]                 | Yes        | No                 |
-
-[201]: ../REFERENCES.md#2
-[202]: ../REFERENCES.md#19
-[203]: ../REFERENCES.md#9
-[204]: ../REFERENCES.md#13
-[205]: ../REFERENCES.md#10
-[206]: ../REFERENCES.md#13
-[207]: ../REFERENCES.md#11
-[208]: ../REFERENCES.md#12
-[209]: ../REFERENCES.md#13
-[210]: ../REFERENCES.md#13
+| `./csv/archive.rushhosting.net_xbox_360_title_id_list.csv`                            | [2]                       | No         | No                 |
+| `./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json` | [19]                      | Yes        | Yes                |
+| `./json/wikipedia.org_xbox_360_games_a-l_table_2.json`                                | [9]                       | Yes        | No                 |
+| `./json/wikipedia.org_xbox_360_games_a-l_table_4.json`                                | [13]                      | Yes        | No                 |
+| `./json/wikipedia.org_xbox_360_games_m-z_table_2.json`                                | [10]                      | Yes        | No                 |
+| `./json/wikipedia.org_xbox_360_games_m-z_table_4.json`                                | [13]                      | Yes        | No                 |
+| `./json/wikipedia.org_xbox_360_system_link_games_table_1.json`                        | [11]                      | Yes        | No                 |
+| `./json/wikipedia.org_xbox_games_table_1.json`                                        | [12]                      | Yes        | No                 |
+| `./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json`               | [13]                      | Yes        | No                 |
+| `./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json`               | [13]                      | Yes        | No                 |
 
 ### 3. Database Coverage
 
@@ -64,28 +53,14 @@ The data and metadata coverage of remote databases.
 
 #### 1. Titles
 
-| Platform         | Total Titles Released                                     | Total Titles Unreleased                        |
-| ---------------- | --------------------------------------------------------- | ---------------------------------------------- |
-| Xbox             | 989 <sup>[3101]</sup>, or 998 <sup>[3103]</sup>           | 57 <sup>[3102]</sup>, or 566 <sup>[3104]</sup> |
-| Xbox: XLBA       | 38 <sup>[3111]</sup>                                      | 0 <sup>[3111]</sup>                            |
-| Xbox 360: Apps	 | 572 <sup>[3121]</sup>                                     | unknown                                        |
-| Xbox 360: Retail | 2,155 (1,072 <sup>[3131]</sup> + 1,080 <sup>[3132]</sup>) | 6 (3 <sup>[3131]<sup> + 3<sup>[3132]</sup>)    |
-| Xbox 360: Indie  | ?                                                         | unknown                                        |
-| Xbox 360: XBLA   | 724 (362 <sup>[3151]</sup> + 362 <sup>[3151]</sup>)       | >= 1 (*GoldenEye 007*) <sup>[3151]<sup>        |
-
-[3101]: ../REFERENCES.md/#12
-[3102]: ../REFERENCES.md/#29
-[3103]: ../REFERENCES.md/#31
-[3104]: ../REFERENCES.md/#32
-
-[3111]: ../REFERENCES.md/#36
-
-[3121]: ../REFERENCES.md/#33
-
-[3131]: ../REFERENCES.md/#09
-[3132]: ../REFERENCES.md/#10
-
-[3151]: ../REFERENCES.md/#30
+| Platform         | Total Titles Released                                | Total Titles Unreleased                    |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------ |
+| Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> |
+| Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          |
+| Xbox 360: Apps	 | 572 <sup>[33]</sup>                                  | unknown                                    |
+| Xbox 360: Retail | 2,155 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]<sup> + 3<sup>[10]</sup>)     |
+| Xbox 360: Indie  | ?                                                    | unknown                                    |
+| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1 (*GoldenEye 007* <sup>[30]<sup> )     |
 
 #### 2. Platforms
 
@@ -110,36 +85,36 @@ The data and metadata coverage of remote databases.
 
 #### 2. Metadata
 
- Remote Database Reference   | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Rating                |
-| -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [1](../REFERENCES.md/#1)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [2](../REFERENCES.md/#2)  | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [5](../REFERENCES.md/#5)  | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
-| [11](../REFERENCES.md/#11) | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    |
-| [12](../REFERENCES.md/#12) | No                    | **Yes**               | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | No                    |
-| [13](../REFERENCES.md/#13) | No                    | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    |
-| [14](../REFERENCES.md/#14) | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
-| [15](../REFERENCES.md/#15) | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
-| [16](../REFERENCES.md/#16) | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
-| [20](../REFERENCES.md/#20) | **Yes**               | **Yes**               | No                    | No                    | No                    | **Yes**               | No                    | No                    |
-| [21](../REFERENCES.md/#21) | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [27](../REFERENCES.md/#27) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [28](../REFERENCES.md/#28) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+ Remote Database Reference | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Rating                |
+| ------------------------ | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
+| [1]                      | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [2]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [5]                      | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
+| [11]                     | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    |
+| [12]                     | No                    | **Yes**               | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | No                    |
+| [13]                     | No                    | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    |
+| [14]                     | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
+| [15]                     | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
+| [16]                     | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
+| [20]                     | **Yes**               | **Yes**               | No                    | No                    | No                    | **Yes**               | No                    | No                    |
+| [21]                     | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [27]                     | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [28]                     | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
 
 #### 3. Features (General)
 
-| Remote Database Reference  | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
-| -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
-| [2](../REFERENCES.md/#2)  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [5](../REFERENCES.md/#5)   | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [9](../REFERENCES.md/#9)  | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
-| [10](../REFERENCES.md/#10) | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
-| [11](../REFERENCES.md/#11) | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    | No                    | No                    |
-| [12](../REFERENCES.md/#12) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [13](../REFERENCES.md/#13) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [16](../REFERENCES.md/#16) | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [20](../REFERENCES.md/#20) | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [28](../REFERENCES.md/#28) | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| Remote Database Reference | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
+| ------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
+| [2]                       | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [5]                       | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [9]                       | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [10]                      | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [11]                      | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [12]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [13]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [16]                      | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [20]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [28]                      | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
 
 #### 4. Features (Xbox)
 
@@ -157,15 +132,54 @@ Xbox features include the following:
 - Scoreboards
 - Voice
 
-| Remote Database Reference  | Features (some or none)                 |
-| -------------------------- | :-------------------------------------: |
-| [2](../REFERENCES.md/#2)  | **Yes**; incomplete: Local, LAN, Online |
-| [5](../REFERENCES.md/#5)  | **Yes**; complete                       |
-| [11](../REFERENCES.md/#11) | **Yes**; incomplete: LAN                |
-| [12](../REFERENCES.md/#12) | No                                      |
-| [13](../REFERENCES.md/#13) | No                                      |
-| [16](../REFERENCES.md/#16) | **Yes**; complete                       |
-| [20](../REFERENCES.md/#20) | No                                      |
+| Remote Database Reference  | Features (some or none)                  |
+| -------------------------- | :-------------------------------------=: |
+| [2]                        |  **Yes**; incomplete: Local, LAN, Online |
+| [5]                        | **Yes**; complete                        |
+| [11]                       | **Yes**; incomplete: LAN                 |
+| [12]                       | No                                       |
+| [13]                       | No                                       |
+| [16]                       | **Yes**; complete                        |
+| [20]                       | No                                       |
 
 ##
 #### Click [here](#databases) to return to the top of this document.
+
+[1]: ../REFERENCES.md/#1
+[2]: ../REFERENCES.md/#2
+[3]: ../REFERENCES.md/#3
+[4]: ../REFERENCES.md/#4
+[5]: ../REFERENCES.md/#5
+[6]: ../REFERENCES.md/#6
+[7]: ../REFERENCES.md/#7
+[8]: ../REFERENCES.md/#8
+[9]: ../REFERENCES.md/#9
+[10]: ../REFERENCES.md/#10
+[11]: ../REFERENCES.md/#11
+[12]: ../REFERENCES.md/#12
+[13]: ../REFERENCES.md/#13
+[14]: ../REFERENCES.md/#14
+[15]: ../REFERENCES.md/#15
+[16]: ../REFERENCES.md/#16
+[17]: ../REFERENCES.md/#17
+[18]: ../REFERENCES.md/#18
+[19]: ../REFERENCES.md/#19
+[20]: ../REFERENCES.md/#20
+[21]: ../REFERENCES.md/#21
+[22]: ../REFERENCES.md/#22
+[23]: ../REFERENCES.md/#23
+[24]: ../REFERENCES.md/#24
+[25]: ../REFERENCES.md/#25
+[26]: ../REFERENCES.md/#26
+[27]: ../REFERENCES.md/#27
+[28]: ../REFERENCES.md/#28
+[29]: ../REFERENCES.md/#29
+[30]: ../REFERENCES.md/#30
+[31]: ../REFERENCES.md/#31
+[32]: ../REFERENCES.md/#32
+[33]: ../REFERENCES.md/#33
+[34]: ../REFERENCES.md/#34
+[35]: ../REFERENCES.md/#35
+[36]: ../REFERENCES.md/#36
+[37]: ../REFERENCES.md/#37
+[38]: ../REFERENCES.md/#38
