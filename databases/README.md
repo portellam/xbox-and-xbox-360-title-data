@@ -24,43 +24,47 @@
 
 ### 1. Disclaimer
 
-The word **"accuracy"** in this context describes as a **ratio** of the presence
-of **metadata** for a number of video game titles **relative** to the **total**
-number of titles.
+- The word **"entry"** or "record" in this context is a given video game title's
+metadata.
 
-The word **"coverage"** in this context describes the **presence** of metadata
-attributes (*Name, Developer, Release Date,* and so forth), and **not**
-necessarily of the metadata **accuracy.**
+- The word **field"** or "attribute" in this context is an individual key and value
+of metadata. For example: `Name: "Halo 3"`
+
+- The word **"coverage"** in this context describes the **presence** of all valid
+**fields** on a local database from a remote database.
+
+- The word **"parity"** in this context describes the **ratio** of the
+**presence** of **entries** on a local database relative to a remote database.
 
 ### 2. This Directory
 
-| Local Database                                                                                | Remote Database Reference | Has Parity?    |
-| --------------------------------------------------------------------------------------------- | ------------------------- | :------------: |
-| -                                                                                             | [1],  [21]                | -              |
-| [`./csv/archive.rushhosting.net_xbox_360_title_id_list.csv`][2002]                            | [2]                       | **Yes**        |
-| -                                                                                             | [3],  [5],  [16]          | -              |
-| -                                                                                             | [4]                       | -              |
-| [`./json/wikipedia.org_xbox_360_games_a-l_table_2.json`][2009]                                | [9]                       | **Yes**        |
-| [`./json/wikipedia.org_xbox_360_games_a-l_table_4.json`][2019]                                | [9]                       | **Yes**        |
-| [`./json/wikipedia.org_xbox_360_games_m-z_table_2.json`][2010]                                | [10]                      | **Yes**        |
-| [`./json/wikipedia.org_xbox_360_games_m-z_table_4.json`][2110]                                | [10]                      | **Yes**        |
-| [`./json/wikipedia.org_xbox_360_system_link_games_table_1.json`][2011]                        | [11]                      | **Yes**        |
-| [`./json/wikipedia.org_xbox_games_table_1.json`][2012]                                        | [12]                      | **Yes**        |
-| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json`][2013]               | [13]                      | **Yes**        |
-| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json`][2113]               | [13]                      | **Yes**        |
-| -                                                                                             | [14]                      | -              |
-| -                                                                                             | [15]                      | -              |
-| [`./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json`][2019] | [19]                      | **Yes**        |
-| -                                                                                             | [22]                      | -              |
-| -                                                                                             | [23]                      | -              |
-| -                                                                                             | [27]                      | -              |
-| -                                                                                             | [28]                      | -              |
-| [`./json/wikipedia.org_list_of_cancelled_xbox_games_table_1.json`][2029]                      | [29]                      | -              |
-| [`./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json`][2031]                    | [31]                      | No             |
-| [`./json/xbox.fandom.com_list_of_xbox_games_table_1.json`][2032]                              | [32]                      | No             |
-| [`./json/wikipedia.org_list_of_xbox_360_applications_table_1.json`][2033]                     | [33]                      | -              |
-| -                                                                                             | [35]                      | -              |
-| -                                                                                             | [36]                      | -              |
+| Local Database                                                                                | Remote           | Has Coverage? | Has Parity? |
+| --------------------------------------------------------------------------------------------- | ---------------- | :-----------: | :---------: |
+| -                                                                                             | [1],  [21]       | -             | -           |
+| [`./csv/archive.rushhosting.net_xbox_360_title_id_list.csv`][2002]                            | [2]              | **Yes**       | No          |
+| -                                                                                             | [3],  [5],  [16] | -             | -           |
+| -                                                                                             | [4]              | -             | -           |
+| [`./json/wikipedia.org_xbox_360_games_a-l_table_2.json`][2009]                                | [9]              | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_360_games_a-l_table_4.json`][2019]                                | [9]              | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_360_games_m-z_table_2.json`][2010]                                | [10]             | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_360_games_m-z_table_4.json`][2110]                                | [10]             | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_360_system_link_games_table_1.json`][2011]                        | [11]             | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_games_table_1.json`][2012]                                        | [12]             | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json`][2013]               | [13]             | **Yes**       | **Yes**     |
+| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json`][2113]               | [13]             | **Yes**       | **Yes**     |
+| -                                                                                             | [14]             | -             | -           |
+| -                                                                                             | [15]             | -             | -           |
+| [`./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json`][2019] | [19]             | **Yes**       | **Yes**     |
+| -                                                                                             | [22]             | -             | -           |
+| -                                                                                             | [23]             | -             | -           |
+| -                                                                                             | [27]             | -             | -           |
+| -                                                                                             | [28]             | -             | -           |
+| [`./json/wikipedia.org_list_of_cancelled_xbox_games_table_1.json`][2029]                      | [29]             | -             | -           |
+| [`./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json`][2031]                    | [31]             | No            | No          |
+| [`./json/xbox.fandom.com_list_of_xbox_games_table_1.json`][2032]                              | [32]             | No            | No          |
+| [`./json/wikipedia.org_list_of_xbox_360_applications_table_1.json`][2033]                     | [33]             | -             | -           |
+| -                                                                                             | [35]             | -             | -           |
+| -                                                                                             | [36]             | -             | -           |
 
 [2002]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
 [2009]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
@@ -83,62 +87,62 @@ The data and metadata coverage of remote databases.
 
 #### 1. Titles
 
-| Platform         | Total Titles Released                                | Total Titles Unreleased                    | Notes                                                                      |
+| Platform         | Released                                             | Unreleased                                 | Notes                                                                      |
 | ---------------- | ---------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------- |
 | Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> | -                                                                          |
 | Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          | -                                                                          |
 | Xbox 360: Retail | 2,152 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]</sup> + 3 <sup>[10]</sup>)   | Website reports 2,155, counted 2,152. Viewed HTML and counted `<tr>` tags. |
-| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup)       | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                       |
+| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                       |
 | Xbox 360: Indie  | ?                                                    | unknown                                    | -                                                                          |
 | Xbox 360: Apps   | 572 <sup>[33]</sup>                                  | unknown                                    | -                                                                          |
 
 #### 2. Platforms
 
-| Remote Database Reference  | Xbox                  | Xbox on Xbox 360      | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
-| -------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [1],  [21]                 | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
-| [2]                        | No                    | No                    | **Yes**               | No                    | No                    | No                    |
-| [3],  [5],  [16]           | **Yes**               | No                    | No                    | No                    | No                    | No                    |
-| [4]                        | No                    | No                    | **Yes**               | No                    | No                    | No                    |
-| [9]                        | No                    | No                    | **Yes**               | No                    | No                    | No                    |
-| [10]                       | No                    | No                    | **Yes**               | No                    | No                    | No                    |
-| [12]                       | **Yes**               | No                    | No                    | No                    | No                    | No                    |
-| [13]                       | No                    | **Yes**               | No                    | No                    | No                    | No                    |
-| [14]                       | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
-| [15]                       | No                    | No                    | No                    | **Yes**               | No                    | No                    |
-| [19]                       | No                    | **Yes**               | No                    | No                    | No                    | No                    |
-| [20]                       | **Yes**               | No                    | **Yes**               | **Yes**               | No                    | No                    |
-| [23]                       | No                    | No                    | No                    | **Yes**               | No                    | No                    |
-| [24]                       | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| Remote           | Xbox                  | Xbox on Xbox 360      | Xbox 360: Retail      | Xbox 360: XBLA        | Xbox 360: Indie       | Xbox 360: Apps        |
+| ---------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
+| [1],  [21]       | No                    | No                    | **Yes**               | **Yes**               | ?                     | ?                     |
+| [2]              | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [3],  [5],  [16] | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [4]              | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [9]              | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [10]             | No                    | No                    | **Yes**               | No                    | No                    | No                    |
+| [12]             | **Yes**               | No                    | No                    | No                    | No                    | No                    |
+| [13]             | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [14]             | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [15]             | No                    | No                    | No                    | **Yes**               | No                    | No                    |
+| [19]             | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [20]             | **Yes**               | No                    | **Yes**               | **Yes**               | No                    | No                    |
+| [23]             | No                    | No                    | No                    | **Yes**               | No                    | No                    |
+| [24]             | **Yes**               | No                    | No                    | No                    | No                    | No                    |
 
 #### 2. Metadata
 
- Remote Database Reference | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Maturity Rating       |
-| ------------------------ | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
-| [1],  [21]               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [2]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [3],  [5],  [16]         | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
-| [11]                     | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    |
-| [12]                     | No                    | **Yes**               | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | No                    |
-| [13]                     | No                    | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    |
-| [14],  [15]              | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
-| [20]                     | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    |
-| [27]                     | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [28]                     | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+ Remote            | Title ID              | Name                  | Developer             | Publisher             | Genre                 | Release Date          | Regions               | Maturity Rating       |
+| ---------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |
+| [1],  [21]       | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [2]              | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [3],  [5],  [16] | **Yes**               | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | **Yes**               |
+| [11]             | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    |
+| [12]             | No                    | **Yes**               | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | No                    |
+| [13]             | No                    | **Yes**               | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    |
+| [14],  [15]      | **Yes**               | **Yes**               | No                    | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    |
+| [20]             | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    |
+| [27]             | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [28]             | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
 
 #### 3. Features (General)
 
-| Remote Database Reference | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
-| ------------------------- | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
-| [2]                       | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [3],  [5],  [16]          | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
-| [9]                       | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
-| [10]                      | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
-| [11]                      | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    | No                    | No                    |
-| [12]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [13]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [20]                      | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
-| [28]                      | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| Remote            | Multiplayer: Local    | Multiplayer: LAN      | Multiplayer: Online   | Player Count: Local   | Player Count: LAN     | Player Count: Online  | 3D Support            | Kinect Supported      | Kinect Required       |
+| ----------------  | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: | :-------------------: |:--------------------: |:--------------------: |
+| [2]               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [3],  [5],  [16]  | **Yes**               | **Yes**               | **Yes**               | **Yes**               | **Yes**               | No                    | No                    | No                    | No                    |
+| [9]               | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [10]              | No                    | No                    | No                    | No                    | No                    | No                    | **Yes**               | **Yes**               | **Yes**               |
+| [11]              | No                    | **Yes**               | No                    | No                    | **Yes**               | No                    | No                    | No                    | No                    |
+| [12]              | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [13]              | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [20]              | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
+| [28]              | No                    | **Yes**               | No                    | No                    | No                    | No                    | No                    | No                    | No                    |
 
 #### 4. Features (*Xbox*)
 
@@ -156,14 +160,14 @@ The data and metadata coverage of remote databases.
 - Scoreboards
 - Voice
 
-| Remote Database Reference  | Features (some or none)                  |
-| -------------------------- | :--------------------------------------: |
-| [2]                        |  **Yes**; incomplete: Local, LAN, Online |
-| [5],  [16]                 | **Yes**; complete                        |
-| [11]                       | **Yes**; incomplete: LAN                 |
-| [12]                       | No                                       |
-| [13]                       | No                                       |
-| [20]                       | No                                       |
+| Remote     | Has Features?                            |
+| ---------- | :--------------------------------------: |
+| [2]        |  **Yes**; incomplete: Local, LAN, Online |
+| [5],  [16] | **Yes**; complete                        |
+| [11]       | **Yes**; incomplete: LAN                 |
+| [12]       | No                                       |
+| [13]       | No                                       |
+| [20]       | No                                       |
 
 ##
 #### Click [here](#databases) to return to the top of this document.
