@@ -34,32 +34,32 @@ necessarily of the metadata **accuracy.**
 
 ### 2. This Directory
 
-| Local Database                                                                               | Remote Database Reference | Parseable? | Working            |
-| -------------------------------------------------------------------------------------------- | ------------------------- | :--------: | :----------------: |
-| -                                                                                            | [1],  [21]                | No         | No                 |
-| [`./csv/archive.rushhosting.net_xbox_360_title_id_list.csv`][201]                            | [2]                       | **Yes**    | No                 |
-| -                                                                                            | [3],  [5],  [16]          | No         | No                 |
-| -                                                                                            | [4]                       | No         | No                 |
-| [`./json/wikipedia.org_xbox_360_games_a-l_table_2.json`][203]                                | [9]                       | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_360_games_a-l_table_4.json`][204]                                | [9]                       | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_360_games_m-z_table_2.json`][205]                                | [10]                      | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_360_games_m-z_table_4.json`][206]                                | [10]                      | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_360_system_link_games_table_1.json`][207]                        | [11]                      | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_games_table_1.json`][208]                                        | [12]                      | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json`][209]               | [13]                      | **Yes**    | **Yes**            |
-| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json`][210]               | [13]                      | **Yes**    | **Yes**            |
-| -                                                                                            | [14]                      | No         | No                 |
-| -                                                                                            | [15]                      | No         | No                 |
-| [`./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json`][202] | [19]                      | **Yes**    | **Yes**            |
-| -                                                                                            | [22]                      | No         | No                 |
-| -                                                                                            | [23]                      | No         | No                 |
-| -                                                                                            | [27]                      | No         | No                 |
-| -                                                                                            | [28]                      | No         | No                 |
-| -                                                                                            | [29]                      | No         | No                 |
-| -                                                                                            | [32]                      | No         | No                 |
-| -                                                                                            | [33]                      | No         | No                 |
-| -                                                                                            | [35]                      | No         | No                 |
-| -                                                                                            | [36]                      | No         | No                 |
+| Local Database                                                                               | Remote Database Reference | Parseable? |
+| -------------------------------------------------------------------------------------------- | ------------------------- | :--------: |
+| -                                                                                            | [1],  [21]                | No         |
+| [`./csv/archive.rushhosting.net_xbox_360_title_id_list.csv`][201]                            | [2]                       | **Yes**    |
+| -                                                                                            | [3],  [5],  [16]          | No         |
+| -                                                                                            | [4]                       | No         |
+| [`./json/wikipedia.org_xbox_360_games_a-l_table_2.json`][203]                                | [9]                       | **Yes**    |
+| [`./json/wikipedia.org_xbox_360_games_a-l_table_4.json`][204]                                | [9]                       | **Yes**    |
+| [`./json/wikipedia.org_xbox_360_games_m-z_table_2.json`][205]                                | [10]                      | **Yes**    |
+| [`./json/wikipedia.org_xbox_360_games_m-z_table_4.json`][206]                                | [10]                      | **Yes**    |
+| [`./json/wikipedia.org_xbox_360_system_link_games_table_1.json`][207]                        | [11]                      | **Yes**    |
+| [`./json/wikipedia.org_xbox_games_table_1.json`][208]                                        | [12]                      | **Yes**    |
+| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json`][209]               | [13]                      | **Yes**    |
+| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json`][210]               | [13]                      | **Yes**    |
+| -                                                                                            | [14]                      | No         |
+| -                                                                                            | [15]                      | No         |
+| [`./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json`][202] | [19]                      | **Yes**    |
+| -                                                                                            | [22]                      | No         |
+| -                                                                                            | [23]                      | No         |
+| -                                                                                            | [27]                      | No         |
+| -                                                                                            | [28]                      | No         |
+| -                                                                                            | [29]                      | No         |
+| -                                                                                            | [32]                      | No         |
+| -                                                                                            | [33]                      | No         |
+| -                                                                                            | [35]                      | No         |
+| -                                                                                            | [36]                      | No         |
 
 [201]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
 [202]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
