@@ -76,14 +76,6 @@ dashboards such as [*Aurora*][6].
 
 N/A
 
-#### Backlog
-
-- [ ] explain how to run various python scripts.
-- [ ] explain/advertise how the JSON files should be used (Aurora Scripts)
-- [ ] explain how to query the JSON files locally.
-- [ ] explain how to query the JSON files online.
-  - [ ] setup GitHub actions to run scripts.
-
 ### ☎️ 5. Contact
 
 Do you need help? Please visit the [Issues][501] page.
