@@ -386,7 +386,6 @@ Accessed 2025-09-14.
 <sup>&nbsp;&nbsp;&nbsp;&nbsp;Original:&nbsp;</sup>
 <sup>https://en.wikipedia.org/wiki/List_of_Xbox_360_applications.</sup>
 
-
 <sup>&nbsp;&nbsp;&nbsp;&nbsp;Archive:&nbsp;</sup>
 <sup>https://web.archive.org/web/20250428052153/https://en.wikipedia.org/wiki/List_of_Xbox_360_applications.</sup>
 
