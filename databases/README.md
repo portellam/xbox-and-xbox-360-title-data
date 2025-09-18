@@ -103,8 +103,8 @@ The data and metadata coverage of remote databases.
 | Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> | -                                                                                                          |
 | Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          | -                                                                                                          |
 | Xbox 360: Retail | 2,152 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]</sup> + 3 <sup>[10]</sup>)   | Website reports 2,155, counted 2,152. Viewed HTML and counted `<tr>` tags. <sup>[9]</sup>  <sup>[10]</sup> |
-| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                                                       |
-| Xbox 360: Indie  | 3,596 <sup>[35]</sup>                                | 165 <sup>[35]</sup>                        | Pre-launch: 9; XNA Starter Kits: 19; XNA Projects: 28; Other: 20. <sup>[35]</sup>                          |
+| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | At least one exists: *GoldenEye 007* <sup>[30]</sup>                                                       |
+| Xbox 360: Indie  | 3,596 <sup>[35]</sup>                                | 165 <sup>[35]</sup>                        | (Not included) Pre-launch: 9; XNA Starter Kits: 19; XNA Projects: 28; Other: 20. <sup>[35]</sup>           |
 | Xbox 360: Apps   | 572 <sup>[33]</sup>                                  | unknown                                    | -                                                                                                          |
 
 #### 2. Platforms
