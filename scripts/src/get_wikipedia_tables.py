@@ -21,7 +21,7 @@ from bs4 import (
 )
 
 from config_wikipedia import (
-  OUTPUT_FILE_NAME_LIST,
+  FILE_NAME_LIST,
   URL_LIST
 )
 
@@ -88,7 +88,7 @@ def main() -> int:
 
   for url, name in zip(
     URL_LIST,
-    OUTPUT_FILE_NAME_LIST
+    FILE_NAME_LIST
   ):
     index += 1
 

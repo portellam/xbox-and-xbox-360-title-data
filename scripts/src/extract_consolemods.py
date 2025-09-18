@@ -16,9 +16,12 @@ from typing import (
   Optional
 )
 
+from config import (
+  ELEMENT_TAG_LIST
+)
+
 from config_consolemods import (
   HEADER_KEY_LIST,
-  ELEMENT_TAG_LIST,
   STATUS_MAP,
   HEADER_MAP
 )

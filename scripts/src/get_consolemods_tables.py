@@ -25,7 +25,7 @@ from typing import (
 )
 
 from config_consolemods import (
-  OUTPUT_FILE_NAME,
+  FILE_NAME,
   URL
 )
 
@@ -130,7 +130,7 @@ def main() -> int:
 
   return write_many(
     URL,
-    OUTPUT_FILE_NAME,
+    FILE_NAME,
     table_list
   )
 

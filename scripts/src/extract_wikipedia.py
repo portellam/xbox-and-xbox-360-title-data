@@ -13,7 +13,7 @@ from typing import (
   Optional
 )
 
-from config_wikipedia import (
+from config import (
   ELEMENT_TAG_LIST
 )
 
