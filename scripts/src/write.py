@@ -16,6 +16,10 @@ from typing import (
   List
 )
 
+from sanitize_file import (
+  sanitize_file_name
+)
+
 def write_json(
   header_list: List[str],
   text: List[
@@ -76,6 +80,13 @@ def write_this(
   if not row_list:
     print(f"Warning: output is empty.")
     return 2
+
+  try:
+    name = sanitize_file_name(name)
+
+  except Exception as e:
+    print(f"Error: {e}")
+    return 1
 
   if not write_json(
     header_list,
