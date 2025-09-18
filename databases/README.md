@@ -38,38 +38,38 @@ of metadata. For example: `Name: "Halo 3"`
 
 ### 2. This Directory
 
-| Local Database                                                                                                          | Remote           | Has Coverage? | Has Parity? |
-| ----------------------------------------------------------------------------------------------------------------------- | ---------------- | :-----------: | :---------: |
-| -                                                                                                                       | [1],  [21]       | -             | -           |
-| `archive.rushhosting.net_xbox_360_title_id_list` <sup>[CSV][20002]</sup>                                                | [2]              | **Yes**       | No          |
-| -                                                                                                                       | [3],  [5],  [16] | -             | -           |
-| -                                                                                                                       | [4]              | -             | -           |
-| `wikipedia.org_xbox_360_games_a-l_table_2` <sup>[JSON][20109]</sup>                                                     | [9]              | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_360_games_a-l_table_4` <sup>[JSON][20119]</sup>                                                     | [9]              | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_360_games_m-z_table_2` <sup>[JSON][20110]</sup>                                                     | [10]             | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_360_games_m-z_table_4` <sup>[JSON][20110]</sup>                                                     | [10]             | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_360_system_link_games_table_1` <sup>[JSON][20111]</sup>                                             | [11]             | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_games_table_1` <sup>[JSON][20112]</sup>                                                             | [12]             | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_games_compatible_with_xbox_360_table_2` <sup>[JSON][20113]</sup>                                    | [13]             | **Yes**       | **Yes**     |
-| `wikipedia.org_xbox_games_compatible_with_xbox_360_table_4` <sup>[JSON][21113]</sup>                                    | [13]             | **Yes**       | **Yes**     |
-| -                                                                                                                       | [14]             | -             | -           |
-| -                                                                                                                       | [15]             | -             | -           |
-| `consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6` <sup>[JSON][20119]</sup>                      | [19]             | **Yes**       | **Yes**     |
-| -                                                                                                                       | [22]             | -             | -           |
-| -                                                                                                                       | [23]             | -             | -           |
-| -                                                                                                                       | [27]             | -             | -           |
-| -                                                                                                                       | [28]             | -             | -           |
-| `wikipedia.org_list_of_cancelled_xbox_games_table_1` <sup>[JSON][20129]</sup>                                           | [29]             | -             | -           |
-| `xbox.fandom.com_list_of_cancelled_xbox_games_table_1` <sup>[JSON][20131]</sup>                                         | [31]             | No            | No          |
-| `xbox.fandom.com_list_of_xbox_games_table_1` <sup>[JSON][20132]</sup>                                                   | [32]             | No            | No          |
-| `wikipedia.org_list_of_xbox_360_applications_table_1` <sup>[JSON][20133]</sup>                                          | [33]             | -             | -           |
-| `WIP__List_of_Xbox_Live_Indie_Games_-_Not_XBLIG_Games` <sup>[CSV][20035]</sup>                                          | [35]             | **Yes**       | **Yes**     |
-| `WIP__List_of_Xbox_Live_Indie_Games_-_Other_XNA_Projects` <sup>[CSV][21035]</sup>                                       | [35]             | **Yes**       | **Yes**     |
-| `WIP__List_of_Xbox_Live_Indie_Games_-_Pre-launch_titles` <sup>[CSV][22035]</sup>                                        | [35]             | **Yes**       | **Yes**     |
-| `WIP__List_of_Xbox_Live_Indie_Games_-_Unreleased_cancelled_Games` <sup>[CSV][23035]</sup>                               | [35]             | **Yes**       | **Yes**     |
-| `WIP__List_of_Xbox_Live_Indie_Games_-_XNA_Starter_Kits_&_Mini_Games` <sup>[CSV][24035]</sup>                            | [35]             | **Yes**       | **Yes**     |
-| `WIP__List_of_Xbox_Live_Indie_Games_-_XNAProjects` <sup>[CSV][25035]</sup>                                              | [35]             | **Yes**       | **Yes**     |
-| -                                                                                                                       | [36]             | -             | -           |
+| Local Database                                                                                                                                                                        | Remote           | Has Coverage? | Has Parity? |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | :-----------: | :---------: |
+| -                                                                                                                                                                                     | [1],  [21]       | -             | -           |
+| `archive.rushhosting.net` <sup>[CSV][20002]</sup>                                                                                                                                     | [2]              | **Yes**       | No          |
+| -                                                                                                                                                                                     | [3],  [5],  [16] | -             | -           |
+| -                                                                                                                                                                                     | [4]              | -             | -           |
+| `Wikipedia \| List of Xbox 360 games (A-L)` <sup>[JSON][20109]</sup>                                                                                                                  | [9]              | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox 360 games (A-L): Cancelled games` <sup>[JSON][20119]</sup>                                                                                                 | [9]              | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox 360 games (M-Z)` <sup>[JSON][20110]</sup>                                                                                                                  | [10]             | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox 360 games (M-Z): Cancelled games` <sup>[JSON][20110]</sup>                                                                                                 | [10]             | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox 360 System Link games` <sup>[JSON][20111]</sup>                                                                                                            | [11]             | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox games` <sup>[JSON][20112]</sup>                                                                                                                            | [12]             | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox games compatible with Xbox 360` <sup>[JSON][20113]</sup>                                                                                                   | [13]             | **Yes**       | **Yes**     |
+| `Wikipedia \| List of Xbox games compatible with Xbox 360: List of Xbox titles removed from backward compatibility list` <sup>[JSON][21113]</sup>                                     | [13]             | **Yes**       | **Yes**     |
+| -                                                                                                                                                                                     | [14]             | -             | -           |
+| -                                                                                                                                                                                     | [15]             | -             | -           |
+| `consolemods.org \| Original Xbox Games Compatibility List` <sup>[JSON][20119]</sup>                                                                                                  | [19]             | **Yes**       | **Yes**     |
+| -                                                                                                                                                                                     | [22]             | -             | -           |
+| -                                                                                                                                                                                     | [23]             | -             | -           |
+| -                                                                                                                                                                                     | [27]             | -             | -           |
+| -                                                                                                                                                                                     | [28]             | -             | -           |
+| `Wikipedia \| List of Cancelled Xbox games` <sup>[JSON][20129]</sup>                                                                                                                  | [29]             | -             | -           |
+| `xbox.fandom.com \| List of Cancelled Xbox games` <sup>[JSON][20131]</sup>                                                                                                            | [31]             | No            | No          |
+| `xbox.fandom.com \| List of Xbox games` <sup>[JSON][20132]</sup>                                                                                                                      | [32]             | No            | No          |
+| `Wikipedia \| List of Xbox 360 applications` <sup>[JSON][20133]</sup>                                                                                                                 | [33]             | -             | -           |
+| `Google Sheets \| WIP: List of Xbox Live Indie Games: Not XBLIG Games` <sup>[CSV][20035]</sup>                                                                                        | [35]             | **Yes**       | **Yes**     |
+| `Google Sheets \| WIP: List of Xbox Live Indie Games: Other XNA Projects` <sup>[CSV][21035]</sup>                                                                                     | [35]             | **Yes**       | **Yes**     |
+| `Google Sheets \| WIP: List of Xbox Live Indie Games: Pre-launch titles` <sup>[CSV][22035]</sup>                                                                                      | [35]             | **Yes**       | **Yes**     |
+| `Google Sheets \| WIP: List of Xbox Live Indie Games: Unreleased cancelled Games` <sup>[CSV][23035]</sup>                                                                             | [35]             | **Yes**       | **Yes**     |
+| `Google Sheets \| WIP: List of Xbox Live Indie Games: XNA Starter Kits & Mini Games` <sup>[CSV][24035]</sup>                                                                          | [35]             | **Yes**       | **Yes**     |
+| `Google Sheets \| WIP: List of Xbox Live Indie Games: XNAProjects` <sup>[CSV][25035]</sup>                                                                                            | [35]             | **Yes**       | **Yes**     |
+| -                                                                                                                                                                                     | [36]             | -             | -           |
 
 [20002]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
 [20109]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
