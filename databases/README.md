@@ -63,7 +63,12 @@ of metadata. For example: `Name: "Halo 3"`
 | [`./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json`][2031]                    | [31]             | No            | No          |
 | [`./json/xbox.fandom.com_list_of_xbox_games_table_1.json`][2032]                              | [32]             | No            | No          |
 | [`./json/wikipedia.org_list_of_xbox_360_applications_table_1.json`][2033]                     | [33]             | -             | -           |
-| -                                                                                             | [35]             | -             | -           |
+| [`WIP_ List of Xbox Live Indie Games - Not XBLIG Games.csv`][2035]                            | [35]             | **Yes**       | **Yes**     |
+| [`WIP_ List of Xbox Live Indie Games - Other XNA Projects.csv`][2135]                         | [35]             | **Yes**       | **Yes**     |
+| [`WIP_ List of Xbox Live Indie Games - Pre-launch titles.csv`][2235]                          | [35]             | **Yes**       | **Yes**     |
+| [`WIP_ List of Xbox Live Indie Games - Unreleased_cancelled Games.csv`][2335]                 | [35]             | **Yes**       | **Yes**     |
+| [`WIP_ List of Xbox Live Indie Games - XNA Starter Kits & Mini Games.csv`][2435]              | [35]             | **Yes**       | **Yes**     |
+| [`WIP_ List of Xbox Live Indie Games - XNAProjects.csv`][2535]                                | [35]             | **Yes**       | **Yes**     |
 | -                                                                                             | [36]             | -             | -           |
 
 [2002]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
@@ -80,6 +85,12 @@ of metadata. For example: `Name: "Halo 3"`
 [2031]: ./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json
 [2032]: ./json/xbox.fandom.com_list_of_xbox_games_table_1.json
 [2033]: ./json/wikipedia.org_list_of_xbox_360_applications_table_1.json
+[2035]: ./WIP_ List of Xbox Live Indie Games - Not XBLIG Games.csv
+[2135]: ./WIP_ List of Xbox Live Indie Games - Other XNA Projects.csv
+[2235]: ./WIP_ List of Xbox Live Indie Games - Pre-launch titles.csv
+[2335]: ./WIP_ List of Xbox Live Indie Games - Unreleased_cancelled Games.csv
+[2435]: ./WIP_ List of Xbox Live Indie Games - XNA Starter Kits & Mini Games.csv
+[2535]: ./WIP_ List of Xbox Live Indie Games - XNAProjects.csv
 
 ### 3. Database Coverage
 
@@ -87,14 +98,14 @@ The data and metadata coverage of remote databases.
 
 #### 1. Titles
 
-| Platform         | Released                                             | Unreleased                                 | Notes                                                                      |
-| ---------------- | ---------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------- |
-| Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> | -                                                                          |
-| Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          | -                                                                          |
-| Xbox 360: Retail | 2,152 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]</sup> + 3 <sup>[10]</sup>)   | Website reports 2,155, counted 2,152. Viewed HTML and counted `<tr>` tags. |
-| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                       |
-| Xbox 360: Indie  | ?                                                    | unknown                                    | -                                                                          |
-| Xbox 360: Apps   | 572 <sup>[33]</sup>                                  | unknown                                    | -                                                                          |
+| Platform         | Released                                             | Unreleased                                 | Notes                                                                                                      |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> | -                                                                                                          |
+| Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          | -                                                                                                          |
+| Xbox 360: Retail | 2,152 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]</sup> + 3 <sup>[10]</sup>)   | Website reports 2,155, counted 2,152. Viewed HTML and counted `<tr>` tags. <sup>[9]</sup>  <sup>[10]</sup> |
+| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                                                       |
+| Xbox 360: Indie  | 3,596 <sup>[35]</sup>                                | 165 <sup>[35]</sup>                        | Pre-launch: 9; XNA Starter Kits: 19; XNA Projects: 28; Other: 20. <sup>[35]</sup>                          |
+| Xbox 360: Apps   | 572 <sup>[33]</sup>                                  | unknown                                    | -                                                                                                          |
 
 #### 2. Platforms
 
