@@ -9,8 +9,7 @@
 #
 
 from config import (
-  ELEMENT_TAG_LIST,
-  OUTPUT_PATH
+  ELEMENT_TAG_LIST
 )
 
 URL_LIST = [
@@ -35,14 +34,8 @@ FILE_NAME_LIST = [
   "wikipedia.org_xbox_360_games_m-z",
   "wikipedia.org_xbox_360_system_link_games",
   "wikipedia.org_xbox_games",
-  "wikipedia.org_xbox_games_compatible_with_xbox_360"
+  "wikipedia.org_xbox_games_compatible_with_xbox_360",
   "xbox.fandom.com_list_of_cancelled_xbox_games",
   "xbox.fandom.com_list_of_xbox_games",
   "wikipedia.org_xbox_live_arcade_xbox",
 ]
-
-for key, value in enumerate(
-  URL_LIST,
-  start = 1
-):
-  FILE_NAME_LIST[key] = OUTPUT_PATH + FILE_NAME_LIST[key]

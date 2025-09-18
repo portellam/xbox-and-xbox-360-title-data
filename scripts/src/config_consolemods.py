@@ -9,8 +9,7 @@
 #
 
 from config import (
-  ELEMENT_TAG_LIST,
-  OUTPUT_PATH
+  ELEMENT_TAG_LIST
 )
 
 URL = (
@@ -18,7 +17,7 @@ URL = (
 )
 
 FILE_NAME = (
-  f"{OUTPUT_PATH}consolemods.org_xbox_360_original_xbox_games_compatibility_list"
+  "consolemods.org_xbox_360_original_xbox_games_compatibility_list"
 )
 
 HEADER_KEY_LIST = [

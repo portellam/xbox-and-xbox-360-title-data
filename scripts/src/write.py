@@ -16,6 +16,10 @@ from typing import (
   List
 )
 
+from config import (
+  OUTPUT_PATH
+)
+
 from sanitize_file import (
   sanitize_file_name
 )
@@ -87,6 +91,8 @@ def write_this(
   except Exception as e:
     print(f"Error: {e}")
     return 1
+
+  name = OUTPUT_PATH + name
 
   if not write_json(
     header_list,
