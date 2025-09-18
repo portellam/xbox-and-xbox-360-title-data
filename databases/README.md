@@ -38,48 +38,59 @@ of metadata. For example: `Name: "Halo 3"`
 
 ### 2. This Directory
 
-| Local Database                                                                                | Remote           | Has Coverage? | Has Parity? |
-| --------------------------------------------------------------------------------------------- | ---------------- | :-----------: | :---------: |
-| -                                                                                             | [1],  [21]       | -             | -           |
-| [`./csv/archive.rushhosting.net_xbox_360_title_id_list.csv`][2002]                            | [2]              | **Yes**       | No          |
-| -                                                                                             | [3],  [5],  [16] | -             | -           |
-| -                                                                                             | [4]              | -             | -           |
-| [`./json/wikipedia.org_xbox_360_games_a-l_table_2.json`][2009]                                | [9]              | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_360_games_a-l_table_4.json`][2019]                                | [9]              | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_360_games_m-z_table_2.json`][2010]                                | [10]             | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_360_games_m-z_table_4.json`][2110]                                | [10]             | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_360_system_link_games_table_1.json`][2011]                        | [11]             | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_games_table_1.json`][2012]                                        | [12]             | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json`][2013]               | [13]             | **Yes**       | **Yes**     |
-| [`./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json`][2113]               | [13]             | **Yes**       | **Yes**     |
-| -                                                                                             | [14]             | -             | -           |
-| -                                                                                             | [15]             | -             | -           |
-| [`./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json`][2019] | [19]             | **Yes**       | **Yes**     |
-| -                                                                                             | [22]             | -             | -           |
-| -                                                                                             | [23]             | -             | -           |
-| -                                                                                             | [27]             | -             | -           |
-| -                                                                                             | [28]             | -             | -           |
-| [`./json/wikipedia.org_list_of_cancelled_xbox_games_table_1.json`][2029]                      | [29]             | -             | -           |
-| [`./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json`][2031]                    | [31]             | No            | No          |
-| [`./json/xbox.fandom.com_list_of_xbox_games_table_1.json`][2032]                              | [32]             | No            | No          |
-| [`./json/wikipedia.org_list_of_xbox_360_applications_table_1.json`][2033]                     | [33]             | -             | -           |
-| -                                                                                             | [35]             | -             | -           |
-| -                                                                                             | [36]             | -             | -           |
+| Local Database                                                                                                          | Remote           | Has Coverage? | Has Parity? |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------------- | :-----------: | :---------: |
+| -                                                                                                                       | [1],  [21]       | -             | -           |
+| `archive.rushhosting.net_xbox_360_title_id_list` <sup>[CSV][20002]</sup>                                                | [2]              | **Yes**       | No          |
+| -                                                                                                                       | [3],  [5],  [16] | -             | -           |
+| -                                                                                                                       | [4]              | -             | -           |
+| `wikipedia.org_xbox_360_games_a-l_table_2` <sup>[JSON][20109]</sup>                                                     | [9]              | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_360_games_a-l_table_4` <sup>[JSON][20119]</sup>                                                     | [9]              | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_360_games_m-z_table_2` <sup>[JSON][20110]</sup>                                                     | [10]             | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_360_games_m-z_table_4` <sup>[JSON][20110]</sup>                                                     | [10]             | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_360_system_link_games_table_1` <sup>[JSON][20111]</sup>                                             | [11]             | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_games_table_1` <sup>[JSON][20112]</sup>                                                             | [12]             | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_games_compatible_with_xbox_360_table_2` <sup>[JSON][20113]</sup>                                    | [13]             | **Yes**       | **Yes**     |
+| `wikipedia.org_xbox_games_compatible_with_xbox_360_table_4` <sup>[JSON][21113]</sup>                                    | [13]             | **Yes**       | **Yes**     |
+| -                                                                                                                       | [14]             | -             | -           |
+| -                                                                                                                       | [15]             | -             | -           |
+| `consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6` <sup>[JSON][20119]</sup>                      | [19]             | **Yes**       | **Yes**     |
+| -                                                                                                                       | [22]             | -             | -           |
+| -                                                                                                                       | [23]             | -             | -           |
+| -                                                                                                                       | [27]             | -             | -           |
+| -                                                                                                                       | [28]             | -             | -           |
+| `wikipedia.org_list_of_cancelled_xbox_games_table_1` <sup>[JSON][20129]</sup>                                           | [29]             | -             | -           |
+| `xbox.fandom.com_list_of_cancelled_xbox_games_table_1` <sup>[JSON][20131]</sup>                                         | [31]             | No            | No          |
+| `xbox.fandom.com_list_of_xbox_games_table_1` <sup>[JSON][20132]</sup>                                                   | [32]             | No            | No          |
+| `wikipedia.org_list_of_xbox_360_applications_table_1` <sup>[JSON][20133]</sup>                                          | [33]             | -             | -           |
+| `WIP__List_of_Xbox_Live_Indie_Games_-_Not_XBLIG_Games` <sup>[CSV][20035]</sup>                                          | [35]             | **Yes**       | **Yes**     |
+| `WIP__List_of_Xbox_Live_Indie_Games_-_Other_XNA_Projects` <sup>[CSV][21035]</sup>                                       | [35]             | **Yes**       | **Yes**     |
+| `WIP__List_of_Xbox_Live_Indie_Games_-_Pre-launch_titles` <sup>[CSV][22035]</sup>                                        | [35]             | **Yes**       | **Yes**     |
+| `WIP__List_of_Xbox_Live_Indie_Games_-_Unreleased_cancelled_Games` <sup>[CSV][23035]</sup>                               | [35]             | **Yes**       | **Yes**     |
+| `WIP__List_of_Xbox_Live_Indie_Games_-_XNA_Starter_Kits_&_Mini_Games` <sup>[CSV][24035]</sup>                            | [35]             | **Yes**       | **Yes**     |
+| `WIP__List_of_Xbox_Live_Indie_Games_-_XNAProjects` <sup>[CSV][25035]</sup>                                              | [35]             | **Yes**       | **Yes**     |
+| -                                                                                                                       | [36]             | -             | -           |
 
-[2002]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
-[2009]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
-[2109]: ./json/wikipedia.org_xbox_360_games_a-l_table_4.json
-[2010]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
-[2110]: ./json/wikipedia.org_xbox_360_games_m-z_table_4.json
-[2011]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
-[2012]: ./json/wikipedia.org_xbox_games_table_1.json
-[2013]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
-[2113]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json
-[2019]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
-[2029]: ./json/wikipedia.org_list_of_cancelled_xbox_games_table_1.json
-[2031]: ./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json
-[2032]: ./json/xbox.fandom.com_list_of_xbox_games_table_1.json
-[2033]: ./json/wikipedia.org_list_of_xbox_360_applications_table_1.json
+[20002]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
+[20109]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
+[21109]: ./json/wikipedia.org_xbox_360_games_a-l_table_4.json
+[20110]: ./json/wikipedia.org_xbox_360_games_m-z_table_2.json
+[21110]: ./json/wikipedia.org_xbox_360_games_m-z_table_4.json
+[20111]: ./json/wikipedia.org_xbox_360_system_link_games_table_1.json
+[20112]: ./json/wikipedia.org_xbox_games_table_1.json
+[20113]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_2.json
+[21113]: ./json/wikipedia.org_xbox_games_compatible_with_xbox_360_table_4.json
+[20119]: ./json/consolemods.org_xbox_360_original_xbox_games_compatibility_list_table_6.json
+[20129]: ./json/wikipedia.org_list_of_cancelled_xbox_games_table_1.json
+[20131]: ./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json
+[20132]: ./json/xbox.fandom.com_list_of_xbox_games_table_1.json
+[20133]: ./json/wikipedia.org_list_of_xbox_360_applications_table_1.json
+[20035]: ./csv/WIP__List_of_Xbox_Live_Indie_Games_-_Not_XBLIG_Games.csv
+[21035]: ./csv/WIP__List_of_Xbox_Live_Indie_Games_-_Other_XNA_Projects.csv
+[22035]: ./csv/WIP__List_of_Xbox_Live_Indie_Games_-_Pre-launch_titles.csv
+[23035]: ./csv/WIP__List_of_Xbox_Live_Indie_Games_-_Unreleased_cancelled_Games.csv
+[24035]: ./csv/WIP__List_of_Xbox_Live_Indie_Games_-_XNA_Starter_Kits_&_Mini_Games.csv
+[25035]: ./csv/WIP__List_of_Xbox_Live_Indie_Games_-_XNAProjects.csv
 
 ### 3. Database Coverage
 
@@ -87,14 +98,14 @@ The data and metadata coverage of remote databases.
 
 #### 1. Titles
 
-| Platform         | Released                                             | Unreleased                                 | Notes                                                                      |
-| ---------------- | ---------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------- |
-| Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> | -                                                                          |
-| Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          | -                                                                          |
-| Xbox 360: Retail | 2,152 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]</sup> + 3 <sup>[10]</sup>)   | Website reports 2,155, counted 2,152. Viewed HTML and counted `<tr>` tags. |
-| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                       |
-| Xbox 360: Indie  | ?                                                    | unknown                                    | -                                                                          |
-| Xbox 360: Apps   | 572 <sup>[33]</sup>                                  | unknown                                    | -                                                                          |
+| Platform         | Released                                             | Unreleased                                 | Notes                                                                                                      |
+| ---------------- | ---------------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| Xbox             | 989 <sup>[12]</sup>, or 998 <sup>[29]</sup>          | 57 <sup>[31]</sup>, or 566 <sup>[32]</sup> | -                                                                                                          |
+| Xbox: XLBA       | 38 <sup>[36]</sup>                                   | 0 <sup>[36]</sup>                          | -                                                                                                          |
+| Xbox 360: Retail | 2,152 (1,072 <sup>[9]</sup> + 1,080 <sup>[10]</sup>) | 6 (3 <sup>[9]</sup> + 3 <sup>[10]</sup>)   | Website reports 2,155, counted 2,152. Viewed HTML and counted `<tr>` tags. <sup>[9]</sup>  <sup>[10]</sup> |
+| Xbox 360: XBLA   | 724 (362 <sup>[30]</sup> + 362 <sup>[30]</sup>)      | >= 1                                       | at least one exists: *GoldenEye 007* <sup>[30]</sup>                                                       |
+| Xbox 360: Indie  | 3,596 <sup>[35]</sup>                                | 165 <sup>[35]</sup>                        | Pre-launch: 9; XNA Starter Kits: 19; XNA Projects: 28; Other: 20. <sup>[35]</sup>                          |
+| Xbox 360: Apps   | 572 <sup>[33]</sup>                                  | unknown                                    | -                                                                                                          |
 
 #### 2. Platforms
 
