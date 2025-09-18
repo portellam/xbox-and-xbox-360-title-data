@@ -8,13 +8,16 @@
 # Version:        1.0.0
 #
 
+from config import (
+  ELEMENT_TAG_LIST,
+  OUTPUT_PATH
+)
+
 URL = (
   "https://consolemods.org/wiki/Xbox_360:Original_Xbox_Games_Compatibility_List"
 )
 
-OUTPUT_PATH = "../../databases/json/"
-
-OUTPUT_FILE_NAME = (
+FILE_NAME = (
   f"{OUTPUT_PATH}consolemods.org_xbox_360_original_xbox_games_compatibility_list"
 )
 
@@ -50,11 +53,6 @@ HEADER_MAP = {
   "21b": "xefu2021b",
   "21c": "xefu2021c"
 }
-
-ELEMENT_TAG_LIST = [
-  "th",
-  "td"
-]
 
 STATUS_MAP = {
   "supported":   "supported",
