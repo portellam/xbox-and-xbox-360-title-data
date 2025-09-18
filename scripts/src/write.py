@@ -35,7 +35,7 @@ def write_json(
   name: str
 ) -> bool:
   try:
-    output_file = f"{name}.json"
+    output_file = f"{OUTPUT_PATH}{name}.json"
 
     if not header_list:
       print("No data.")
@@ -91,8 +91,6 @@ def write_this(
   except Exception as e:
     print(f"Error: {e}")
     return 1
-
-  name = OUTPUT_PATH + name
 
   if not write_json(
     header_list,

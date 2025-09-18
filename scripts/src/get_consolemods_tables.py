@@ -63,6 +63,7 @@ def write_many(
 
   for table in table_list:
     header_list, _ = extract_table_data(table)
+
     if not has_required_headers(header_list):
       print(f"Skipping table {index}: missing required headers.")
       index += 1
