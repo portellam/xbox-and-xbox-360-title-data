@@ -13,13 +13,20 @@ import datetime
 import re
 import sys
 import time
-from typing import List, Optional
+
+from typing import (
+  List,
+  Optional
+)
 
 try:
   import aiohttp
   import asyncio
-  import pandas as pd
-  from bs4 import BeautifulSoup
+  import pandas
+
+  from bs4 import (
+    BeautifulSoup
+  )
 
 except ImportError as e:
   print(f"Missing required package: {e.name}. Please install using 'pip install {e.name}'")
@@ -68,7 +75,7 @@ def read_title_list(
     has_extension = file_path.lower().endswith(OUTPUT_FILE_EXTENSION)
 
     if has_extension:
-      df = pd.read_csv(file_path)
+      df = pandas.read_csv(file_path)
 
       if PRIMARY_KEY in df.columns:
         title_list = df[PRIMARY_KEY].dropna().astype(str).tolist()
@@ -368,7 +375,7 @@ def write_csv(
   data: List[dict]
 ) -> None:
   try:
-    df = pd.DataFrame(data)
+    df = pandas.DataFrame(data)
 
     df.to_csv(
       OUTPUT_FILE,
