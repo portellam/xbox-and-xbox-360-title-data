@@ -5,7 +5,7 @@
     "Technical issue(s)": "Sometimes the text on menu options and buttons are replaced by text from a similar object on the same screen.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "25 to Life",
@@ -13,7 +13,7 @@
     "Technical issue(s)": "Random crashes would occur when attempting to start an online match.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "4x4 Evo 2",
@@ -101,7 +101,7 @@
     "Technical issue(s)": "There is flickering geometry during some levels. On occasion a sound effect will play repeatedly.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "APEX Racing Evoluzione (PAL)",
@@ -109,7 +109,7 @@
     "Technical issue(s)": "During the dream mode cutscene there is missing audio dialogue.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Aquaman: Battle for Atlantis",
@@ -125,7 +125,7 @@
     "Technical issue(s)": "Minor audio static can be heard during gameplay.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Armed and Dangerous",
@@ -133,7 +133,7 @@
     "Technical issue(s)": "After the first level voice audio doesn't play during game cinematics. During the opening cinematic some audio and video choppiness are present.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Army Men: Sarge's War",
@@ -189,7 +189,7 @@
     "Technical issue(s)": "In the second zone during combat scenes there is a thirty to forty frames per second drop in performance.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Baldur's Gate: Dark Alliance II",
@@ -205,7 +205,7 @@
     "Technical issue(s)": "The bottom half of the screen is not drawn correctly in split-screen mode.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "The Bard's Tale",
@@ -221,7 +221,7 @@
     "Technical issue(s)": "The aiming reticule is surrounded by a box while the snowmobile suffers from a partial lack of collision.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Batman Begins",
@@ -285,7 +285,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 16 ]"
+    "Ref(s)": "[ 17 ]"
   },
   {
     "Title": "Black Stone: Magic & Steel Ex-Chaser (JP)",
@@ -293,7 +293,7 @@
     "Technical issue(s)": "Graphics for Y button do not display correctly in Controller Settings.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Blade II",
@@ -301,7 +301,7 @@
     "Technical issue(s)": "There is a slight pause when reaching a save point.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Blinx: The Time Sweeper",
@@ -309,7 +309,7 @@
     "Technical issue(s)": "This title consistently experiences slowdown.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Blinx 2: Masters of Time and Space",
@@ -317,7 +317,7 @@
     "Technical issue(s)": "This title experiences consistent performance problems.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Blitz: The League",
@@ -333,7 +333,7 @@
     "Technical issue(s)": "Characters may spin in different directions randomly during cut scenes. When gaining a new ability graphical effects do not display correctly.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "BloodRayne 2",
@@ -341,7 +341,7 @@
     "Technical issue(s)": "After reloading the checkpoint a noticeable loss in frame rate is present.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 11 ]"
+    "Ref(s)": "[ 16 ] [ 12 ]"
   },
   {
     "Title": "BlowOut",
@@ -349,7 +349,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 18 ]"
+    "Ref(s)": "[ 19 ]"
   },
   {
     "Title": "BMX XXX",
@@ -365,7 +365,7 @@
     "Technical issue(s)": "During gameplay system hangs on occasion while light sources show through walls.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Breeders' Cup World Thoroughbred Championships [ a ]",
@@ -373,7 +373,7 @@
     "Technical issue(s)": "Video in the Start menu skips.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Brute Force",
@@ -389,7 +389,7 @@
     "Technical issue(s)": "When viewing the opening logos and cinematic it will not display properly.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Buffy the Vampire Slayer: Chaos Bleeds",
@@ -400,7 +400,7 @@
     "Ref(s)": "[ 5 ]"
   },
   {
-    "Title": "Burger King games [ 19 ]",
+    "Title": "Burger King games [ 20 ]",
     "Publisher(s)": "King Games",
     "Technical issue(s)": "See Big Bumpin', PocketBike Racer, and Sneak King entries.",
     "Add-Ons": "",
@@ -413,7 +413,7 @@
     "Technical issue(s)": "During the \"USA Marathon\" track performance drops.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Burnout 2: Point of Impact",
@@ -421,7 +421,7 @@
     "Technical issue(s)": "Pressing Start on attract mode will cause the game to boot back instantly. When playing split-screen races and on tracks with snow and rain effects performance slows down.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Burnout 3: Takedown",
@@ -429,7 +429,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "NA PAL",
-    "Ref(s)": "[ 20 ]"
+    "Ref(s)": "[ 21 ]"
   },
   {
     "Title": "Cabela's Big Game Hunter 2005 Adventures",
@@ -485,7 +485,7 @@
     "Technical issue(s)": "During the prologue stage a green dot appears and will remain on screen while walking down the last set of stairs.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Call of Duty: Finest Hour",
@@ -501,7 +501,7 @@
     "Technical issue(s)": "When playing multiplayer, dots representing the enemy do not appear in the HUD.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Call of Duty 3",
@@ -517,7 +517,7 @@
     "Technical issue(s)": "When viewing cut scenes pixel color alteration will occur.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Catwoman",
@@ -581,7 +581,7 @@
     "Technical issue(s)": "While on the main menu there is some texture flickering in the background image. Before the start of a race graphical artifacts appear on text on screen. During single and multiplayer races there are severe fluidity issues, inconstant frame rate and screen tearing.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Combat Elite: WWII Paratroopers",
@@ -613,7 +613,7 @@
     "Technical issue(s)": "Loading screens will not appear, occasional system hangs during gameplay and local multiplayer. Effects such as dust and smoke will not render correctly. The game crashes when entering the Dung Beetle dungeon.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Constantine",
@@ -629,7 +629,7 @@
     "Technical issue(s)": "When playing in VGA/HD video mode performance drops occur during single player mode high bot matches.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Crash Bandicoot: The Wrath of Cortex",
@@ -637,7 +637,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "NA PAL",
-    "Ref(s)": "[ 21 ] [ 22 ]"
+    "Ref(s)": "[ 22 ] [ 23 ]"
   },
   {
     "Title": "Crash Nitro Kart",
@@ -645,7 +645,7 @@
     "Technical issue(s)": "Runs at 30 fps in 720p in 480p the game runs at 60fps.",
     "Add-Ons": "",
     "Region(s)": "NA PAL",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Crash Twinsanity",
@@ -661,7 +661,7 @@
     "Technical issue(s)": "Random cut scenes display a static image while audio plays normally. There is an occasional crash during the loading screen.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Crimson Skies: High Road to Revenge",
@@ -669,7 +669,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 11 ] [ 21 ]"
+    "Ref(s)": "[ 12 ] [ 22 ]"
   },
   {
     "Title": "Crouching Tiger, Hidden Dragon",
@@ -685,7 +685,7 @@
     "Technical issue(s)": "There are some environments that are transparent. There is some skipping during the cut scenes.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Dai Senryaku VII: Modern Military Tactics Daisenryaku VII (JP)",
@@ -693,7 +693,7 @@
     "Technical issue(s)": "After the opening logos, a dirty disc error is occasionally displayed.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Dark Angel",
@@ -717,7 +717,7 @@
     "Technical issue(s)": "The sky is corrupted in the Attract Mode. There is also a random performance drop during gameplay.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Dead or Alive 3",
@@ -733,7 +733,7 @@
     "Technical issue(s)": "A random crash may occur before starting the opening movie. Slowdowns during certain stages.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Dead to Rights",
@@ -741,7 +741,7 @@
     "Technical issue(s)": "Flickering during third helicopter fight on mission #6. Temporary performance drops on stage #7.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 11 ]"
+    "Ref(s)": "[ 16 ] [ 12 ]"
   },
   {
     "Title": "Deathrow",
@@ -757,7 +757,7 @@
     "Technical issue(s)": "The weapon sounds cut out during periods of high activity.",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ] [ 23 ] [ 24 ] [ 25 ]"
+    "Ref(s)": "[ 16 ] [ 18 ] [ 24 ] [ 25 ] [ 26 ]"
   },
   {
     "Title": "Digimon Rumble Arena 2",
@@ -765,7 +765,7 @@
     "Technical issue(s)": "Issue only present in the Japanese version, save data title is shown in English.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Dinotopia: The Sunstone Odyssey",
@@ -805,7 +805,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 26 ] [ 27 ] [ 28 ]"
+    "Ref(s)": "[ 27 ] [ 28 ] [ 29 ]"
   },
   {
     "Title": "Drive to Survive Mashed: Fully Loaded (PAL)",
@@ -813,7 +813,7 @@
     "Technical issue(s)": "A short pause in gameplay will occur when taunting.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Dungeons & Dragons: Heroes",
@@ -845,7 +845,7 @@
     "Technical issue(s)": "The load game screenshots will fail to render correctly.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "ESPN College Hoops",
@@ -861,7 +861,7 @@
     "Technical issue(s)": "During the intro video, there is some choppiness.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "ESPN Major League Baseball",
@@ -869,7 +869,7 @@
     "Technical issue(s)": "Controller sometimes fails to vibrate outside of the strike zone, logos on player uniforms sometimes flicker and occasional choppy animations when video mode is set to 1080i.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "ESPN MLS ExtraTime 2002",
@@ -893,7 +893,7 @@
     "Technical issue(s)": "There are texture issues throughout the gameplay and gameplay splash screens.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Evil Dead: A Fistful of Boomstick",
@@ -909,7 +909,7 @@
     "Technical issue(s)": "Some in-game light sources engulf large portions of the screen. There is some random crashing.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "F1 2001",
@@ -925,7 +925,7 @@
     "Technical issue(s)": "Occasionally there is an audio \"scratch\" or static popping sound.",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 21 ]"
+    "Ref(s)": "[ 16 ] [ 22 ]"
   },
   {
     "Title": "Fable: The Lost Chapters",
@@ -957,7 +957,7 @@
     "Technical issue(s)": "There is a random crash during the first full-motion video.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Far Cry Instincts",
@@ -965,7 +965,7 @@
     "Technical issue(s)": "During three-person split-screen, there is graphic distortion and loss of control. There are jagged horizontal lines in the attract mode on 480p/720p displays. Frame rate drops during the second mission, and there are visible texture seams while riding the zipline in the mines. When using a melee attack after transformation, the knife audio effect plays. The checkpoints do not save when running in PAL-50.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Fatal Frame Project Zero (PAL)",
@@ -973,7 +973,7 @@
     "Technical issue(s)": "The PAL version \"Project Zero\" is not supported. Missing video during a ghost introduction cutscene in the mansion.\nSome alpha textures on the main character's hair are broken.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Fatal Frame II: Crimson Butterfly Project Zero II: Crimson Butterfly (PAL)",
@@ -1013,7 +1013,7 @@
     "Technical issue(s)": "The frame rate drops on the opening video, and the in-game cut scenes are blurry.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "FIFA Street",
@@ -1053,7 +1053,7 @@
     "Technical issue(s)": "The audio and video are not synced in the cut scenes while there is minor flickering in the cinematics. There is a performance slowdown during gameplay when there is a significant number of objects on screen, and the floor texture is missing in the Pier 15 area of Chapter 3.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "FlatOut",
@@ -1085,7 +1085,7 @@
     "Technical issue(s)": "In Chapter 4, there is a texture dropout in the cut scene. In Chapters 4 and 5, the unlockable concept art videos do not play. There is a small vertical dotted line distortion on the right side of the heads-up display.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Forza Motorsport",
@@ -1101,7 +1101,7 @@
     "Technical issue(s)": "The frame rate occasionally drops during the game.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Freedom Fighters",
@@ -1141,7 +1141,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 17 ]"
+    "Ref(s)": "[ 5 ] [ 18 ]"
   },
   {
     "Title": "Full Spectrum Warrior: Ten Hammers",
@@ -1149,7 +1149,7 @@
     "Technical issue(s)": "There is some improper aliasing on player models and environment.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Futurama",
@@ -1173,7 +1173,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 11 ] [ 21 ]"
+    "Ref(s)": "[ 12 ] [ 22 ]"
   },
   {
     "Title": "Gauntlet: Seven Sorrows",
@@ -1181,7 +1181,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 29 ]"
+    "Ref(s)": "[ 30 ]"
   },
   {
     "Title": "Genma Onimusha",
@@ -1229,7 +1229,7 @@
     "Technical issue(s)": "Video output is too narrow on VGA with 1280x1024 resolution. This can be remedied by selecting a different output resolution. There is a chance of save data corruption when the game is booted up. Lightbulbs may show a checkerboard pattern instead of light effect.",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 11 ] [ 30 ]"
+    "Ref(s)": "[ 16 ] [ 12 ] [ 31 ]"
   },
   {
     "Title": "Grand Theft Auto III",
@@ -1240,7 +1240,7 @@
     "Ref(s)": "[ ref 1 ]"
   },
   {
-    "Title": "Grand Theft Auto: Double Pack [ 33 ]",
+    "Title": "Grand Theft Auto: Double Pack [ 34 ]",
     "Publisher(s)": "Rockstar Games",
     "Technical issue(s)": "See GTA 3 and Vice City entries.",
     "Add-Ons": "",
@@ -1253,7 +1253,7 @@
     "Technical issue(s)": "Audio sometimes cuts out randomly during cutscenes, or sometimes audio lag. Vehicle explosions would cause it to flicker. Most notably the fire trucks.",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 34 ] [ 35 ]"
+    "Ref(s)": "[ 35 ] [ 36 ]"
   },
   {
     "Title": "Grand Theft Auto: Vice City",
@@ -1261,10 +1261,10 @@
     "Technical issue(s)": "There is some chugging during the intro. Major frame rate slowdown while driving. Radio is quiet during gameplay.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
-    "Title": "Grand Theft Auto: The Trilogy [ 36 ]",
+    "Title": "Grand Theft Auto: The Trilogy [ 37 ]",
     "Publisher(s)": "Rockstar Games",
     "Technical issue(s)": "See GTA 3, Vice City, and San Andreas entries.",
     "Add-Ons": "",
@@ -1293,7 +1293,7 @@
     "Technical issue(s)": "During system link and online gameplay, players may be randomly teleported.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Grooverider: Slot Car Thunder",
@@ -1317,7 +1317,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 37 ]"
+    "Ref(s)": "[ 38 ]"
   },
   {
     "Title": "The Guy Game",
@@ -1325,7 +1325,7 @@
     "Technical issue(s)": "There is audio choppiness in videos under the bonus unlockables, and on the extra videos at the end of an episode.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Half-Life 2",
@@ -1333,7 +1333,7 @@
     "Technical issue(s)": "This game does not play on PAL-60 televisions with composite cabling. This does not affect PAL-50 televisions. Screen corruption in attract mode will occur after the console has been idle for a long period of time.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Halo: Combat Evolved",
@@ -1341,7 +1341,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 21 ]"
+    "Ref(s)": "[ 22 ]"
   },
   {
     "Title": "Halo 2",
@@ -1349,7 +1349,7 @@
     "Technical issue(s)": "Performance problems while playing on the Backwash map. Occasionally the player may observe \"ghost\" images displayed on the screen. Playing the Gravemind stage in Campaign displays ghost images as well. According to Microsoft, the workaround for this issue is to return to the Dashboard and restart the game.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Halo 2 Multiplayer Map Pack",
@@ -1365,7 +1365,7 @@
     "Technical issue(s)": "Certain objects have no graphics while there is a frames-per-second issue.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Harry Potter and the Goblet of Fire",
@@ -1381,7 +1381,7 @@
     "Technical issue(s)": "An occasional hard lock occurs when switching to cut scenes. Occasionally, enemies will become stuck in a loop or just stuck to the environment.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Harry Potter and the Sorcerer's Stone Harry Potter and the Philosopher's Stone (PAL)",
@@ -1397,7 +1397,7 @@
     "Technical issue(s)": "An Xbox version was planned but never released, however this title is included on Microsoft's official backwards compatible list.",
     "Add-Ons": "",
     "Region(s)": "Unreleased",
-    "Ref(s)": "[ 5 ] [ 38 ]"
+    "Ref(s)": "[ 5 ] [ 39 ]"
   },
   {
     "Title": "High Heat Major League Baseball 2004",
@@ -1453,7 +1453,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 17 ]"
+    "Ref(s)": "[ 18 ]"
   },
   {
     "Title": "I-Ninja",
@@ -1461,7 +1461,7 @@
     "Technical issue(s)": "The frame rate drops in World 3 Central map.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "IHRA Drag Racing: Sportsman Edition",
@@ -1509,7 +1509,7 @@
     "Technical issue(s)": "Some sound effects are out of sync, and there is a random crash on the last level.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Indigo Prophecy Fahrenheit (PAL)",
@@ -1517,7 +1517,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 21 ]"
+    "Ref(s)": "[ 22 ]"
   },
   {
     "Title": "IndyCar Series 2005",
@@ -1533,7 +1533,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 23 ]"
+    "Ref(s)": "[ 24 ]"
   },
   {
     "Title": "Jade Empire",
@@ -1541,7 +1541,7 @@
     "Technical issue(s)": "The Monk Zeng content from the limited edition became available as of the December 2005 update.",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 17 ] [ 39 ]"
+    "Ref(s)": "[ 18 ] [ 40 ]"
   },
   {
     "Title": "Jet Set Radio Future",
@@ -1549,7 +1549,7 @@
     "Technical issue(s)": "There is graphical flickering in the main menu. Some particle effects in 99th street cause heavy frame drops as well as unknown frame drops in various other stages (Dogenzaka Hill, Fortified Rezidential Zone).",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Judge Dredd: Dredd vs. Death",
@@ -1573,7 +1573,7 @@
     "Technical issue(s)": "Text still appears when scrolling through the upgrade menu screen. There are performance drops during game play. There are some texture issues.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Kabuki Warriors",
@@ -1605,7 +1605,7 @@
     "Technical issue(s)": "Minor video stuttering occurs during the actual movie videos.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "The King of Fighters Neowave",
@@ -1613,7 +1613,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 11 ]"
+    "Ref(s)": "[ 12 ]"
   },
   {
     "Title": "The King of Fighters 2002 & 2003",
@@ -1629,7 +1629,7 @@
     "Technical issue(s)": "Game hangs when selecting \"Create Match\" after editing a party.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "The Legend of Spyro: A New Beginning",
@@ -1637,7 +1637,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 37 ]"
+    "Ref(s)": "[ 38 ]"
   },
   {
     "Title": "Lego Star Wars: The Video Game",
@@ -1661,7 +1661,7 @@
     "Technical issue(s)": "Incorrect textures are loaded as the player progresses.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Lemony Snicket's A Series of Unfortunate Events",
@@ -1677,7 +1677,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Loons: The Fight for Fame",
@@ -1701,7 +1701,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Magatama",
@@ -1709,7 +1709,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "J",
-    "Ref(s)": "[ 22 ]"
+    "Ref(s)": "[ 23 ]"
   },
   {
     "Title": "Magic: The Gathering \u2013 Battlegrounds",
@@ -1741,7 +1741,7 @@
     "Technical issue(s)": "There is some severe artifacting on character sprites.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Mat Hoffman's Pro BMX 2",
@@ -1757,7 +1757,7 @@
     "Technical issue(s)": "The game has some minor slowdown.",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 40 ]"
+    "Ref(s)": "[ 41 ]"
   },
   {
     "Title": "Max Payne 2: The Fall of Max Payne",
@@ -1820,7 +1820,7 @@
     "Technical issue(s)": "The thumbnail map will not render correctly. During the China campaign, there are random system hang-ups that prevent player progress.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Metal Arms: Glitch in the System",
@@ -1828,7 +1828,7 @@
     "Technical issue(s)": "Minor frame drops occur.",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 41 ]"
+    "Ref(s)": "[ 42 ]"
   },
   {
     "Title": "Micro Machines",
@@ -1860,7 +1860,7 @@
     "Technical issue(s)": "All resolutions above 480i / 480p show no video. There is text corruption throughout the game in the menu, gameplay, pause, and other screens.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "MLB Slugfest 2004",
@@ -1892,7 +1892,7 @@
     "Technical issue(s)": "The Press Start screen has severe flickering.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Mortal Kombat: Deception",
@@ -1900,7 +1900,7 @@
     "Technical issue(s)": "There is flickering on the title screen.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "MotoGP",
@@ -1916,7 +1916,7 @@
     "Technical issue(s)": "Engine sound effects play louder than normal setting when at higher speeds. Engine sounds crackle and cut out during races. The option to assign keys to the Right Trigger in the Settings menu is missing. Tutorial videos shake and flash.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "MVP Baseball 2003",
@@ -1948,7 +1948,7 @@
     "Technical issue(s)": "The loading progress bar is missing.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Murakumo: Renegade Mech Pursuit",
@@ -1964,7 +1964,7 @@
     "Technical issue(s)": "The shadows flicker when leaving the starting gate. Loading screens have a silver box behind the text. Distant trees flicker in and out on the Montauk Plains Freestyle stage.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "MX vs. ATV Unleashed",
@@ -1972,7 +1972,7 @@
     "Technical issue(s)": "When entering or leaving a race, graphics are polarized. There is object rendering difficulty on the horizon during a waypoint race. Shadows flicker in the THQ SX championship on the Tucson track.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "MX World Tour Featuring Jamie Little",
@@ -2020,7 +2020,7 @@
     "Technical issue(s)": "There is audio static throughout the game, and the performance drops when the rear view mirror is enabled.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NASCAR Thunder 2003",
@@ -2028,7 +2028,7 @@
     "Technical issue(s)": "Framerate is sluggish, and there is also audio static throughout the game. The audio effects are loud when in the in-car view, and there is some flickering in the Pause menu.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NBA Ballers",
@@ -2076,7 +2076,7 @@
     "Technical issue(s)": "There is audio stuttering in the introductory video.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NCAA College Basketball 2K3",
@@ -2092,7 +2092,7 @@
     "Technical issue(s)": "Player speed while sprinting is very slow. During gameplay there is some audio static.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NCAA March Madness 06",
@@ -2100,7 +2100,7 @@
     "Technical issue(s)": "Performance problems occur during the intro video. There is some audio stutter during the game setup, and minor audio static occurs during gameplay.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NCAA March Madness 2005",
@@ -2108,7 +2108,7 @@
     "Technical issue(s)": "Video stutters during the introductory video.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Need for Speed: Underground 2",
@@ -2180,7 +2180,7 @@
     "Technical issue(s)": "Audio and video are out of sync in the introductory cinematic.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NHL 2K3",
@@ -2188,7 +2188,7 @@
     "Technical issue(s)": "A random crash will occur at the loading screen when launching a quick game. During system link games, there are performance drops and random de-syncing between consoles. There are minor performance drops during gameplay, and after a goal is scored, an audio squeal can be heard.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NHL Hitz 2003",
@@ -2204,7 +2204,7 @@
     "Technical issue(s)": "During faceoffs and replays, there is minor flickering on the players.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "NightCaster",
@@ -2212,7 +2212,7 @@
     "Technical issue(s)": "Audio dialogue ends early during the gameplay, and there is a minor performance drop during the opening and closing of the spellbook.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Ninja Gaiden",
@@ -2220,7 +2220,7 @@
     "Technical issue(s)": "The unlockable NES arcade games cannot be played.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Ninja Gaiden Black",
@@ -2228,7 +2228,7 @@
     "Technical issue(s)": "This title is rendered at a slightly reduced speed on PAL-50 televisions. The game runs normally under PAL-60. The unlockable NES arcade game can't be played.",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 16 ] [ 11 ]"
+    "Ref(s)": "[ 16 ] [ 17 ] [ 12 ]"
   },
   {
     "Title": "Oddworld: Munch's Oddysee",
@@ -2236,7 +2236,7 @@
     "Technical issue(s)": "The frame rate drops during in-game cinematics, and the sound effects sound very distant.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Open Season",
@@ -2244,7 +2244,7 @@
     "Technical issue(s)": "The camera is jittery when running uphill on the Beaver Damage Stage.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Outlaw Golf 2",
@@ -2260,7 +2260,7 @@
     "Technical issue(s)": "Frame rate drops during gameplay.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Outlaw Tennis",
@@ -2276,7 +2276,7 @@
     "Technical issue(s)": "Flickering background graphics occur during a match.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Outlaw Volleyball: Red Hot",
@@ -2292,7 +2292,7 @@
     "Technical issue(s)": "Audio loops occasionally get stuck. Graphics do not always stream in time around checkpoints. Performance drops during game play.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "OutRun 2006: Coast 2 Coast",
@@ -2300,7 +2300,7 @@
     "Technical issue(s)": "The loading screen hangs for quite a long time, but eventually the game starts and plays as expected.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Over the Hedge",
@@ -2316,7 +2316,7 @@
     "Technical issue(s)": "Character motion can be blurry.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Panzer Dragoon Orta",
@@ -2324,7 +2324,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 17 ]"
+    "Ref(s)": "[ 18 ]"
   },
   {
     "Title": "Panzer Elite Action: Fields of Glory",
@@ -2332,7 +2332,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "PAL",
-    "Ref(s)": "[ 17 ]"
+    "Ref(s)": "[ 18 ]"
   },
   {
     "Title": "Pariah",
@@ -2340,7 +2340,7 @@
     "Technical issue(s)": "There is a minor, but recurring, drop in performance during gameplay. The Loading bar does not display until it is almost full. There is a green line in the pre-game introduction video.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Phantom Crash",
@@ -2356,7 +2356,7 @@
     "Technical issue(s)": "The system occasionally hangs during gameplay.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Pinball Hall of Fame: The Gottlieb Collection",
@@ -2396,7 +2396,7 @@
     "Technical issue(s)": "Frame drops on larger areas when enemies are present. Unlockable mini-games do not play correctly for this title.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 11 ]"
+    "Ref(s)": "[ 16 ] [ 12 ]"
   },
   {
     "Title": "Pro Race Driver TOCA Race Driver (PAL)",
@@ -2412,7 +2412,7 @@
     "Technical issue(s)": "There are severe FPS drops on several maps.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Project Gotham Racing 2",
@@ -2420,7 +2420,7 @@
     "Technical issue(s)": "Cars don't render properly in Car Select and Transmission Select. The car radio does not work in-game.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "PocketBike Racer",
@@ -2436,7 +2436,7 @@
     "Technical issue(s)": "The game has a tendency to apply the pause menu texture to Raz's clothing upon closing it, turning it blue.",
     "Add-Ons": "XO XBO",
     "Region(s)": "NA PAL",
-    "Ref(s)": "[ 21 ] [ 22 ]"
+    "Ref(s)": "[ 22 ] [ 23 ]"
   },
   {
     "Title": "Pump It Up: Exceed",
@@ -2492,7 +2492,7 @@
     "Technical issue(s)": "The compass fails to load in certain levels, and fish can become stuck in the rocks when on the line.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Rayman Arena",
@@ -2508,15 +2508,15 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 43 ]"
+    "Ref(s)": "[ 44 ]"
   },
   {
     "Title": "Red Dead Revolver",
     "Publisher(s)": "Rockstar Games",
-    "Technical issue(s)": "There is some graphics flicker in HD video mode, which can be resolved by switching to 480p video output. When fighting the boss \"Bad Bessie\", if the player gets too close to her the game will freeze. A workaround can be found on a GameFAQs forum. [ 44 ]",
+    "Technical issue(s)": "There is some graphics flicker in HD video mode, which can be resolved by switching to 480p video output. When fighting the boss \"Bad Bessie\", if the player gets too close to her the game will freeze. A workaround can be found on a GameFAQs forum. [ 45 ]",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Red Faction II",
@@ -2524,7 +2524,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 11 ]"
+    "Ref(s)": "[ 12 ]"
   },
   {
     "Title": "RedCard 2003",
@@ -2548,7 +2548,7 @@
     "Technical issue(s)": "Heavy framerate drops on some levels.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 45 ]"
+    "Ref(s)": "[ 5 ] [ 46 ]"
   },
   {
     "Title": "Richard Burns Rally",
@@ -2556,7 +2556,7 @@
     "Technical issue(s)": "Game play pauses during Exercise in the Rally School.",
     "Add-Ons": "",
     "Region(s)": "PAL",
-    "Ref(s)": "[ 5 ] [ 15 ] [ 46 ]"
+    "Ref(s)": "[ 5 ] [ 16 ] [ 47 ]"
   },
   {
     "Title": "Run Like Hell",
@@ -2572,7 +2572,7 @@
     "Technical issue(s)": "Main Menu does not display. Press A to launch single player mode. Widescreen mode is activated, but is squished to 4:3 480p widescreen and HD resolutions. Only will switching to HD VGA modes and changing the aspect ratio to 4:3 will fix this issue.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Robin Hood: Defender of the Crown",
@@ -2628,7 +2628,7 @@
     "Technical issue(s)": "There is audio stuttering during the gameplay, and players render as a dark silhouette on the right side of the field but only during the first game played.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Rugby League 2",
@@ -2644,7 +2644,7 @@
     "Technical issue(s)": "An Xbox version was planned but never released, however this title is included on Microsoft's official backwards compatible list.",
     "Add-Ons": "",
     "Region(s)": "Unreleased",
-    "Ref(s)": "[ 47 ] [ 48 ] [ 5 ]"
+    "Ref(s)": "[ 48 ] [ 49 ] [ 5 ]"
   },
   {
     "Title": "Samurai Warriors",
@@ -2684,7 +2684,7 @@
     "Technical issue(s)": "Title plays very slowly. Occasional crashes during replays and occasional moderate frame rate drops.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Sega GT Online",
@@ -2692,7 +2692,7 @@
     "Technical issue(s)": "Performance drops too low on many levels.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Sega Soccer Slam",
@@ -2700,7 +2700,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 43 ]"
+    "Ref(s)": "[ 44 ]"
   },
   {
     "Title": "Serious Sam",
@@ -2716,7 +2716,7 @@
     "Technical issue(s)": "Performance drops with poor frame-per-second rate in gameplay. PAL edition not backwards compatible.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Shadow the Hedgehog",
@@ -2740,7 +2740,7 @@
     "Technical issue(s)": "While running at 480p in-game cinematics are choppy. A random crash will occur during the Dreamworks cinematic.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Shattered Union",
@@ -2772,7 +2772,7 @@
     "Technical issue(s)": "A line-like graphic is displayed near the character's neck.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Shrek 2",
@@ -2793,10 +2793,10 @@
   {
     "Title": "Sid Meier's Pirates!",
     "Publisher(s)": "2K Games",
-    "Technical issue(s)": "While sailing on the world map, there are occasional choppy animations. The German version of the game has a bug that doesn't allow dividing the plunder, making the game unbeatable. 2K never fixed the bug on Xbox or Xbox One. The game did not get sold as an Xbox Original in Germany. [ 49 ] [ 50 ]",
+    "Technical issue(s)": "While sailing on the world map, there are occasional choppy animations. The German version of the game has a bug that doesn't allow dividing the plunder, making the game unbeatable. 2K never fixed the bug on Xbox or Xbox One. The game did not get sold as an Xbox Original in Germany. [ 50 ] [ 51 ]",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 16 ] [ 11 ]"
+    "Ref(s)": "[ 16 ] [ 17 ] [ 12 ]"
   },
   {
     "Title": "Silent Hill 2: Restless Dreams",
@@ -2812,7 +2812,7 @@
     "Technical issue(s)": "Visible seams on NPCs' faces during cutscenes.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "The Simpsons: Hit & Run",
@@ -2892,7 +2892,7 @@
     "Technical issue(s)": "The controller vibration does not work.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Spawn: Armageddon",
@@ -2932,7 +2932,7 @@
     "Technical issue(s)": "Textures flicker during the game.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Splat Magazine Renegade Paintball",
@@ -2964,7 +2964,7 @@
     "Technical issue(s)": "Certain textures load incorrectly in the game.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "SpyHunter 2",
@@ -2996,7 +2996,7 @@
     "Technical issue(s)": "This title has minor graphical glitches.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Stake: Fortune Fighters",
@@ -3012,7 +3012,7 @@
     "Technical issue(s)": "In some instances, system link games may freeze. The ice cave on the \"Rhen Var Harbor\" map has major texture flickering.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Star Wars: Battlefront II",
@@ -3020,7 +3020,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 17 ]"
+    "Ref(s)": "[ 18 ]"
   },
   {
     "Title": "Star Wars Episode III: Revenge of the Sith",
@@ -3036,7 +3036,7 @@
     "Technical issue(s)": "Cannot play split-screen games for this title.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Star Wars: Jedi Starfighter",
@@ -3044,7 +3044,7 @@
     "Technical issue(s)": "Minor slowdown during menu selections and transitions, minor performance issues during cut scenes. Items on HUD may randomly become solid instead of transparent.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 15 ] [ 17 ]"
+    "Ref(s)": "[ 16 ] [ 18 ]"
   },
   {
     "Title": "Star Wars: Knights of the Old Republic",
@@ -3052,7 +3052,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 11 ]"
+    "Ref(s)": "[ 12 ]"
   },
   {
     "Title": "Star Wars: Knights of the Old Republic II \u2013 The Sith Lords",
@@ -3060,7 +3060,7 @@
     "Technical issue(s)": "Severe audio glitches: soundtrack and combat music will cut out after a series of intermittent buzzing-like sounds usually in the menu screen. Severe framerate drops during combat. Player characters will freeze in place and phase ahead instead of walking/running. Save file corruption is also a distinct possibility. The game should be played exclusively on the first generation Xbox for an optimal experience.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 17 ]"
+    "Ref(s)": "[ 18 ]"
   },
   {
     "Title": "Star Wars: Republic Commando",
@@ -3068,7 +3068,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 17 ]"
+    "Ref(s)": "[ 18 ]"
   },
   {
     "Title": "Starsky and Hutch",
@@ -3108,7 +3108,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 29 ]"
+    "Ref(s)": "[ 30 ]"
   },
   {
     "Title": "The Suffering",
@@ -3148,7 +3148,7 @@
     "Technical issue(s)": "Game takes almost a minute to load from the Xbox splash screen. There are graphical issues when moving between screens.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Taz: Wanted",
@@ -3156,7 +3156,7 @@
     "Technical issue(s)": "During World 3, Stage 2: Haunted there is a partially mis-textured graphic. The reconnect controller screen is not displayed.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Teenage Mutant Ninja Turtles",
@@ -3172,7 +3172,7 @@
     "Technical issue(s)": "The introductory video stutters.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "The Terminator: Dawn of Fate",
@@ -3188,7 +3188,7 @@
     "Technical issue(s)": "There is a minor performance drop during gameplay. The black bars are not positioned properly at 640x480 VGA.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Test Drive",
@@ -3196,7 +3196,7 @@
     "Technical issue(s)": "There are minor performance drops and minor texture flickering during gameplay. Character voices are missing during cut scenes from stage 35 until end of game.",
     "Add-Ons": "",
     "Region(s)": "NA",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Test Drive: Eve of Destruction Driven to Destruction (PAL)",
@@ -3212,7 +3212,7 @@
     "Technical issue(s)": "The opening video displays a grey screen with audio only upon starting the game.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Thief: Deadly Shadows",
@@ -3244,7 +3244,7 @@
     "Technical issue(s)": "There is an occasional random crash during gameplay. The Pirate Raiders mini-game sometimes loads without environments. In the Event Horizon mini-game, enemy sprites are missing and are replaced by a white rectangle.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tiger Woods PGA Tour 07",
@@ -3276,7 +3276,7 @@
     "Technical issue(s)": "Night vision doesn't work properly in split-screen multiplayer.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tom Clancy's Ghost Recon 2: Summit Strike",
@@ -3284,7 +3284,7 @@
     "Technical issue(s)": "In split-screen multiplayer games, the screen is completely black.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tom Clancy's Ghost Recon: Island Thunder",
@@ -3292,7 +3292,7 @@
     "Technical issue(s)": "In-game voice chat is not working.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tom Clancy's Rainbow Six 3",
@@ -3332,7 +3332,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 41 ]"
+    "Ref(s)": "[ 42 ]"
   },
   {
     "Title": "Tom Clancy's Splinter Cell: Double Agent",
@@ -3340,7 +3340,7 @@
     "Technical issue(s)": "When accessing Versus Mode, the system occasionally hangs and the video signal is corrupted. Frame rate drops in the second and third missions. The Save File Snapshot Photo is corrupted after saving.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
@@ -3364,7 +3364,7 @@
     "Technical issue(s)": "There are graphic obstructions in system link.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tony Hawk's Pro Skater 3",
@@ -3372,7 +3372,7 @@
     "Technical issue(s)": "Client soft locks after the host leaves a system link game. Game will freeze at the Xbox logo unless playing with the console\u2019s resolution set to 480p or by playing with AV Cables. Does not run at full frame rate.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Tony Hawk's Pro Skater 4",
@@ -3426,7 +3426,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Trigger Man",
@@ -3442,7 +3442,7 @@
     "Technical issue(s)": "Stuttering occurs during the logo animations during start-up on the splash screen. Texture errors on occur on command prompts.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "True Crime: Streets of LA",
@@ -3450,7 +3450,7 @@
     "Technical issue(s)": "When operating the car, a small indistinct screen appears. Graphic defects are displayed around the track name.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Turok: Evolution",
@@ -3458,7 +3458,7 @@
     "Technical issue(s)": "During gameplay there are flickering textures.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Ty the Tasmanian Tiger",
@@ -3514,7 +3514,7 @@
     "Technical issue(s)": "The frame rate drops in the Story Mode character selection screen. There are occasional system hangs during Instant Action games, and after leaving the game while navigating back to the Xbox Dashboard. There are some missing textures on the Eternal map.",
     "Add-Ons": "XBO",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "The Urbz: Sims in the City",
@@ -3522,7 +3522,7 @@
     "Technical issue(s)": "In the Cozmo Street area the game stutters. While on loading screens random system hardlocks will occur.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Van Helsing",
@@ -3530,7 +3530,7 @@
     "Technical issue(s)": "At the top edge of the main menu and mission briefing screens there is flickering.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Vexx",
@@ -3578,7 +3578,7 @@
     "Technical issue(s)": "On boot, theres a high chance the Microsoft Game Studios and Presto Studios FMVs will not play. Loading screens do not display correctly. While on the High Rise level characters will flicker. During the Space Walk level there is some texture tearing when in combat or being knocked off the platform.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "WinBack 2: Project Poseidon",
@@ -3586,7 +3586,7 @@
     "Technical issue(s)": "When switching to character B there are some missing textures.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Without Warning",
@@ -3594,7 +3594,7 @@
     "Technical issue(s)": "Some texture corruption, gameplay freezes briefly.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "World Series Baseball 2K3",
@@ -3618,7 +3618,15 @@
     "Technical issue(s)": "",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": ""
+    "Ref(s)": "[ 5 ]"
+  },
+  {
+    "Title": "Worms 3D",
+    "Publisher(s)": "Sega",
+    "Technical issue(s)": "",
+    "Add-Ons": "",
+    "Region(s)": "",
+    "Ref(s)": "[ 5 ]"
   },
   {
     "Title": "Worms 4: Mayhem",
@@ -3642,7 +3650,7 @@
     "Technical issue(s)": "Upon completion of a battle the \"You are Victorious\" audio file may play twice. Only weapons and armor of the models are drawn. Game units \"Centaur\" and \"Centabra\" will not display on the map.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "WWE Raw 2",
@@ -3658,7 +3666,7 @@
     "Technical issue(s)": "When six characters are present on screen the game runs very slowly.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "X2: Wolverine's Revenge",
@@ -3666,7 +3674,7 @@
     "Technical issue(s)": "When approaching locker cabinets they will flash. Characters/surrounding environments experience minor, occasional texture flickering on later levels",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Xiaolin Showdown",
@@ -3698,7 +3706,7 @@
     "Technical issue(s)": "During system link play random crashes and system hardlocks will occur.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Zapper: One Wicked Cricket",
@@ -3706,7 +3714,7 @@
     "Technical issue(s)": "",
     "Add-Ons": "XO",
     "Region(s)": "",
-    "Ref(s)": "[ 51 ]"
+    "Ref(s)": "[ 52 ]"
   },
   {
     "Title": "Zathura",
@@ -3714,6 +3722,6 @@
     "Technical issue(s)": "During the first level there is missing audio in the pre-rendered video.",
     "Add-Ons": "",
     "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 15 ]"
+    "Ref(s)": "[ 5 ] [ 16 ]"
   }
 ]

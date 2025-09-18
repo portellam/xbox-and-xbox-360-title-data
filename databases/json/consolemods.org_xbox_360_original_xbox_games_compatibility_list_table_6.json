@@ -1016,7 +1016,7 @@
     "21a": "untested",
     "21b": "untested",
     "21c": "playable",
-    "Tested By": "Unknown",
+    "Tested By": "LucasGS",
     "Known Issues": "None"
   },
   {
@@ -1895,12 +1895,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "Officially supported",
-    "7b": "untested",
+    "7b": "playable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "LazyIllusion, RollPlayStation",
+    "21c": "unplayable",
+    "Tested By": "LazyIllusion, RollPlayStation, LucasGS",
     "Known Issues": "When playing multiplayer, dots representing the enemy do not appear in the HUD."
   },
   {
@@ -1929,12 +1929,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "untested",
-    "7b": "untested",
+    "7b": "playable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "playable",
-    "Tested By": "LazyIllusion, RollPlayStation",
+    "Tested By": "LazyIllusion, RollPlayStation, LucasGS",
     "Known Issues": "Prone to potentially game breaking freezing late in the Soviet campaign, very occasional minor texture flickering."
   },
   {
@@ -2716,7 +2716,7 @@
     "21a": "untested",
     "21b": "untested",
     "21c": "playable",
-    "Tested By": "willindiana",
+    "Tested By": "willindiana, LucasGS",
     "Known Issues": "None"
   },
   {
@@ -3192,7 +3192,7 @@
     "21a": "playable",
     "21b": "playable",
     "21c": "playable",
-    "Tested By": "Wolf",
+    "Tested By": "Wolf, LucasGS",
     "Known Issues": "FMVs lag a little sometimes"
   },
   {
@@ -3442,12 +3442,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "playable",
-    "7b": "untested",
+    "7b": "playable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Unknown",
+    "21c": "unplayable",
+    "Tested By": "Unknown, LucasGS",
     "Known Issues": "None"
   },
   {
@@ -3850,13 +3850,13 @@
     "1_1": "untested",
     "6": "untested",
     "7": "in-game",
-    "7b": "untested",
+    "7b": "playable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Riley541",
-    "Known Issues": "Plays fine for around a minute then the sky starts to produce major graphical issues technically playable but far from a ideal way to play"
+    "21c": "playable",
+    "Tested By": "Riley541, LucasGS",
+    "Known Issues": "in xefu21 the game presents a pronounced \u201cblur\u201d in environments with lighting such as building signs, and in the game\u2019s HUD, in other xefu it presents the same \u201cproblem\u201d but the game is very playable."
   },
   {
     "Name": "Drome Racers",
@@ -4314,7 +4314,7 @@
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "Fisherlr777",
+    "Tested By": "Fisherlr777, LucasGS",
     "Known Issues": "Some oddball glitching. First biker is duplicated. Minor cutscene graphical glitches."
   },
   {
@@ -4327,11 +4327,11 @@
     "6": "untested",
     "7": "in-game",
     "7b": "Officially supported",
-    "19": "untested",
+    "19": "unplayable",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Unknown",
+    "21c": "unplayable",
+    "Tested By": "Unknown, LucasGS",
     "Known Issues": "Freeze at loading screen *only (europe) version works with minor issues"
   },
   {
@@ -7730,9 +7730,9 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "LazyIllusion",
-    "Known Issues": "Frame rate issues during action"
+    "21c": "playable",
+    "Tested By": "LazyIllusion, LucasGS",
+    "Known Issues": "Frame rate issues during action, You can play using xefu2021c."
   },
   {
     "Name": "Max Payne 2: The Fall of Max Payne",
@@ -7744,12 +7744,12 @@
     "6": "untested",
     "7": "playable",
     "7b": "untested",
-    "19": "untested",
+    "19": "unplayable",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "LazyIllusion",
-    "Known Issues": "None"
+    "21c": "unplayable",
+    "Tested By": "LazyIllusion, LucasGS",
+    "Known Issues": "In the tests I did, it didn't work on xefu2019 or xefu2021c"
   },
   {
     "Name": "Maximum Chase",
@@ -7832,9 +7832,9 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "RollPlayStation",
-    "Known Issues": "None"
+    "21c": "unplayable",
+    "Tested By": "RollPlayStation, LucasGS",
+    "Known Issues": "not playable with xefu2021c"
   },
   {
     "Name": "Medal of Honor: European Assault",
@@ -7849,9 +7849,9 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Fisherlr777",
-    "Known Issues": "None"
+    "21c": "playable",
+    "Tested By": "Fisherlr777, LucasGS",
+    "Known Issues": "The game itself has a small drop in frames running on the Xbox 360. using xefu2021c the game remains very playable."
   },
   {
     "Name": "Medal of Honor: Rising Sun",
@@ -7866,9 +7866,9 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "LazyIllusion",
-    "Known Issues": "Frame rate issues with resolutions higher than 480p"
+    "21c": "unplayable",
+    "Tested By": "LazyIllusion, LucasGS",
+    "Known Issues": "Frame rate issues with resolutions higher than 480p, not playable with xefu2021c"
   },
   {
     "Name": "Mega Man Anniversary Collection",
@@ -8100,12 +8100,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "playable",
-    "7b": "untested",
-    "19": "untested",
-    "21a": "untested",
-    "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Gustavo_margutti, RedXSlade",
+    "7b": "playable",
+    "19": "unplayable",
+    "21a": "unplayable",
+    "21b": "unplayable",
+    "21c": "unplayable",
+    "Tested By": "Gustavo_margutti, RedXSlade, LucasGS",
     "Known Issues": "Some FPS drops in 720p. The game runs great in 480p. Tokyo Challenge is completely playable from start to end. Sometimes the music in gameplay can glitch if you skip through songs quickly, this is fixed by restarting the game or waiting for the glitching song to finish."
   },
   {
@@ -8410,8 +8410,8 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "LazyIllusion, RollPlayStation",
+    "21c": "playable",
+    "Tested By": "LazyIllusion, RollPlayStation, LucasGS",
     "Known Issues": "There is flickering on the title screen."
   },
   {
@@ -8576,12 +8576,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "playable",
-    "7b": "untested",
+    "7b": "playable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "unplayable",
-    "Tested By": "Imadummy, HERSXYBACON",
+    "Tested By": "Imadummy, HERSXYBACON, LucasGS",
     "Known Issues": "None"
   },
   {
@@ -10107,12 +10107,12 @@
     "6": "untested",
     "7": "playable",
     "7b": "untested",
-    "19": "untested",
+    "19": "unplayable",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "LazyIllusion",
-    "Known Issues": "The unlockable NES game cannot be played"
+    "21c": "unplayable",
+    "Tested By": "LazyIllusion, LucasGS",
+    "Known Issues": "The unlockable NES game cannot be played, Doesn't leave the Xbox screen with xefu2021c"
   },
   {
     "Name": "Nobunaga no Yabou: Ranseiki",
@@ -11963,8 +11963,8 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "/u/maty15987, ddchampaigne",
+    "21c": "unplayable",
+    "Tested By": "/u/maty15987, ddchampaigne, LucasGS",
     "Known Issues": "Incorrect aspect ratio, works perfectly otherwise"
   },
   {
@@ -15393,12 +15393,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "playable",
-    "7b": "untested",
+    "7b": "playable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Unknown",
+    "21c": "playable",
+    "Tested By": "LucasGS",
     "Known Issues": "None"
   },
   {
@@ -15431,8 +15431,8 @@
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Unknown",
+    "21c": "unplayable",
+    "Tested By": "LucasGS",
     "Known Issues": "None"
   },
   {
@@ -15444,12 +15444,12 @@
     "1_1": "untested",
     "6": "untested",
     "7": "playable",
-    "7b": "untested",
-    "19": "untested",
+    "7b": "playable",
+    "19": "unplayable",
     "21a": "untested",
     "21b": "untested",
-    "21c": "untested",
-    "Tested By": "Sagadali523",
+    "21c": "unplayable",
+    "Tested By": "Sagadali523, LucasGS",
     "Known Issues": "The OG Xbox white theme, at the start of the game, seems flicker instantly a bit when the Ubisoft intro starts until it's gone and the videoclip is back to normal, but the game can still be fully played. However, during gameplay, it lags in most areas expect it's not really very laggy, and the framerate will go back smoother (similar to playing it in original Xbox) which it only works when switching to a thermal vision."
   },
   {
