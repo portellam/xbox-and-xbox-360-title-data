@@ -85,12 +85,12 @@ of metadata. For example: `Name: "Halo 3"`
 [2031]: ./json/xbox.fandom.com_list_of_cancelled_xbox_games_table_1.json
 [2032]: ./json/xbox.fandom.com_list_of_xbox_games_table_1.json
 [2033]: ./json/wikipedia.org_list_of_xbox_360_applications_table_1.json
-[2035]: ( ./json/WIP_ List of Xbox Live Indie Games - Not XBLIG Games.csv)
-[2135]: (./json/WIP_ List of Xbox Live Indie Games - Other XNA Projects.csv)
-[2235]: (./json/WIP_ List of Xbox Live Indie Games - Pre-launch titles.csv)
-[2335]: (./json/WIP_ List of Xbox Live Indie Games - Unreleased_cancelled Games.csv)
-[2435]: (./json/WIP_ List of Xbox Live Indie Games - XNA Starter Kits & Mini Games.csv)
-[2535]: (./json/WIP_ List of Xbox Live Indie Games - XNAProjects.csv)
+[2035]:  ./json/WIP_ List of Xbox Live Indie Games - Not XBLIG Games.csv
+[2135]: ./json/WIP_ List of Xbox Live Indie Games - Other XNA Projects.csv
+[2235]: ./json/WIP_ List of Xbox Live Indie Games - Pre-launch titles.csv
+[2335]: ./json/WIP_ List of Xbox Live Indie Games - Unreleased_cancelled Games.csv
+[2435]: ./json/WIP_ List of Xbox Live Indie Games - XNA Starter Kits & Mini Games.csv
+[2535]: ./json/WIP_ List of Xbox Live Indie Games - XNAProjects.csv
 
 ### 3. Database Coverage
 
