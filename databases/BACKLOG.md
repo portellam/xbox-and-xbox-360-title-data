@@ -4,7 +4,7 @@
 
 - [ ] add more?
 
-- [ ] migrate databases to own git repository? Or keep here and migrate scripts elsewhere?
+- [ ] add both CSV and JSON files. CSV files are viewable in Markdown as tables!
 
 - [ ] *Xbox* and *Xbox 360:* master database file with following columns:
 	1. **Title ID**

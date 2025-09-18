@@ -4,6 +4,8 @@
 
 - [ ] add more
 
+- [ ] add logic to output as CSV files. These are viewable in Markdown!
+
 - [ ] cron job to upload latest database files to this repo.
 
 - [ ] individual script files for each resource.
