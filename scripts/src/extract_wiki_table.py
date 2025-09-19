@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 #
-# Filename:       extract_consolemods.py
-# Description:    Extract HTML Wiki table as lists.
+# Filename:       extract_wiki_table.py
+# Description:    Extract an HTML webpage Wiki table as a list.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
 # Version:        1.0.0
@@ -20,12 +20,6 @@ from config import (
   ELEMENT_TAG_LIST
 )
 
-from config_consolemods import (
-  HEADER_KEY_LIST,
-  STATUS_MAP,
-  HEADER_MAP
-)
-
 try:
   from bs4 import BeautifulSoup
 
@@ -40,12 +34,16 @@ except ImportError as e:
 
 def extract_cell_value(
   cell: BeautifulSoup,
-  is_status_column: bool
+  is_status_column: bool,
+  status_map: Dict[
+    str,
+    str
+  ]
 ) -> str:
   div = cell.find('div')
 
   if div and div.has_attr('title') and is_status_column:
-    return STATUS_MAP.get(
+    return status_map.get(
       div['title'].lower().strip(),
       div['title'].strip()
     )
@@ -55,17 +53,22 @@ def extract_cell_value(
   if not text:
     return ""
 
-  return STATUS_MAP.get(
+  return status_map.get(
     text.lower(),
     text
   ) if is_status_column else text
 
 def extract_headers(
-  table: BeautifulSoup
+  table: BeautifulSoup,
+  header_key_list: List[str],
+  header_map: Dict[
+    str,
+    str
+  ]
 ) -> List[str]:
   inverted_header_map = {}
 
-  for key, value in HEADER_MAP.items():
+  for key, value in header_map.items():
     inverted_header_map[value] = key
 
   try:
@@ -77,7 +80,7 @@ def extract_headers(
     else:
       header_cells = table.find_all(
         "th",
-        limit = len(HEADER_KEY_LIST)
+        limit = len(header_key_list)
       )
 
     header_list = []
@@ -93,7 +96,6 @@ def extract_headers(
         text = cell.get_text(strip = True)
 
       text = text.strip()
-
       normalized_text = normalize_header(text)
 
       text = inverted_header_map.get(
@@ -115,7 +117,15 @@ def extract_headers(
 
 def extract_rows(
   table: BeautifulSoup,
-  header_list: List[str]
+  header_list: List[str],
+  header_map: Dict[
+    str,
+    str
+  ],
+  status_map: Dict[
+    str,
+    str
+  ]
 ) -> List[
   Dict[
     str,
@@ -142,10 +152,12 @@ def extract_rows(
         header_list,
         cell_list
       ):
-        is_status_column = header in HEADER_MAP or header in HEADER_MAP.values()
+        is_status_column = header in header_map or header in header_map.values()
+
         value = extract_cell_value(
           cell,
-          is_status_column
+          is_status_column,
+          status_map
         )
 
         if value == header or not value:
@@ -166,7 +178,12 @@ def extract_rows(
     return []
 
 def extract_table_data(
-  table: BeautifulSoup
+  table: BeautifulSoup,
+  header_key_list: List[str],
+  header_map: Dict[
+    str,
+    str
+  ]
 ) -> tuple[
   List[str],
   List[
@@ -186,14 +203,14 @@ def extract_table_data(
     else:
       header_cells = table.find_all(
         "th",
-        limit = len(HEADER_KEY_LIST)
+        limit = len(header_key_list)
       )
 
     inverted_header_map = {
       v: k for
         k,
         v
-      in HEADER_MAP.items()
+      in header_map.items()
     }
 
     for cell in header_cells:
@@ -242,11 +259,12 @@ def extract_table_data(
         header_list,
         cell_list
       ):
-        is_status_column = header in HEADER_MAP or header in HEADER_MAP.values()
+        is_status_column = header in header_map or header in header_map.values()
 
         value = extract_cell_value(
           cell,
-          is_status_column
+          is_status_column,
+          status_map
         )
 
         if value == header or not value:
@@ -269,10 +287,16 @@ def extract_table_data(
     []
 
 def find_by_header(
-  soup: BeautifulSoup
+  soup: BeautifulSoup,
+  header_key_list,
+  header_map
 ) -> Optional[BeautifulSoup]:
   for table in soup.find_all("table"):
-    header_list = extract_headers(table)
+    header_list = extract_headers(
+      table,
+      header_key_list,
+      header_map
+    )
 
     if has_required_headers(header_list):
       return table
@@ -280,7 +304,9 @@ def find_by_header(
   return None
 
 def find_by_section_id(
-  soup: BeautifulSoup
+  soup: BeautifulSoup,
+  header_key_list,
+  header_map
 ) -> Optional[BeautifulSoup]:
   section = soup.find(
     "span",
@@ -309,21 +335,35 @@ def find_by_section_id(
   if not table:
     return None
 
-  header_list = extract_headers(table)
+  header_list = extract_headers(
+      table,
+      header_key_list,
+      header_map
+    )
 
   if has_required_headers(header_list):
     return table
   return None
 
 def find_table(
-  soup: BeautifulSoup
+  soup: BeautifulSoup,
+  header_key_list,
+  header_map
 ) -> Optional[BeautifulSoup]:
-  table = find_by_section_id(soup)
+  table = find_by_section_id(
+    soup,
+    header_key_list,
+    header_map
+  )
 
   if table:
     return table
 
-  table = find_by_header(soup)
+  table = find_by_header(
+    soup,
+    header_key_list,
+    header_map
+  )
 
   if table:
     return table
@@ -334,20 +374,27 @@ def find_table(
   )
 
   if table:
-    header_list = extract_headers(table)
+    header_list = extract_headers(
+      table,
+      header_key_list,
+      header_map
+    )
 
     if has_required_headers(header_list):
       return table
 
-  tables = soup.find_all("table")
+  table_list = soup.find_all("table")
 
-  for i, table in enumerate(tables):
-    headers = extract_headers(table)
+  for i, table in enumerate(table_list):
+    headers = extract_headers(
+      table,
+      header_key_list,
+      header_map
+    )
 
     if has_required_headers(headers):
       return table
 
-  print("DEBUG: No suitable table found")
   return None
 
 def has_required_headers(
