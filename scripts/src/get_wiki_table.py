@@ -20,6 +20,7 @@ from bs4 import (
 )
 
 from typing import (
+  Dict,
   List
 )
 
@@ -68,7 +69,7 @@ def write_many(
   for table in table_list:
     header_list, _ = extract_table_data(
       table,
-      header_key_list
+      header_key_list,
       header_map,
       status_map
     )
@@ -97,8 +98,8 @@ def write_many(
 
     header_list, row_list = extract_table_data(
       table,
-      header_map,
       header_key_list,
+      header_map,
       status_map
     )
 
@@ -130,7 +131,6 @@ def write_many(
 def main(
   url: str,
   base_name: str,
-  table_list: List[BeautifulSoup],
   header_key_list: List[str],
   required_header_list: List[str],
   header_map: Dict[
