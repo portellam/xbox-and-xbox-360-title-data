@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f get_consolemods_tables_requirements.txt ]; then
-            pip install -r get_consolemods_tables_requirements.txt
+            pip install -r get_consolemods_table_requirements.txt
           fi
 
           if [ -f get_google_sheets_requirements.txt ]; then
@@ -32,7 +32,7 @@ jobs:
           fi
 
       - name: Get latest from consolemods.org
-        run: python get_consolemods_tables.py
+        run: python get_consolemods_table.py
 
       - name: Get latest from Google sheets
         run: python get_google_sheets.py
