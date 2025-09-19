@@ -17,12 +17,54 @@ from typing import (
 )
 
 from config import (
-  OUTPUT_PATH
+  OUTPUT_BASE_PATH,
+  OUTPUT_CSV_PATH,
+  OUTPUT_JSON_PATH
 )
 
 from sanitize_file import (
   sanitize_file_name
 )
+
+def write_csv(
+  header_list: List[str],
+  text: List[
+    Dict[
+      str,
+      str
+    ]
+  ],
+  name: str
+) -> bool:
+  try:
+    output_file = f"{OUTPUT_CSV_PATH}{name}.csv"
+
+    if not header_list:
+      print("No data.")
+      raise Exception
+
+    print(f"Writing to file: '{output_file}'")
+
+    with open(
+      output_file,
+      "w",
+      newline = "",
+      encoding = "utf-8"
+    ) as csvfile:
+      writer = csv.DictWriter(
+        csvfile,
+        fieldnames = header_list
+      )
+      writer.writeheader()
+      writer.writerows(text)
+
+    print("Wrote to file.")
+    return True
+
+  except Exception as e:
+    print("Could not write to file.")
+    print(f"Error: {e}")
+    return False
 
 def write_json(
   header_list: List[str],
@@ -35,7 +77,7 @@ def write_json(
   name: str
 ) -> bool:
   try:
-    output_file = f"{OUTPUT_PATH}{name}.json"
+    output_file = f"{OUTPUT_JSON_PATH}{name}.json"
 
     if not header_list:
       print("No data.")
@@ -93,6 +135,13 @@ def write_this(
     return 1
 
   if not write_json(
+    header_list,
+    row_list,
+    name
+  ):
+    return 1
+
+  if not write_csv(
     header_list,
     row_list,
     name
