@@ -60,7 +60,7 @@ def extract_cell_value(
 
 def extract_headers(
   table: BeautifulSoup,
-  header_key_list: List[str],
+  header_list: List[str],
   header_map: Dict[
     str,
     str
@@ -179,8 +179,13 @@ def extract_rows(
 
 def extract_table_data(
   table: BeautifulSoup,
-  header_key_list: List[str],
+  header_list: List[str],
+  required_header_list: List[str],
   header_map: Dict[
+    str,
+    str
+  ],
+  status_map: Dict[
     str,
     str
   ]
@@ -288,25 +293,44 @@ def extract_table_data(
 
 def find_by_header(
   soup: BeautifulSoup,
-  header_key_list,
-  header_map
+  header_list: List[str],
+  required_header_list: List[str],
+  header_map: Dict[
+    str,
+    str
+  ],
+  status_map: Dict[
+    str,
+    str
+  ]
 ) -> Optional[BeautifulSoup]:
-  for table in soup.find_all("table"):
+  for soup in soup.find_all("table"):
     header_list = extract_headers(
       table,
       header_key_list,
       header_map
     )
 
-    if has_required_headers(header_list):
+    if has_required_headers(
+      header_list,
+      required_header_list
+    ):
       return table
 
   return None
 
 def find_by_section_id(
   soup: BeautifulSoup,
-  header_key_list,
-  header_map
+  header_list: List[str],
+  required_header_list: List[str],
+  header_map: Dict[
+    str,
+    str
+  ],
+  status_map: Dict[
+    str,
+    str
+  ]
 ) -> Optional[BeautifulSoup]:
   section = soup.find(
     "span",
@@ -345,10 +369,18 @@ def find_by_section_id(
     return table
   return None
 
-def find_table(
+def find_tables(
   soup: BeautifulSoup,
-  header_key_list,
-  header_map
+  header_list: List[str],
+  required_header_list: List[str],
+  header_map: Dict[
+    str,
+    str
+  ],
+  status_map: Dict[
+    str,
+    str
+  ]
 ) -> Optional[BeautifulSoup]:
   table = find_by_section_id(
     soup,
@@ -362,6 +394,7 @@ def find_table(
   table = find_by_header(
     soup,
     header_key_list,
+    required_header_list
     header_map
   )
 
@@ -380,25 +413,32 @@ def find_table(
       header_map
     )
 
-    if has_required_headers(header_list):
+    if has_required_headers(
+      header_list,
+      required_header_list
+    ):
       return table
 
   table_list = soup.find_all("table")
 
   for i, table in enumerate(table_list):
-    headers = extract_headers(
+    header_list = extract_headers(
       table,
       header_key_list,
       header_map
     )
 
-    if has_required_headers(headers):
+    if has_required_headers(
+      header_list,
+      required_header_list
+    ):
       return table
 
   return None
 
 def has_required_headers(
-  header_list: List[str]
+  header_list: List[str],
+  required_header_list: List[str]
 ) -> bool:
   header_set_lower = {
     h.lower()
@@ -413,9 +453,9 @@ def has_required_headers(
 
   return all(h in header_set_lower for h in required_headers)
 
-def normalize_header(h: str) -> str:
+def normalize_header(header: str) -> str:
   return re.sub(
     r'[^a-z0-9_]',
     '',
-    h.lower()
+    header.lower()
   )
