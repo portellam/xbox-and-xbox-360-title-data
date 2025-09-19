@@ -38,6 +38,12 @@ HEADER_KEY_LIST = [
   "Tested By"
 ]
 
+REQUIRED_HEADER_LIST = [
+  "name",
+  "tested by",
+  "known issues"
+]
+
 HEADER_MAP = {
   "1": "xefu",
   "2": "xefu2",
