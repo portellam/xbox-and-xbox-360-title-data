@@ -16,23 +16,24 @@
 
 ### 1. This Directory
 
-| Script                                                                         | Remote Database Reference       | Functionality                                      | Status                                                        |
-| ------------------------------------------------------------------------------ | ------------------------------- | -------------------------------------------------- | ------------------------------------------------------------- |
-| -                                                                              | [1],  [21]                      | N/A                                                | N/A                                                           |
-| [`./get_rushhosting_data.py`](./get-xbox-360-games_archive.rushhosting.net.py) | [2]                             | Queries URL, aggregates HTML and converts to JSON. | Developing. Rate limited. Fails every 50 to 100 web requests. |
-| -                                                                              | [3],  [5],  [6]                 | N/A                                                | N/A                                                           |
-| [`./src/get_wikipedia_tables.py`](./src/get_wikipedia_tables.py)               | [9],  [10],  [11],  [12],  [13] | Parses HTML, converts to JSON.                     | Working.                                                      |
-| -                                                                              | [14],  [15]                     | N/A                                                | N/A                                                           |
-| [`./src/get_consolemods_tables.py`](./src/get_consolemods_tables.py)           | [19]                            | Parses HTML, converts to JSON.                     | Working.                                                      |
-| -                                                                              | [22]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [23]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [27]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [28]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [29]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [32]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [33]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [35]                            | N/A                                                | N/A                                                           |
-| -                                                                              | [36]                            | N/A                                                | N/A                                                           |
+| Script                                                                         | Remote Database                 | Status                                                        |
+| ------------------------------------------------------------------------------ | ------------------------------- | ------------------------------------------------------------- |
+| [`./src/get_wiki_table.py`](./src/get_wiki_table.py)                           | any Wiki powered webpage        | Working.                                                      |
+| -                                                                              | [1],  [21]                      | -                                                             |
+| [`./src/get_rushhosting.net_database.py`](./get_rushhosting.net_database.py)   | [2]                             | Developing. Rate limited. Fails every 50 to 100 web requests. |
+| -                                                                              | [3],  [5],  [6]                 | -                                                             |
+| [`./src/get_wikipedia_tables.py`](./src/get_wikipedia_tables.py)               | [9],  [10],  [11],  [12],  [13] | Working.                                                      |
+| -                                                                              | [14],  [15]                     | -                                                             |
+| [`./src/get_consolemods_table.py`](./src/get_consolemods_table.py)             | [19]                            | Working.                                                      |
+| -                                                                              | [22]                            | -                                                             |
+| -                                                                              | [23]                            | -                                                             |
+| -                                                                              | [27]                            | -                                                             |
+| -                                                                              | [28]                            | -                                                             |
+| -                                                                              | [29]                            | -                                                             |
+| -                                                                              | [32]                            | -                                                             |
+| -                                                                              | [33]                            | -                                                             |
+| -                                                                              | [35]                            | -                                                             |
+| -                                                                              | [36]                            | -                                                             |
 
 ##
 #### Click [here](#scripts) to return to the top of this document.

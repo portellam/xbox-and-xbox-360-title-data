@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #
-# Filename:       get-rushhosting.net-database.py
+# Filename:       get_rushhosting.net_database.py
 # Description:    Retrieves data from archive.rushhosting.net pages, and outputs
 #                 as JSON.
 # Author(s):      Alex Portell <github.com/portellam>
