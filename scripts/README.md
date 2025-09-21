@@ -55,7 +55,7 @@
 
 #### 1. General Best Practices
 
-- Add delays between requests (≥1 second).
+- Add delays between requests (greater than one ( ≥1 ) second).
 - Cache results to minimize server load.
 - Document your data sources and usage in publications.
 - Handle errors gracefully without retry loops.
@@ -65,7 +65,7 @@
 - Do not use for unauthorized data collection.
 - Follow Google's [*Terms of Use*][2200].
 - Only works with sheets shared publicly ("Anyone with link").
-- Rate limited to ~30 requests/minute to respect quotas.
+- Rate limited to about thirty ( ~30 ) requests/minute to respect quotas.
 - Respect sheet owners' terms and privacy settings.
 - Respect the [`robots.txt`][2201].
 
@@ -81,7 +81,7 @@
 - Follow Wikimedia [*Terms of Use*][2300].
 - Include original article links in redistributed data.
 
-- Maximum two hundred (200) requests/second, six thousand (6,000) requests/day
+- Maximum two-hundred (200) requests/second, six-thousand (6,000) requests/day
 (this tool uses much lower limits).
 
 - Respect the [`robots.txt`][2301].
@@ -95,7 +95,7 @@
 #### 4. Generic Wiki Usage
 
 - Always check target wiki's `robots.txt` and *Terms of Service*.
-- Use conservative rate limiting (less than one ( ≤ 1 ) request/second).
+- Use conservative rate limiting (less than one ( ≤1 ) request/second).
 - Attribute original sources properly.
 - Respect each wiki's specific policies.
 
@@ -106,7 +106,7 @@
 
 - Include attribution when redistributing data.
 - Non-commercial research use only.
-- Rate limit to 1 request/second.
+- Rate limit to one (1) request/second.
 - Respect the [`robots.txt`][2500].
 
 - The following tools apply:

@@ -47,7 +47,7 @@
 # Version:        1.0.0
 #
 
-GOOGLE_API_QUOTA_LIMIT_IN_SECONDS = 2.000  # Set as (30) quotas/minute. Actual is sixty (60) quotas/minute.
+GOOGLE_API_QUOTA_LIMIT_IN_SECONDS = 2.000  # Set as thirty (30) quotas/minute. Actual is sixty (60) quotas/minute.
 
 import sys
 import time

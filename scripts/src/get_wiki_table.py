@@ -54,7 +54,7 @@
 # Version:        1.0.0
 #
 
-WIKI_HTTP_QUOTA_LIMIT_IN_SECONDS = 1.000  # Set as one (1) quota/second. Actual is 200 quotas/second.
+WIKI_HTTP_QUOTA_LIMIT_IN_SECONDS = 1.000  # Set as one (1) quota/second. Actual is two-hundred (200) quotas/second.
 
 import sys
 

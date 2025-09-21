@@ -66,7 +66,7 @@
 # Version:        1.0.0
 #
 
-WIKIPEDIA_HTTP_QUOTA_LIMIT_IN_SECONDS = 0.050  # Set as two (2) quotas/second. Actual is two hundred (200) quotas/second.
+WIKIPEDIA_HTTP_QUOTA_LIMIT_IN_SECONDS = 0.500  # Set as two (2) quotas/second. Actual is two-hundred (200) quotas/second.
 
 import sys
 
