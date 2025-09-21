@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
 #
-# Copyright (C) 2025 Alex Portell <github.com/portellam>
-#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -44,9 +42,11 @@ except ImportError as e:
   sys.exit(1)
 
 def get_html(
-  url: str
+  url: str,
+  quota_limit_in_seconds: float
 ) -> Optional[str]:
   try:
+    validate_sleep_time(quota_limit_in_seconds)
     print(f"Fetching page: '{url}'")
 
     response = requests.get(
@@ -57,6 +57,7 @@ def get_html(
       timeout = 10
     )
 
+    time.sleep(float)
     response.raise_for_status()
     print("Fetched page.")
     return response.text
@@ -65,3 +66,16 @@ def get_html(
     print("Could not fetch page.")
     print(f"Error: {e}")
     return None
+
+def validate_sleep_time(sleep_time_in_seconds: float) -> None:
+  if not isinstance(
+    sleep_time_in_seconds,
+    (
+      int,
+      float
+    )
+  ):
+    raise ValueError("Sleep time must be an integer or float.")
+
+  if sleep_time < 0:
+    raise ValueError("Sleep time cannot be negative.")
