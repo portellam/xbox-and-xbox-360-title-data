@@ -16,24 +16,34 @@
 
 ### 1. This Directory
 
-| Script                                                                         | Remote Database                 | Status                                                        |
-| ------------------------------------------------------------------------------ | ------------------------------- | ------------------------------------------------------------- |
-| [`./src/get_wiki_table.py`](./src/get_wiki_table.py)                           | any Wiki powered webpage        | Working.                                                      |
-| -                                                                              | [1],  [21]                      | -                                                             |
-| [`./src/get_rushhosting.net_database.py`](./get_rushhosting.net_database.py)   | [2]                             | Developing. Rate limited. Fails every 50 to 100 web requests. |
-| -                                                                              | [3],  [5],  [6]                 | -                                                             |
-| [`./src/get_wikipedia_tables.py`](./src/get_wikipedia_tables.py)               | [9],  [10],  [11],  [12],  [13] | Working.                                                      |
-| -                                                                              | [14],  [15]                     | -                                                             |
-| [`./src/get_consolemods_table.py`](./src/get_consolemods_table.py)             | [19]                            | Working.                                                      |
-| -                                                                              | [22]                            | -                                                             |
-| -                                                                              | [23]                            | -                                                             |
-| -                                                                              | [27]                            | -                                                             |
-| -                                                                              | [28]                            | -                                                             |
-| -                                                                              | [29]                            | -                                                             |
-| -                                                                              | [32]                            | -                                                             |
-| -                                                                              | [33]                            | -                                                             |
-| -                                                                              | [35]                            | -                                                             |
-| -                                                                              | [36]                            | -                                                             |
+| Script                                          | Remote Database                 | Status                                                        |
+| ----------------------------------------------- | ------------------------------- | ------------------------------------------------------------- |
+| [`./src/get_this_database.py`][100A]            | any remote database file        | Working.                                                      |
+| [`./src/get_wiki_table.py`][100B]               | any Wiki powered webpage        | Working.                                                      |
+| -                                               | [1],  [21]                      | -                                                             |
+| [`./src/get_rushhosting.net_database.py`][1002] | [2]                             | Developing. Rate limited. Fails every 50 to 100 web requests. |
+| [`./src/get_many_databases.py`][1003]           | [3],  [5],  [6]                 | Working.                                                      |
+| [`./src/get_wikipedia_tables.py`][1009]         | [9],  [10],  [11],  [12],  [13] | Working.                                                      |
+| -                                               | [14],  [15]                     | -                                                             |
+| [`./src/get_consolemods_table.py`][1019]        | [19]                            | Working.                                                      |
+| -                                               | [22]                            | -                                                             |
+| -                                               | [23]                            | -                                                             |
+| -                                               | [27]                            | -                                                             |
+| -                                               | [28]                            | -                                                             |
+| -                                               | [29]                            | -                                                             |
+| -                                               | [32]                            | -                                                             |
+| -                                               | [33]                            | -                                                             |
+| -                                               | [35]                            | -                                                             |
+| -                                               | [36]                            | -                                                             |
+
+
+[100A]: ./src/get_this_database.py
+[100B]: ./src/get_wiki_table.py
+[1002]: ./src/get_rushhosting.net_database.py
+[1003]: ./src/get_many_databases.py
+[1009]: ./src/get_wikipedia_tables.py
+[1019]: ./src/get_consolemods_table.py
+
 
 ##
 #### Click [here](#scripts) to return to the top of this document.

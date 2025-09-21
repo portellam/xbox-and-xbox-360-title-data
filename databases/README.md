@@ -45,7 +45,7 @@ version of a database file to **view** the data as a **table.**
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | :-----------: | :---------: |
 | -                                                                                                                                                                                     | [1],  [21]       | -             | -           |
 | `archive.rushhosting.net` <sup>[CSV][20002]</sup>                                                                                                                                     | [2]              | **Yes**       | No          |
-| -                                                                                                                                                                                     | [3],  [5],  [16] | -             | -           |
+| `MobCat\'s Original Xbox Title ID Database` <sup>[CSV][20003]</sup> <sup>[JSON][20103]</sup> <sup>[DB][20203]</sup>                                                                   | [3],  [5],  [16] | **Yes**       | **Yes**     |
 | -                                                                                                                                                                                     | [4]              | -             | -           |
 | `Wikipedia \| List of Xbox 360 games (A-L)` <sup>[CSV][20009]</sup>  <sup>[JSON][20109]</sup>                                                                                         | [9]              | **Yes**       | **Yes**     |
 | `Wikipedia \| List of Xbox 360 games (A-L): Cancelled games` <sup>[CSV][21009]</sup>  <sup>[JSON][21109]</sup>                                                                        | [9]              | **Yes**       | **Yes**     |
@@ -75,6 +75,10 @@ version of a database file to **view** the data as a **table.**
 | -                                                                                                                                                                                     | [36]             | -             | -           |
 
 [20002]: ./csv/archive.rushhosting.net_xbox_360_title_id_list.csv
+
+[20003]: ./csv/MobCat's_Original_Xbox_Title_ID_Database.csv
+[20103]: ./json/MobCat's_Original_Xbox_Title_ID_Database.json
+[20203]: ./db/MobCat's_Original_Xbox_Title_ID_Database.db
 
 [20009]: ./csv/wikipedia.org_xbox_360_games_a-l_table_2.csv
 [20109]: ./json/wikipedia.org_xbox_360_games_a-l_table_2.json
