@@ -11,6 +11,12 @@
 ## Table of Contents
 
 - [1. This Directory](#1-this-directory)
+- [2. Legal & Usage Notes](#2-legal--usage-notes)
+  - [1. General Best Practices](#1-general-best-practices)
+  - [2. Google Sheets API Usage](#2-google-sheets-api-usage)
+  - [3. Wikipedia Usage](#3-wikipedia-usage)
+  - [4. Generic Wiki Usage](#4-generic-wiki-usage)
+  - [5. ConsoleMods.org Usage](#5-consolemodsorg-usage)
 
 ## Contents
 
@@ -44,29 +50,73 @@
 [1009]: ./src/get_wikipedia_tables.py
 [1019]: ./src/get_consolemods_table.py
 [1035]: ./src/get_google_sheets.py
-[1135]: #1-google-sheets-api
-
 
 ### 2. Legal & Usage Notes
 
-#### 1. Google Sheets API
+#### 1. General Best Practices
 
+- Add delays between requests (≥1 second).
+- Cache results to minimize server load.
+- Document your data sources and usage in publications.
+- Handle errors gracefully without retry loops.
+
+#### 2. Google Sheets API Usage
+
+- Do not use for unauthorized data collection.
+
+- Follow Google's *Terms of Use*:
+[https://developers.google.com/terms][2200]
+
+- Only works with sheets shared publicly ("Anyone with link").
+- Rate limited to ~30 requests/minute to respect quotas.
+- Respect sheet owners' terms and privacy settings.
+- Respect the `robots.txt` ([https://www.consolemods.org/robots.txt][2201])
 
 - The following tools use Google's free public Sheets API:
   - [`./src/get_google_sheets.py`][1035]
 
-- Rate limited to ~30 requests/minute to respect quotas.
-- Only works with sheets shared publicly ("Anyone with link").
+[2200]: https://developers.google.com/terms
+[2201]: https://google.com/robots.txt
 
-##### 1. Your Responsibilities
+#### 3. Wikipedia Usage
 
-- Ensure you have permission to access sheets you process.
-- Respect sheet owners' terms and privacy settings.
-- Do not use for unauthorized data collection.
+- Content is CC BY-SA 3.0 - attribute Wikipedia as source.
 
-##### 2. Google's Terms
-See: https://developers.google.com/terms
+- Follow Wikimedia *Terms of Use*:
+[https://foundation.wikimedia.org/wiki/Terms_of_Use][2300]
 
+- Include original article links in redistributed data.
+- Maximum two hundred (200) requests/second, six thousand (6,000) requests/day
+(this tool uses much lower limits).
+
+- Respect the `robots.txt`: [https://www.wikipedia.org/robots.txt][2301]
+
+- The following tools apply:
+  - [`./src/get_wikipedia_tables.py`][1009]
+
+[2300]: https://foundation.wikimedia.org/wiki/Terms_of_Use
+
+#### 4. Generic Wiki Usage
+
+- Always check target wiki's `robots.txt` and *Terms of Service*.
+- Use conservative rate limiting (less than one ( ≤ 1 ) request/second).
+- Attribute original sources properly.
+- Respect each wiki's specific policies.
+
+- The following tools apply:
+  - [`./src/get_wiki_table.py`][100B]
+
+#### 5. ConsoleMods.org Usage
+
+- Include attribution when redistributing data.
+- Non-commercial research use only.
+- Rate limit to 1 request/second.
+- Respect the `robots.txt` ([https://www.consolemods.org/robots.txt][2500])
+
+- The following tools apply:
+  - [`./src/get_wikipedia_tables.py`][1019]
+
+[2500]: https://www.consolemods.org/robots.txt
 
 ##
 #### Click [here](#scripts) to return to the top of this document.
