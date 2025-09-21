@@ -1,14 +1,58 @@
 #!/usr/bin/env python3
 
 #
+# Copyright (C) 2025 Alex Portell <github.com/portellam>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# THIRD PARTY NOTICES:
+#
+# This software uses the Google Sheets API under the Google APIs Terms of Service
+# (https://developers.google.com/terms). You must comply with these terms when
+# using this script, including rate limits and data usage restrictions.
+#
+# Google and Google Sheets are trademarks of Google LLC. This software is not
+# affiliated with, endorsed by, or sponsored by Google LLC.
+#
+# DATA USAGE NOTICE:
+#
+# This script only accesses publicly available Google Sheets. Users are
+# responsible for ensuring they have permission to access and process the data
+# retrieved. Respect the privacy and terms of service of the original sheet
+# creators.
+#
+# USAGE WARNING:
+#
+#   - Only use with sheets marked "Anyone with the link can view".
+#   - Respect sheet owners' terms of use.
+#   - Do not scrape private or restricted content.
+#   - Comply with robots.txt and rate limits.
+#
+
+#
 # Filename:       get_google_sheets.py
 # Description:    Retrieves data from public Google Sheet(s) and outputs as JSON.
 # Author(s):      Alex Portell <github.com/portellam>
 # Maintainer(s):  Alex Portell <github.com/portellam>
+# License:        GNU General Public License v3.0
 # Version:        1.0.0
 #
 
 import sys
+import time
+
+GOOGLE_API_QUOTA_LIMIT_PER_SECOND = 0.5  # Set as (30) quotas/minute. Actual is sixty (60) quotas/minute.
 
 from typing import (
   Dict,
@@ -76,6 +120,7 @@ def parse_this(
     print(f"Fetching Google Sheet: '{sheet_url}'")
 
     gc = gspread.url()
+    time.sleep(GOOGLE_API_QUOTA_LIMIT_PER_SECOND)
     spreadsheet = gc.open_by_url(sheet_url)
     worksheet = spreadsheet.worksheet(sheet_name)
     data_list = worksheet.get_all_values()
