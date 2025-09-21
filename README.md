@@ -1,19 +1,25 @@
 # Xbox and Xbox 360 Title Data
 ### Developing
 
-A project to **compile** a local database from multiple **remote** sources, of
-video game titles for the *Microsoft Xbox* and *Xbox 360* consoles. The project
-includes scripts to **parse** and **aggregate** remote data to organize into a
-local database. The project also includes references of documentation and remote
-sources.
+A **non-commercial, non-profit,** and **open-source** project to **compile** a
+list of **remote** sources, of video game titles for the *Microsoft Xbox* and
+*Xbox 360* consoles. The project includes documentation and references.
 
-The **accuracy** of the local database is **subjective** and dependent on the
-remote database(s) used.
+Also included are scripts to **parse** and **aggregate** remote data to organize
+into a local database. The **purpose** of the local database is to **extend** the
+functionality of a given **user interface** (UI), of which to view and play the
+*Xbox* and *Xbox 360* titles from. For example, a custom *Xbox 360* dashboard such
+as [*Aurora*][37], to extend its [filter/sort functions of title metadata][6].
 
-The **purpose** of the local database is to **extend** the functionality of a
-given **user interface** (UI), of which to view and play the *Xbox* and *Xbox 360*
-titles from. For example, a custom *Xbox 360* dashboard such as [*Aurora*][37],
-to extend its [filter/sort functions of title metadata][6].
+No intellectual infrigment, no copyright infrigement, no endorsement by
+*Microsoft, Google, Wikipedia, Console Mods* or any other referenced entity,
+is intended.
+
+If any data goes against authorized use by any referenced party, please contact
+a repository contributor so this may be resolved appropriately.
+
+This repository, its documentation, and/or its database(s) should **not** be
+considered as an **accurate** or **reliable** source of information.
 
 Please use with caution.
 
