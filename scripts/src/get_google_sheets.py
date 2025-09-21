@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 #
-# Copyright (C) 2025 Alex Portell <github.com/portellam>
-#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -49,10 +47,10 @@
 # Version:        1.0.0
 #
 
+GOOGLE_API_QUOTA_LIMIT_IN_SECONDS = 2.000  # Set as (30) quotas/minute. Actual is sixty (60) quotas/minute.
+
 import sys
 import time
-
-GOOGLE_API_QUOTA_LIMIT_PER_SECOND = 0.5  # Set as (30) quotas/minute. Actual is sixty (60) quotas/minute.
 
 from typing import (
   Dict,
@@ -120,7 +118,7 @@ def parse_this(
     print(f"Fetching Google Sheet: '{sheet_url}'")
 
     gc = gspread.url()
-    time.sleep(GOOGLE_API_QUOTA_LIMIT_PER_SECOND)
+    time.sleep(GOOGLE_API_QUOTA_LIMIT_IN_SECONDS)
     spreadsheet = gc.open_by_url(sheet_url)
     worksheet = spreadsheet.worksheet(sheet_name)
     data_list = worksheet.get_all_values()
