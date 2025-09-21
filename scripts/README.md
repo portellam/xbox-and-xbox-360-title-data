@@ -27,7 +27,7 @@
 | [`./src/get_this_database.py`][100A]            | any remote database file        | Working.                                                                      |
 | [`./src/get_wiki_table.py`][100B]               | any Wiki powered webpage        | Working.                                                                      |
 | -                                               | [1],  [21]                      | -                                                                             |
-| [`./src/get_rushhosting.net_database.py`][1002] | [2]                             | Developing. Suffers timeouts Fails every 50 to 100 web requests.              |
+| [`./src/get_rushhosting.net_database.py`][1002] | [2]                             | Developing. Suffers timeouts. Fails every 50 to 100 web requests.             |
 | [`./src/get_many_databases.py`][1003]           | [3],  [5],  [6]                 | Working. For SQL query statement(s), see [`./src/config_databases.py`][1103]. |
 | [`./src/get_wikipedia_tables.py`][1009]         | [9],  [10],  [11],  [12],  [13] | Working.                                                                      |
 | -                                               | [14],  [15]                     | -                                                                             |
