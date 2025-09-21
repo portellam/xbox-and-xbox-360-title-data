@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 
 #
-# Copyright (C) 2025 Alex Portell <github.com/portellam>
-#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -35,10 +33,6 @@ import requests
 
 from bs4 import (
   BeautifulSoup
-)
-
-from fetch import (
-  get_html
 )
 
 def export_html(
@@ -138,28 +132,6 @@ def format_html_element(
 
   return f"{indent}"
   + f"<{element.name}{attributes}>{text}</{element.name}>"
-
-def get_html_tables(
-  url
-):
-  text = get_html(url)
-
-  if not text:
-    return []
-
-  soup = BeautifulSoup(
-    text,
-    'html.parser'
-  )
-
-  table_list = soup.find_all('table')
-  sanitized_list = []
-
-  for table in table_list:
-    sanitized_html = sanitize_html_table(table)
-    sanitized_list.append(sanitized_html)
-
-  return sanitized_list
 
 def sanitize_html_table(
   table
