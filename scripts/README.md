@@ -25,9 +25,9 @@
 | Script                                          | Remote Database                 | Status                                                                        |
 | ----------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------- |
 | [`./src/get_this_database.py`][100A]            | any remote database file        | Working.                                                                      |
-| [`./src/get_wiki_table.py`][100B]               | any Wiki powered webpage        | Working.                                                                     |
+| [`./src/get_wiki_table.py`][100B]               | any Wiki powered webpage        | Working.                                                                      |
 | -                                               | [1],  [21]                      | -                                                                             |
-| [`./src/get_rushhosting.net_database.py`][1002] | [2]                             | Developing. Rate limited. Fails every 50 to 100 web requests.                 |
+| [`./src/get_rushhosting.net_database.py`][1002] | [2]                             | Developing. Suffers timeouts Fails every 50 to 100 web requests.              |
 | [`./src/get_many_databases.py`][1003]           | [3],  [5],  [6]                 | Working. For SQL query statement(s), see [`./src/config_databases.py`][1103]. |
 | [`./src/get_wikipedia_tables.py`][1009]         | [9],  [10],  [11],  [12],  [13] | Working.                                                                      |
 | -                                               | [14],  [15]                     | -                                                                             |
@@ -39,7 +39,7 @@
 | -                                               | [29]                            | -                                                                             |
 | -                                               | [32]                            | -                                                                             |
 | -                                               | [33]                            | -                                                                             |
-| [`./src/get_google_sheets.py`][1035]            | [35]                            | -                                                                             |
+| [`./src/get_google_sheets.py`][1035]            | [35]                            | Working.                                                                      |
 | -                                               | [36]                            | -                                                                             |
 
 [100A]: ./src/get_this_database.py
@@ -63,14 +63,11 @@
 #### 2. Google Sheets API Usage
 
 - Do not use for unauthorized data collection.
-
-- Follow Google's *Terms of Use*:
-[https://developers.google.com/terms][2200]
-
+- Follow Google's [*Terms of Use*][2200].
 - Only works with sheets shared publicly ("Anyone with link").
 - Rate limited to ~30 requests/minute to respect quotas.
 - Respect sheet owners' terms and privacy settings.
-- Respect the `robots.txt` ([https://www.consolemods.org/robots.txt][2201])
+- Respect the [`robots.txt`][2201].
 
 - The following tools use Google's free public Sheets API:
   - [`./src/get_google_sheets.py`][1035]
@@ -81,20 +78,19 @@
 #### 3. Wikipedia Usage
 
 - Content is CC BY-SA 3.0 - attribute Wikipedia as source.
-
-- Follow Wikimedia *Terms of Use*:
-[https://foundation.wikimedia.org/wiki/Terms_of_Use][2300]
-
+- Follow Wikimedia [*Terms of Use*][2300].
 - Include original article links in redistributed data.
+
 - Maximum two hundred (200) requests/second, six thousand (6,000) requests/day
 (this tool uses much lower limits).
 
-- Respect the `robots.txt`: [https://www.wikipedia.org/robots.txt][2301]
+- Respect the [`robots.txt`][2301].
 
 - The following tools apply:
   - [`./src/get_wikipedia_tables.py`][1009]
 
 [2300]: https://foundation.wikimedia.org/wiki/Terms_of_Use
+[2301]: https://www.wikipedia.org/robots.txt
 
 #### 4. Generic Wiki Usage
 
@@ -111,7 +107,7 @@
 - Include attribution when redistributing data.
 - Non-commercial research use only.
 - Rate limit to 1 request/second.
-- Respect the `robots.txt` ([https://www.consolemods.org/robots.txt][2500])
+- Respect the [`robots.txt`][2500].
 
 - The following tools apply:
   - [`./src/get_wikipedia_tables.py`][1019]
