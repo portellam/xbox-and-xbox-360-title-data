@@ -82,6 +82,26 @@ Do you need help? Please visit the [Issues][501] page.
 
 [501]: https://github.com/portellam/xbox-and-xbox-360-title-data/issues
 
+### 6. Licensing
+- Core library (`./scripts/src/`): GPLv3 (see [LICENSE-GPL][601])
+
+- Documentation: GPL v3 (see [LICENSE-GPL][601])
+  - README (`./databases/README.md`)
+  - Databases README (`./databases/README.md`)
+  - Scripts README (`./scripts/README.md`)
+
+- Remote database files: please refer to related [References][602]
+(see `./databases/README.md`). Author does not assume or claim ownership over the
+remote database files, unless otherwise stated.
+  - CSV (`./databases/csv`)
+  - DB (`./databases/db`)
+  - JSON (`./databases/json`)
+
+- All other files: All rights reserved.
+
+[601]: ./LICENSE-GPL
+[602]: ./REFERENCES.md
+
 ##
 #### Click [here](#xbox-and-xbox-360-title-data) to return to the top of this document.
 
