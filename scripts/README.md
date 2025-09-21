@@ -33,7 +33,7 @@
 | -                                               | [29]                            | -                                                                             |
 | -                                               | [32]                            | -                                                                             |
 | -                                               | [33]                            | -                                                                             |
-| -                                               | [35]                            | -                                                                             |
+| [`./src/get_google_sheets.py`][1035]            | [35]                            | -                                                                             |
 | -                                               | [36]                            | -                                                                             |
 
 [100A]: ./src/get_this_database.py
@@ -43,6 +43,30 @@
 [1103]: ./src/config_databases.py
 [1009]: ./src/get_wikipedia_tables.py
 [1019]: ./src/get_consolemods_table.py
+[1035]: ./src/get_google_sheets.py
+[1135]: #1-google-sheets-api
+
+
+### 2. Legal & Usage Notes
+
+#### 1. Google Sheets API
+
+
+- The following tools use Google's free public Sheets API:
+  - [`./src/get_google_sheets.py`][1035]
+
+- Rate limited to ~30 requests/minute to respect quotas.
+- Only works with sheets shared publicly ("Anyone with link").
+
+##### 1. Your Responsibilities
+
+- Ensure you have permission to access sheets you process.
+- Respect sheet owners' terms and privacy settings.
+- Do not use for unauthorized data collection.
+
+##### 2. Google's Terms
+See: https://developers.google.com/terms
+
 
 ##
 #### Click [here](#scripts) to return to the top of this document.
