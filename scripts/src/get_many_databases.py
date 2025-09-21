@@ -19,7 +19,7 @@ from typing import (
   List
 )
 
-from config_database import (
+from config_databases import (
   DB_QUERY_MAP
 )
 
