@@ -11,7 +11,7 @@
 ## Table of Contents
 
 - [1. This Directory](#1-this-directory)
-- [2. Legal & Usage Notes](#2-legal--usage-notes)
+- [2. Legal & Usage Directives/Notes](#2-legal--usage-directivesnotes)
   - [1. General Best Practices](#1-general-best-practices)
   - [2. Google Sheets API Usage](#2-google-sheets-api-usage)
   - [3. Wikipedia Usage](#3-wikipedia-usage)
@@ -51,7 +51,7 @@
 [1019]: ./src/get_consolemods_table.py
 [1035]: ./src/get_google_sheets.py
 
-### 2. Legal & Usage Notes
+### 2. Legal & Usage Directives/Notes
 
 #### 1. General Best Practices
 
@@ -80,10 +80,7 @@
 - Content is CC BY-SA 3.0 - attribute Wikipedia as source.
 - Follow Wikimedia [*Terms of Use*][2300].
 - Include original article links in redistributed data.
-
-- Maximum two-hundred (200) requests/second, six-thousand (6,000) requests/day
-(this tool uses much lower limits).
-
+- Maximum two-hundred (200) requests/second, six-thousand (6,000) requests/day.
 - Respect the [`robots.txt`][2301].
 
 - The following tools apply:
