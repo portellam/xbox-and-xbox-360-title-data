@@ -125,13 +125,13 @@ def main() -> int:
     sheet_name = NAME_LIST[index]
     output_name = FILE_NAME_LIST[index]
 
-    exit_code = parse_this(
+    result = parse_this(
       value,
       sheet_name,
       output_name
     )
 
-    if exit_code == 0:
+    if result == 0:
       partial_success = True
 
     else:
