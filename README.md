@@ -39,6 +39,7 @@ Please use with caution.
 - [💾 3. Download](#-3-download)
 - [❓ 4. Usage](#-4-usage)
 - [☎️ 5. Contact](#-5-contact)
+- [📝 6. Licensing](#-6-licensing)
 
 ## Contents
 
@@ -82,7 +83,7 @@ Do you need help? Please visit the [Issues][501] page.
 
 [501]: https://github.com/portellam/xbox-and-xbox-360-title-data/issues
 
-### 6. Licensing
+### 📝 6. Licensing
 - Core library (`./scripts/src/`): GPLv3 (see [LICENSE-GPL][601])
 
 - Documentation: GPL v3 (see [LICENSE-GPL][601])
@@ -90,9 +91,10 @@ Do you need help? Please visit the [Issues][501] page.
   - Databases README (`./databases/README.md`)
   - Scripts README (`./scripts/README.md`)
 
-- Remote database files: please refer to related [References][602]
-(see `./databases/README.md`). Author does not assume or claim ownership over the
-remote database files, unless otherwise stated.
+- Remote database files:
+  - Author does not assume or claim ownership over the remote database files, unless
+otherwise stated. Please refer to related [References][602]
+(see `./databases/README.md`).
   - CSV (`./databases/csv`)
   - DB (`./databases/db`)
   - JSON (`./databases/json`)
