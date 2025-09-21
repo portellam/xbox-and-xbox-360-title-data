@@ -72,7 +72,6 @@ def write_many(
     )
 
     write_this(
-      url,
       name,
       header_list,
       row_list

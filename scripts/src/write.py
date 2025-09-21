@@ -105,7 +105,6 @@ def write_json(
     return False
 
 def write_this(
-  url: str,
   name: str,
   header_list: List[str],
   row_list: List[
@@ -115,10 +114,6 @@ def write_this(
     ]
   ]
 ) -> int:
-  if not url:
-    print("Warning: URL is not valid.")
-    return 1
-
   if not name:
     print("Warning: file name is not valid.")
     return 1
