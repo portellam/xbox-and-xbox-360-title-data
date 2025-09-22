@@ -398,14 +398,14 @@
     "5": "unplayable",
     "1_1": "unplayable",
     "6": "unplayable",
-    "7": "unplayable",
+    "7": "playable",
     "7b": "unplayable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "unplayable",
     "Tested By": "willindiana",
-    "Known Issues": "Black screen but game is running"
+    "Known Issues": "Use Config Loader xefu7 to fix black screen while game is running."
   },
   {
     "Name": "American Idol (prototype)",
@@ -1027,14 +1027,14 @@
     "5": "untested",
     "1_1": "untested",
     "6": "untested",
-    "7": "untested",
+    "7": "playable",
     "7b": "untested",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "in-game",
-    "Tested By": "@oreos420#6530, ItsAshleyFTW, Dominater01",
-    "Known Issues": "Game seems to run faster than normal speed."
+    "Tested By": "@oreos420#6530, ItsAshleyFTW, Dominater01, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix game running too fast."
   },
   {
     "Name": "Batman: Rise of Sin Tzu",
@@ -1061,14 +1061,14 @@
     "5": "unplayable",
     "1_1": "unplayable",
     "6": "unplayable",
-    "7": "unplayable",
+    "7": "in-game",
     "7b": "unplayable",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "unplayable",
-    "Tested By": "willindiana, Dominater01",
-    "Known Issues": "Xbox encountered error"
+    "Tested By": "willindiana, Dominater01, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix crash when starting game. Controller does not work."
   },
   {
     "Name": "Battle Engine Aquila",
@@ -2019,8 +2019,8 @@
     "21a": "unplayable",
     "21b": "unplayable",
     "21c": "unplayable",
-    "Tested By": "willindiana",
-    "Known Issues": "\u201cThis Original Xbox game has encountered a problem and can\u2019t continue\u201d error in every Xefu."
+    "Tested By": "willindiana, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix crash when starting game."
   },
   {
     "Name": "Cars",
@@ -2132,14 +2132,14 @@
     "5": "Menus",
     "1_1": "Menus",
     "6": "Menus",
-    "7": "Menus",
+    "7": "playable",
     "7b": "Menus",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "/u/maty15987, szymmirr, Imadummy, willindiana",
-    "Known Issues": "Flickering 3D models and speed issues. Game freezes shortly after starting a match."
+    "Tested By": "/u/maty15987, szymmirr, Imadummy, willindiana, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix freeze flickering 3D models, speed issues, and freezing."
   },
   {
     "Name": "Championship Bowling",
@@ -2506,14 +2506,14 @@
     "5": "untested",
     "1_1": "untested",
     "6": "untested",
-    "7": "untested",
+    "7": "playable",
     "7b": "untested",
-    "19": "untested",
+    "19": "unplayable",
     "21a": "untested",
     "21b": "untested",
-    "21c": "playable",
-    "Tested By": "Unknown",
-    "Known Issues": "None"
+    "21c": "unplayable",
+    "Tested By": "Derf",
+    "Known Issues": "40 second long black screen before intro video starts on xefu7. xefu2019 and xefu2021c crash immediately on Xbox screen."
   },
   {
     "Name": "Combat Elite: WWII Paratroopers",
@@ -8235,14 +8235,14 @@
     "5": "untested",
     "1_1": "untested",
     "6": "untested",
-    "7": "in-game",
+    "7": "playable",
     "7b": "untested",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "Unknown",
-    "Known Issues": "Freezes at loading screen"
+    "Tested By": "Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix freeze at loading screen."
   },
   {
     "Name": "MLB Slugfest 20-03",
@@ -9578,14 +9578,14 @@
     "5": "in-game",
     "1_1": "in-game",
     "6": "in-game",
-    "7": "in-game",
+    "7": "playable",
     "7b": "in-game",
     "19": "in-game",
     "21a": "in-game",
     "21b": "in-game",
     "21c": "in-game",
-    "Tested By": "LazyIllusion, HatKid421",
-    "Known Issues": "Black screen when in gameplay but can blindly play"
+    "Tested By": "LazyIllusion, HatKid421, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix black screen when in gameplay."
   },
   {
     "Name": "Neighbours from Hell",
@@ -12808,14 +12808,14 @@
     "5": "untested",
     "1_1": "untested",
     "6": "untested",
-    "7": "in-game",
+    "7": "playable",
     "7b": "untested",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "LazyIllusion",
-    "Known Issues": "Glitching models in cutscene and freezes after cutscene"
+    "Tested By": "LazyIllusion, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix glitching models in cutscene and freezes after cutscene."
   },
   {
     "Name": "Spawn: Armageddon",
@@ -13216,14 +13216,14 @@
     "5": "in-game",
     "1_1": "in-game",
     "6": "in-game",
-    "7": "in-game",
+    "7": "playable",
     "7b": "in-game",
     "19": "in-game",
     "21a": "in-game",
     "21b": "in-game",
     "21c": "in-game",
-    "Tested By": "trex1967, Morrigan0001",
-    "Known Issues": "Game runs too fast to be a ideal way to play"
+    "Tested By": "trex1967, Morrigan0001, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix main menu glitch and game running too fast."
   },
   {
     "Name": "Star Wars Jedi Knight: Jedi Academy",
@@ -13539,14 +13539,14 @@
     "5": "untested",
     "1_1": "untested",
     "6": "untested",
-    "7": "unplayable",
+    "7": "playable",
     "7b": "untested",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "Imadummy",
-    "Known Issues": "Freezes a few seconds into the match"
+    "Tested By": "Imadummy, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix freeze a few seconds into the match."
   },
   {
     "Name": "Street Racing Syndicate",
@@ -14066,14 +14066,14 @@
     "5": "untested",
     "1_1": "untested",
     "6": "untested",
-    "7": "in-game",
+    "7": "playable",
     "7b": "untested",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "/u/Bret_Linden",
-    "Known Issues": "Freezes at game splash screen"
+    "Tested By": "/u/Bret_Linden, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix freeze at game splash screen."
   },
   {
     "Name": "Test Drive",
@@ -16242,14 +16242,14 @@
     "5": "Menus",
     "1_1": "Menus",
     "6": "Menus",
-    "7": "Menus",
+    "7": "playable",
     "7b": "Menus",
     "19": "untested",
     "21a": "untested",
     "21b": "untested",
     "21c": "untested",
-    "Tested By": "/u/RDR007, CatMachete",
-    "Known Issues": "Crashes to Xbox logo when you attempt to load a mission."
+    "Tested By": "/u/RDR007, CatMachete, Elko992",
+    "Known Issues": "Use Config Loader xefu7 to fix crash when you attempt to load a mission."
   },
   {
     "Name": "US Open 2003",

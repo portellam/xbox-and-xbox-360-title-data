@@ -1098,7 +1098,7 @@
   {
     "Title": "Freaky Flyers",
     "Publisher(s)": "Midway Games",
-    "Technical issue(s)": "The frame rate occasionally drops during the game.",
+    "Technical issue(s)": "The frame rate occasionally drops during the game, changing the resolution to 480p yields moderate improvements.",
     "Add-Ons": "",
     "Region(s)": "",
     "Ref(s)": "[ 5 ] [ 16 ]"
@@ -1218,7 +1218,7 @@
   {
     "Title": "GoldenEye: Rogue Agent",
     "Publisher(s)": "EA Games",
-    "Technical issue(s)": "The PAL version is not backwards compatible.",
+    "Technical issue(s)": "",
     "Add-Ons": "",
     "Region(s)": "",
     "Ref(s)": "[ 5 ]"
@@ -1259,9 +1259,13 @@
     "Title": "Grand Theft Auto: Vice City",
     "Publisher(s)": "Rockstar Games",
     "Technical issue(s)": "There is some chugging during the intro. Major frame rate slowdown while driving. Radio is quiet during gameplay.",
-    "Add-Ons": "",
-    "Region(s)": "",
-    "Ref(s)": "[ 5 ] [ 16 ]"
+    "Add-Ons": ""
+  },
+  {
+    "Title": "Grand Theft Auto: IV",
+    "Publisher(s)": "Rockstar Games",
+    "Technical issue(s)": "",
+    "Add-Ons": "[ 5 ] [ 16 ]"
   },
   {
     "Title": "Grand Theft Auto: The Trilogy [ 37 ]",
