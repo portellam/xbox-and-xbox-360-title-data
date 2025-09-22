@@ -39,13 +39,15 @@ This repository's primary purpose is to **help** community-driven and
 non-commercial projects of (primarily) *Xbox 360* video game
 **title data documentation**.
 
-Auxiliary purposes include: development of scripts to **parse** and **aggregate**
-remote data to organize into a **local database.**
+Auxiliary purposes include: **development** of scripts to **parse** and
+**aggregate** remote data, and organize into a **local database.**
 
-The intended **purpose** of a local database is to **extend** the functionality of
-a given **user interface** (UI), of which to view and play the *Xbox* and
+The intended **purpose** of a local database is to **extend** the functionality
+of a given **user interface** (UI), of which to view and play the *Xbox* and
 *Xbox 360* titles from. For example, a custom *Xbox 360* dashboard such as
 [*Aurora*][37], to extend its [filter/sort functions of title metadata][6].
+
+**No** other purpose is **recommended** or **advertised.**
 
 ### ❗ 2. Disclaimer
 
@@ -59,7 +61,10 @@ should not be considered as an accurate or reliable source of information.
 If any data goes against authorized use by any referenced party, please contact a
 repository contributor so the matter may be resolved.
 
-Please use caution when accessing databases or executing scripts.
+Scripts include rate limits to as a courtesy to the web hosts of remote databases.
+These rate limits must be respected, and not overrided.
+
+Please use caution when executing scripts or accessing databases.
 
 ### ✅ 3. Requirements
 
