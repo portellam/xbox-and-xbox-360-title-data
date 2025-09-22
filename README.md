@@ -3,25 +3,8 @@
 
 A **non-commercial, non-profit,** and **open-source** project to **compile** a
 list of **remote** sources, of video game titles for the *Microsoft Xbox* and
-*Xbox 360* consoles. The project includes documentation and references.
-
-Also included are scripts to **parse** and **aggregate** remote data to organize
-into a local database. The **purpose** of the local database is to **extend** the
-functionality of a given **user interface** (UI), of which to view and play the
-*Xbox* and *Xbox 360* titles from. For example, a custom *Xbox 360* dashboard such
-as [*Aurora*][37], to extend its [filter/sort functions of title metadata][6].
-
-No intellectual infrigment, no copyright infrigement, no endorsement by
-*Microsoft, Google, Wikipedia, Console Mods* or any other referenced entity,
-is intended.
-
-If any data goes against authorized use by any referenced party, please contact
-a repository contributor so this may be resolved appropriately.
-
-This repository, its documentation, and/or its database(s) should **not** be
-considered as an **accurate** or **reliable** source of information.
-
-Please use with caution.
+*Xbox 360* consoles. Also includes documentation, references, scripts, and
+databases.
 
 ## [💾 Download](#-3-download)
 #### View this repository on [Codeberg][001], [GitHub][002].
@@ -41,25 +24,49 @@ Please use with caution.
 ## Table of Contents
 
 - [❓ 1. Why?](#-1-why)
-- [✅ 2. Requirements](#-2-requirements)
-- [💾 3. Download](#-3-download)
-- [❓ 4. Usage](#-4-usage)
-- [☎️ 5. Contact](#-5-contact)
-- [📝 6. Licensing](#-6-licensing)
+- [❗ 2. Disclaimer](#-2-disclaimer)
+- [✅ 3. Requirements](#-3-requirements)
+- [💾 4. Download](#-4-download)
+- [🔨 5. Usage](#-5-usage)
+- [☎️ 6. Contact](#-6-contact)
+- [📝 7. Licensing](#-7-licensing)
 
 ## Contents
 
 ### ❓ 1. Why?
 
-To generate a local database file from multiple remote sources, and to use said
-database to extend the [filter and sort functionality][37] of custom *Xbox 360*
-dashboards such as [*Aurora*][6].
+This repository's primary purpose is to **help** community-driven and
+non-commercial projects of (primarily) *Xbox 360* video game
+**title data documentation**.
 
-### ✅ 2. Requirements
+Auxiliary purposes include: development of scripts to **parse** and **aggregate**
+remote data to organize into a **local database.**
 
+The intended **purpose** of a local database is to **extend** the functionality of
+a given **user interface** (UI), of which to view and play the *Xbox* and
+*Xbox 360* titles from. For example, a custom *Xbox 360* dashboard such as
+[*Aurora*][37], to extend its [filter/sort functions of title metadata][6].
+
+### ❗ 2. Disclaimer
+
+No intellectual or copyright infrigement is intended. No endorsement by
+*Microsoft, Google, Wikipedia, Console Mods* or any other referenced organization
+or entity is assumed.
+
+This repository, its documentation, the remote database(s), or local database
+should not be considered as an accurate or reliable source of information.
+
+If any data goes against authorized use by any referenced party, please contact a
+repository contributor so the matter may be resolved.
+
+Please use caution when accessing databases or executing scripts.
+
+### ✅ 3. Requirements
+
+For executing script files:
 - [Python][34]
 
-### 💾 3. Download
+### 💾 4. Download
 
 - Download the Latest Release: [Codeberg][301], [GitHub][302]
 
@@ -79,20 +86,21 @@ dashboards such as [*Aurora*][6].
 [301]: https://codeberg.org/portellam/xbox-and-xbox-360-title-data/releases/latest
 [302]: https://github.com/portellam/xbox-and-xbox-360-title-data/releases/latest
 
-### ❓ 4. Usage
+### 🔨 5. Usage
 
 N/A
 
-### ☎️ 5. Contact
+### ☎️ 6. Contact
 
 Do you need help? Please visit the [Issues][501] page.
 
 [501]: https://github.com/portellam/xbox-and-xbox-360-title-data/issues
 
-### 📝 6. Licensing
-- Core library (`./scripts/src/`): GPLv3 (see [LICENSE-GPL][601])
+### 📝 7. Licensing
 
-- Documentation: GPL v3 (see [LICENSE-GPL][601])
+- Core library (`./scripts/src/`): GPLv3 (see [LICENSE-GPL.md][601])
+
+- Documentation: GPL v3 (see [LICENSE-GPL.md][601])
   - README (`./databases/README.md`)
   - Databases README (`./databases/README.md`)
   - Scripts README (`./scripts/README.md`)
