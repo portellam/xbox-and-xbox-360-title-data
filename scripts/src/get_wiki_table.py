@@ -86,7 +86,7 @@ from sanitize_html import (
 )
 
 from write import (
-  write_json
+  write_this
 )
 
 def write_many(
@@ -162,10 +162,10 @@ def write_many(
 
     print("Processed table.")
 
-    if not write_json(
+    if not write_this(
+      file_name,
       header_list,
-      row_list,
-      file_name
+      row_list
     ):
       print()
       continue
