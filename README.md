@@ -1,9 +1,9 @@
 # Xbox and Xbox 360 Title Data
 ### Developing
 
-A **non-commercial, non-profit,** and **open-source** project to **compile** a
-list of **remote** sources, of video game titles for the *Microsoft Xbox* and
-*Xbox 360* consoles. Also includes documentation, references, scripts, and
+A **non-commercial, non-profit,** and **open-source** project to research and
+compile a list of remote sources, of video game titles for the *Microsoft Xbox*
+and *Xbox 360* consoles. Also includes documentation, references, scripts, and
 databases.
 
 ## [💾 Download](#-3-download)
@@ -37,7 +37,7 @@ databases.
 
 This repository's primary purpose is to **help** community-driven and
 non-commercial projects of (primarily) *Xbox 360* video game
-**title data documentation**.
+**title data documentation** and research.
 
 Auxiliary purposes include: **development** of scripts to **parse** and
 **aggregate** remote data, and organize into a **local database.**
@@ -52,7 +52,7 @@ of a given **user interface** (UI), of which to view and play the *Xbox* and
 ### ❗ 2. Disclaimer
 
 No intellectual or copyright infrigement is intended. No endorsement by
-*Microsoft, Google, Wikipedia, Console Mods* or any other referenced organization
+*Microsoft, Google, Wikipedia, Console Mods*, or any other referenced organization
 or entity is assumed.
 
 This repository, its documentation, the remote database(s), or local database
