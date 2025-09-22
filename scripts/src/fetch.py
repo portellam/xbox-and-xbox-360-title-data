@@ -26,6 +26,7 @@
 
 import re
 import sys
+import time
 
 from typing import (
   Optional
@@ -47,7 +48,9 @@ def get_html(
 ) -> Optional[str]:
   try:
     validate_sleep_time(quota_limit_in_seconds)
-    print(f"Fetching page: '{url}'")
+    quota_limit_in_seconds_str = str(quota_limit_in_seconds).rstrip('0').rstrip('.')
+
+    print(f"Found page: '{url}'")
 
     response = requests.get(
       url,
@@ -57,7 +60,9 @@ def get_html(
       timeout = 10
     )
 
-    time.sleep(float)
+    print(f"Waiting {quota_limit_in_seconds_str} second(s).")
+    time.sleep(quota_limit_in_seconds)
+    print(f"Fetching page.")
     response.raise_for_status()
     print("Fetched page.")
     return response.text
@@ -77,5 +82,5 @@ def validate_sleep_time(sleep_time_in_seconds: float) -> None:
   ):
     raise ValueError("Sleep time must be an integer or float.")
 
-  if sleep_time < 0:
+  if sleep_time_in_seconds < 0:
     raise ValueError("Sleep time cannot be negative.")

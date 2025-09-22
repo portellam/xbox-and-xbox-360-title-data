@@ -115,10 +115,16 @@ def parse_this(
       print("Output name is not valid.")
       raise TypeError
 
-    print(f"Fetching Google Sheet: '{sheet_url}'")
+    print(f"Found Google Sheet: '{sheet_url}'")
 
     gc = gspread.url()
+
+    quota_limit_in_seconds_str = str(GOOGLE_API_QUOTA_LIMIT_IN_SECONDS).rstrip('0')
+    quota_limit_in_seconds_str = quota_limit_in_seconds_str.rstrip('.')
+    print(f"Waiting {quota_limit_in_seconds_str} second(s).")
     time.sleep(GOOGLE_API_QUOTA_LIMIT_IN_SECONDS)
+
+    print(f"Fetching Google Sheet.")
     spreadsheet = gc.open_by_url(sheet_url)
     worksheet = spreadsheet.worksheet(sheet_name)
     data_list = worksheet.get_all_values()

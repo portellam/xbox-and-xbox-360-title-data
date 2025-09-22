@@ -48,9 +48,11 @@ from get_this_database import (
 def main() -> int:
   partial_success = False
   complete_success = True
+  quota_limit_in_seconds = 5.000
 
   for value in DB_QUERY_MAP:
     result = download_and_query(
+      quota_limit_in_seconds,
       value['path'],
       value['name'],
       value['query']

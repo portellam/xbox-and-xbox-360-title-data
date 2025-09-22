@@ -28,7 +28,7 @@ import csv
 import json
 import os
 import sqlite3
-import tempfile
+import time
 import urllib.request
 
 from typing import (
@@ -48,13 +48,80 @@ from write import (
   write_this
 )
 
+def download_and_query(
+  quota_limit_in_seconds: float,
+  db_url: str,
+  name: str,
+  query: str
+) -> int:
+  db_path = None
+
+  if type(name) is not str:
+    return 2
+
+  try:
+    if not db_url:
+      print("Warning: database path is not valid.")
+      return 1
+
+    if not name:
+      print("Warning: file name is not valid.")
+      return 1
+
+    name = sanitize_file_name(name)
+
+    db_path = download_db(
+      quota_limit_in_seconds,
+      db_url,
+      name,
+      OUTPUT_DB_PATH
+    )
+
+    row_list = execute_query(
+      db_path,
+      query
+    )
+
+    if not row_list:
+      print("No results from query.")
+      return 2
+
+    header_list = [
+      key
+      for key in row_list[0].keys()
+    ]
+
+    result = write_results(
+      db_url = db_url,
+      name = name,
+      header_list = header_list,
+      row_list = row_list
+    )
+
+    if result != 0:
+      return result
+
+    print("Executed query.")
+    return 0
+
+  except Exception as e:
+    print(f"Error: {e}")
+    return 1
+
 def download_db(
+  quota_limit_in_seconds: float,
   db_url: str,
   db_file_name: str,
   db_parent_path: str = OUTPUT_DB_PATH
 ) -> str:
   try:
-    print(f"Downloading database: '{db_url}'.")
+    print(f"Found database: '{db_url}'.")
+
+    validate_sleep_time(quota_limit_in_seconds)
+    quota_limit_in_seconds_str = str(quota_limit_in_seconds).rstrip('0').rstrip('.')
+    print(f"Waiting {quota_limit_in_seconds_str} second(s).")
+    time.sleep(quota_limit_in_seconds)
+    print(f"Downloading database.")
 
     os.makedirs(
       os.path.dirname(db_parent_path) or '.',
@@ -134,6 +201,19 @@ def execute_query(
 
     raise
 
+def validate_sleep_time(sleep_time_in_seconds: float) -> None:
+  if not isinstance(
+    sleep_time_in_seconds,
+    (
+      int,
+      float
+    )
+  ):
+    raise ValueError("Sleep time must be an integer or float.")
+
+  if sleep_time_in_seconds < 0:
+    raise ValueError("Sleep time cannot be negative.")
+
 def write_results(
   db_url: str,
   name: str,
@@ -165,61 +245,3 @@ def write_results(
     return 1
 
   return 0
-
-def download_and_query(
-  db_url: str,
-  name: str,
-  query: str
-) -> int:
-  db_path = None
-
-  if type(name) is not str:
-    return 2
-
-  try:
-    if not db_url:
-      print("Warning: database path is not valid.")
-      return 1
-
-    if not name:
-      print("Warning: file name is not valid.")
-      return 1
-
-    name = sanitize_file_name(name)
-
-    db_path = download_db(
-      db_url,
-      name,
-      OUTPUT_DB_PATH
-    )
-
-    row_list = execute_query(
-      db_path,
-      query
-    )
-
-    if not row_list:
-      print("No results from query.")
-      return 2
-
-    header_list = [
-      key
-      for key in row_list[0].keys()
-    ]
-
-    result = write_results(
-      db_url = db_url,
-      name = name,
-      header_list = header_list,
-      row_list = row_list
-    )
-
-    if result != 0:
-      return result
-
-    print("Executed query.")
-    return 0
-
-  except Exception as e:
-    print(f"Error: {e}")
-    return 1
