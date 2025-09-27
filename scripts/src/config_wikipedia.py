@@ -39,7 +39,8 @@ URL_LIST = [
   "https://en.wikipedia.org/wiki/List_of_Xbox_games_compatible_with_Xbox_360",
   "https://xbox.fandom.com/wiki/List_of_Cancelled_Xbox_games",
   "https://xbox.fandom.com/wiki/List_of_Xbox_games",
-  "https://en.wikipedia.org/wiki/Xbox_Live_Arcade#Xbox"
+  "https://en.wikipedia.org/wiki/Xbox_Live_Arcade",
+  "https://en.wikipedia.org/wiki/Xbox_Live_Arcade#Xbox",
 ]
 
 FILE_NAME_LIST = [
@@ -53,5 +54,6 @@ FILE_NAME_LIST = [
   "wikipedia.org_xbox_games_compatible_with_xbox_360",
   "xbox.fandom.com_list_of_cancelled_xbox_games",
   "xbox.fandom.com_list_of_xbox_games",
+  "wikipedia.org_xbox_live_arcade",
   "wikipedia.org_xbox_live_arcade_xbox",
 ]
